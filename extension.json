@@ -1,5 +1,5 @@
 {
-	"name": "BlueSpiceSmartList",
+	"name": "BlueSpiceSmartlist",
 	"version": "2.27.1-alpha",
 	"url": "https://help.bluespice.com/index.php/SmartList",
 	"author": [
@@ -13,9 +13,9 @@
 	"license-name": "GPL-2.0+",
 	"type": "bluespice",
 	"bsgExtensions": {
-		"SmartList": {
+		"BlueSpiceSmartlist": {
 			"className": "SmartList",
-			"extPath": "/BlueSpiceExtensions/SmartList"
+			"extPath": "/BlueSpiceSmartlist"
 		}
 	},
 	"APIModules": {
@@ -30,8 +30,19 @@
 		"SmartList": "SmartList.class.php",
 		"BSApiTasksSmartList": "includes/api/BSApiTasksSmartList.php"
 	},
+	"ResourceModules": {
+		"ext.bluespice.smartlist": {
+			"scripts": "bluespice.smartlist.js",
+			"dependencies": "ext.bluespice.extjs"
+		}
+	},
+	"ResourceFileModulePaths": {
+		"localBasePath": "resources",
+		"remoteExtPath": "BlueSpiceSmartlist/resources"
+	},
 	"Hooks":{
-		"UnitTestsList": "SmartList::onUnitTestsList"
+		"UnitTestsList": "SmartList::onUnitTestsList",
+		"BeforePageDisplay": "SmartList::onBeforePageDisplay"
 	},
 	"load_composer_autoloader": true,
 	"manifest_version": 1

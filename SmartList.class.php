@@ -27,8 +27,7 @@
  * @author     Stephan Muggli <muggli@hallowelt.com>
  * @author     Leonid Verhovskij <verhovskij@hallowelt.com>
  * @version    2.23.1
- * @package    BlueSpice_Extensions
- * @subpackage SmartList
+ * @package    BlueSpiceSmartlist
  * @copyright  Copyright (C) 2016 Hallo Welt! GmbH, All rights reserved.
  * @license    http://www.gnu.org/copyleft/gpl.html GNU Public License v2 or later
  * @filesource
@@ -36,8 +35,7 @@
 
 /**
  * Base class for SmartList extension
- * @package BlueSpice_Extensions
- * @subpackage SmartList
+ * @package BlueSpiceSmartlist
  */
 class SmartList extends BsExtensionMW {
 	/**
@@ -1373,6 +1371,16 @@ class SmartList extends BsExtensionMW {
 	 */
 	public static function onUnitTestsList( array &$paths ) {
 		$paths[] = __DIR__ . '/tests/phpunit/';
+		return true;
+	}
+
+	/**
+	 * @param OutputPage $out
+	 * @param Skin $skin
+	 * @return boolean
+	 */
+	public static function onBeforePageDisplay( &$out, &$skin ) {
+		$out->addModules( 'ext.bluespice.smartlist' );
 		return true;
 	}
 }
