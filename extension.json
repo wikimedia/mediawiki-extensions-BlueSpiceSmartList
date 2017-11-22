@@ -1,6 +1,7 @@
 {
 	"name": "BlueSpiceSmartlist",
-	"version": "2.27.1-alpha",
+	"license-name": "GPL-3.0",
+	"version": "3.0.0-alpha",
 	"url": "https://help.bluespice.com/index.php/SmartList",
 	"author": [
 		"Markus Glaser",
@@ -10,7 +11,6 @@
 		"Leonid Verhovskij"
 	],
 	"descriptionmsg": "bs-smartlist-desc",
-	"license-name": "GPL-2.0+",
 	"type": "bluespice",
 	"bsgExtensions": {
 		"BlueSpiceSmartlist": {
