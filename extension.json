@@ -12,10 +12,14 @@
 	],
 	"descriptionmsg": "bs-smartlist-desc",
 	"type": "bluespice",
-	"bsgExtensions": {
-		"BlueSpiceSmartlist": {
-			"className": "SmartList",
-			"extPath": "/BlueSpiceSmartlist"
+	"attributes": {
+		"BlueSpiceFoundation": {
+			"Extensions": {
+				"BlueSpiceSmartlist": {
+					"className": "SmartList",
+					"extPath": "/BlueSpiceSmartlist"
+				}
+			}
 		}
 	},
 	"APIModules": {
@@ -25,6 +29,10 @@
 		"SmartList": [
 			"i18n"
 		]
+	},
+	"DefaultUserOptions": {
+		"bs-smartlist-pref-count": 5,
+		"bs-smartlist-pref-comments": false
 	},
 	"AutoloadClasses": {
 		"SmartList": "SmartList.class.php",
@@ -41,9 +49,13 @@
 		"remoteExtPath": "BlueSpiceSmartlist/resources"
 	},
 	"Hooks":{
+		"GetPreferences": [
+			"\\BlueSpice\\SmartList\\Hook\\GetPreferences\\AddCount::callback",
+			"\\BlueSpice\\SmartList\\Hook\\GetPreferences\\AddComments::callback"
+		],
 		"UnitTestsList": "SmartList::onUnitTestsList",
 		"BeforePageDisplay": "SmartList::onBeforePageDisplay"
 	},
 	"load_composer_autoloader": true,
-	"manifest_version": 1
+	"manifest_version": 2
 }
