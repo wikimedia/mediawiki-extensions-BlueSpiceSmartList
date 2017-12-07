@@ -1,8 +1,9 @@
 {
 	"@metadata": {
 		"authors": [
-			"StephDC"
+			"StephDC",
+			"Davidzdh"
 		]
 	},
-	"bs-smartlist-time": "時"
+	"bs-smartlist-time": "時日"
 }
