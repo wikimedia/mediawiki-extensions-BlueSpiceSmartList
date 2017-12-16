@@ -52,22 +52,6 @@ class SmartList extends BsExtensionMW {
 		$this->setHook( 'BSDashboardsUserDashboardPortalPortlets' );
 		$this->setHook( 'BSUsageTrackerRegisterCollectors' );
 
-		BsConfig::registerVar( 'MW::SmartList::Count', 5, BsConfig::LEVEL_USER | BsConfig::TYPE_INT, 'bs-smartlist-pref-count', 'int');
-		BsConfig::registerVar( 'MW::SmartList::Namespaces', array(), BsConfig::LEVEL_PUBLIC | BsConfig::TYPE_ARRAY_STRING | BsConfig::USE_PLUGIN_FOR_PREFS, 'bs-smartlist-pref-namespaces', 'multiselectex');
-		BsConfig::registerVar( 'MW::SmartList::Categories', array(), BsConfig::LEVEL_PUBLIC | BsConfig::TYPE_ARRAY_STRING, 'bs-smartlist-pref-categories', 'multiselectplusadd');
-		// possible values: -, day, week, month
-		BsConfig::registerVar( 'MW::SmartList::Period', '-', BsConfig::LEVEL_PUBLIC | BsConfig::TYPE_STRING | BsConfig::USE_PLUGIN_FOR_PREFS, 'bs-smartlist-pref-period', 'select');
-		BsConfig::registerVar( 'MW::SmartList::ShowMinorChanges', true, BsConfig::LEVEL_PUBLIC | BsConfig::TYPE_BOOL, 'bs-smartlist-pref-showminorchanges', 'toggle');
-		BsConfig::registerVar( 'MW::SmartList::ShowOnlyNewArticles', false, BsConfig::LEVEL_PUBLIC | BsConfig::TYPE_BOOL, 'bs-smartlist-pref-showonlynewarticles', 'toggle');
-		BsConfig::registerVar( 'MW::SmartList::Trim', 20, BsConfig::LEVEL_PUBLIC | BsConfig::TYPE_INT, 'bs-smartlist-pref-trim', 'int');
-		BsConfig::registerVar( 'MW::SmartList::ShowText', false, BsConfig::LEVEL_PUBLIC | BsConfig::TYPE_BOOL, 'bs-smartlist-pref-showtext', 'toggle');
-		BsConfig::registerVar( 'MW::SmartList::TrimText', 50, BsConfig::LEVEL_PUBLIC | BsConfig::TYPE_INT, 'bs-smartlist-pref-trimtext', 'int');
-		// possible values: title, time
-		BsConfig::registerVar( 'MW::SmartList::Order', 'DESC', BsConfig::LEVEL_PUBLIC | BsConfig::TYPE_STRING | BsConfig::USE_PLUGIN_FOR_PREFS, 'bs-smartlist-pref-order', 'select'); //title|time
-		BsConfig::registerVar( 'MW::SmartList::Sort', 'time', BsConfig::LEVEL_PUBLIC | BsConfig::TYPE_STRING | BsConfig::USE_PLUGIN_FOR_PREFS, 'bs-smartlist-pref-sort', 'select');
-		BsConfig::registerVar( 'MW::SmartList::ShowNamespace', true, BsConfig::LEVEL_PUBLIC | BsConfig::TYPE_BOOL, 'bs-smartlist-pref-shownamespace', 'toggle');
-		BsConfig::registerVar( 'MW::SmartList::Comments', false, BsConfig::LEVEL_USER | BsConfig::TYPE_BOOL | BsConfig::USE_PLUGIN_FOR_PREFS, 'bs-smartlist-pref-comments', 'check');
-
 		wfProfileOut('BS::' . __METHOD__);
 	}
 
@@ -573,6 +557,7 @@ class SmartList extends BsExtensionMW {
 		 */
 		$aObjectList = array();
 		$aNamespaceIds = array();
+		$config = \MediaWiki\MediaWikiServices::getInstance()->getConfigFactory()->makeConfig( 'bsg' );
 
 		$oErrorListView = new ViewTagErrorList( $this );
 		$oValidationResult = BsValidator::isValid( 'ArgCount', $aArgs['count'], array( 'fullResponse' => true ) );
@@ -735,7 +720,7 @@ class SmartList extends BsExtensionMW {
 			if ( isset( $aArgs['meta'] ) && $aArgs['meta'] == true ) {
 				$aFields[] = 'MAX(rc_timestamp) as time, rc_user_text as username';
 			}
-			if ( BsConfig::get( 'MW::SmartList::Comments' ) ) {
+			if ( $config->get( 'bs-smartlist-pref-comments' ) ) {
 				$aFields[] = 'MAX(rc_comment) as comment';
 			}
 			$res = $dbr->select(
@@ -875,7 +860,7 @@ class SmartList extends BsExtensionMW {
 				$sMeta = '';
 				$sComment = '';
 				$sTitle = $oTitle->getText();
-				if ( BsConfig::get('MW::SmartList::Comments' ) ) {
+				if ( $config->get( 'bs-smartlist-pref-comments' ) ) {
 					$sComment = ( strlen( $row->comment ) > 50 ) ? substr( $row->comment, 0, 50 ) . '...' : $row->comment;
 					$sComment = wfMessage( 'bs-smartlist-comment' )->params( $sComment )->escaped();
 				}
