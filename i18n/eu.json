@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Subi"
+			"Subi",
+			"Mikel Ibaiba"
 		]
 	},
 	"bs-smartlist-recent-changes": "Aldaketa berriak",
@@ -12,5 +13,7 @@
 	"bs-smartlist-week": "Astea",
 	"bs-smartlist-month": "Hilabetea",
 	"bs-smartlist-time": "Ordua",
-	"bs-smartlist-title": "Izenburua"
+	"bs-smartlist-title": "Izenburua",
+	"bs-smartlist-lastedits": "Nire aldaketak",
+	"bs-smartlist-noedits": "Ez da aldaketarik aurkitu."
 }
