@@ -34,6 +34,9 @@
 		"bs-smartlist-pref-count": 5,
 		"bs-smartlist-pref-comments": false
 	},
+	"AutoloadNamespaces": {
+		"BlueSpice\\SmartList\\" : "src/"
+	},
 	"AutoloadClasses": {
 		"SmartList": "SmartList.class.php",
 		"BSApiTasksSmartList": "includes/api/BSApiTasksSmartList.php"
