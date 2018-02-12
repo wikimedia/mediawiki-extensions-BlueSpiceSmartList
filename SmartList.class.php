@@ -40,7 +40,6 @@ class SmartList extends BsExtensionMW {
 	 * Initialization of ShoutBox extension
 	 */
 	protected function initExt() {
-		wfProfileIn('BS::' . __METHOD__);
 		$this->setHook( 'ParserFirstCallInit', 'onParserFirstCallInit' );
 		$this->setHook( 'PageContentSaveComplete' );
 		$this->setHook( 'BSWidgetListHelperInitKeyWords' );
@@ -51,8 +50,6 @@ class SmartList extends BsExtensionMW {
 		$this->setHook( 'BSDashboardsUserDashboardPortalConfig' );
 		$this->setHook( 'BSDashboardsUserDashboardPortalPortlets' );
 		$this->setHook( 'BSUsageTrackerRegisterCollectors' );
-
-		wfProfileOut('BS::' . __METHOD__);
 	}
 
 	/**
@@ -331,7 +328,6 @@ class SmartList extends BsExtensionMW {
 	 * @return ViewWidget.
 	 */
 	public function onWidgetListKeywordYourEdits() {
-		wfProfileIn( 'BS::'.__METHOD__ );
 		$oWidgetView = new ViewWidget();
 		$oWidgetView
 			->setId( 'bs-smartlist-edits' )
@@ -340,7 +336,6 @@ class SmartList extends BsExtensionMW {
 			->setTooltip( wfMessage( 'bs-smartlist-lastedits' )->plain() )
 			->setAdditionalBodyClasses( array( 'bs-nav-links', 'bs-widgetbar-portlet' ) ); //For correct margin and fontsize
 
-		wfProfileOut( 'BS::'.__METHOD__ );
 		return $oWidgetView;
 	}
 
@@ -914,7 +909,6 @@ class SmartList extends BsExtensionMW {
 	 * @return string list of edits
 	 */
 	public function getYourEdits( $iCount, $sOrigin = 'dashboard', $iDisplayLength = 18 ) {
-		wfProfileIn( 'BS::'.__METHOD__ );
 		$iCount = BsCore::sanitize( $iCount, 0, BsPARAMTYPE::INT );
 
 		$oDbr = wfGetDB( DB_REPLICA );
@@ -950,7 +944,6 @@ class SmartList extends BsExtensionMW {
 
 		$sEdits = '<ul>' . implode( '', $aEdits ) . '</ul>';
 
-		wfProfileOut( 'BS::'.__METHOD__ );
 		return $sEdits;
 	}
 
