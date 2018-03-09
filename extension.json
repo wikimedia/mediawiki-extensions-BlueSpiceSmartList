@@ -1,5 +1,5 @@
 {
-	"name": "BlueSpiceSmartlist",
+	"name": "BlueSpiceSmartList",
 	"license-name": "GPL-3.0-only",
 	"version": "3.0.0-alpha",
 	"url": "https://help.bluespice.com/index.php/SmartList",
@@ -21,9 +21,9 @@
 	"attributes": {
 		"BlueSpiceFoundation": {
 			"Extensions": {
-				"BlueSpiceSmartlist": {
+				"BlueSpiceSmartList": {
 					"className": "SmartList",
-					"extPath": "/BlueSpiceSmartlist"
+					"extPath": "/BlueSpiceSmartList"
 				}
 			}
 		}
@@ -32,12 +32,11 @@
 		"bs-smartlist-tasks": "BSApiTasksSmartList"
 	},
 	"MessagesDirs": {
-		"SmartList": [
+		"BlueSpiceSmartList": [
 			"i18n"
 		]
 	},
 	"DefaultUserOptions": {
-		"bs-smartlist-pref-count": 5,
 		"bs-smartlist-pref-comments": false
 	},
 	"AutoloadNamespaces": {
@@ -55,7 +54,7 @@
 	},
 	"ResourceFileModulePaths": {
 		"localBasePath": "resources",
-		"remoteExtPath": "BlueSpiceSmartlist/resources"
+		"remoteExtPath": "BlueSpiceSmartList/resources"
 	},
 	"Hooks":{
 		"GetPreferences": [

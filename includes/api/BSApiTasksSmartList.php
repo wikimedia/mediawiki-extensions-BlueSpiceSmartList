@@ -157,7 +157,18 @@ class BSApiTasksSmartList extends BSApiTasksBase {
 		;
 
 		try {
-			$sContent = BsExtensionManager::getExtension( 'SmartList' )->getToplist( '', array( 'count' => $iCount, 'portletperiod' => $sTime ), null );
+			$sContent =
+				\MediaWiki\MediaWikiServices::getInstance()
+				->getService( 'BSExtensionFactory' )
+				->getExtension( 'BlueSpiceSmartList' )
+				->getToplist(
+					'',
+					array(
+						'count' => $iCount,
+						'portletperiod' => $sTime
+					),
+					null
+				);
 			$oReturn->success = true;
 		} catch ( Exception $e ) {
 			$oErrorListView = new ViewTagErrorList();
@@ -190,7 +201,10 @@ class BSApiTasksSmartList extends BSApiTasksBase {
 			: 'alltime'
 		;
 
-		$oReturn->payload['html'] = BsExtensionManager::getExtension( 'SmartList' )->getEditedPages( $iCount, $sTime );
+		$oReturn->payload['html'] = \MediaWiki\MediaWikiServices::getInstance()
+				->getService( 'BSExtensionFactory' )
+				->getExtension( 'BlueSpiceSmartList' )
+				->getEditedPages( $iCount, $sTime );
 
 		$oReturn->success = true;
 		return $oReturn;
@@ -215,7 +229,10 @@ class BSApiTasksSmartList extends BSApiTasksBase {
 			: 0
 		;
 
-		$oReturn->payload['html'] = BsExtensionManager::getExtension( 'SmartList' )->getActivePortlet( $iCount, $sTime );
+		$oReturn->payload['html'] = \MediaWiki\MediaWikiServices::getInstance()
+				->getService( 'BSExtensionFactory' )
+				->getExtension( 'BlueSpiceSmartList' )
+				->getActivePortlet( $iCount, $sTime );
 
 		$oReturn->success = true;
 		return $oReturn;
@@ -235,7 +252,10 @@ class BSApiTasksSmartList extends BSApiTasksBase {
 			: 10
 		;
 
-		$oReturn->payload['html'] = BsExtensionManager::getExtension( 'SmartList' )->getYourEdits( $iCount );
+		$oReturn->payload['html'] = \MediaWiki\MediaWikiServices::getInstance()
+				->getService( 'BSExtensionFactory' )
+				->getExtension( 'BlueSpiceSmartList' )
+				->getYourEdits( $iCount );
 
 		$oReturn->success = true;
 		return $oReturn;

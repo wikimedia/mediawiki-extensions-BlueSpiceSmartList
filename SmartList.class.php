@@ -25,7 +25,7 @@
  * @author     Patric Wirth <wirth@hallowelt.com>
  * @author     Stephan Muggli <muggli@hallowelt.com>
  * @author     Leonid Verhovskij <verhovskij@hallowelt.com>
- * @package    BlueSpiceSmartlist
+ * @package    BlueSpiceSmartList
  * @copyright  Copyright (C) 2016 Hallo Welt! GmbH, All rights reserved.
  * @license    http://www.gnu.org/copyleft/gpl.html GNU Public License v3
  * @filesource
@@ -33,7 +33,7 @@
 
 /**
  * Base class for SmartList extension
- * @package BlueSpiceSmartlist
+ * @package BlueSpiceSmartList
  */
 class SmartList extends BsExtensionMW {
 	/**
@@ -90,7 +90,18 @@ class SmartList extends BsExtensionMW {
 	 */
 	public static function getMostVisitedPages( $iCount, $sTime ) {
 		try {
-			$sContent = BsExtensionManager::getExtension( 'SmartList' )->getToplist( '', array( 'count' => $iCount, 'portletperiod' => $sTime ), null );
+			$sContent =
+				\MediaWiki\MediaWikiServices::getInstance()
+				->getService( 'BSExtensionFactory' )
+				->getExtension( 'BlueSpiceSmartList' )
+				->getToplist(
+					'',
+					array(
+						'count' => $iCount,
+						'portletperiod' => $sTime
+					),
+					null
+				);
 		} catch ( Exception $e ) {
 			$oErrorListView = new ViewTagErrorList();
 			$oErrorListView->addItem( new ViewTagError( $e->getMessage() ) );
@@ -106,7 +117,10 @@ class SmartList extends BsExtensionMW {
 	 * @return string most edited pages
 	 */
 	public static function getMostEditedPages( $iCount, $sTime ) {
-		return BsExtensionManager::getExtension( 'SmartList' )->getEditedPages( $iCount, $sTime );
+		return \MediaWiki\MediaWikiServices::getInstance()
+				->getService( 'BSExtensionFactory' )
+				->getExtension( 'BlueSpiceSmartList' )
+				->getEditedPages( $iCount, $sTime );
 	}
 
 	/**
@@ -116,7 +130,10 @@ class SmartList extends BsExtensionMW {
 	 * @return string most edited pages
 	 */
 	public static function getMostActivePortlet( $iCount, $sTime ) {
-		return BsExtensionManager::getExtension( 'SmartList' )->getActivePortlet( $iCount, $sTime );
+		return \MediaWiki\MediaWikiServices::getInstance()
+				->getService( 'BSExtensionFactory' )
+				->getExtension( 'BlueSpiceSmartList' )
+				->getActivePortlet( $iCount, $sTime );
 	}
 
 	/**
@@ -126,55 +143,10 @@ class SmartList extends BsExtensionMW {
 	 * @return string most edited pages
 	 */
 	public static function getYourEditsPortlet( $iCount ) {
-		return BsExtensionManager::getExtension( 'SmartList' )->getYourEdits( $iCount );
-	}
-
-	/**
-	 * Sets parameters for more complex options in preferences
-	 * @param string $sAdapterName Name of the adapter, e.g. MW
-	 * @param BsConfig $oVariable Instance of variable
-	 * @return array Preferences options
-	 */
-	public function runPreferencePlugin( $sAdapterName, $oVariable ) {
-		$aPrefs = array();
-		switch ( $oVariable->getName() ) {
-			case 'CategoryMode':
-				$aPrefs = array(
-					'options' => array(
-						wfMessage( 'bs-smartlist-and' )->plain() => 'AND',
-						wfMessage( 'bs-smartlist-or' )->plain() => 'OR'
-					)
-				);
-				break;
-			case 'Period':
-				$aPrefs = array(
-					'options' => array(
-						'-' => '-',
-						wfMessage( 'bs-smartlist-day' )->plain() => 'day',
-						wfMessage( 'bs-smartlist-week' )->plain() => 'week',
-						wfMessage( 'bs-smartlist-month' )->plain() => 'month'
-					)
-				);
-				break;
-			case 'Sort':
-				$aPrefs = array(
-					'options' => array(
-						wfMessage( 'bs-smartlist-time' )->plain() => 'time',
-						wfMessage( 'bs-smartlist-title' )->plain() => 'title'
-					)
-				);
-				break;
-			case 'Order':
-				$aPrefs = array(
-					'options' => array(
-						wfMessage( 'bs-smartlist-sort-asc' )->plain() => 'ASC',
-						wfMessage( 'bs-smartlist-sort-desc' )->plain() => 'DESC'
-					)
-				);
-				break;
-		}
-
-		return $aPrefs;
+		return \MediaWiki\MediaWikiServices::getInstance()
+				->getService( 'BSExtensionFactory' )
+				->getExtension( 'BlueSpiceSmartList' )
+				->getYourEdits( $iCount );
 	}
 
 	/**
@@ -552,7 +524,6 @@ class SmartList extends BsExtensionMW {
 		 */
 		$aObjectList = array();
 		$aNamespaceIds = array();
-		$config = \MediaWiki\MediaWikiServices::getInstance()->getConfigFactory()->makeConfig( 'bsg' );
 
 		$oErrorListView = new ViewTagErrorList( $this );
 		$oValidationResult = BsValidator::isValid( 'ArgCount', $aArgs['count'], array( 'fullResponse' => true ) );
@@ -715,7 +686,8 @@ class SmartList extends BsExtensionMW {
 			if ( isset( $aArgs['meta'] ) && $aArgs['meta'] == true ) {
 				$aFields[] = 'MAX(rc_timestamp) as time, rc_user_text as username';
 			}
-			if ( $config->get( 'bs-smartlist-pref-comments' ) ) {
+
+			if ( \RequestContext::getMain()->getUser()->getOption( 'bs-smartlist-pref-comments' ) ) {
 				$aFields[] = 'MAX(rc_comment) as comment';
 			}
 			$res = $dbr->select(
@@ -855,7 +827,7 @@ class SmartList extends BsExtensionMW {
 				$sMeta = '';
 				$sComment = '';
 				$sTitle = $oTitle->getText();
-				if ( $config->get( 'bs-smartlist-pref-comments' ) ) {
+				if ( \RequestContext::getMain()->getUser()->getOption( 'bs-smartlist-pref-comments' ) ) {
 					$sComment = ( strlen( $row->comment ) > 50 ) ? substr( $row->comment, 0, 50 ) . '...' : $row->comment;
 					$sComment = wfMessage( 'bs-smartlist-comment' )->params( $sComment )->escaped();
 				}
