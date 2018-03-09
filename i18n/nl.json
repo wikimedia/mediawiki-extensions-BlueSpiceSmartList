@@ -16,7 +16,6 @@
 	"bs-smartlist-invalid-namespaces": "De opgegeven {{PLURAL:$1|naamruimte is|naamruimten zijn}} ongeldig: $2.",
 	"bs-smartlist-invalid-target": "De gegeven doelstelling, is geen geldige titel van de pagina",
 	"bs-smartlist-comment": "Rectie: $1.",
-	"bs-smartlist-pref-count": "Aantal inzendingen:",
 	"bs-smartlist-pref-comments": "Reactie weergeven",
 	"bs-smartlist-sort-asc": "oplopend",
 	"bs-smartlist-sort-desc": "aflopend",

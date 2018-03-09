@@ -13,7 +13,6 @@
 	"bs-smartlist-invalid-namespaces": "{{PLURAL:$1|O espazo de nomes dado non é válido|Os espazos de nomes dados non son válidos}}: $2.",
 	"bs-smartlist-invalid-target": "El obxectivo dado non é un título de páxina válido",
 	"bs-smartlist-comment": "Commentario: $1.",
-	"bs-smartlist-pref-count": "Número de entradas:",
 	"bs-smartlist-pref-comments": "Mostrar o comentario",
 	"bs-smartlist-sort-asc": "ascendente",
 	"bs-smartlist-sort-desc": "descendente",
