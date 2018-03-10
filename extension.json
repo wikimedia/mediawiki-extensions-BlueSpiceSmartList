@@ -57,10 +57,7 @@
 		"remoteExtPath": "BlueSpiceSmartList/resources"
 	},
 	"Hooks":{
-		"GetPreferences": [
-			"\\BlueSpice\\SmartList\\Hook\\GetPreferences\\AddCount::callback",
-			"\\BlueSpice\\SmartList\\Hook\\GetPreferences\\AddComments::callback"
-		],
+		"GetPreferences": "\\BlueSpice\\SmartList\\Hook\\GetPreferences\\AddComments::callback",
 		"UnitTestsList": "SmartList::onUnitTestsList",
 		"BeforePageDisplay": "SmartList::onBeforePageDisplay"
 	},
