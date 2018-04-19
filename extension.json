@@ -58,7 +58,6 @@
 	},
 	"Hooks":{
 		"GetPreferences": "\\BlueSpice\\SmartList\\Hook\\GetPreferences\\AddComments::callback",
-		"UnitTestsList": "SmartList::onUnitTestsList",
 		"BeforePageDisplay": "SmartList::onBeforePageDisplay"
 	},
 	"load_composer_autoloader": true,
