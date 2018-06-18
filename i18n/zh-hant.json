@@ -12,7 +12,7 @@
 	"prefs-smartlist": "智慧清單",
 	"bs-smartlist-recent-changes": "最近變更",
 	"bs-smartlist-no-entries": "查無結果。",
-	"bs-smartlist-invalid-namespaces": "指定的{{PLURAL:$1|名稱空間|名稱空間}}無效：$2。",
+	"bs-smartlist-invalid-namespaces": "指定的{{PLURAL:$1|命名空間}}無效：$2。",
 	"bs-smartlist-invalid-target": "提供的目標不是有效頁面標題",
 	"bs-smartlist-comment": "評論：$1。",
 	"bs-smartlist-pref-comments": "顯示註釋",
