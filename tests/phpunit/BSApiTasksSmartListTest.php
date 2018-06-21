@@ -1,5 +1,7 @@
 <?php
 
+use BlueSpice\Tests\BSApiTasksTestBase;
+
 /*
  * Test BlueSpice SmartList API Endpoints
  */
