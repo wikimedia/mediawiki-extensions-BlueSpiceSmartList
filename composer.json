@@ -1,5 +1,5 @@
 {
-	"name": "mediawiki/blue-spice-smart-list",
+	"name": "bluespice/smartlist",
 	"type": "mediawiki-extension",
 	"description": "Displays the last five changes of the wiki in a list",
 	"license": "GPL-3.0-only",
@@ -23,5 +23,8 @@
 		"fix": [
 			"minus-x fix ."
 		]
+	},
+	"extra": {
+		"installer-name": "BlueSpiceSmartList"
 	}
 }
