@@ -84,7 +84,7 @@ class SmartList extends BsExtensionMW {
 	/**
 	 * Returns list of most visited pages called via Ajax
 	 * @param integer $iCount number of items
-	 * @param sring $sTime timespan
+	 * @param string $sTime timespan
 	 * @return string most visited pages
 	 */
 	public static function getMostVisitedPages( $iCount, $sTime ) {
@@ -112,7 +112,7 @@ class SmartList extends BsExtensionMW {
 	/**
 	 * Returns list of most edited pages called via Ajax
 	 * @param integer $iCount number of items
-	 * @param sring $sTime timespan
+	 * @param string $sTime timespan
 	 * @return string most edited pages
 	 */
 	public static function getMostEditedPages( $iCount, $sTime ) {
@@ -123,10 +123,9 @@ class SmartList extends BsExtensionMW {
 	}
 
 	/**
-	 * Returns list of most edited pages called via Ajax
 	 * @param integer $iCount number of items
-	 * @param sring $sTime timespan
-	 * @return string most edited pages
+	 * @param string $sTime timespan
+	 * @return string
 	 */
 	public static function getMostActivePortlet( $iCount, $sTime ) {
 		return \MediaWiki\MediaWikiServices::getInstance()
@@ -136,10 +135,8 @@ class SmartList extends BsExtensionMW {
 	}
 
 	/**
-	 * Returns list of most edited pages called via Ajax
 	 * @param integer $iCount number of items
-	 * @param sring $sCaller caller
-	 * @return string most edited pages
+	 * @return string
 	 */
 	public static function getYourEditsPortlet( $iCount ) {
 		return \MediaWiki\MediaWikiServices::getInstance()
@@ -890,7 +887,7 @@ class SmartList extends BsExtensionMW {
 	}
 
 	/**
-	 *
+	 * @param User $user
 	 * @param int $iCount
 	 * @param string $sOrigin
 	 * @param int $iDisplayLength
@@ -1291,7 +1288,7 @@ class SmartList extends BsExtensionMW {
 	 * Remove the excluded namespaces from the list of namespaces.
 	 *
 	 * @param array &$aArgs Arguments of custom list
-	 * @param array &$aNamespaceDiff
+	 * @return int[]
 	 */
 	public function makeNamespaceArrayDiff( &$aArgs ) {
 
