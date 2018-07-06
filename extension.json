@@ -33,6 +33,11 @@
 				"ext.bluespice.smartList.newbies.visualEditor",
 				"ext.bluespice.smartList.toplist.visualEditor"
 			]
+		},
+		"BlueSpiceUserSidebar": {
+			"Widgets": {
+				"YOUREDITS": "\\BlueSpice\\SmartList\\Panel\\YourEdits::factory"
+			}
 		}
 	},
 	"APIModules": {

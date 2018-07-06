@@ -43,7 +43,6 @@ class SmartList extends BsExtensionMW {
 		$this->setHook( 'ParserFirstCallInit', 'onParserFirstCallInit' );
 		$this->setHook( 'PageContentSaveComplete' );
 		$this->setHook( 'BSWidgetListHelperInitKeyWords' );
-		$this->setHook( 'BSUserSidebarDefaultWidgets' );
 		$this->setHook( 'BSInsertMagicAjaxGetData', 'onBSInsertMagicAjaxGetData' );
 		$this->setHook( 'BSDashboardsAdminDashboardPortalConfig' );
 		$this->setHook( 'BSDashboardsAdminDashboardPortalPortlets' );
@@ -352,18 +351,6 @@ class SmartList extends BsExtensionMW {
 		$parser->setHook( 'bs:newbies', array( $this, 'onTagBsNewbies' ) );
 		$parser->setHook( 'toplist', array( $this, 'onTagToplist' ) );
 		$parser->setHook( 'bs:toplist', array( $this, 'onTagToplist' ) );
-
-		return true;
-	}
-
-	/**
-	 * Callback for UserSidebar. Adds the YourEdits Widget to the UserSidebar as default filling.
-	 * @param BsEvent $oEvent The event to handle
-	 * @param array $aWidgets An array of WidgetView objects
-	 * @return array An array of WidgetView objects
-	 */
-	public function onBSUserSidebarDefaultWidgets( &$aViews, $oUser, $oTitle ) {
-		$aViews['YOUREDITS'] = $this->onWidgetListKeywordYourEdits();
 
 		return true;
 	}
@@ -881,13 +868,42 @@ class SmartList extends BsExtensionMW {
 	 * @return string list of edits
 	 */
 	public function getYourEdits( $iCount, $sOrigin = 'dashboard', $iDisplayLength = 18 ) {
+		$aEditTitles = $this->getYourEditsTitles( $this->getUser(), $iCount, $sOrigin, $iDisplayLength );
+		if( count( $aEditTitles ) === 0 ) {
+			return '<ul><li>' . wfMessage('bs-smartlist-noedits')->plain() . '</ul></li>';
+		}
+
+
+
+		$aEdits = array();
+		foreach ( $aEditTitles as $aEdit ) {
+			$sHtml = '';
+			$oTitle = $aEdit['titles'];
+			$sHtml = $aEdit['displayText'];
+			$sLink = Linker::link( $oTitle, $sHtml );
+			$aEdits[] = Html::openElement('li') . $sLink . Html::closeElement('li');
+		}
+
+		$sEdits = '<ul>' . implode( '', $aEdits ) . '</ul>';
+
+		return $sEdits;
+	}
+
+	/**
+	 *
+	 * @param int $iCount
+	 * @param string $sOrigin
+	 * @param int $iDisplayLength
+	 * @return \Title[]
+	 */
+	public static function getYourEditsTitles( $user, $iCount, $sOrigin = 'dashboard', $iDisplayLength = 18 ) {
 		$iCount = BsCore::sanitize( $iCount, 0, BsPARAMTYPE::INT );
 
 		$oDbr = wfGetDB( DB_REPLICA );
 		$res = $oDbr->select(
 			'revision',
 			'rev_page',
-			array( 'rev_user' => $this->getUser()->getId() ),
+			array( 'rev_user' => $user->getId() ),
 			__METHOD__,
 			array(
 				'GROUP BY' => 'rev_page',
@@ -899,24 +915,21 @@ class SmartList extends BsExtensionMW {
 		$aEdits = array();
 		if ( $oDbr->numRows( $res ) > 0 ) {
 			foreach ( $res as $row ) {
-				$sHtml = '';
 				$oTitle = Title::newFromID( $row->rev_page );
 				if ( !( $oTitle instanceof Title ) ) continue;
 				if ( $sOrigin === 'dashboard' ) {
-					$sHtml = $oTitle->getPrefixedText();
+					$displayText = $oTitle->getPrefixedText();
 				} else {
-					$sHtml = BsStringHelper::shorten( $oTitle->getPrefixedText() , array( 'max-length' => $iDisplayLength, 'position' => 'middle' ) );
+					$displayText = BsStringHelper::shorten( $oTitle->getPrefixedText() , array( 'max-length' => $iDisplayLength, 'position' => 'middle' ) );
 				}
-				$sLink = Linker::link( $oTitle, $sHtml );
-				$aEdits[] = Html::openElement( 'li' ) . $sLink . Html::closeElement( 'li' );
+				$aEdits[] = [
+					'title' => $oTitle,
+					'displayText' => $displayText
+				];
 			}
-		} else {
-			 return '<ul><li>' . wfMessage( 'bs-smartlist-noedits' )->plain() . '</ul></li>';
 		}
 
-		$sEdits = '<ul>' . implode( '', $aEdits ) . '</ul>';
-
-		return $sEdits;
+		return $aEdits;
 	}
 
 	/**
