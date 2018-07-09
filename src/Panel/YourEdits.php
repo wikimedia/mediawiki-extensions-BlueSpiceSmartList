@@ -32,7 +32,7 @@ class YourEdits extends BasePanel implements IPanel {
 		if( isset( $this->params['count'] ) ) {
 			$count = (int) $this->params['count'];
 		}
-		erroR_log("COUNT;: " . $count );
+
 		$edits = \SmartList::getYourEditsTitles( $this->getUser(), $count );
 
 		$links = [];
