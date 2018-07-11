@@ -377,6 +377,7 @@ class SmartList extends BsExtensionMW {
 		$oDescriptor->name = 'smartlist';
 		$oDescriptor->desc = wfMessage( 'bs-smartlist-tag-smartlist-desc' )->plain();
 		$oDescriptor->code = '<bs:smartlist />';
+		$oDescriptor->mwvecommand = 'smartListCommand';
 		$oDescriptor->previewable = false;
 		$oDescriptor->examples = array(
 			array(
@@ -397,6 +398,7 @@ class SmartList extends BsExtensionMW {
 		$oDescriptor->name = 'newbies';
 		$oDescriptor->desc = wfMessage( 'bs-smartlist-tag-newbies-desc' )->plain();
 		$oDescriptor->code = '<bs:newbies />';
+		$oDescriptor->mwvecommand = 'newbiesCommand';
 		$oDescriptor->previewable = false;
 		$oDescriptor->examples = array(
 			array(
@@ -412,6 +414,7 @@ class SmartList extends BsExtensionMW {
 		$oDescriptor->name = 'toplist';
 		$oDescriptor->desc = wfMessage( 'bs-smartlist-tag-toplist-desc' )->plain();
 		$oDescriptor->code = '<bs:toplist />';
+		$oDescriptor->mwvecommand = 'topListCommand';
 		$oDescriptor->previewable = false;
 		$oDescriptor->examples = array(
 			array(
