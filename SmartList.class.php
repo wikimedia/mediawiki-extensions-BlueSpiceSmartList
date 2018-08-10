@@ -878,7 +878,7 @@ class SmartList extends BsExtensionMW {
 		$aEdits = array();
 		foreach ( $aEditTitles as $aEdit ) {
 			$sHtml = '';
-			$oTitle = $aEdit['titles'];
+			$oTitle = $aEdit['title'];
 			$sHtml = $aEdit['displayText'];
 			$sLink = Linker::link( $oTitle, $sHtml );
 			$aEdits[] = Html::openElement('li') . $sLink . Html::closeElement('li');
