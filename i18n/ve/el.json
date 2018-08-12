@@ -4,6 +4,7 @@
 			"Nikosgranturismogt"
 		]
 	},
+	"bs-smartlist-ve-smartlist-title": "ΈξυπνηΛίστα",
 	"bs-smartlist-ve-mode-recentchanges-label": "Πρόσφατες αλλαγές",
 	"bs-smartlist-ve-mode-changesofweek-label": "Αλλαγές της εβδομάδας",
 	"bs-smartlist-ve-smartlistinspector-count": "Μέτρηση",
@@ -30,6 +31,7 @@
 	"bs-smartlist-ve-sort-title-label": "Τίτλος",
 	"bs-smartlist-ve-newbies-title": "Νεοεισερχόμενοι",
 	"bs-smartlist-ve-newbiesinspector-count": "Μέτρηση",
+	"bs-smartlist-ve-toplist-title": "ΚορυφαίαΛίστα",
 	"bs-smartlist-ve-toplistinspector-count": "Μέτρηση",
 	"bs-smartlist-ve-toplistinspector-ns": "Ονοματοχώρος(-οι)",
 	"bs-smartlist-ve-toplistinspector-cat": "Κατηγορία",
