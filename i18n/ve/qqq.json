@@ -27,7 +27,7 @@
 	"bs-smartlist-ve-smartlistinspector-meta": "Label for attribute \"meta\" input - if metadata should be shown",
 	"bs-smartlist-ve-smartlistinspector-target": "Label for attribute \"target\" input",
 	"bs-smartlist-ve-smartlistinspector-excludens": "Label for attribute \"excludens\" input - list of namespaces that will not be considered when retrieving results",
-	"bs-smartlist-ve-period-day-label": "Label for dropdown option for \"period\" attribute - one day",
+	"bs-smartlist-ve-period-day-label": "Label for dropdown option for \"period\" attribute - one day\n{{Identical|Day}}",
 	"bs-smartlist-ve-period-week-label": "Label for dropdown option for \"period\" attribute - one week",
 	"bs-smartlist-ve-period-month-label": "Label for dropdown option for \"period\" attribute - one month",
 	"bs-smartlist-ve-sort-time-label": "Label for dropdown option for \"sort\" attribute - sort by time of creation/modification",
