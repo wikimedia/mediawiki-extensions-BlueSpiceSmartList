@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Hedda"
+			"Hedda",
+			"Rapsar"
 		]
 	},
 	"bs-smartlist-ve-smartlist-title": "AkıllıListe",
@@ -24,7 +25,7 @@
 	"bs-smartlist-ve-smartlistinspector-showns": "Ad alanlarını göster",
 	"bs-smartlist-ve-smartlistinspector-meta": "Meta",
 	"bs-smartlist-ve-smartlistinspector-target": "Hedef",
-	"bs-smartlist-ve-smartlistinspector-excludens": "Ad alanını hariç tut",
+	"bs-smartlist-ve-smartlistinspector-excludens": "Ad alan(lar)ını hariç tut",
 	"bs-smartlist-ve-period-day-label": "Gün",
 	"bs-smartlist-ve-period-week-label": "Hafta",
 	"bs-smartlist-ve-period-month-label": "Ay",
