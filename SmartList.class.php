@@ -359,7 +359,7 @@ class SmartList extends BsExtensionMW {
 			),
 			array(
 				'label' => wfMessage( 'bs-smartlist-tag-smartlist-example-whatlinkshere' )->plain(),
-				'code' => '<bs:smartlist mode="whatlinkshere" traget="ARTICLENAME" />'
+				'code' => '<bs:smartlist mode="whatlinkshere" target="ARTICLENAME" />'
 			)
 		);
 		$oDescriptor->helplink = 'https://help.bluespice.com/index.php/SmartList';
