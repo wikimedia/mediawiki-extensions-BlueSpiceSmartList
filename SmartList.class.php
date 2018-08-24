@@ -42,7 +42,6 @@ class SmartList extends BsExtensionMW {
 	protected function initExt() {
 		$this->setHook( 'ParserFirstCallInit', 'onParserFirstCallInit' );
 		$this->setHook( 'PageContentSaveComplete' );
-		$this->setHook( 'BSWidgetListHelperInitKeyWords' );
 		$this->setHook( 'BSInsertMagicAjaxGetData', 'onBSInsertMagicAjaxGetData' );
 		$this->setHook( 'BSDashboardsAdminDashboardPortalConfig' );
 		$this->setHook( 'BSDashboardsAdminDashboardPortalPortlets' );
@@ -292,22 +291,6 @@ class SmartList extends BsExtensionMW {
 	}
 
 	/**
-	 * Callback for WidgetListHelper. Adds the WhoIsOnline Widget to the list if Keyword is found.
-	 * @return ViewWidget.
-	 */
-	public function onWidgetListKeywordYourEdits() {
-		$oWidgetView = new ViewWidget();
-		$oWidgetView
-			->setId( 'bs-smartlist-edits' )
-			->setTitle( wfMessage( 'bs-smartlist-lastedits' )->plain() )
-			->setBody( $this->getYourEdits( 5, 'widget', 30 ) )
-			->setTooltip( wfMessage( 'bs-smartlist-lastedits' )->plain() )
-			->setAdditionalBodyClasses( array( 'bs-nav-links', 'bs-widgetbar-portlet' ) ); //For correct margin and fontsize
-
-		return $oWidgetView;
-	}
-
-	/**
 	 * Purges aricle cache on save when smartlist tag is present.
 	 * @param Article $article The article that is created.
 	 * @param User $user User that saved the article.
@@ -349,16 +332,6 @@ class SmartList extends BsExtensionMW {
 		$parser->setHook( 'toplist', array( $this, 'onTagToplist' ) );
 		$parser->setHook( 'bs:toplist', array( $this, 'onTagToplist' ) );
 
-		return true;
-	}
-
-	/**
-	 * Event-Handler for 'MW::Utility::WidgetListHelper::InitKeywords'. Registers a callback for the INFOBOX Keyword.
-	 * @param array $aKeywords An array of Keywords array( 'KEYWORD' => $callable )
-	 * @return array The appended array of Keywords array( 'KEYWORD' => $callable )
-	 */
-	public function onBSWidgetListHelperInitKeyWords( &$aKeywords, $oTitle ) {
-		$aKeywords['YOUREDITS'] = array( $this, 'onWidgetListKeywordYourEdits' );
 		return true;
 	}
 
