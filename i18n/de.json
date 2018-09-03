@@ -3,7 +3,8 @@
 		"authors": [
 			"Stephan Muggli <muggli@hallowelt.biz>",
 			"Metalhead64",
-			"Purodha"
+			"Purodha",
+			"Hwboehm"
 		]
 	},
 	"bs-smartlist-desc": "Zeigt die letzten fünf Änderungen des Wikis in einer Liste an",
@@ -36,5 +37,6 @@
 	"bs-smartlist-mostvisitedpagesdesc": "Liste der meisten besuchten Seiten sortiert nach der Anzahl der Aufrufe,",
 	"bs-smartlist-lasteditsdesc": "Liste der von dir zuletzt bearbeiteten Seiten.",
 	"bs-smartlist-hitcounter-missing": "Die Softwareerweiterung „<a target='blank' href='https://www.mediawiki.org/wiki/Extension:HitCounters'>HitCounters</a>“ muss installiert sein.",
-	"apihelp-bs-smartlist-tasks-description": "API-Funktionen zur Bereitstellung von Portletdaten für Seiten- und Benutzerstatistiken."
+	"apihelp-bs-smartlist-tasks-description": "API-Funktionen zur Bereitstellung von Portletdaten für Seiten- und Benutzerstatistiken.",
+	"apihelp-bs-smartlist-tasks-summary": "API-Funktionen zum Bereitstellen von Portletdaten für Seiten- und Benutzerstatistiken"
 }
