@@ -36,7 +36,10 @@
 		},
 		"BlueSpiceUserSidebar": {
 			"Widgets": {
-				"YOUREDITS": "\\BlueSpice\\SmartList\\Panel\\YourEdits::factory"
+				"YOUREDITS": {
+					"callback": "\\BlueSpice\\SmartList\\Panel\\YourEdits::factory",
+					"default": true
+				}
 			}
 		}
 	},
