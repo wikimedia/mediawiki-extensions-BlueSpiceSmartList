@@ -786,7 +786,7 @@ class SmartList extends BsExtensionMW {
 				$sText = '';
 				$sMeta = '';
 				$sComment = '';
-				$sTitle = $oTitle->getText();
+				$sPrefixedTitle = $oTitle->getPrefixedText();
 				if ( \RequestContext::getMain()->getUser()->getOption( 'bs-smartlist-pref-comments' ) ) {
 					$sComment = ( strlen( $row->comment ) > 50 ) ? substr( $row->comment, 0, 50 ) . '...' : $row->comment;
 					$sComment = wfMessage( 'bs-smartlist-comment' )->params( $sComment )->escaped();
@@ -796,13 +796,13 @@ class SmartList extends BsExtensionMW {
 				}
 				$oSmartListListEntryView = new ViewBaseElement();
 				if ( $aArgs['showtext'] && ( $iItems <= $aArgs['numwithtext'] ) ) {
-					$oSmartListListEntryView->setTemplate( '*[[:{NAMESPACE}:{TITLE}|{DISPLAYTITLE}]]{META}<br/>{TEXT}' . "\n" );
+					$oSmartListListEntryView->setTemplate( '*[[:{PREFIXEDTITLE}|{DISPLAYTITLE}]]{META}<br/>{TEXT}' . "\n" );
 					$sText = BsPageContentProvider::getInstance()->getContentFromTitle( $oTitle );
 					$sText = Sanitizer::stripAllTags( $sText );
 					$sText = BsStringHelper::shorten( $sText, array( 'max-length' => $aArgs['trimtext'], 'position' => 'end' ) );
 					$sText = '<nowiki>' . $sText . '</nowiki>';
 				} else {
-					$oSmartListListEntryView->setTemplate( '*[[:{NAMESPACE}:{TITLE}|{DISPLAYTITLE}]] {COMMENT} {META}' . "\n" );
+					$oSmartListListEntryView->setTemplate( '*[[:{PREFIXEDTITLE}|{DISPLAYTITLE}]] {COMMENT} {META}' . "\n" );
 				}
 
 				if ( $aArgs['showns'] == true ) {
@@ -812,14 +812,8 @@ class SmartList extends BsExtensionMW {
 				}
 				$sDisplayTitle = BsStringHelper::shorten( $sDisplayTitle, array( 'max-length' => $aArgs['trim'], 'position' => 'middle' ) );
 
-				$sNamespaceText = '';
-
-				if ( $row->namespace > 0 && $row->namespace != null ) {
-					$sNamespaceText = MWNamespace::getCanonicalName( $row->namespace );
-				}
 				$aData = array(
-					'NAMESPACE' => $sNamespaceText,
-					'TITLE' => $sTitle,
+					'PREFIXEDTITLE' => $sPrefixedTitle,
 					'DISPLAYTITLE' => $sDisplayTitle,
 					'COMMENT' => $sComment,
 					'META' => $sMeta,
