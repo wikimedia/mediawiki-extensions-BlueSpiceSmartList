@@ -344,6 +344,10 @@ class SmartList extends BsExtensionMW {
 	public function onBSInsertMagicAjaxGetData( &$oResponse, $type ) {
 		if ( $type != 'tags' ) return true;
 
+		$extension = \BlueSpice\Services::getInstance()->getBSExtensionFactory()
+				->getExtension( 'BlueSpiceSmartList' );
+		$helplink = $extension->getUrl();
+
 		$oDescriptor = new stdClass();
 		$oDescriptor->id = 'bs:smartlist';
 		$oDescriptor->type = 'tag';
@@ -362,7 +366,7 @@ class SmartList extends BsExtensionMW {
 				'code' => '<bs:smartlist mode="whatlinkshere" target="ARTICLENAME" />'
 			)
 		);
-		$oDescriptor->helplink = 'https://help.bluespice.com/index.php/SmartList';
+		$oDescriptor->helplink = $helplink;
 		$oResponse->result[] = $oDescriptor;
 
 		$oDescriptor = new stdClass();
@@ -378,7 +382,7 @@ class SmartList extends BsExtensionMW {
 				'code' => '<bs:newbies count="3" />'
 			)
 		);
-		$oDescriptor->helplink = 'https://help.bluespice.com/index.php/SmartList';
+		$oDescriptor->helplink = $helplink;
 		$oResponse->result[] = $oDescriptor;
 
 		$oDescriptor = new stdClass();
@@ -394,7 +398,7 @@ class SmartList extends BsExtensionMW {
 				'code' => '<bs:toplist count="4" cat="Wiki" period="month" />'
 			)
 		);
-		$oDescriptor->helplink = 'https://help.bluespice.com/index.php/SmartList';
+		$oDescriptor->helplink = $helplink;
 		$oResponse->result[] = $oDescriptor;
 
 		return true;
