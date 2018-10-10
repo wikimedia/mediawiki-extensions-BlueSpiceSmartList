@@ -51,9 +51,6 @@
 			"i18n", "i18n/ve"
 		]
 	},
-	"DefaultUserOptions": {
-		"bs-smartlist-pref-comments": false
-	},
 	"AutoloadNamespaces": {
 		"BlueSpice\\SmartList\\" : "src/"
 	},
@@ -158,7 +155,6 @@
 		"remoteExtPath": "BlueSpiceSmartList/resources"
 	},
 	"Hooks":{
-		"GetPreferences": "\\BlueSpice\\SmartList\\Hook\\GetPreferences\\AddComments::callback",
 		"BeforePageDisplay": "SmartList::onBeforePageDisplay"
 	},
 	"load_composer_autoloader": true,

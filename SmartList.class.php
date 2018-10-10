@@ -647,9 +647,6 @@ class SmartList extends BsExtensionMW {
 				$aFields[] = 'MAX(rc_timestamp) as time, rc_user_text as username';
 			}
 
-			if ( \RequestContext::getMain()->getUser()->getOption( 'bs-smartlist-pref-comments' ) ) {
-				$aFields[] = 'MAX(rc_comment) as comment';
-			}
 			$res = $dbr->select(
 				array(
 					'recentchanges',
@@ -785,12 +782,9 @@ class SmartList extends BsExtensionMW {
 				// Security here: only show pages the user can read.
 				$sText = '';
 				$sMeta = '';
-				$sComment = '';
 				$sPrefixedTitle = $oTitle->getPrefixedText();
-				if ( \RequestContext::getMain()->getUser()->getOption( 'bs-smartlist-pref-comments' ) ) {
-					$sComment = ( strlen( $row->comment ) > 50 ) ? substr( $row->comment, 0, 50 ) . '...' : $row->comment;
-					$sComment = wfMessage( 'bs-smartlist-comment' )->params( $sComment )->escaped();
-				}
+				$sComment = '';
+
 				if ( isset( $aArgs['meta'] ) && $aArgs['meta'] == true ) {
 					$sMeta = ' - <i>('.$row->username.', '.$this->getLanguage()->date( $row->time, true, true ).')</i>';
 				}
