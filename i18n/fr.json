@@ -16,7 +16,6 @@
 	"bs-smartlist-invalid-namespaces": "{{PLURAL:$1|L’espace de nom fourni n’est pas valide|Les espaces de nom fournis ne sont pas valides}} : $2.",
 	"bs-smartlist-invalid-target": "La cible fournie n’est pas un titre de page valide",
 	"bs-smartlist-comment": "Commentaire : $1.",
-	"bs-smartlist-pref-comments": "Afficher le commentaire",
 	"bs-smartlist-sort-asc": "croissant",
 	"bs-smartlist-sort-desc": "décroissant",
 	"bs-smartlist-day": "Jour",

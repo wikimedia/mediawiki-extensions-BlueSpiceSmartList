@@ -12,7 +12,6 @@
 	"bs-smartlist-invalid-namespaces": "{{PLURAL:$1|Исемдәр арауығы }} дөрөҫ түгел: $2.",
 	"bs-smartlist-invalid-target": "Күрһәтелгән маҡсат биттәге атама була алмай",
 	"bs-smartlist-comment": "Комментарий: $1.",
-	"bs-smartlist-pref-comments": "Комментарийҙы күрһәтергә",
 	"bs-smartlist-sort-asc": "үҫеш буйынса",
 	"bs-smartlist-sort-desc": "түбәнәйеү буйынса",
 	"bs-smartlist-day": "Көн",

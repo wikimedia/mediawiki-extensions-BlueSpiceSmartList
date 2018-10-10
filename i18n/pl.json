@@ -11,7 +11,6 @@
 	"bs-smartlist-no-entries": "Brak wyników.",
 	"bs-smartlist-invalid-namespaces": "{{PLURAL:$1|Podana przestrzeń nazw jest nieprawidłowa|Podane przestrzenie nazw są nieprawidłowe}}: $2.",
 	"bs-smartlist-comment": "Komentarz: $1.",
-	"bs-smartlist-pref-comments": "Pokaż komentarz",
 	"bs-smartlist-sort-asc": "rosnąco",
 	"bs-smartlist-sort-desc": "malejąco",
 	"bs-smartlist-day": "Dzień",

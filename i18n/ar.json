@@ -12,7 +12,6 @@
 	"bs-smartlist-invalid-namespaces": " {{PLURAL:$1|النطاق المعطى غير صالح|النطاقات المعطاة غير صالحة}}: $2.",
 	"bs-smartlist-invalid-target": "الهدف المحدد ليس عنوان صفحة صالحا",
 	"bs-smartlist-comment": "تعليق: $1.",
-	"bs-smartlist-pref-comments": "إظهار التعليق",
 	"bs-smartlist-sort-asc": "تصاعديا",
 	"bs-smartlist-sort-desc": "تنازليا",
 	"bs-smartlist-day": "يوم",

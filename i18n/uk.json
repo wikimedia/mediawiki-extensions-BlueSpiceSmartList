@@ -14,7 +14,6 @@
 	"bs-smartlist-invalid-namespaces": "{{PLURAL:$1|Поданий простір назв|Подані простори назв}}: $2.",
 	"bs-smartlist-invalid-target": "Вказана ціль не є дійсною назвою сторінки",
 	"bs-smartlist-comment": "Коментар: $1.",
-	"bs-smartlist-pref-comments": "Показати коментар",
 	"bs-smartlist-sort-asc": "за зростанням",
 	"bs-smartlist-sort-desc": "за спаданням",
 	"bs-smartlist-day": "День",

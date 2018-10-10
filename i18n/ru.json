@@ -13,7 +13,6 @@
 	"bs-smartlist-invalid-namespaces": "{{PLURAL:$1|Данное пространство|Данные пространства}} имён неверно: $2.",
 	"bs-smartlist-invalid-target": "Указанная цель не является допустимым заголовком страницы",
 	"bs-smartlist-comment": "Комментарий: $1.",
-	"bs-smartlist-pref-comments": "Показать комментарий",
 	"bs-smartlist-sort-asc": "по возрастанию",
 	"bs-smartlist-sort-desc": "по убыванию",
 	"bs-smartlist-day": "День",
