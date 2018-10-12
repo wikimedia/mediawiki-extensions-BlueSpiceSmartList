@@ -3,7 +3,8 @@ ve.ui.TopListInspectorTool = function VeUiTopListInspectorTool( toolGroup, confi
 };
 OO.inheritClass( ve.ui.TopListInspectorTool, ve.ui.FragmentInspectorTool );
 ve.ui.TopListInspectorTool.static.name = 'topListTool';
-ve.ui.TopListInspectorTool.static.group = 'object';
+ve.ui.TopListInspectorTool.static.group = 'none';
+ve.ui.TopListInspectorTool.static.autoAddToCatchall = false;
 ve.ui.TopListInspectorTool.static.icon = 'toplist'; //To be added
 ve.ui.TopListInspectorTool.static.title = OO.ui.deferMsg(
 	'bs-smartlist-ve-toplist-title'
