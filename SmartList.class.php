@@ -41,7 +41,6 @@ class SmartList extends BsExtensionMW {
 	 */
 	protected function initExt() {
 		$this->setHook( 'ParserFirstCallInit', 'onParserFirstCallInit' );
-		$this->setHook( 'PageContentSaveComplete' );
 		$this->setHook( 'BSInsertMagicAjaxGetData', 'onBSInsertMagicAjaxGetData' );
 		$this->setHook( 'BSDashboardsAdminDashboardPortalConfig' );
 		$this->setHook( 'BSDashboardsAdminDashboardPortalPortlets' );
@@ -287,29 +286,6 @@ class SmartList extends BsExtensionMW {
 			)
 		);
 
-		return true;
-	}
-
-	/**
-	 * Purges aricle cache on save when smartlist tag is present.
-	 * @param Article $article The article that is created.
-	 * @param User $user User that saved the article.
-	 * @param Content $content
-	 * @param string $summary Edit summary.
-	 * @param bool $minoredit Marked as minor.
-	 * @param bool $watchthis Put on watchlist.
-	 * @param int $sectionanchor Not in use any more.
-	 * @param int $flags Bitfield.
-	 * @param Revision $revision New revision object.
-	 * @param Status $status Status object (since MW1.14)
-	 * @param int $baseRevId Revision ID this edit is based on (since MW1.15)
-	 * @param bool $redirect Redirect user back to page after edit (since MW1.17)
-	 * @return bool allow other hooked methods to be executed. Always true
-	 */
-	public function onPageContentSaveComplete( &$article, &$user, $content, $summary, $minoredit, $watchthis, $sectionanchor, &$flags, $revision, &$status, $baseRevId ) {
-		if ( stripos( $content->getNativeData(), "smartlist" ) || stripos( $content->getNativeData(), "infobox" ) ) {
-			$article->doPurge();
-		}
 		return true;
 	}
 
