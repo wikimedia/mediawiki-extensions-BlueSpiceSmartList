@@ -1264,13 +1264,4 @@ class SmartList extends BsExtensionMW {
 		return true;
 	}
 
-	/**
-	 * @param OutputPage $out
-	 * @param Skin $skin
-	 * @return boolean
-	 */
-	public static function onBeforePageDisplay( &$out, &$skin ) {
-		$out->addModules( 'ext.bluespice.smartlist' );
-		return true;
-	}
 }
