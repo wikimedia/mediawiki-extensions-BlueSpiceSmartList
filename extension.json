@@ -155,7 +155,7 @@
 		"remoteExtPath": "BlueSpiceSmartList/resources"
 	},
 	"Hooks":{
-		"BeforePageDisplay": "SmartList::onBeforePageDisplay"
+		"BeforePageDisplay": "\\BlueSpice\\SmartList\\Hook\\BeforePageDisplay\\AddResources::callback"
 	},
 	"load_composer_autoloader": true,
 	"manifest_version": 2
