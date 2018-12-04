@@ -31,6 +31,7 @@
  * @filesource
  */
 
+use BlueSpice\Services;
 /**
  * Base class for SmartList extension
  * @package BlueSpiceSmartList
@@ -900,8 +901,10 @@ class SmartList extends BsExtensionMW {
 		foreach ( $res as $row ) {
 			$oUser = User::newFromId( $row->user_id );
 			$oTitle = Title::makeTitle( NS_USER, $oUser->getName() );
-			$sLink = BsLinkProvider::makeLink( $oTitle, $oUser->getName() );
-			$aOut[] = $sLink;
+
+			$aOut[] = Services::getInstance()->getLinkRenderer()->makeKnownLink(
+				$oTitle
+			);
 		}
 
 		$oDbr->freeResult( $res );
@@ -1049,7 +1052,9 @@ class SmartList extends BsExtensionMW {
 						continue;
 					}
 					$aInList[] = $oTitle->getPrefixedText();
-					$sLink = BsLinkProvider::makeLink( $oTitle );
+					$sLink = Services::getInstance()->getLinkRenderer()->makeLink(
+						$oTitle
+					);
 					$aList['<li>'. $sLink . ' (' . $row->page_counter . ')</li>'] = (int)$row->page_counter;
 					$iCurrCount++;
 				}
@@ -1076,7 +1081,9 @@ class SmartList extends BsExtensionMW {
 					}
 					$aInList[] = $oTitle->getPrefixedText();
 
-					$sLink = BsLinkProvider::makeLink( $oTitle );
+					$sLink = Services::getInstance()->getLinkRenderer()->makeLink(
+						$oTitle
+					);
 					$aList[] = '<li>' . $sLink . ' (' . $row->page_counter . ')</li>';
 					$iCurrCount++;
 				}
@@ -1126,7 +1133,9 @@ class SmartList extends BsExtensionMW {
 
 			foreach ( $res as $row ) {
 				$oTitle = Title::newFromID( $row->rev_page );
-				$sLink = BsLinkProvider::makeLink( $oTitle );
+				$sLink = Services::getInstance()->getLinkRenderer()->makeLink(
+					$oTitle
+				);
 				$aList[] = '<li>' . $sLink . ' (' . $row->page_counter . ')</li>';
 			}
 
@@ -1176,7 +1185,9 @@ class SmartList extends BsExtensionMW {
 				if ( $oUser->isIP( $oUser->getName() ) ) continue;
 
 				$oTitle = Title::makeTitle( NS_USER, $oUser->getName() );
-				$sLink = BsLinkProvider::makeLink( $oTitle );
+				$sLink = Services::getInstance()->getLinkRenderer()->makeLink(
+					$oTitle
+				);
 				$aList[] = '<li>' . $sLink . ' (' . $row->edit_count . ')</li>';
 				$i++;
 			}
