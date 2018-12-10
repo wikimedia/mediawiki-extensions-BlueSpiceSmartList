@@ -70,10 +70,6 @@
 				"ve/ve.ui.SmartListInspector.js",
 				"ve/ve.ui.SmartListInspectorTool.js"
 			],
-			"targets": [
-				"desktop",
-				"mobile"
-			],
 			"messages": [
 				"bs-smartlist-ve-smartlist-title",
 				"bs-smartlist-ve-mode-recentchanges-label",
@@ -114,10 +110,6 @@
 				"ve/ve.ui.NewbiesInspector.js",
 				"ve/ve.ui.NewbiesInspectorTool.js"
 			],
-			"targets": [
-				"desktop",
-				"mobile"
-			],
 			"messages": [
 				"bs-smartlist-ve-newbies-title",
 				"bs-smartlist-ve-newbiesinspector-count"
@@ -132,10 +124,6 @@
 				"ve/ve.dm.TopListNode.js",
 				"ve/ve.ui.TopListInspector.js",
 				"ve/ve.ui.TopListInspectorTool.js"
-			],
-			"targets": [
-				"desktop",
-				"mobile"
 			],
 			"messages": [
 				"bs-smartlist-ve-toplist-title",
