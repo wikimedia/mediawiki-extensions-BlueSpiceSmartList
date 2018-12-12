@@ -4,12 +4,18 @@
 			"Joetaras"
 		]
 	},
+	"bs-smartlist-ve-smartlist-title": "SmartList",
 	"bs-smartlist-ve-mode-recentchanges-label": "Cangiaminde recende",
 	"bs-smartlist-ve-mode-changesofweek-label": "Cangiaminde d'a sumane",
 	"bs-smartlist-ve-smartlistinspector-count": "Condegge",
+	"bs-smartlist-ve-smartlistinspector-ns": "Namespace",
 	"bs-smartlist-ve-smartlistinspector-cat": "Categorije",
+	"bs-smartlist-ve-smartlistinspector-minor": "Fà 'ndrucà le stuèdeche",
+	"bs-smartlist-ve-smartlistinspector-catmode": "Mode d'a categorije",
 	"bs-smartlist-ve-smartlistinspector-period": "Periode",
 	"bs-smartlist-ve-smartlistinspector-mode": "Mode",
+	"bs-smartlist-ve-smartlistinspector-new": "Fà 'ndrucà sulamende le vôsce nuève",
+	"bs-smartlist-ve-smartlistinspector-heading": "Testate",
 	"bs-smartlist-ve-period-day-label": "Sciúrne",
 	"bs-smartlist-ve-sort-title-label": "Titole",
 	"bs-smartlist-ve-newbies-title": "Nuève nuève",
