@@ -47,7 +47,6 @@ ve.ui.SmartListInspector.prototype.initialize = function () {
 	this.$content.addClass( 've-ui-smartlist-inspector-content' );
 
 	this.indexLayout.$element.append(
-		this.modeLayout.$element,
 		this.countLayout.$element,
 		this.nsLayout.$element,
 		this.catLayout.$element,
@@ -116,18 +115,6 @@ ve.ui.SmartListInspector.prototype.createFields = function() {
 		]
 	} );
 
-	this.modeInput = new OO.ui.DropdownInputWidget( {
-		options: [
-			{
-				data: 'recentchanges',
-				label: mw.message( 'bs-smartlist-ve-mode-recentchanges-label' ).plain()
-			},
-			{
-				data: 'changesofweek',
-				label: mw.message( 'bs-smartlist-ve-mode-changesofweek-label' ).plain()
-			}
-		]
-	} );
 	this.newInput = new OO.ui.ToggleSwitchWidget();
 	this.headingInput = new OO.ui.TextInputWidget();
 	this.trimInput = new OO.ui.NumberInputWidget( { min: 1, max: 250, isInteger: true } );
@@ -194,10 +181,6 @@ ve.ui.SmartListInspector.prototype.setLayouts = function() {
 		align: 'right',
 		label: ve.msg( 'bs-smartlist-ve-smartlistinspector-period' )
 	} );
-	this.modeLayout = new OO.ui.FieldLayout( this.modeInput, {
-		align: 'right',
-		label: ve.msg( 'bs-smartlist-ve-smartlistinspector-mode' )
-	} );
 	this.newLayout = new OO.ui.FieldLayout( this.newInput, {
 		align: 'right',
 		label: ve.msg( 'bs-smartlist-ve-smartlistinspector-new' )
@@ -256,11 +239,6 @@ ve.ui.SmartListInspector.prototype.getSetupProcess = function ( data ) {
 		.next( function () {
 			var attributes = this.selectedNode.getAttribute( 'mw' ).attrs;
 
-			this.modeInput.setValue( attributes.mode || '' );
-			if( attributes.mode ) {
-				this.applyMode( attributes.mode );
-			}
-
 			this.nsInput.setValue( attributes.ns || '' );
 			this.catInput.setValue( attributes.cat || '' );
 			if( attributes.count ) {
@@ -312,10 +290,6 @@ ve.ui.SmartListInspector.prototype.getSetupProcess = function ( data ) {
 };
 
 ve.ui.SmartListInspector.prototype.wireEvents = function() {
-	this.modeInput.on( 'change', function( e ) {
-		this.onChangeHandler();
-		this.applyMode();
-	}.bind( this ) );
 
 	this.nsInput.on( 'change', this.onChangeHandler );
 	this.catInput.on( 'change', this.onChangeHandler );
@@ -337,51 +311,11 @@ ve.ui.SmartListInspector.prototype.wireEvents = function() {
 	this.headingInput.on( 'change', this.onChangeHandler );
 }
 
-ve.ui.SmartListInspector.prototype.applyMode = function( mode ) {
-	mode = mode || this.modeInput.getValue();
-
-	if( mode === 'changesofweek' ) {
-		this.setDisabledElements( true );
-	} else {
-		this.setDisabledElements( false );
-	}
-}
-
-ve.ui.SmartListInspector.prototype.setDisabledElements = function( disabled ) {
-	var elements = [
-		this.nsInput,
-		this.catInput,
-		this.minorInput,
-		this.catmodeInput,
-		this.newInput,
-		this.trimInput,
-		this.showtextInput,
-		this.sortInput,
-		this.trimtextInput,
-		this.orderInput,
-		this.shownsInput,
-		this.numwithtextInput,
-		this.metaInput,
-		this.targetInput,
-		this.excludensInput,
-		this.headingInput
-	];
-
-	for( var idx in elements ) {
-		elements[idx].setDisabled( disabled );
-	}
-}
-
 ve.ui.SmartListInspector.prototype.updateMwData = function ( mwData ) {
 	// Parent method
 	ve.ui.SmartListInspector.super.prototype.updateMwData.call( this, mwData );
 
 	// Get data from inspector
-	if( this.modeInput.getValue() !== '' ) {
-		mwData.attrs.mode = this.modeInput.getValue();
-	} else {
-		delete( mwData.attrs.mode );
-	}
 	if( this.nsInput.getValue() !== '' ) {
 		mwData.attrs.ns = this.nsInput.getValue();
 	} else {
