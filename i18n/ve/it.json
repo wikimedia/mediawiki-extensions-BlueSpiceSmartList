@@ -4,11 +4,9 @@
 			"Beta16"
 		]
 	},
-	"bs-smartlist-ve-mode-recentchanges-label": "Ultime modifiche",
 	"bs-smartlist-ve-smartlistinspector-ns": "Namespace",
 	"bs-smartlist-ve-smartlistinspector-cat": "Categoria",
 	"bs-smartlist-ve-smartlistinspector-period": "Periodo",
-	"bs-smartlist-ve-smartlistinspector-mode": "Modalità",
 	"bs-smartlist-ve-smartlistinspector-sort": "Ordina per",
 	"bs-smartlist-ve-smartlistinspector-order": "Ordinamento",
 	"bs-smartlist-ve-smartlistinspector-showns": "Mostra namespace",

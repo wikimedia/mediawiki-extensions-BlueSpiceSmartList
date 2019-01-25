@@ -4,15 +4,12 @@
 			"WikiPhoenix"
 		]
 	},
-	"bs-smartlist-ve-mode-recentchanges-label": "Senaste ändringar",
-	"bs-smartlist-ve-mode-changesofweek-label": "Veckans ändringar",
 	"bs-smartlist-ve-smartlistinspector-count": "Antal",
 	"bs-smartlist-ve-smartlistinspector-ns": "Namnrymd(er)",
 	"bs-smartlist-ve-smartlistinspector-cat": "Kategori",
 	"bs-smartlist-ve-smartlistinspector-minor": "Visa mindre",
 	"bs-smartlist-ve-smartlistinspector-catmode": "Kategoriläge",
 	"bs-smartlist-ve-smartlistinspector-period": "Period",
-	"bs-smartlist-ve-smartlistinspector-mode": "Läge",
 	"bs-smartlist-ve-smartlistinspector-new": "Visa endast nya artiklar",
 	"bs-smartlist-ve-smartlistinspector-heading": "Rubrik",
 	"bs-smartlist-ve-smartlistinspector-trim": "Beskär",

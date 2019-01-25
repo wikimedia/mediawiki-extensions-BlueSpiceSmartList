@@ -5,15 +5,12 @@
 			"Shaleych"
 		]
 	},
-	"bs-smartlist-ve-mode-recentchanges-label": "Свежие правки",
-	"bs-smartlist-ve-mode-changesofweek-label": "Изменения за неделю",
 	"bs-smartlist-ve-smartlistinspector-count": "Количество",
 	"bs-smartlist-ve-smartlistinspector-ns": "Пространства имён",
 	"bs-smartlist-ve-smartlistinspector-cat": "Категория",
 	"bs-smartlist-ve-smartlistinspector-minor": "Показать малые правки",
 	"bs-smartlist-ve-smartlistinspector-catmode": "Режим категории",
 	"bs-smartlist-ve-smartlistinspector-period": "Период",
-	"bs-smartlist-ve-smartlistinspector-mode": "Режим",
 	"bs-smartlist-ve-smartlistinspector-new": "Показать только новые статьи",
 	"bs-smartlist-ve-smartlistinspector-heading": "Заголовок",
 	"bs-smartlist-ve-smartlistinspector-showtext": "Показать текст",
