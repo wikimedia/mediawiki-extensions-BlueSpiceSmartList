@@ -425,7 +425,7 @@ class SmartList extends BsExtensionMW {
 			$oSmartListView->setTemplate('<div class="bs-smartlist">{LIST}</div>');
 		}
 
-		$sCustomList = $this->getCustomList( $aArgs );
+		$sCustomList = $this->getCustomList( $aArgs, $oParser );
 
 		if ( empty( $sCustomList ) ) {
 			$sCustomList = wfMessage( 'bs-smartlist-no-entries' )->plain();
@@ -458,7 +458,7 @@ class SmartList extends BsExtensionMW {
 	 * @param bool $aArgs['showns'] Show namespace befor title.
 	 * @return string HTML output that is to be displayed.
 	 */
-	private function getCustomList( $aArgs ) {
+	private function getCustomList( $aArgs, \Parser $parser ) {
 		/*
 		 * Contains the items that need to be displayed
 		 * @var List of objects with three properties: title, namespace and timestamp
@@ -802,7 +802,7 @@ class SmartList extends BsExtensionMW {
 		} else {
 			return '';
 		}
-		return $this->mCore->parseWikiText( $oSmartListListView->execute(), $this->getTitle() );
+		return $parser->recursiveTagParseFully( $oSmartListListView->execute() );
 	}
 
 	/**
