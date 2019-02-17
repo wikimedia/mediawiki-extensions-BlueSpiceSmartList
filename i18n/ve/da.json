@@ -1,0 +1,14 @@
+{
+	"@metadata": {
+		"authors": [
+			"Saederup92"
+		]
+	},
+	"bs-smartlist-ve-smartlistinspector-ns": "Navnerum",
+	"bs-smartlist-ve-smartlistinspector-cat": "Kategori",
+	"bs-smartlist-ve-period-day-label": "Dag",
+	"bs-smartlist-ve-period-week-label": "Uge",
+	"bs-smartlist-ve-period-month-label": "Måned",
+	"bs-smartlist-ve-sort-time-label": "Tidspunkt",
+	"bs-smartlist-ve-sort-title-label": "Titel"
+}
