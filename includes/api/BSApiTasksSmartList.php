@@ -21,7 +21,7 @@
  * @author     Leonid Verhovskij <verhovskij@hallowelt.com>
  * @package    Bluespice_Extensions
  * @copyright  Copyright (C) 2016 Hallo Welt! GmbH, All rights reserved.
- * @license    http://www.gnu.org/copyleft/gpl.html GNU Public License v3
+ * @license    http://www.gnu.org/copyleft/gpl.html GPL-3.0-only
  */
 
 class BSApiTasksSmartList extends BSApiTasksBase {
@@ -30,7 +30,7 @@ class BSApiTasksSmartList extends BSApiTasksBase {
 	 * Methods that can be called by task param
 	 * @var array
 	 */
-	protected $aTasks = array(
+	protected $aTasks = [
 		'getMostVisitedPages' => [
 			'examples' => [
 				[
@@ -112,16 +112,16 @@ class BSApiTasksSmartList extends BSApiTasksBase {
 				]
 			]
 		]
-	);
+	];
 
 	/**
 	 * Methods that can be executed even when the wiki is in read-mode, as
 	 * they do not alter the state/content of the wiki
 	 * @var array
 	 */
-	protected $aReadTasks = array(
+	protected $aReadTasks = [
 		'getMostVisitedPages',
-	);
+	];
 
 	/**
 	 * Returns an array of tasks and their required permissions
@@ -129,12 +129,12 @@ class BSApiTasksSmartList extends BSApiTasksBase {
 	 * @return array
 	 */
 	protected function getRequiredTaskPermissions() {
-		return array(
-			'getMostVisitedPages' => array( 'read' ),
-			'getMostEditedPages' => array( 'read' ),
-			'getMostActivePortlet' => array( 'read' ),
-			'getYourEditsPortlet' => array( 'read' ),
-		);
+		return [
+			'getMostVisitedPages' => [ 'read' ],
+			'getMostEditedPages' => [ 'read' ],
+			'getMostActivePortlet' => [ 'read' ],
+			'getYourEditsPortlet' => [ 'read' ],
+		];
 	}
 
 	/**
@@ -147,14 +147,12 @@ class BSApiTasksSmartList extends BSApiTasksBase {
 		$oReturn = $this->makeStandardReturn();
 
 		$iCount = isset( $oTaskData->count )
-			? (int) $oTaskData->count
-			: 10
-		;
+			? (int)$oTaskData->count
+			: 10;
 
 		$sTime = isset( $oTaskData->period )
 			? $oTaskData->period
-			: 'alltime'
-		;
+			: 'alltime';
 
 		try {
 			$sContent =
@@ -163,10 +161,10 @@ class BSApiTasksSmartList extends BSApiTasksBase {
 				->getExtension( 'BlueSpiceSmartList' )
 				->getToplist(
 					'',
-					array(
+					[
 						'count' => $iCount,
 						'portletperiod' => $sTime
-					),
+					],
 					null
 				);
 			$oReturn->success = true;
@@ -192,14 +190,12 @@ class BSApiTasksSmartList extends BSApiTasksBase {
 		$oReturn = $this->makeStandardReturn();
 
 		$iCount = isset( $oTaskData->count )
-			? (int) $oTaskData->count
-			: 10
-		;
+			? (int)$oTaskData->count
+			: 10;
 
 		$sTime = isset( $oTaskData->period )
 			? $oTaskData->period
-			: 'alltime'
-		;
+			: 'alltime';
 
 		$oReturn->payload['html'] = \MediaWiki\MediaWikiServices::getInstance()
 				->getService( 'BSExtensionFactory' )
@@ -220,14 +216,12 @@ class BSApiTasksSmartList extends BSApiTasksBase {
 		$oReturn = $this->makeStandardReturn();
 
 		$iCount = isset( $oTaskData->count )
-			? (int) $oTaskData->count
-			: 10
-		;
+			? (int)$oTaskData->count
+			: 10;
 
 		$sTime = isset( $oTaskData->portletperiod )
-			? (int) $oTaskData->portletperiod
-			: 0
-		;
+			? (int)$oTaskData->portletperiod
+			: 0;
 
 		$oReturn->payload['html'] = \MediaWiki\MediaWikiServices::getInstance()
 				->getService( 'BSExtensionFactory' )
@@ -248,9 +242,8 @@ class BSApiTasksSmartList extends BSApiTasksBase {
 		$oReturn = $this->makeStandardReturn();
 
 		$iCount = isset( $oTaskData->count )
-			? (int) $oTaskData->count
-			: 10
-		;
+			? (int)$oTaskData->count
+			: 10;
 
 		$oReturn->payload['html'] = \MediaWiki\MediaWikiServices::getInstance()
 				->getService( 'BSExtensionFactory' )

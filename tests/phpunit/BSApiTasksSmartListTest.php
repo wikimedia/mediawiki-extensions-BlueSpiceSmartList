@@ -22,7 +22,7 @@ class BSApiTasksSmartListTest extends BSApiTasksTestBase {
 	public function testGetMostActivePortlet() {
 		$data = $this->executeTask(
 		  'getMostActivePortlet', [
-			'portletConfig' => [ json_encode( [ ] ) ]
+			'portletConfig' => [ json_encode( [] ) ]
 		  ]
 		);
 
@@ -34,7 +34,7 @@ class BSApiTasksSmartListTest extends BSApiTasksTestBase {
 	public function testGetMostEditedPages() {
 		$data = $this->executeTask(
 		  'getMostEditedPages', [
-			'portletConfig' => [ json_encode( [ ] ) ]
+			'portletConfig' => [ json_encode( [] ) ]
 		  ]
 		);
 
@@ -46,7 +46,7 @@ class BSApiTasksSmartListTest extends BSApiTasksTestBase {
 	public function testGetMostVisitedPages() {
 		$data = $this->executeTask(
 		  'getMostVisitedPages', [
-			'portletConfig' => [ json_encode( [ ] ) ]
+			'portletConfig' => [ json_encode( [] ) ]
 		  ]
 		);
 
@@ -58,7 +58,7 @@ class BSApiTasksSmartListTest extends BSApiTasksTestBase {
 	public function testGetYourEditsPortlet() {
 		$data = $this->executeTask(
 		  'getYourEditsPortlet', [
-			'portletConfig' => [ json_encode( [ ] ) ]
+			'portletConfig' => [ json_encode( [] ) ]
 		  ]
 		);
 
