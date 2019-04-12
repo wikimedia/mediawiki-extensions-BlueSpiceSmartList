@@ -29,14 +29,14 @@ class YourEdits extends BasePanel implements IPanel {
 	 */
 	public function getBody() {
 		$count = 5;
-		if( isset( $this->params['count'] ) ) {
-			$count = (int) $this->params['count'];
+		if ( isset( $this->params['count'] ) ) {
+			$count = (int)$this->params['count'];
 		}
 
 		$edits = \SmartList::getYourEditsTitles( $this->getUser(), $count );
 
 		$links = [];
-		foreach( $edits as $edit ) {
+		foreach ( $edits as $edit ) {
 			$link = [
 				'href' => $edit['title']->getFullURL(),
 				'text' => $edit['displayText'],
