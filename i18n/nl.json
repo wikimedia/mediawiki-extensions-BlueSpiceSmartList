@@ -6,7 +6,8 @@
 			"Siebrand",
 			"Sjoerddebruin",
 			"MrLeopold",
-			"Osnard"
+			"Osnard",
+			"Mainframe98"
 		]
 	},
 	"bs-smartlist-desc": "Geeft de laatste vijf wijzigingen van de wiki in een lijst",
@@ -24,6 +25,8 @@
 	"bs-smartlist-time": "Tijd",
 	"bs-smartlist-title": "Naam",
 	"bs-smartlist-tag-smartlist-desc": "Geeft configureerbare informatie over de recente veranderingen.",
+	"bs-smartlist-tag-smartlist-example-rc": "Modus: Recente wijzigingen",
+	"bs-smartlist-tag-smartlist-example-whatlinkshere": "Modus: Verwijzingen naar deze pagina",
 	"bs-smartlist-tag-newbies-desc": "Geeft de meest recente gebruikers.",
 	"bs-smartlist-tag-toplist-desc": "Hiermee geeft u een lijst van de meest bekeken pagina ' s.",
 	"bs-smartlist-mostvisitedpages": "Meest bekeken pagina's",
