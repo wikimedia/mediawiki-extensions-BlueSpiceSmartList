@@ -1,0 +1,13 @@
+{
+	"@metadata": {
+		"authors": [
+			"Erelon"
+		]
+	},
+	"bs-smartlist-ve-smartlistinspector-meta": "מטא",
+	"bs-smartlist-ve-period-day-label": "יום",
+	"bs-smartlist-ve-period-week-label": "שבוע",
+	"bs-smartlist-ve-period-month-label": "חודש",
+	"bs-smartlist-ve-sort-time-label": "זמן",
+	"bs-smartlist-ve-sort-title-label": "כותרת"
+}
