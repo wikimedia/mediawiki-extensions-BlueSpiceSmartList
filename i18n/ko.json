@@ -17,5 +17,13 @@
 	"bs-smartlist-lastedits": "내 편집",
 	"bs-smartlist-noedits": "편집이 없습니다.",
 	"bs-smartlist-hitcounter-missing": "확장 기능 <a target='blank' href='https://www.mediawiki.org/wiki/Extension:HitCounters'>HitCounters</a>를 설치해야 합니다.",
-	"apihelp-bs-smartlist-tasks-description": "문서와 사용자 통계의 포틀릿 데이터를 제공할 API 함수들입니다."
+	"apihelp-bs-smartlist-tasks-description": "문서와 사용자 통계의 포틀릿 데이터를 제공할 API 함수들입니다.",
+	"bs-smartlist-invalid-namespaces": "지정된 {{PLURAL:$1|이름공간은}} 유효하지 않습니다: $2.",
+	"bs-smartlist-sort-asc": "오름차순",
+	"bs-smartlist-sort-desc": "내림차순",
+	"bs-smartlist-day": "일",
+	"bs-smartlist-week": "주",
+	"bs-smartlist-month": "월",
+	"bs-smartlist-time": "시간",
+	"bs-smartlist-title": "제목"
 }

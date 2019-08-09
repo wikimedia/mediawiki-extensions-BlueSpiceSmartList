@@ -23,5 +23,6 @@
 	"bs-smartlist-ve-toplistinspector-count": "Aantal",
 	"bs-smartlist-ve-toplistinspector-ns": "Naamruimte(n)",
 	"bs-smartlist-ve-toplistinspector-cat": "Categorie",
-	"bs-smartlist-ve-toplistinspector-period": "Periode"
+	"bs-smartlist-ve-toplistinspector-period": "Periode",
+	"bs-smartlist-ve-smartlistinspector-catmode": "Categorie modus"
 }

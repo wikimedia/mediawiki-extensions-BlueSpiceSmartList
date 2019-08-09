@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Bjankuloski06"
+			"Bjankuloski06",
+			"Vlad5250"
 		]
 	},
 	"bs-smartlist-desc": "Ги прикажува последните пет промени на викито во список",
@@ -29,5 +30,7 @@
 	"bs-smartlist-mostactiveusersdesc": "Список на најактивни корисници подредени по уредувања.",
 	"bs-smartlist-mosteditedpagesdesc": "Список на најуредувани страници подредени по уредувања.",
 	"bs-smartlist-mostvisitedpagesdesc": "Список на најпосетувани страници подредени по посети.",
-	"bs-smartlist-lasteditsdesc": "Список на страници што сте ги уредиле."
+	"bs-smartlist-lasteditsdesc": "Список на страници што сте ги уредиле.",
+	"bs-smartlist-tag-smartlist-example-rc": "Режим: Скорешни промени",
+	"bs-smartlist-tag-smartlist-example-whatlinkshere": "Режим: Што води овде"
 }

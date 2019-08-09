@@ -3,7 +3,8 @@
 		"authors": [
 			"夢蝶葬花",
 			"A Chinese Wikipedian",
-			"Phenolla"
+			"Phenolla",
+			"LNDDYL"
 		]
 	},
 	"bs-smartlist-ve-smartlist-title": "智能列表",
@@ -24,7 +25,7 @@
 	"bs-smartlist-ve-smartlistinspector-numwithtext": "文本编号",
 	"bs-smartlist-ve-smartlistinspector-meta": "元",
 	"bs-smartlist-ve-smartlistinspector-target": "目标",
-	"bs-smartlist-ve-smartlistinspector-excludens": "排除命名空间",
+	"bs-smartlist-ve-smartlistinspector-excludens": "排除名字空间",
 	"bs-smartlist-ve-period-day-label": "日",
 	"bs-smartlist-ve-period-week-label": "周",
 	"bs-smartlist-ve-period-month-label": "月",

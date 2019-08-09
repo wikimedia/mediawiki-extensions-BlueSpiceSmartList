@@ -6,7 +6,8 @@
 			"Siebrand",
 			"Sjoerddebruin",
 			"MrLeopold",
-			"Osnard"
+			"Osnard",
+			"Mainframe98"
 		]
 	},
 	"bs-smartlist-desc": "Geeft de laatste vijf wijzigingen van de wiki in een lijst",
@@ -36,5 +37,7 @@
 	"bs-smartlist-mostvisitedpagesdesc": "Lijst van meest bekeken pagina's gesorteerd op aantal keren bekeken",
 	"bs-smartlist-lasteditsdesc": "Lijst met pagina's die u hebt bewerkt.",
 	"bs-smartlist-hitcounter-missing": "Extensie <a target='blank' href='https://www.mediawiki.org/wiki/Extension:HitCounters'>HitCounters</a> moet geïnstalleerd zijn.",
-	"apihelp-bs-smartlist-tasks-description": "API-functies om portlet-gegevens te bedienen voor pagina- en gebruikersstatistieken"
+	"apihelp-bs-smartlist-tasks-description": "API-functies om portlet-gegevens te bedienen voor pagina- en gebruikersstatistieken",
+	"bs-smartlist-tag-smartlist-example-rc": "Modus: Recente wijzigingen",
+	"bs-smartlist-tag-smartlist-example-whatlinkshere": "Modus: Verwijzingen naar deze pagina"
 }
