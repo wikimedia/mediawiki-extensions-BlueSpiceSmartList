@@ -4,9 +4,11 @@
 			"Vlad5250"
 		]
 	},
+	"bs-smartlist-ve-smartlist-title": "SmartList",
 	"bs-smartlist-ve-smartlistinspector-count": "Број",
 	"bs-smartlist-ve-smartlistinspector-cat": "Категорија",
 	"bs-smartlist-ve-smartlistinspector-minor": "Прикажи ситни",
+	"bs-smartlist-ve-smartlistinspector-catmode": "Режим за категории",
 	"bs-smartlist-ve-smartlistinspector-period": "Период",
 	"bs-smartlist-ve-smartlistinspector-new": "Прикажи само нови статии",
 	"bs-smartlist-ve-smartlistinspector-heading": "Заглавие",
