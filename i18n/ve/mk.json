@@ -19,5 +19,14 @@
 	"bs-smartlist-ve-period-week-label": "Недела",
 	"bs-smartlist-ve-period-month-label": "Месец",
 	"bs-smartlist-ve-sort-time-label": "Време",
-	"bs-smartlist-ve-sort-title-label": "Наслов"
+	"bs-smartlist-ve-sort-title-label": "Наслов",
+	"bs-smartlist-ve-smartlist-title": "SmartList",
+	"bs-smartlist-ve-smartlistinspector-catmode": "Режим за категории",
+	"bs-smartlist-ve-smartlistinspector-showtext": "Прикажи текст",
+	"bs-smartlist-ve-smartlistinspector-trimtext": "Скриј текст",
+	"bs-smartlist-ve-smartlistinspector-numwithtext": "Број со текст",
+	"bs-smartlist-ve-newbiesinspector-count": "Број",
+	"bs-smartlist-ve-toplistinspector-count": "Број",
+	"bs-smartlist-ve-toplistinspector-cat": "Категорија",
+	"bs-smartlist-ve-toplistinspector-period": "Период"
 }
