@@ -1,0 +1,14 @@
+{
+	"@metadata": {
+		"authors": [
+			"Saederup92"
+		]
+	},
+	"bs-smartlist-day": "Dag",
+	"bs-smartlist-week": "Uge",
+	"bs-smartlist-month": "Måned",
+	"bs-smartlist-time": "Tidspunkt",
+	"bs-smartlist-title": "Titel",
+	"bs-smartlist-lastedits": "Mine redigeringer",
+	"bs-smartlist-recent-changes": "Seneste ændringer"
+}

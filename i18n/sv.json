@@ -5,7 +5,8 @@
 			"Freked",
 			"Lokal Profil",
 			"Platinawolf",
-			"WikiPhoenix"
+			"WikiPhoenix",
+			"Sturban"
 		]
 	},
 	"bs-smartlist-desc": "Visar de fem senaste ändringarna på wikin i en lista",
@@ -22,7 +23,7 @@
 	"bs-smartlist-month": "Månad",
 	"bs-smartlist-time": "Tid",
 	"bs-smartlist-title": "Titel",
-	"bs-smartlist-tag-smartlist-desc": "Visar konfigurerbar information om senaste ändringar.",
+	"bs-smartlist-tag-smartlist-desc": "Visar automatiskt genererade listor över artiklar. Konfigurationen fungerar genom flera modi och parametrar.",
 	"bs-smartlist-tag-smartlist-example-rc": "Läge: Senaste ändringarna",
 	"bs-smartlist-tag-smartlist-example-whatlinkshere": "Läge: Vad länkar hit",
 	"bs-smartlist-tag-newbies-desc": "Visar de nyaste användarna på wikin. Listan kan begränsas till ett visst antal.",
