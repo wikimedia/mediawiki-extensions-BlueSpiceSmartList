@@ -22,7 +22,7 @@
  * For further information visit http://www.bluespice.com
  *
  * @author     Markus Glaser <glaser@hallowelt.com>
- * @author     Patric Wirth <wirth@hallowelt.com>
+ * @author     Patric Wirth
  * @author     Stephan Muggli <muggli@hallowelt.com>
  * @author     Leonid Verhovskij <verhovskij@hallowelt.com>
  * @package    BlueSpiceSmartList
