@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Hedda",
-			"Rapsar"
+			"Rapsar",
+			"BaRaN6161 TURK"
 		]
 	},
 	"bs-smartlist-ve-smartlist-title": "AkıllıListe",
@@ -20,6 +21,7 @@
 	"bs-smartlist-ve-smartlistinspector-sort": "Sıralama",
 	"bs-smartlist-ve-smartlistinspector-order": "Sıralama düzeni",
 	"bs-smartlist-ve-smartlistinspector-showns": "Ad alanlarını göster",
+	"bs-smartlist-ve-smartlistinspector-numwithtext": "Metin içeren sayı",
 	"bs-smartlist-ve-smartlistinspector-meta": "Meta",
 	"bs-smartlist-ve-smartlistinspector-target": "Hedef",
 	"bs-smartlist-ve-smartlistinspector-excludens": "Ad alan(lar)ını hariç tut",
