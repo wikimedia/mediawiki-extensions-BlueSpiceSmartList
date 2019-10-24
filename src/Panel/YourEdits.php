@@ -4,6 +4,7 @@ namespace BlueSpice\SmartList\Panel;
 
 use BlueSpice\Calumma\IPanel;
 use BlueSpice\Calumma\Panel\BasePanel;
+use Skins\Chameleon\IdRegistry;
 
 class YourEdits extends BasePanel implements IPanel {
 	protected $params = [];
@@ -57,5 +58,42 @@ class YourEdits extends BasePanel implements IPanel {
 
 	protected function getTitle() {
 		return $this->skintemplate->getSkin()->getTitle();
+	}
+
+	/**
+	 *
+	 * @var string
+	 */
+	protected $htmlId = null;
+
+	/**
+	 * The HTML ID for thie component
+	 * @return string
+	 */
+	public function getHtmlId() {
+		if ( ( $this->htmlId === null ) && ( isset( $this->params['panelId'] ) ) ) {
+			$this->htmlId = IdRegistry::getRegistry()->getId( $this->params['panelId'] );
+		} elseif ( $this->htmlId === null ) {
+			$this->htmlId = IdRegistry::getRegistry()->getId();
+		}
+		return $this->htmlId;
+	}
+
+	/**
+	 *
+	 * @return bool
+	 */
+	public function getPanelCollapseState() {
+		$htmlId = $this->htmlId;
+
+		$cookieName = $this->getCookiePrefix() . $htmlId;
+		$skin = $this->skintemplate->getSkin();
+		$cookie = $skin->getRequest()->getCookie( $cookieName );
+
+		if ( $cookie === 'true' ) {
+			return true;
+		} else {
+			return false;
+		}
 	}
 }
