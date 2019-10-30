@@ -631,6 +631,7 @@ class SmartList extends BsExtensionMW {
 				$aFields[] = 'MAX(rc_timestamp) as time, rc_user_text as username';
 			}
 
+			$aConditions[ 'page_content_model' ] = [ '', 'wikitext' ];
 			$res = $dbr->select(
 				[
 					'recentchanges',
@@ -722,6 +723,7 @@ class SmartList extends BsExtensionMW {
 				? ' ASC'
 				: ' DESC';
 
+			$aConditions[ 'page_content_model' ] = [ '', 'wikitext' ];
 			$res = $dbr->select(
 				$aTables,
 				$aFields,
@@ -848,12 +850,16 @@ class SmartList extends BsExtensionMW {
 
 		$oDbr = wfGetDB( DB_REPLICA );
 		$res = $oDbr->select(
-			'revision',
-			'rev_page',
-			[ 'rev_user' => $user->getId() ],
+			[ 'revision', 'page' ],
+			[ 'rev_page' ],
+			[
+				'rev_user' => $user->getId(),
+				'rev_page = page_id',
+				'page_content_model' => [ '', 'wikitext' ]
+			],
 			__METHOD__,
 			[
-				'GROUP BY' => 'rev_page',
+				'GROUP BY' => 'page_id',
 				'ORDER BY' => 'MAX(rev_timestamp) DESC',
 				'LIMIT' => $iCount
 			]
@@ -1016,6 +1022,7 @@ class SmartList extends BsExtensionMW {
 			}
 		}
 
+		$aConditions[ 'page_content_model' ] = [ '', 'wikitext' ];
 		$res = $oDbr->select(
 			$aTables,
 			$aColumns,
@@ -1135,8 +1142,9 @@ class SmartList extends BsExtensionMW {
 			$this->getTimestampForQuery( $aConditions, $iTime );
 		}
 
+		$aConditions['page_content_model'] = [ '', 'wikitext' ];
 		$res = $oDbr->select(
-				'revision',
+				[ 'revision', 'page' ],
 				[
 					'COUNT(rev_page) as page_counter',
 					'rev_page'
