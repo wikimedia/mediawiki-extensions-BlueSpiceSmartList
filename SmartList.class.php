@@ -667,7 +667,7 @@ class SmartList extends BsExtensionMW {
 			// PW(25.02.2015) TODO:
 			// There could be filters - see Special:Whatlinkshere
 			$oTargetTitle = empty( $aArgs['target'] )
-				? $this->getContext()->getTitle()
+				? $this->context->getTitle()
 				: Title::newFromText( $aArgs['target'] );
 
 			if ( is_null( $oTargetTitle ) ) {
