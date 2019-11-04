@@ -392,7 +392,7 @@ class SmartList extends BsExtensionMW {
 	 * @return string HTML output that is to be displayed.
 	 */
 	public function onTagSmartList( $sInput, $aArgs, $oParser ) {
-		$oParser->disableCache();
+		$oParser->getOutput()->updateCacheExpiry( 0 );
 		$oParser->getOutput()->setProperty( 'bs-tag-smartlist', 1 );
 
 		foreach ( $aArgs as $sArg => $sVal ) {
@@ -895,7 +895,7 @@ class SmartList extends BsExtensionMW {
 	 * @return string HTML output that is to be displayed.
 	 */
 	public function onTagBsNewbies( $sInput, $aArgs, $oParser ) {
-		$oParser->disableCache();
+		$oParser->getOutput()->updateCacheExpiry( 0 );
 		$iCount = BsCore::sanitizeArrayEntry( $aArgs, 'count', 5, BsPARAMTYPE::INT );
 
 		$oDbr = wfGetDB( DB_REPLICA );
@@ -933,7 +933,7 @@ class SmartList extends BsExtensionMW {
 	 * @return string HTML output that is to be displayed.
 	 */
 	public function onTagToplist( $sInput, $aArgs, $oParser ) {
-		$oParser->disableCache();
+		$oParser->getOutput()->updateCacheExpiry( 0 );
 
 		$oParser->getOutput()->setProperty( 'bs-toplist', FormatJson::encode( $aArgs ) );
 
