@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Hedda",
-			"Rapsar"
+			"Rapsar",
+			"BaRaN6161 TURK"
 		]
 	},
 	"bs-smartlist-ve-smartlist-title": "AkıllıListe",
@@ -35,5 +36,6 @@
 	"bs-smartlist-ve-toplistinspector-ns": "Ad alan(lar)ı",
 	"bs-smartlist-ve-toplistinspector-cat": "Kategori",
 	"bs-smartlist-ve-toplistinspector-period": "Dönem",
-	"bs-smartlist-ve-toplistinspector-portletperiod": "Portlet dönemi"
+	"bs-smartlist-ve-toplistinspector-portletperiod": "Portlet dönemi",
+	"bs-smartlist-ve-smartlistinspector-numwithtext": "Metin içeren sayı"
 }
