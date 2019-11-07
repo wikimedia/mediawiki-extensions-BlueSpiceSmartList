@@ -28,5 +28,8 @@
 	"bs-smartlist-ve-newbiesinspector-count": "Број",
 	"bs-smartlist-ve-toplistinspector-count": "Број",
 	"bs-smartlist-ve-toplistinspector-cat": "Категорија",
-	"bs-smartlist-ve-toplistinspector-period": "Период"
+	"bs-smartlist-ve-toplistinspector-period": "Период",
+	"bs-smartlist-ve-smartlistinspector-ns": "Именски простор(и)",
+	"bs-smartlist-ve-smartlistinspector-excludens": "Изземи именски простор(и)",
+	"bs-smartlist-ve-toplistinspector-ns": "Именски простор(и)"
 }
