@@ -1022,7 +1022,6 @@ class SmartList extends BsExtensionMW {
 			}
 		}
 
-		$aConditions[ 'page_content_model' ] = [ '', 'wikitext' ];
 		$res = $oDbr->select(
 			$aTables,
 			$aColumns,
