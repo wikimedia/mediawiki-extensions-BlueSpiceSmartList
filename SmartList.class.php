@@ -962,6 +962,11 @@ class SmartList extends BsExtensionMW {
 		if ( !ExtensionRegistry::getInstance()->isLoaded( 'HitCounters' ) ) {
 			return wfMessage( 'bs-smartlist-hitcounter-missing' )->plain();
 		}
+		if ( !ExtensionRegistry::getInstance()->isLoaded( 'BlueSpiceWhoIsOnline' ) ) {
+			throw new MWException(
+				'Extension "BlueSpiceWhoIsOnline" is required for this tag'
+			);
+		}
 		$sCat = BsCore::sanitizeArrayEntry( $aArgs, 'cat',           '', BsPARAMTYPE::STRING );
 		$sNs = BsCore::sanitizeArrayEntry( $aArgs, 'ns',            '', BsPARAMTYPE::STRING );
 		$iCount = BsCore::sanitizeArrayEntry( $aArgs, 'count',         10, BsPARAMTYPE::INT );
@@ -985,8 +990,9 @@ class SmartList extends BsExtensionMW {
 			$aJoinConditions = [];
 
 			if ( $sPeriod === 'week' || $iPortletPeriod === 7 ) {
-				$iTimestamp = wfTimestamp( TS_UNIX ) - ( 7 * 24 * 60 * 60 );
-				$aConditions[] = 'wo_timestamp >= ' . $iTimestamp;
+				$maxTS = \BlueSpice\Timestamp::getInstance();
+				$maxTS->timestamp->modify( "- 7 days" );
+				$aConditions[] = 'wo_log_ts >= ' . $maxTS->getTimestamp( TS_MW );
 			}
 			$bAlltime = false;
 		} else {
