@@ -90,7 +90,7 @@ class SmartList extends BsExtensionMW {
 	public static function getMostVisitedPages( $iCount, $sTime ) {
 		try {
 			$sContent =
-				\MediaWiki\MediaWikiServices::getInstance()
+				Services::getInstance()
 				->getService( 'BSExtensionFactory' )
 				->getExtension( 'BlueSpiceSmartList' )
 				->getToplist(
@@ -116,7 +116,7 @@ class SmartList extends BsExtensionMW {
 	 * @return string most edited pages
 	 */
 	public static function getMostEditedPages( $iCount, $sTime ) {
-		return \MediaWiki\MediaWikiServices::getInstance()
+		return Services::getInstance()
 				->getService( 'BSExtensionFactory' )
 				->getExtension( 'BlueSpiceSmartList' )
 				->getEditedPages( $iCount, $sTime );
@@ -128,7 +128,7 @@ class SmartList extends BsExtensionMW {
 	 * @return string
 	 */
 	public static function getMostActivePortlet( $iCount, $sTime ) {
-		return \MediaWiki\MediaWikiServices::getInstance()
+		return Services::getInstance()
 				->getService( 'BSExtensionFactory' )
 				->getExtension( 'BlueSpiceSmartList' )
 				->getActivePortlet( $iCount, $sTime );
@@ -139,7 +139,7 @@ class SmartList extends BsExtensionMW {
 	 * @return string
 	 */
 	public static function getYourEditsPortlet( $iCount ) {
-		return \MediaWiki\MediaWikiServices::getInstance()
+		return Services::getInstance()
 				->getService( 'BSExtensionFactory' )
 				->getExtension( 'BlueSpiceSmartList' )
 				->getYourEdits( $iCount );
