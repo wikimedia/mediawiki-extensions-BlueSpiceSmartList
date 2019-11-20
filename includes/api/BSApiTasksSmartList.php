@@ -156,7 +156,7 @@ class BSApiTasksSmartList extends BSApiTasksBase {
 
 		try {
 			$sContent =
-				\MediaWiki\MediaWikiServices::getInstance()
+				$this->getServices()
 				->getService( 'BSExtensionFactory' )
 				->getExtension( 'BlueSpiceSmartList' )
 				->getToplist(
@@ -197,7 +197,7 @@ class BSApiTasksSmartList extends BSApiTasksBase {
 			? $oTaskData->period
 			: 'alltime';
 
-		$oReturn->payload['html'] = \MediaWiki\MediaWikiServices::getInstance()
+		$oReturn->payload['html'] = $this->getServices()
 				->getService( 'BSExtensionFactory' )
 				->getExtension( 'BlueSpiceSmartList' )
 				->getEditedPages( $iCount, $sTime );
@@ -223,7 +223,7 @@ class BSApiTasksSmartList extends BSApiTasksBase {
 			? (int)$oTaskData->portletperiod
 			: 0;
 
-		$oReturn->payload['html'] = \MediaWiki\MediaWikiServices::getInstance()
+		$oReturn->payload['html'] = $this->getServices()
 				->getService( 'BSExtensionFactory' )
 				->getExtension( 'BlueSpiceSmartList' )
 				->getActivePortlet( $iCount, $sTime );
@@ -245,7 +245,7 @@ class BSApiTasksSmartList extends BSApiTasksBase {
 			? (int)$oTaskData->count
 			: 10;
 
-		$oReturn->payload['html'] = \MediaWiki\MediaWikiServices::getInstance()
+		$oReturn->payload['html'] = $this->getServices()
 				->getService( 'BSExtensionFactory' )
 				->getExtension( 'BlueSpiceSmartList' )
 				->getYourEdits( $iCount );
