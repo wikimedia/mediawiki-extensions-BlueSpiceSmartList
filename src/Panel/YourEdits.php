@@ -2,6 +2,7 @@
 
 namespace BlueSpice\SmartList\Panel;
 
+use QuickTemplate;
 use BlueSpice\Calumma\IPanel;
 use BlueSpice\Calumma\Panel\BasePanel;
 use Skins\Chameleon\IdRegistry;
@@ -9,11 +10,11 @@ use Skins\Chameleon\IdRegistry;
 class YourEdits extends BasePanel implements IPanel {
 	protected $params = [];
 
-	public static function factory( $sktemplate, $params ) {
+	public static function factory( QuickTemplate $sktemplate, $params ) {
 		return new self( $sktemplate, $params );
 	}
 
-	public function __construct( $skintemplate, $params ) {
+	public function __construct( QuickTemplate $skintemplate, $params ) {
 		parent::__construct( $skintemplate );
 		$this->params = $params;
 	}
