@@ -2,17 +2,35 @@
 
 namespace BlueSpice\SmartList\Panel;
 
+use Title;
+use User;
+use QuickTemplate;
 use BlueSpice\Calumma\IPanel;
 use BlueSpice\Calumma\Panel\BasePanel;
 
 class YourEdits extends BasePanel implements IPanel {
+	/**
+	 *
+	 * @var array
+	 */
 	protected $params = [];
 
-	public static function factory( $sktemplate, $params ) {
+	/**
+	 *
+	 * @param QuickTemplate $sktemplate
+	 * @param array $params
+	 * @return YourEdits
+	 */
+	public static function factory( QuickTemplate $sktemplate, $params ) {
 		return new self( $sktemplate, $params );
 	}
 
-	public function __construct( $skintemplate, $params ) {
+	/**
+	 *
+	 * @param QuickTemplate $skintemplate
+	 * @param array $params
+	 */
+	public function __construct( QuickTemplate $skintemplate, $params ) {
 		parent::__construct( $skintemplate );
 		$this->params = $params;
 	}
@@ -51,10 +69,18 @@ class YourEdits extends BasePanel implements IPanel {
 		return $linkListGroup->getHtml();
 	}
 
+	/**
+	 *
+	 * @return User
+	 */
 	protected function getUser() {
 		return $this->skintemplate->getSkin()->getUser();
 	}
 
+	/**
+	 *
+	 * @return Title
+	 */
 	protected function getTitle() {
 		return $this->skintemplate->getSkin()->getTitle();
 	}
