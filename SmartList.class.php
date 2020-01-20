@@ -43,7 +43,6 @@ class SmartList extends BsExtensionMW {
 	 */
 	protected function initExt() {
 		$this->setHook( 'ParserFirstCallInit', 'onParserFirstCallInit' );
-		$this->setHook( 'BSInsertMagicAjaxGetData', 'onBSInsertMagicAjaxGetData' );
 		$this->setHook( 'BSDashboardsAdminDashboardPortalConfig' );
 		$this->setHook( 'BSDashboardsAdminDashboardPortalPortlets' );
 		$this->setHook( 'BSDashboardsUserDashboardPortalConfig' );
@@ -310,77 +309,6 @@ class SmartList extends BsExtensionMW {
 		$parser->setHook( 'bs:newbies', [ $this, 'onTagBsNewbies' ] );
 		$parser->setHook( 'toplist', [ $this, 'onTagToplist' ] );
 		$parser->setHook( 'bs:toplist', [ $this, 'onTagToplist' ] );
-
-		return true;
-	}
-
-	/**
-	 * Inject tags into InsertMagic
-	 * @param Object &$oResponse reference
-	 * @param String $type
-	 * @return always true to keep hook running
-	 */
-	public function onBSInsertMagicAjaxGetData( &$oResponse, $type ) {
-		if ( $type != 'tags' ) {
-			return true;
-		}
-
-		$extension = \BlueSpice\Services::getInstance()->getBSExtensionFactory()
-				->getExtension( 'BlueSpiceSmartList' );
-		$helplink = $extension->getUrl();
-
-		$oDescriptor = new stdClass();
-		$oDescriptor->id = 'bs:smartlist';
-		$oDescriptor->type = 'tag';
-		$oDescriptor->name = 'smartlist';
-		$oDescriptor->desc = wfMessage( 'bs-smartlist-tag-smartlist-desc' )->plain();
-		$oDescriptor->code = '<bs:smartlist />';
-		$oDescriptor->mwvecommand = 'smartListCommand';
-		$oDescriptor->previewable = false;
-		$oDescriptor->examples = [
-			[
-				'label' => wfMessage( 'bs-smartlist-tag-smartlist-example-rc' )->plain(),
-				'code' => '<bs:smartlist new="true" count="7" ns="104" trim="false" />'
-			],
-			[
-				'label' => wfMessage( 'bs-smartlist-tag-smartlist-example-whatlinkshere' )->plain(),
-				'code' => '<bs:smartlist mode="whatlinkshere" target="ARTICLENAME" />'
-			]
-		];
-		$oDescriptor->helplink = $helplink;
-		$oResponse->result[] = $oDescriptor;
-
-		$oDescriptor = new stdClass();
-		$oDescriptor->id = 'bs:newbies';
-		$oDescriptor->type = 'tag';
-		$oDescriptor->name = 'newbies';
-		$oDescriptor->desc = wfMessage( 'bs-smartlist-tag-newbies-desc' )->plain();
-		$oDescriptor->code = '<bs:newbies />';
-		$oDescriptor->mwvecommand = 'newbiesCommand';
-		$oDescriptor->previewable = false;
-		$oDescriptor->examples = [
-			[
-				'code' => '<bs:newbies count="3" />'
-			]
-		];
-		$oDescriptor->helplink = $helplink;
-		$oResponse->result[] = $oDescriptor;
-
-		$oDescriptor = new stdClass();
-		$oDescriptor->id = 'bs:toplist';
-		$oDescriptor->type = 'tag';
-		$oDescriptor->name = 'toplist';
-		$oDescriptor->desc = wfMessage( 'bs-smartlist-tag-toplist-desc' )->plain();
-		$oDescriptor->code = '<bs:toplist />';
-		$oDescriptor->mwvecommand = 'topListCommand';
-		$oDescriptor->previewable = false;
-		$oDescriptor->examples = [
-			[
-				'code' => '<bs:toplist count="4" cat="Wiki" period="month" />'
-			]
-		];
-		$oDescriptor->helplink = $helplink;
-		$oResponse->result[] = $oDescriptor;
 
 		return true;
 	}

@@ -138,6 +138,13 @@
 		"localBasePath": "resources",
 		"remoteExtPath": "BlueSpiceSmartList/resources"
 	},
+	"Hooks": {
+		"BSInsertMagicAjaxGetData": [
+			"\\BlueSpice\\SmartList\\Hook\\BSInsertMagicAjaxGetData\\AddSmartListTag::callback",
+			"\\BlueSpice\\SmartList\\Hook\\BSInsertMagicAjaxGetData\\AddNewbiesTag::callback",
+			"\\BlueSpice\\SmartList\\Hook\\BSInsertMagicAjaxGetData\\AddToplistTag::callback"
+		]
+	},
 	"load_composer_autoloader": true,
 	"manifest_version": 2
 }
