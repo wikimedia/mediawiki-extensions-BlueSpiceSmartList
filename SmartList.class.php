@@ -47,7 +47,6 @@ class SmartList extends BsExtensionMW {
 		$this->setHook( 'BSDashboardsAdminDashboardPortalPortlets' );
 		$this->setHook( 'BSDashboardsUserDashboardPortalConfig' );
 		$this->setHook( 'BSDashboardsUserDashboardPortalPortlets' );
-		$this->setHook( 'BSUsageTrackerRegisterCollectors' );
 	}
 
 	/**
@@ -1379,21 +1378,6 @@ class SmartList extends BsExtensionMW {
 		}
 
 		return $aNamespaceDiff;
-	}
-
-	/**
-	 * Register tag with UsageTracker extension
-	 * @param array &$aCollectorsConfig
-	 * @return Always true to keep hook running
-	 */
-	public function onBSUsageTrackerRegisterCollectors( &$aCollectorsConfig ) {
-		$aCollectorsConfig['bs:smartlist'] = [
-			'class' => 'Property',
-			'config' => [
-				'identifier' => 'bs-tag-smartlist'
-			]
-		];
-		return true;
 	}
 
 }
