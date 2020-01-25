@@ -473,22 +473,24 @@ class SmartList extends BsExtensionMW {
 
 	/**
 	 * Actually renders the SmartList list view.
-	 * @param int $aArgs['count'] Maximum number of items in list.
-	 * @param string $aArgs['namespaces'] Comma separated list of namespaces that should be
-	 * considered.
-	 * @param string $aArgs['categories'] Comma separated list of categories that should be
-	 * considered.
-	 * @param string $aArgs['period'] Period of time that should be considered (-|day|week|month)
-	 * @param string $aArgs['mode'] Defines the basic criteria of pages that should be considered.
-	 * Default: recentchanges. Other Extensions can hook into SmartList and define their own mode.
-	 * @param bool $aArgs['showMinorChanges'] Should minor changes be considered
-	 * @param bool $aArgs['showOnlyNewArtiles'] Should edits be considered or only page creations
-	 * @param int $aArgs['trim'] Maximum number of title characters.
-	 * @param bool $aArgs['showtext'] Also display article text.
-	 * @param int $aArgs['trimtext'] Maximum number of text characters.
-	 * @param string $aArgs['order'] Sort order for list. (time|title)
-	 * @param string $aArgs['excludens'] Comma separated list of excluded namespaces.
-	 * @param bool $aArgs['showns'] Show namespace befor title.
+	 * @param array $aArgs Array with keys:
+	 *   - int 'count' - Maximum number of items in list.
+	 *   - string 'namespaces' - Comma separated list of namespaces that should be
+	 *      considered.
+	 *   - string 'categories' - Comma separated list of categories that should be
+	 *      considered.
+	 *   - string 'period' - Period of time that should be considered (-|day|week|month)
+	 *   - string 'mode' - Defines the basic criteria of pages that should be considered.
+	 *      Default: recentchanges. Other Extensions can hook into SmartList and define their own mode.
+	 *   - bool 'showMinorChanges' - Should minor changes be considered
+	 *   - bool 'showOnlyNewArtiles' - Should edits be considered or only page creations
+	 *   - int 'trim' - Maximum number of title characters.
+	 *   - bool 'showtext' - Also display article text.
+	 *   - int 'trimtext' - Maximum number of text characters.
+	 *   - string 'order' - Sort order for list. (time|title)
+	 *   - string 'excludens' -  Comma separated list of excluded namespaces.
+	 *   - bool 'showns' - Show namespace befor title.
+	 * @param \Parser $parser
 	 * @return string HTML output that is to be displayed.
 	 */
 	private function getCustomList( $aArgs, \Parser $parser ) {
@@ -707,7 +709,7 @@ class SmartList extends BsExtensionMW {
 				? $this->context->getTitle()
 				: Title::newFromText( $aArgs['target'] );
 
-			if ( is_null( $oTargetTitle ) ) {
+			if ( $oTargetTitle === null ) {
 				$oErrorListView->addItem(
 					new ViewTagError(
 						wfMessage( 'bs-smartlist-invalid-target' )->text()

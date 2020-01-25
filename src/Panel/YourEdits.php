@@ -2,12 +2,12 @@
 
 namespace BlueSpice\SmartList\Panel;
 
-use Title;
-use User;
-use QuickTemplate;
 use BlueSpice\Calumma\IPanel;
 use BlueSpice\Calumma\Panel\BasePanel;
+use QuickTemplate;
 use Skins\Chameleon\IdRegistry;
+use Title;
+use User;
 
 class YourEdits extends BasePanel implements IPanel {
 	/**

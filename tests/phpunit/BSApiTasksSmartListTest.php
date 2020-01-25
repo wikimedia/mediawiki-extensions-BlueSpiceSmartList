@@ -35,7 +35,7 @@ class BSApiTasksSmartListTest extends BSApiTasksTestBase {
 		  ]
 		);
 
-		$this->assertEquals( true, $data->success );
+		$this->assertTrue( $data->success );
 
 		return $data;
 	}
@@ -52,7 +52,7 @@ class BSApiTasksSmartListTest extends BSApiTasksTestBase {
 		  ]
 		);
 
-		$this->assertEquals( true, $data->success );
+		$this->assertTrue( $data->success );
 
 		return $data;
 	}
@@ -69,7 +69,7 @@ class BSApiTasksSmartListTest extends BSApiTasksTestBase {
 		  ]
 		);
 
-		$this->assertEquals( true, $data->success );
+		$this->assertTrue( $data->success );
 
 		return $data;
 	}
@@ -86,7 +86,7 @@ class BSApiTasksSmartListTest extends BSApiTasksTestBase {
 		  ]
 		);
 
-		$this->assertEquals( true, $data->success );
+		$this->assertTrue( $data->success );
 
 		return $data;
 	}
