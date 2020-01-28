@@ -654,7 +654,7 @@ class SmartList extends BsExtensionMW {
 			}
 			if ( $aArgs['showOnlyNewArticles'] ) {
 				$sOrderSQL = 'MIN(rc_timestamp) DESC';
-				$aConditions[] = 'rc_new = 1';
+				$aConditions['rc_source'] = RecentChange::SRC_NEW;
 			}
 			if ( !empty( $aArgs['period'] ) && $aArgs['period'] !== '-' ) {
 				$aConditions[] = "rc_timestamp > '" . $sMinTimestamp . "'";
