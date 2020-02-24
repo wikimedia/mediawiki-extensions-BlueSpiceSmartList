@@ -1,11 +1,12 @@
 {
 	"@metadata": {
 		"authors": [
-			"Tumsaa"
+			"Tumsaa",
+			"Oromoo"
 		]
 	},
 	"bs-smartlist-recent-changes": "Jijjiirama dhihoo",
-	"bs-smartlist-no-entries": "Homtuu hin argamane",
+	"bs-smartlist-no-entries": "Homtuu hin argamne",
 	"bs-smartlist-comment": "Yaada: $1",
 	"bs-smartlist-sort-asc": "Irraa olee",
 	"bs-smartlist-sort-desc": "Irraa gadee",
