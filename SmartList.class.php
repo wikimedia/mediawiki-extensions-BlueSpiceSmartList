@@ -32,6 +32,7 @@
  */
 
 use BlueSpice\Services;
+use MediaWiki\MediaWikiServices;
 
 /**
  * Base class for SmartList extension
@@ -500,6 +501,7 @@ class SmartList extends BsExtensionMW {
 		 */
 		$aObjectList = [];
 		$aNamespaceIds = [];
+		$permManager = MediaWikiServices::getInstance()->getPermissionManager();
 
 		$oErrorListView = new ViewTagErrorList( $this );
 		$oValidationResult = BsValidator::isValid(
@@ -693,7 +695,11 @@ class SmartList extends BsExtensionMW {
 
 				$oTitle = Title::makeTitleSafe( $row->namespace, $row->title );
 
-				if ( !$oTitle || !$oTitle->quickUserCan( 'read' ) ) {
+				if ( !$oTitle || !$permManager->quickUserCan(
+					'read',
+					$this->context->getUser(),
+					$oTitle
+				) ) {
 					continue;
 				}
 
@@ -778,7 +784,11 @@ class SmartList extends BsExtensionMW {
 				}
 
 				$oTitle = Title::makeTitleSafe( $row->namespace, $row->title );
-				if ( !$oTitle || !$oTitle->quickUserCan( 'read' ) ) {
+				if ( !$oTitle || !$permManager->quickUserCan(
+					'read',
+					$this->context->getUser(),
+					$oTitle
+				) ) {
 					continue;
 				}
 
@@ -1119,6 +1129,7 @@ class SmartList extends BsExtensionMW {
 			$aList = [];
 			$aInList = [];
 			$iCurrCount = 0;
+			$permManager = MediaWikiServices::getInstance()->getPermissionManager();
 			if ( $bAlltime === false ) {
 				foreach ( $res as $row ) {
 					if ( $iCurrCount === $iCount ) {
@@ -1129,7 +1140,11 @@ class SmartList extends BsExtensionMW {
 					}
 					$oTitle = Title::makeTitle( $row->wo_page_namespace, $row->wo_page_title );
 
-					if ( !$oTitle->quickUserCan( 'read' ) ) {
+					if ( !$permManager->quickUserCan(
+						'read',
+						$this->context->getUser(),
+						$oTitle
+					) ) {
 						continue;
 					}
 
@@ -1164,7 +1179,11 @@ class SmartList extends BsExtensionMW {
 					}
 
 					$oTitle = Title::makeTitle( $row->page_namespace, $row->page_title );
-					if ( !$oTitle->quickUserCan( 'read' ) ) {
+					if ( !$permManager->quickUserCan(
+						'read',
+						$this->context->getUser(),
+						$oTitle
+					) ) {
 						continue;
 					}
 
