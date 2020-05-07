@@ -1,10 +1,10 @@
 {
 	"@metadata": {
 		"authors": [
-			"Stephan Muggli <muggli@hallowelt.biz>",
+			"Hwboehm",
 			"Metalhead64",
 			"Purodha",
-			"Hwboehm"
+			"Stephan Muggli <muggli@hallowelt.biz>"
 		]
 	},
 	"bs-smartlist-desc": "Zeigt die letzten fünf Änderungen des Wikis in einer Liste an",

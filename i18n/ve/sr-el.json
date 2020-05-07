@@ -1,5 +1,7 @@
 {
-	"@metadata": [],
+	"@metadata": {
+		"authors": []
+	},
 	"bs-smartlist-ve-smartlistinspector-ns": "Imenski prostor(i)",
 	"bs-smartlist-ve-smartlistinspector-cat": "Kategorija",
 	"bs-smartlist-ve-smartlistinspector-catmode": "Režim kategorije",

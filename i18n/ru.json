@@ -1,9 +1,9 @@
 {
 	"@metadata": {
 		"authors": [
+			"Facenapalm",
 			"Okras",
-			"Striking Blue",
-			"Facenapalm"
+			"Striking Blue"
 		]
 	},
 	"bs-smartlist-desc": "Отображает в списке последние пять изменений вики.",

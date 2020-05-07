@@ -2,11 +2,11 @@
 	"@metadata": {
 		"authors": [
 			"Gomoko",
-			"Wyz",
 			"Ltrlg",
-			"Yasten",
 			"Trial",
-			"Wladek92"
+			"Wladek92",
+			"Wyz",
+			"Yasten"
 		]
 	},
 	"bs-smartlist-desc": "Affiche une liste des cinq dernières modifications du wiki",

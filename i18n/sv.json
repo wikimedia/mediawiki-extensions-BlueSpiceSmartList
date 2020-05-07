@@ -1,12 +1,12 @@
 {
 	"@metadata": {
 		"authors": [
-			"Jopparn",
 			"Freked",
+			"Jopparn",
 			"Lokal Profil",
 			"Platinawolf",
-			"WikiPhoenix",
-			"Sturban"
+			"Sturban",
+			"WikiPhoenix"
 		]
 	},
 	"bs-smartlist-desc": "Visar de fem senaste ändringarna på wikin i en lista",

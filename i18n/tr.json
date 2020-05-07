@@ -1,8 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Sayginer",
-			"BaRaN6161 TURK"
+			"BaRaN6161 TURK",
+			"Sayginer"
 		]
 	},
 	"prefs-smartlist": "Akıllı liste",
@@ -19,7 +19,7 @@
 	"bs-smartlist-month": "Ay",
 	"bs-smartlist-time": "Zaman",
 	"bs-smartlist-title": "Başlık",
-	"bs-smartlist-tag-smartlist-desc": "Otomatik olarak oluşturulan makale listelerini gösterir. Yapılandırma birkaç modi ve parametre ile çalışır.",
+	"bs-smartlist-tag-smartlist-desc": "Otomatik olarak oluşturulan madde listelerini gösterir. Yapılandırma birkaç modi ve parametre ile çalışır.",
 	"bs-smartlist-tag-smartlist-example-rc": "Mod: Son değişiklikler",
 	"bs-smartlist-tag-smartlist-example-whatlinkshere": "Mod: Buradaki bağlantılar",
 	"bs-smartlist-tag-newbies-desc": "Wiki'nin yeni kullanıcılarını gösterir. Liste belirli bir numarayla sınırlandırılabilir.",

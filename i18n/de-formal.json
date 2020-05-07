@@ -1,8 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Stephan Muggli <muggli@hallowelt.biz>",
-			"Hwboehm"
+			"Hwboehm",
+			"Stephan Muggli <muggli@hallowelt.biz>"
 		]
 	},
 	"bs-smartlist-invalid-namespaces": "{{PLURAL:$1|Der angegebene Namensraum ist|Die angegebenen Namensräume sind}} fehlerhaft: $2.",
