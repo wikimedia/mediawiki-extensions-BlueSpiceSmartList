@@ -922,20 +922,28 @@ class SmartList extends BsExtensionMW {
 		$iCount = BsCore::sanitize( $iCount, 0, BsPARAMTYPE::INT );
 
 		$oDbr = wfGetDB( DB_REPLICA );
+		$query = MediaWikiServices::getInstance()->getRevisionStore()->getQueryInfo();
+		$actor = ActorMigration::newMigration()->getWhere( $oDbr, 'rev_user', $user );
+		$query['tables'][] = 'page';
+		$query['joins']['page'] = [ 'JOIN', 'rev_page = page_id' ];
+		$query['fields'][] = 'page_id';
+		$query['fields'][] = 'page_content_model';
+		$conds = [
+			'page_content_model' => [ '', 'wikitext' ],
+			$actor['conds']
+		];
+		$options = [
+			'GROUP BY' => 'page_id',
+			'ORDER BY' => 'MAX(rev_timestamp) DESC',
+			'LIMIT' => $iCount
+		];
 		$res = $oDbr->select(
-			[ 'revision', 'page' ],
-			[ 'rev_page' ],
-			[
-				'rev_user' => $user->getId(),
-				'rev_page = page_id',
-				'page_content_model' => [ '', 'wikitext' ]
-			],
+			$query['tables'],
+			$query['fields'],
+			$conds,
 			__METHOD__,
-			[
-				'GROUP BY' => 'page_id',
-				'ORDER BY' => 'MAX(rev_timestamp) DESC',
-				'LIMIT' => $iCount
-			]
+			$options,
+			$query['joins']
 		);
 
 		$aEdits = [];
