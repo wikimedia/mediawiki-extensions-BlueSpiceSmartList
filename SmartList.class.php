@@ -1292,18 +1292,19 @@ class SmartList extends BsExtensionMW {
 			$this->getTimestampForQuery( $aConditions, $iTime );
 		}
 
+		$query = MediaWikiServices::getInstance()->getRevisionStore()->getQueryInfo();
+		$query['fields'][] = 'COUNT(actor_rev_user.actor_name) as edit_count';
+		$options = [
+			'GROUP BY' => 'rev_user',
+			'ORDER BY' => 'edit_count DESC'
+		];
 		$res = $oDbr->select(
-				'revision',
-				[
-					'COUNT(rev_user) as edit_count',
-					'rev_user'
-				],
-				$aConditions,
-				__METHOD__,
-				[
-					'GROUP BY' => 'rev_user',
-					'ORDER BY' => 'edit_count DESC'
-				]
+			$query['tables'],
+			$query['fields'],
+			$aConditions,
+			__METHOD__,
+			$options,
+			$query['joins']
 		);
 
 		$aList = [];
