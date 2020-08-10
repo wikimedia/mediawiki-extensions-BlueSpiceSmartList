@@ -1,7 +1,9 @@
 {
 	"@metadata": {
 		"authors": [
+			"Abbaabiyyummaa",
 			"Oromoo",
+			"Oromoom",
 			"Tumsaa"
 		]
 	},
@@ -15,7 +17,7 @@
 	"bs-smartlist-month": "Ji'a",
 	"bs-smartlist-time": "Yeroo",
 	"bs-smartlist-title": "Mataduree",
-	"bs-smartlist-mosteditedpages": "Fuula baayyee jijjiirame",
+	"bs-smartlist-mosteditedpages": "Fuula baayyee gulaalame",
 	"bs-smartlist-lastedits": "Jijjiirama Kan Koo",
-	"bs-smartlist-noedits": "Jijjiiramni hin argamne"
+	"bs-smartlist-noedits": "Gulaala homtuu hin argamne"
 }
