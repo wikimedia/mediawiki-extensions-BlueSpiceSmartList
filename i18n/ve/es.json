@@ -28,5 +28,7 @@
 	"bs-smartlist-ve-newbies-title": "Principiantes",
 	"bs-smartlist-ve-toplistinspector-ns": "Espacio(s) de nombres",
 	"bs-smartlist-ve-toplistinspector-cat": "Categoría",
-	"bs-smartlist-ve-toplistinspector-period": "Período"
+	"bs-smartlist-ve-toplistinspector-period": "Período",
+	"bs-smartlist-ve-mode-recentchanges-label": "Cambios recientes",
+	"bs-smartlist-ve-mode-changesofweek-label": "Cambios de la semana"
 }
