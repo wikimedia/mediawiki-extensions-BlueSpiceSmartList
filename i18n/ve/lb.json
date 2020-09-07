@@ -21,5 +21,7 @@
 	"bs-smartlist-ve-newbies-title": "Ufänger",
 	"bs-smartlist-ve-newbiesinspector-count": "Zuel",
 	"bs-smartlist-ve-toplistinspector-cat": "Kategorie",
-	"bs-smartlist-ve-toplistinspector-period": "Period"
+	"bs-smartlist-ve-toplistinspector-period": "Period",
+	"bs-smartlist-ve-mode-recentchanges-label": "Rezent Ännerungen",
+	"bs-smartlist-ve-mode-changesofweek-label": "Ännerunge vun der Woch"
 }

@@ -30,5 +30,7 @@
 	"bs-smartlist-ve-toplistinspector-count": "Број",
 	"bs-smartlist-ve-toplistinspector-ns": "Именски простор(и)",
 	"bs-smartlist-ve-toplistinspector-cat": "Категорија",
-	"bs-smartlist-ve-toplistinspector-period": "Период"
+	"bs-smartlist-ve-toplistinspector-period": "Период",
+	"bs-smartlist-ve-mode-recentchanges-label": "Недавне промене",
+	"bs-smartlist-ve-mode-changesofweek-label": "Промене недеље"
 }

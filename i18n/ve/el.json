@@ -34,5 +34,7 @@
 	"bs-smartlist-ve-toplistinspector-count": "Μέτρηση",
 	"bs-smartlist-ve-toplistinspector-ns": "Ονοματοχώρος(-οι)",
 	"bs-smartlist-ve-toplistinspector-cat": "Κατηγορία",
-	"bs-smartlist-ve-toplistinspector-period": "Περίοδος"
+	"bs-smartlist-ve-toplistinspector-period": "Περίοδος",
+	"bs-smartlist-ve-mode-recentchanges-label": "Πρόσφατες αλλαγές",
+	"bs-smartlist-ve-mode-changesofweek-label": "Αλλαγές της εβδομάδας"
 }

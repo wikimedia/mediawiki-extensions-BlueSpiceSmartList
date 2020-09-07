@@ -15,5 +15,6 @@
 	"bs-smartlist-ve-period-month-label": "Mese",
 	"bs-smartlist-ve-sort-title-label": "Titolo",
 	"bs-smartlist-ve-toplistinspector-ns": "Namespace",
-	"bs-smartlist-ve-toplistinspector-cat": "Categoria"
+	"bs-smartlist-ve-toplistinspector-cat": "Categoria",
+	"bs-smartlist-ve-mode-recentchanges-label": "Ultime modifiche"
 }

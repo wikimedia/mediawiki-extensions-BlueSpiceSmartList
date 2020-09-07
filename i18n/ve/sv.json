@@ -32,5 +32,7 @@
 	"bs-smartlist-ve-toplistinspector-count": "Antal",
 	"bs-smartlist-ve-toplistinspector-ns": "Namnrymd(er)",
 	"bs-smartlist-ve-toplistinspector-cat": "Kategori",
-	"bs-smartlist-ve-toplistinspector-period": "Period"
+	"bs-smartlist-ve-toplistinspector-period": "Period",
+	"bs-smartlist-ve-mode-recentchanges-label": "Senaste ändringar",
+	"bs-smartlist-ve-mode-changesofweek-label": "Veckans ändringar"
 }
