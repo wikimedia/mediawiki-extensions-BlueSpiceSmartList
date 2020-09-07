@@ -31,7 +31,6 @@
  * @filesource
  */
 
-use BlueSpice\Services;
 use MediaWiki\MediaWikiServices;
 
 /**
@@ -89,7 +88,7 @@ class SmartList extends BsExtensionMW {
 	public static function getMostVisitedPages( $iCount, $sTime ) {
 		try {
 			$sContent =
-				Services::getInstance()
+				MediaWikiServices::getInstance()
 				->getService( 'BSExtensionFactory' )
 				->getExtension( 'BlueSpiceSmartList' )
 				->getToplist(
@@ -115,7 +114,7 @@ class SmartList extends BsExtensionMW {
 	 * @return string most edited pages
 	 */
 	public static function getMostEditedPages( $iCount, $sTime ) {
-		return Services::getInstance()
+		return MediaWikiServices::getInstance()
 				->getService( 'BSExtensionFactory' )
 				->getExtension( 'BlueSpiceSmartList' )
 				->getEditedPages( $iCount, $sTime );
@@ -127,7 +126,7 @@ class SmartList extends BsExtensionMW {
 	 * @return string
 	 */
 	public static function getMostActivePortlet( $iCount, $sTime ) {
-		return Services::getInstance()
+		return MediaWikiServices::getInstance()
 				->getService( 'BSExtensionFactory' )
 				->getExtension( 'BlueSpiceSmartList' )
 				->getActivePortlet( $iCount, $sTime );
@@ -138,7 +137,7 @@ class SmartList extends BsExtensionMW {
 	 * @return string
 	 */
 	public static function getYourEditsPortlet( $iCount ) {
-		return Services::getInstance()
+		return MediaWikiServices::getInstance()
 				->getService( 'BSExtensionFactory' )
 				->getExtension( 'BlueSpiceSmartList' )
 				->getYourEdits( $iCount );
@@ -999,7 +998,7 @@ class SmartList extends BsExtensionMW {
 			$oUser = User::newFromId( $row->user_id );
 			$oTitle = Title::makeTitle( NS_USER, $oUser->getName() );
 
-			$aOut[] = Services::getInstance()->getLinkRenderer()->makeKnownLink(
+			$aOut[] = MediaWikiServices::getInstance()->getLinkRenderer()->makeKnownLink(
 				$oTitle
 			);
 		}
@@ -1167,7 +1166,7 @@ class SmartList extends BsExtensionMW {
 						continue;
 					}
 					$aInList[] = $oTitle->getPrefixedText();
-					$sLink = Services::getInstance()->getLinkRenderer()->makeLink(
+					$sLink = MediaWikiServices::getInstance()->getLinkRenderer()->makeLink(
 						$oTitle
 					);
 					$aList['<li>' . $sLink . ' (' . $row->page_counter . ')</li>'] = (int)$row->page_counter;
@@ -1208,7 +1207,7 @@ class SmartList extends BsExtensionMW {
 					}
 					$aInList[] = $oTitle->getPrefixedText();
 
-					$sLink = Services::getInstance()->getLinkRenderer()->makeLink(
+					$sLink = MediaWikiServices::getInstance()->getLinkRenderer()->makeLink(
 						$oTitle
 					);
 					$aList[] = '<li>' . $sLink . ' (' . $row->page_counter . ')</li>';
@@ -1263,7 +1262,7 @@ class SmartList extends BsExtensionMW {
 
 			foreach ( $res as $row ) {
 				$oTitle = Title::newFromID( $row->rev_page );
-				$sLink = Services::getInstance()->getLinkRenderer()->makeLink(
+				$sLink = MediaWikiServices::getInstance()->getLinkRenderer()->makeLink(
 					$oTitle
 				);
 				$aList[] = '<li>' . $sLink . ' (' . $row->page_counter . ')</li>';
@@ -1322,7 +1321,7 @@ class SmartList extends BsExtensionMW {
 				}
 
 				$oTitle = Title::makeTitle( NS_USER, $oUser->getName() );
-				$sLink = Services::getInstance()->getLinkRenderer()->makeLink(
+				$sLink = MediaWikiServices::getInstance()->getLinkRenderer()->makeLink(
 					$oTitle
 				);
 				$aList[] = '<li>' . $sLink . ' (' . $row->edit_count . ')</li>';
