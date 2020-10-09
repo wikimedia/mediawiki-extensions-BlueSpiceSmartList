@@ -200,7 +200,7 @@ class SmartList extends BsExtensionMW {
 				'title' => wfMessage( 'bs-smartlist-mosteditedpages' )->plain()
 			]
 		];
-		$aPortalConfig[2][] = [
+		$aPortalConfig[1][] = [
 			'type'  => 'BS.SmartList.MostActivePortlet',
 			'config' => [
 				'title' => wfMessage( 'bs-smartlist-mostactiveusers' )->plain()
@@ -280,7 +280,7 @@ class SmartList extends BsExtensionMW {
 				'title' => wfMessage( 'bs-smartlist-mosteditedpages' )->plain()
 			]
 		];
-		$aPortalConfig[2][] = [
+		$aPortalConfig[1][] = [
 			'type'  => 'BS.SmartList.MostActivePortlet',
 			'config' => [
 				'title' => wfMessage( 'bs-smartlist-mostactiveusers' )->plain()
