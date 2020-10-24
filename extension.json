@@ -144,7 +144,11 @@
 			"\\BlueSpice\\SmartList\\Hook\\BSInsertMagicAjaxGetData\\AddNewbiesTag::callback",
 			"\\BlueSpice\\SmartList\\Hook\\BSInsertMagicAjaxGetData\\AddToplistTag::callback"
 		],
-		"BSUsageTrackerRegisterCollectors": "\\BlueSpice\\SmartList\\Hook\\BSUsageTrackerRegisterCollectors\\AddSmartlistTag::callback"
+		"BSUsageTrackerRegisterCollectors": "\\BlueSpice\\SmartList\\Hook\\BSUsageTrackerRegisterCollectors\\AddSmartlistTag::callback",
+		"BSDashboardsAdminDashboardPortalPortlets": "\\BlueSpice\\SmartList\\Hook\\BSDashboardsAdminDashboardPortalPortlets\\AddPortlets::callback",
+		"BSDashboardsAdminDashboardPortalConfig": "\\BlueSpice\\SmartList\\Hook\\BSDashboardsAdminDashboardPortalConfig\\AddConfigs::callback",
+		"BSDashboardsUserDashboardPortalPortlets": "\\BlueSpice\\SmartList\\Hook\\BSDashboardsUserDashboardPortalPortlets\\AddPortlets::callback",
+		"BSDashboardsUserDashboardPortalConfig": "\\BlueSpice\\SmartList\\Hook\\BSDashboardsUserDashboardPortalConfig\\AddConfigs::callback"
 	},
 	"load_composer_autoloader": true,
 	"manifest_version": 2
