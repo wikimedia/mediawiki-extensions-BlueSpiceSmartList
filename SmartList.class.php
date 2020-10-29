@@ -603,11 +603,14 @@ class SmartList extends BsExtensionMW {
 			$aConditions = [];
 
 			switch ( $aArgs['period'] ) {
-				case 'month': $sMinTimestamp = $dbr->timestamp( time() - 30 * 24 * 60 * 60 );
+				case 'month':
+					$sMinTimestamp = $dbr->timestamp( time() - 30 * 24 * 60 * 60 );
 					break;
-				case 'week': $sMinTimestamp = $dbr->timestamp( time() - 7 * 24 * 60 * 60 );
+				case 'week':
+					$sMinTimestamp = $dbr->timestamp( time() - 7 * 24 * 60 * 60 );
 					break;
-				case 'day': $sMinTimestamp = $dbr->timestamp( time() - 24 * 60 * 60 );
+				case 'day':
+					$sMinTimestamp = $dbr->timestamp( time() - 24 * 60 * 60 );
 					break;
 				default:
 					break;
@@ -1228,7 +1231,7 @@ class SmartList extends BsExtensionMW {
 	 * Generates list of most edited pages
 	 * @param int $iCount
 	 * @param int $iTime
-	 * @return String list of pages or empty
+	 * @return string list of pages or empty
 	 */
 	public function getEditedPages( $iCount, $iTime ) {
 		$oDbr = wfGetDB( DB_REPLICA );
@@ -1279,7 +1282,7 @@ class SmartList extends BsExtensionMW {
 	 * Generates list of most edited pages
 	 * @param int $iCount
 	 * @param int $iTime
-	 * @return String list of pages or empty
+	 * @return string list of pages or empty
 	 */
 	public function getActivePortlet( $iCount, $iTime ) {
 		$oDbr = wfGetDB( DB_REPLICA );
