@@ -24,5 +24,7 @@
 	"bs-smartlist-ve-newbiesinspector-count": "Hesabu",
 	"bs-smartlist-ve-toplistinspector-count": "Hesabu",
 	"bs-smartlist-ve-toplistinspector-cat": "Kundi",
-	"bs-smartlist-ve-toplistinspector-period": "Wakati"
+	"bs-smartlist-ve-toplistinspector-period": "Wakati",
+	"bs-smartlist-ve-mode-recentchanges-label": "Mabadiliko ya hivi karibuni",
+	"bs-smartlist-ve-mode-changesofweek-label": "Mabadiliko ya Juma"
 }
