@@ -31,5 +31,7 @@
 	"bs-smartlist-ve-toplistinspector-count": "Количество",
 	"bs-smartlist-ve-toplistinspector-ns": "Пространства имён",
 	"bs-smartlist-ve-toplistinspector-cat": "Категория",
-	"bs-smartlist-ve-toplistinspector-period": "Период"
+	"bs-smartlist-ve-toplistinspector-period": "Период",
+	"bs-smartlist-ve-mode-recentchanges-label": "Свежие правки",
+	"bs-smartlist-ve-mode-changesofweek-label": "Изменения за неделю"
 }
