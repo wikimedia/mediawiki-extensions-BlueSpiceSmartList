@@ -801,8 +801,13 @@ class SmartList extends BsExtensionMW {
 			$dbr->freeResult( $res );
 
 		} else {
-			Hooks::run(
-				'BSSmartListCustomMode', [ &$aObjectList, $aArgs, $this ]
+			MediaWikiServices::getInstance()->getHookContainer()->run(
+				'BSSmartListCustomMode',
+				[
+					&$aObjectList,
+					$aArgs,
+					$this
+				]
 			);
 		}
 
@@ -864,12 +869,15 @@ class SmartList extends BsExtensionMW {
 					'META' => $sMeta,
 					'TEXT' => $sText
 				];
-				Hooks::run( 'BSSmartListBeforeEntryViewAddData', [
-					&$aData,
-					$aArgs,
-					$oSmartListListEntryView,
-					$row
-				] );
+				MediaWikiServices::getInstance()->getHookContainer()->run(
+					'BSSmartListBeforeEntryViewAddData',
+					[
+						&$aData,
+						$aArgs,
+						$oSmartListListEntryView,
+						$row
+					]
+				);
 				$oSmartListListEntryView->addData( $aData );
 				$oSmartListListView->addItem( $oSmartListListEntryView );
 				$iItems++;
