@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"BadDog",
+			"Kizule",
 			"Zoranzoki21"
 		]
 	},
@@ -13,8 +14,8 @@
 	"bs-smartlist-ve-smartlistinspector-heading": "Наслов",
 	"bs-smartlist-ve-smartlistinspector-showtext": "Прикажи текст",
 	"bs-smartlist-ve-smartlistinspector-trimtext": "Скрати текст",
-	"bs-smartlist-ve-smartlistinspector-sort": "Сортирај по",
-	"bs-smartlist-ve-smartlistinspector-order": "Редослед сортирања",
+	"bs-smartlist-ve-smartlistinspector-sort": "Поређај по",
+	"bs-smartlist-ve-smartlistinspector-order": "Начин ређања",
 	"bs-smartlist-ve-smartlistinspector-showns": "Прикажи именске просторе",
 	"bs-smartlist-ve-smartlistinspector-numwithtext": "Број са текстом",
 	"bs-smartlist-ve-smartlistinspector-meta": "Мета",
@@ -30,5 +31,7 @@
 	"bs-smartlist-ve-toplistinspector-count": "Број",
 	"bs-smartlist-ve-toplistinspector-ns": "Именски простор(и)",
 	"bs-smartlist-ve-toplistinspector-cat": "Категорија",
-	"bs-smartlist-ve-toplistinspector-period": "Период"
+	"bs-smartlist-ve-toplistinspector-period": "Период",
+	"bs-smartlist-ve-mode-recentchanges-label": "Недавне промене",
+	"bs-smartlist-ve-mode-changesofweek-label": "Промене недеље"
 }

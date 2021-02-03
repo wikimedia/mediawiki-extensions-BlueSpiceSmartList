@@ -19,5 +19,6 @@
 	"bs-smartlist-ve-sort-time-label": "Czas",
 	"bs-smartlist-ve-sort-title-label": "Tytuł",
 	"bs-smartlist-ve-toplistinspector-ns": "Przestrzeń(-nie) nazw",
-	"bs-smartlist-ve-toplistinspector-cat": "Kategoria"
+	"bs-smartlist-ve-toplistinspector-cat": "Kategoria",
+	"bs-smartlist-ve-mode-recentchanges-label": "Ostatnie zmiany"
 }

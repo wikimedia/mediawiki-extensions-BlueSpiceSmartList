@@ -31,5 +31,7 @@
 	"bs-smartlist-ve-toplistinspector-count": "개수",
 	"bs-smartlist-ve-toplistinspector-ns": "이름공간",
 	"bs-smartlist-ve-toplistinspector-cat": "분류",
-	"bs-smartlist-ve-toplistinspector-period": "기간"
+	"bs-smartlist-ve-toplistinspector-period": "기간",
+	"bs-smartlist-ve-mode-recentchanges-label": "최근 바뀜",
+	"bs-smartlist-ve-mode-changesofweek-label": "주의 바뀜"
 }

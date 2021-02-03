@@ -1,10 +1,10 @@
 {
 	"@metadata": {
 		"authors": [
-			"Ата",
 			"Andriykopanytsia",
+			"Osnard",
 			"Piramidion",
-			"Osnard"
+			"Ата"
 		]
 	},
 	"bs-smartlist-desc": "Відображає останні п'ять зміни у вікі списком",

@@ -1,11 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"Liuxinyu970226",
 			"Cwlin0416",
 			"EagerLin",
+			"Kly",
 			"LNDDYL",
-			"Kly"
+			"Liuxinyu970226"
 		]
 	},
 	"bs-smartlist-desc": "顯示在清單裡 wiki 的最近 5 次更改",

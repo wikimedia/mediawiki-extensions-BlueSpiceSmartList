@@ -10,5 +10,8 @@
 	"bs-smartlist-time": "Tidspunkt",
 	"bs-smartlist-title": "Titel",
 	"bs-smartlist-lastedits": "Mine redigeringer",
-	"bs-smartlist-recent-changes": "Seneste ændringer"
+	"bs-smartlist-recent-changes": "Seneste ændringer",
+	"bs-smartlist-mostvisitedpages": "Mest besøgte sider",
+	"bs-smartlist-mosteditedpages": "Topredigerede sider",
+	"bs-smartlist-mostactiveusers": "Mest aktive brugere (efter antal redigeringer)"
 }

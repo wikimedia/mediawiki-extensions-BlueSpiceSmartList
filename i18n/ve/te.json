@@ -10,5 +10,8 @@
 	"bs-smartlist-ve-period-month-label": "నెల",
 	"bs-smartlist-ve-sort-time-label": "సమయం",
 	"bs-smartlist-ve-sort-title-label": "శీర్షిక",
-	"bs-smartlist-ve-toplistinspector-cat": "వర్గం"
+	"bs-smartlist-ve-toplistinspector-cat": "వర్గం",
+	"bs-smartlist-ve-smartlistinspector-ns": "పేరుబరు(లు)",
+	"bs-smartlist-ve-smartlistinspector-minor": "చిన్నవి చూపించు",
+	"bs-smartlist-ve-mode-recentchanges-label": "ఇటీవలి మార్పులు"
 }

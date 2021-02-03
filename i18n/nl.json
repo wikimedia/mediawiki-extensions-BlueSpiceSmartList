@@ -1,13 +1,13 @@
 {
 	"@metadata": {
 		"authors": [
-			"SPQRobin",
 			"Esketti",
-			"Siebrand",
-			"Sjoerddebruin",
+			"Mainframe98",
 			"MrLeopold",
 			"Osnard",
-			"Mainframe98"
+			"SPQRobin",
+			"Siebrand",
+			"Sjoerddebruin"
 		]
 	},
 	"bs-smartlist-desc": "Geeft de laatste vijf wijzigingen van de wiki in een lijst",
