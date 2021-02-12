@@ -46,36 +46,6 @@ class SmartList extends BsExtensionMW {
 	}
 
 	/**
-	 * Hook-Handler for Hook 'LoadExtensionSchemaUpdates'
-	 * @param DatabaseUpdater $updater Updater
-	 * @return bool Always true
-	 */
-	public static function getSchemaUpdates( $updater ) {
-		$odbw = wfGetDB( DB_MASTER );
-		if ( $odbw->tableExists( 'bs_settings' ) === true ) {
-			$res = $odbw->select(
-				'bs_settings',
-				$odbw->addIdentifierQuotes( 'value' ),
-				[
-					$odbw->addIdentifierQuotes( 'key' ) => 'MW::SmartList::Order'
-				]
-			);
-			if ( $odbw->numRows( $res ) === 1 ) {
-				$obj = $odbw->fetchObject( $res );
-				if ( $obj->value === serialize( 'time' ) || $obj->value === serialize( 'title' ) ) {
-					$odbw->delete(
-					'bs_settings',
-					[
-						$odbw->addIdentifierQuotes( 'key' ) => 'MW::SmartList::Order'
-					]
-				);
-				}
-			}
-		}
-		return true;
-	}
-
-	/**
 	 * Returns list of most visited pages called via Ajax
 	 * @param int $iCount number of items
 	 * @param string $sTime timespan
