@@ -52,7 +52,7 @@
 		]
 	},
 	"AutoloadNamespaces": {
-		"BlueSpice\\SmartList\\" : "src/"
+		"BlueSpice\\SmartList\\": "src/"
 	},
 	"AutoloadClasses": {
 		"SmartList": "SmartList.class.php",
