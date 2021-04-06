@@ -1115,13 +1115,14 @@ class SmartList extends BsExtensionMW {
 		$oDbr = wfGetDB( DB_REPLICA );
 		$iCount = BsCore::sanitize( $iCount, 10, BsPARAMTYPE::INT );
 		$iTime = BsCore::sanitize( $iTime, 0, BsPARAMTYPE::INT );
+		$services = MediaWikiServices::getInstance();
 
 		$aConditions = [];
 		if ( $iTime !== 0 ) {
 			$this->getTimestampForQuery( $aConditions, $iTime );
 		}
 
-		$query = MediaWikiServices::getInstance()->getRevisionStore()->getQueryInfo();
+		$query = $services->getRevisionStore()->getQueryInfo();
 		$query['fields'][] = 'COUNT(actor_rev_user.actor_name) as edit_count';
 		$options = [
 			'GROUP BY' => 'rev_user',
@@ -1146,12 +1147,12 @@ class SmartList extends BsExtensionMW {
 					break;
 				}
 				$oUser = User::newFromId( $row->rev_user );
-				if ( $oUser->isIP( $oUser->getName() ) ) {
+				if ( $services->getUserNameUtils()->isIP( $oUser->getName() ) ) {
 					continue;
 				}
 
 				$oTitle = Title::makeTitle( NS_USER, $oUser->getName() );
-				$sLink = MediaWikiServices::getInstance()->getLinkRenderer()->makeLink(
+				$sLink = $services->getLinkRenderer()->makeLink(
 					$oTitle
 				);
 				$aList[] = '<li>' . $sLink . ' (' . $row->edit_count . ')</li>';
