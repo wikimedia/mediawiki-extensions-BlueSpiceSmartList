@@ -730,7 +730,10 @@ class SmartList extends BsExtensionMW {
 			$sHtml = '';
 			$oTitle = $aEdit['title'];
 			$sHtml = $aEdit['displayText'];
-			$sLink = Linker::link( $oTitle, $sHtml );
+			$sLink = MediaWikiServices::getInstance()->getLinkRenderer()->makeLink(
+				$oTitle,
+				new HtmlArmor( $sHtml )
+			);
 			$aEdits[] = Html::openElement( 'li' ) . $sLink . Html::closeElement( 'li' );
 		}
 
