@@ -148,7 +148,7 @@ ve.ui.SmartListInspector.prototype.createFields = function() {
 			}
 		]
 	} );
-	this.shownsInput = new OO.ui.ToggleSwitchWidget();
+	this.shownsInput = new OO.ui.ToggleSwitchWidget( { value: true } );
 	this.numwithtextInput = new OO.ui.NumberInputWidget( { min: 1, max: 1000, isInteger: true } );
 	this.metaInput = new OO.ui.ToggleSwitchWidget();
 	this.targetInput = new OO.ui.TextInputWidget();
@@ -389,7 +389,7 @@ ve.ui.SmartListInspector.prototype.updateMwData = function ( mwData ) {
 	if( this.shownsInput.getValue() === true ) {
 		mwData.attrs.showns = "1";
 	} else {
-		delete( mwData.attrs.showns );
+		mwData.attrs.showns = "0";
 	}
 	if( this.metaInput.getValue() ) {
 		mwData.attrs.meta = this.metaInput.getValue();
