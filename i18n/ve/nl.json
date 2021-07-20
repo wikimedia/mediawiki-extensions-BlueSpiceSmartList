@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Mainframe98"
+			"Mainframe98",
+			"Romaine"
 		]
 	},
 	"bs-smartlist-ve-smartlistinspector-ns": "Naamruimte(n)",
@@ -24,5 +25,11 @@
 	"bs-smartlist-ve-toplistinspector-count": "Aantal",
 	"bs-smartlist-ve-toplistinspector-ns": "Naamruimte(n)",
 	"bs-smartlist-ve-toplistinspector-cat": "Categorie",
-	"bs-smartlist-ve-toplistinspector-period": "Periode"
+	"bs-smartlist-ve-toplistinspector-period": "Periode",
+	"bs-smartlist-ve-smartlistinspector-meta": "Meta",
+	"bs-smartlist-ve-newbies-title": "Nieuwkomers",
+	"bs-smartlist-ve-toplist-title": "Toplijst",
+	"bs-smartlist-ve-toplistinspector-portletperiod": "Portlet-periode",
+	"bs-smartlist-ve-mode-recentchanges-label": "Recente wijzigingen",
+	"bs-smartlist-ve-mode-changesofweek-label": "Veranderingen van de week"
 }
