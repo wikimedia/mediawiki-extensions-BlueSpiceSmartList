@@ -5,5 +5,8 @@
 		]
 	},
 	"bs-smartlist-day": "Jornu",
-	"bs-smartlist-title": "Tìtulu"
+	"bs-smartlist-title": "Tìtulu",
+	"bs-smartlist-recent-changes": "Ùrtimi canciamenti",
+	"bs-smartlist-week": "Simana",
+	"bs-smartlist-month": "Misi"
 }
