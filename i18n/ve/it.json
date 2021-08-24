@@ -2,9 +2,11 @@
 	"@metadata": {
 		"authors": [
 			"Ajeje Brazorf",
-			"Beta16"
+			"Beta16",
+			"Stefano"
 		]
 	},
+	"bs-smartlist-ve-smartlistinspector-count": "Conteggio",
 	"bs-smartlist-ve-smartlistinspector-ns": "Namespace",
 	"bs-smartlist-ve-smartlistinspector-cat": "Categoria",
 	"bs-smartlist-ve-smartlistinspector-period": "Periodo",
