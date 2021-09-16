@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"Mainframe98",
+			"McDutchie",
 			"Romaine"
 		]
 	},
@@ -9,7 +10,7 @@
 	"bs-smartlist-ve-smartlistinspector-ns": "Naamruimte(n)",
 	"bs-smartlist-ve-smartlistinspector-cat": "Categorie",
 	"bs-smartlist-ve-smartlistinspector-minor": "Toon kleine bewerkingen",
-	"bs-smartlist-ve-smartlistinspector-catmode": "Categorie modus",
+	"bs-smartlist-ve-smartlistinspector-catmode": "Categoriemodus",
 	"bs-smartlist-ve-smartlistinspector-period": "Periode",
 	"bs-smartlist-ve-smartlistinspector-new": "Alleen nieuwe artikelen tonen",
 	"bs-smartlist-ve-smartlistinspector-heading": "Kopje",
