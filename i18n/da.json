@@ -13,5 +13,6 @@
 	"bs-smartlist-mostvisitedpages": "Mest besøgte sider",
 	"bs-smartlist-mosteditedpages": "Topredigerede sider",
 	"bs-smartlist-mostactiveusers": "Mest aktive brugere (efter antal redigeringer)",
-	"bs-smartlist-lastedits": "Mine redigeringer"
+	"bs-smartlist-lastedits": "Mine redigeringer",
+	"bs-smartlist-noedits": "Ingen redigeringer fundet."
 }
