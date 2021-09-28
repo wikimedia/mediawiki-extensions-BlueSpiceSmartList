@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"Mainframe98",
+			"McDutchie",
 			"Romaine"
 		]
 	},
@@ -25,11 +26,16 @@
 	"bs-smartlist-ve-toplistinspector-ns": "Naamruimte(n)",
 	"bs-smartlist-ve-toplistinspector-cat": "Categorie",
 	"bs-smartlist-ve-toplistinspector-period": "Periode",
-	"bs-smartlist-ve-smartlistinspector-catmode": "Categorie modus",
+	"bs-smartlist-ve-smartlistinspector-catmode": "Categoriemodus",
 	"bs-smartlist-ve-smartlistinspector-meta": "Meta",
 	"bs-smartlist-ve-newbies-title": "Nieuwkomers",
 	"bs-smartlist-ve-toplist-title": "Toplijst",
 	"bs-smartlist-ve-toplistinspector-portletperiod": "Portlet-periode",
 	"bs-smartlist-ve-mode-recentchanges-label": "Recente wijzigingen",
-	"bs-smartlist-ve-mode-changesofweek-label": "Veranderingen van de week"
+	"bs-smartlist-ve-mode-changesofweek-label": "Veranderingen van de week",
+	"bs-smartlist-ve-smartlistinspector-count": "Aantal",
+	"bs-smartlist-ve-smartlistinspector-heading": "Kopje",
+	"bs-smartlist-ve-smartlistinspector-trim": "Trim",
+	"bs-smartlist-ve-smartlistinspector-showtext": "Toon tekst",
+	"bs-smartlist-ve-smartlistinspector-trimtext": "Trim tekst"
 }
