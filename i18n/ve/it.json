@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Ajeje Brazorf",
-			"Beta16"
+			"Beta16",
+			"Stefano"
 		]
 	},
 	"bs-smartlist-ve-smartlistinspector-ns": "Namespace",
@@ -18,5 +19,6 @@
 	"bs-smartlist-ve-toplistinspector-ns": "Namespace",
 	"bs-smartlist-ve-toplistinspector-cat": "Categoria",
 	"bs-smartlist-ve-mode-recentchanges-label": "Ultime modifiche",
-	"bs-smartlist-ve-toplistinspector-period": "Periodo"
+	"bs-smartlist-ve-toplistinspector-period": "Periodo",
+	"bs-smartlist-ve-smartlistinspector-count": "Conteggio"
 }

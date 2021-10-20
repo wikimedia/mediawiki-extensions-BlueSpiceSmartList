@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"Dejan Savuljesku <savuljesku@hallowelt.com>",
+			"McDutchie",
 			"Robby"
 		]
 	},
@@ -9,7 +10,7 @@
 	"bs-smartlist-ve-smartlistinspector-count": "Label for attribute \"count\" input - number of results to show",
 	"bs-smartlist-ve-smartlistinspector-ns": "Label for attribute \"ns\" input - namespaces to show results from",
 	"bs-smartlist-ve-smartlistinspector-cat": "Label for attribute \"cat\" input - categories to show results from",
-	"bs-smartlist-ve-smartlistinspector-minor": "Label for attribute \"minor\" input - is minor changes should be shown",
+	"bs-smartlist-ve-smartlistinspector-minor": "Label for attribute \"minor\" input - if minor changes should be shown",
 	"bs-smartlist-ve-smartlistinspector-catmode": "Label for attribute \"catmode\" input - if results containing all or a one of categories given should be shown",
 	"bs-smartlist-ve-smartlistinspector-period": "Label for attribute \"period\" input - what time period should be considered when retrieving changes\n{{Identical|Period}}",
 	"bs-smartlist-ve-smartlistinspector-new": "Label for attribute \"new\" input - boolean - show only new pages",
