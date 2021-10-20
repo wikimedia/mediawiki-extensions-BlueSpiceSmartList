@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Amir1arch",
-			"FarsiNevis"
+			"FarsiNevis",
+			"Jeeputer"
 		]
 	},
 	"bs-smartlist-ve-smartlistinspector-count": "تعداد",
@@ -19,5 +20,18 @@
 	"bs-smartlist-ve-toplistinspector-count": "تعداد",
 	"bs-smartlist-ve-toplistinspector-ns": "فضا(ها)ی نام",
 	"bs-smartlist-ve-toplistinspector-cat": "رده",
-	"bs-smartlist-ve-toplistinspector-period": "دوره"
+	"bs-smartlist-ve-toplistinspector-period": "دوره",
+	"bs-smartlist-ve-smartlistinspector-catmode": "حالت رده",
+	"bs-smartlist-ve-smartlistinspector-new": "تنها نمایش مقاله‌های تازه",
+	"bs-smartlist-ve-smartlistinspector-heading": "سرآیند",
+	"bs-smartlist-ve-smartlistinspector-trim": "پیرایش",
+	"bs-smartlist-ve-smartlistinspector-showtext": "نمایش متن",
+	"bs-smartlist-ve-smartlistinspector-trimtext": "پیرایش متن",
+	"bs-smartlist-ve-smartlistinspector-sort": "مرتب‌سازی بر پایهٔ",
+	"bs-smartlist-ve-smartlistinspector-order": "ترتیب مرتب‌سازی",
+	"bs-smartlist-ve-smartlistinspector-showns": "نمایش فضاهای نام",
+	"bs-smartlist-ve-smartlistinspector-numwithtext": "شماره با متن",
+	"bs-smartlist-ve-smartlistinspector-meta": "متا",
+	"bs-smartlist-ve-smartlistinspector-target": "هدف",
+	"bs-smartlist-ve-newbies-title": "تازه‌کاران"
 }
