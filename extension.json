@@ -40,6 +40,9 @@
 					"callback": "\\BlueSpice\\SmartList\\Panel\\YourEdits::factory",
 					"default": true
 				}
+			},
+			"WidgetRegistry": {
+				"YOUREDITS": "\\BlueSpice\\SmartList\\UserSidebar\\Widget\\YourEdits::factory"
 			}
 		}
 	},
