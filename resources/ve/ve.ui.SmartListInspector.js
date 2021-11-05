@@ -389,7 +389,7 @@ ve.ui.SmartListInspector.prototype.updateMwData = function ( mwData ) {
 	if( this.shownsInput.getValue() === true ) {
 		mwData.attrs.showns = "1";
 	} else {
-		delete( mwData.attrs.showns );
+		mwData.attrs.showns = "0";
 	}
 	if( this.metaInput.getValue() ) {
 		mwData.attrs.meta = this.metaInput.getValue();
