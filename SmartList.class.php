@@ -671,10 +671,10 @@ class SmartList extends BsExtensionMW {
 					);
 				}
 
-				if ( $aArgs['showns'] == true ) {
-					$sDisplayTitle = $oTitle->getFullText();
-				} else {
+				if ( !$aArgs['showns'] ) {
 					$sDisplayTitle = $oTitle->getText();
+				} else {
+					$sDisplayTitle = $oTitle->getFullText();
 				}
 				$sDisplayTitle = BsStringHelper::shorten(
 					$sDisplayTitle,
