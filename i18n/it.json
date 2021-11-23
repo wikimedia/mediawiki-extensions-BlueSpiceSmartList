@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Ajeje Brazorf",
 			"Beta16",
 			"Matteocng",
 			"Stefano"
@@ -15,7 +16,7 @@
 	"bs-smartlist-tag-newbies-desc": "Mostra i nuovi utenti del wiki. L'elenco può essere ristretto ad un certo numero.",
 	"bs-smartlist-tag-toplist-desc": "Mostra le pagine più visitate. Può essere limitato da diversi parametri.",
 	"bs-smartlist-recent-changes": "Ultime modifiche",
-	"bs-smartlist-comment": "Commento: $1",
+	"bs-smartlist-comment": "Commento: $1.",
 	"bs-smartlist-sort-asc": "crescente",
 	"bs-smartlist-sort-desc": "decrescente"
 }

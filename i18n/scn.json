@@ -8,5 +8,10 @@
 	"bs-smartlist-title": "Tìtulu",
 	"bs-smartlist-recent-changes": "Ùrtimi canciamenti",
 	"bs-smartlist-week": "Simana",
-	"bs-smartlist-month": "Misi"
+	"bs-smartlist-month": "Misi",
+	"bs-smartlist-comment": "Cummentu: $1.",
+	"bs-smartlist-mostvisitedpages": "Pàggini cchiù taliati",
+	"bs-smartlist-mosteditedpages": "Pàggini cchiù canciati",
+	"bs-smartlist-mostactiveusers": "Utenti cchiù attivi (pi canciamenti)",
+	"bs-smartlist-lastedits": "Li mè canciamenti"
 }
