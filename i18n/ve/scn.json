@@ -1,0 +1,25 @@
+{
+	"@metadata": {
+		"authors": [
+			"Ajeje Brazorf"
+		]
+	},
+	"bs-smartlist-ve-smartlistinspector-ns": "Namespace",
+	"bs-smartlist-ve-smartlistinspector-cat": "Catigurìa",
+	"bs-smartlist-ve-smartlistinspector-period": "Pirìudu",
+	"bs-smartlist-ve-smartlistinspector-new": "Ammustra sulu li novi vuci",
+	"bs-smartlist-ve-smartlistinspector-heading": "Ntistazzioni",
+	"bs-smartlist-ve-smartlistinspector-showtext": "Ammustra testu",
+	"bs-smartlist-ve-smartlistinspector-showns": "Ammustra namespace",
+	"bs-smartlist-ve-smartlistinspector-numwithtext": "Nùmmiru cu testu",
+	"bs-smartlist-ve-smartlistinspector-meta": "Meta",
+	"bs-smartlist-ve-period-day-label": "Jornu",
+	"bs-smartlist-ve-period-week-label": "Simana",
+	"bs-smartlist-ve-period-month-label": "Misi",
+	"bs-smartlist-ve-sort-title-label": "Tìtulu",
+	"bs-smartlist-ve-toplistinspector-ns": "Namespace",
+	"bs-smartlist-ve-toplistinspector-cat": "Catigurìa",
+	"bs-smartlist-ve-toplistinspector-period": "Pirìudu",
+	"bs-smartlist-ve-mode-recentchanges-label": "Ùrtimi canciamenti",
+	"bs-smartlist-ve-mode-changesofweek-label": "Canciamenti dâ simana"
+}

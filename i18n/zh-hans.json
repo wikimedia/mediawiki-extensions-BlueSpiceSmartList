@@ -3,14 +3,15 @@
 		"authors": [
 			"Liuxinyu970226",
 			"Osnard",
-			"Yfdyh000"
+			"Yfdyh000",
+			"Xiplus"
 		]
 	},
 	"bs-smartlist-desc": "列表显示wiki最近5次更改",
 	"prefs-smartlist": "智能列表",
 	"bs-smartlist-recent-changes": "最近更改",
 	"bs-smartlist-no-entries": "未找到结果。",
-	"bs-smartlist-invalid-namespaces": "指定的{{PLURAL:$1|名字空间}}无效：$2。",
+	"bs-smartlist-invalid-namespaces": "指定的{{PLURAL:$1|命名空间}}无效：$2。",
 	"bs-smartlist-invalid-target": "提供的目标不是一个有效页面标题",
 	"bs-smartlist-comment": "评论：$1。",
 	"bs-smartlist-sort-asc": "升序",

@@ -3,11 +3,12 @@
 		"authors": [
 			"Beta16",
 			"Matteocng",
-			"Stefano"
+			"Stefano",
+			"Ajeje Brazorf"
 		]
 	},
 	"bs-smartlist-recent-changes": "Ultime modifiche",
-	"bs-smartlist-comment": "Commento: $1",
+	"bs-smartlist-comment": "Commento: $1.",
 	"bs-smartlist-sort-asc": "crescente",
 	"bs-smartlist-sort-desc": "decrescente",
 	"bs-smartlist-day": "Giorno",

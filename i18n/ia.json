@@ -1,0 +1,38 @@
+{
+	"@metadata": {
+		"authors": [
+			"McDutchie"
+		]
+	},
+	"bs-smartlist-desc": "Monstra le ultime cinque modificationes del wiki in un lista",
+	"prefs-smartlist": "Lista intelligente",
+	"bs-smartlist-recent-changes": "Modificationes recente",
+	"bs-smartlist-no-entries": "Nulle resultato trovate.",
+	"bs-smartlist-invalid-namespaces": "Le spatio{{PLURAL:$1||s}} de nomines date es invalide: $2.",
+	"bs-smartlist-invalid-target": "Le destination date non es un titulo de pagina valide.",
+	"bs-smartlist-comment": "Commento: $1",
+	"bs-smartlist-sort-asc": "ascendente",
+	"bs-smartlist-sort-desc": "descendente",
+	"bs-smartlist-day": "Die",
+	"bs-smartlist-week": "Septimana",
+	"bs-smartlist-month": "Mense",
+	"bs-smartlist-time": "Hora",
+	"bs-smartlist-title": "Titulo",
+	"bs-smartlist-tag-smartlist-desc": "Monstra listas automaticamente generate de articulos. Le configuration functiona de varie modos e parametros.",
+	"bs-smartlist-tag-smartlist-example-rc": "Modo: Modificationes recente",
+	"bs-smartlist-tag-smartlist-example-whatlinkshere": "Modo: Paginas ligate a iste",
+	"bs-smartlist-tag-newbies-desc": "Monstra le nove usatores del wiki. Le lista pote esser limitate a un certe numero.",
+	"bs-smartlist-tag-toplist-desc": "Monstra le paginas le plus visitate. Pote esser limitate per varie parametros.",
+	"bs-smartlist-mostvisitedpages": "Paginas le plus visitate",
+	"bs-smartlist-mosteditedpages": "Paginas le plus modificate",
+	"bs-smartlist-mostactiveusers": "Usatores le plus active (in numero de modificationes)",
+	"bs-smartlist-lastedits": "Mi modificationes",
+	"bs-smartlist-noedits": "Nulle modification trovate.",
+	"bs-smartlist-mostactiveusersdesc": "Lista del usatores le plus active ordinate per lor modificationes.",
+	"bs-smartlist-mosteditedpagesdesc": "Lista de paginas le plus modificate ordinate per lor modificationes.",
+	"bs-smartlist-mostvisitedpagesdesc": "Lista de paginas le plus visitate ordinate per lor visitas.",
+	"bs-smartlist-lasteditsdesc": "Lista de paginas que tu ha modificate.",
+	"bs-smartlist-hitcounter-missing": "Le extension <a target='blank' href='https://www.mediawiki.org/wiki/Extension:HitCounters'>HitCounters</a> debe esser installate.",
+	"apihelp-bs-smartlist-tasks-description": "Functiones API que forni datos de portlet pro statisticas sur paginas e usatores.",
+	"apihelp-bs-smartlist-tasks-summary": "Functiones API que forni datos de portlet pro statisticas sur paginas e usatores."
+}

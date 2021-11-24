@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Robby"
+			"Robby",
+			"Soued031"
 		]
 	},
 	"bs-smartlist-ve-smartlistinspector-cat": "Kategorie",
@@ -9,7 +10,7 @@
 	"bs-smartlist-ve-smartlistinspector-new": "Nëmmen nei Artikele weisen",
 	"bs-smartlist-ve-smartlistinspector-heading": "Iwwerschrëft",
 	"bs-smartlist-ve-smartlistinspector-showtext": "Text weisen",
-	"bs-smartlist-ve-smartlistinspector-showns": "Nummräim weisen",
+	"bs-smartlist-ve-smartlistinspector-showns": "Nummraim weisen",
 	"bs-smartlist-ve-smartlistinspector-numwithtext": "Zuel mat Text",
 	"bs-smartlist-ve-smartlistinspector-meta": "Meta",
 	"bs-smartlist-ve-smartlistinspector-target": "Zil",
