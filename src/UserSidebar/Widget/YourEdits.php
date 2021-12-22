@@ -42,7 +42,7 @@ class YourEdits extends Widget {
 		$links = [];
 		foreach ( $edits as $edit ) {
 			$link = [
-				'href' => $edit['title']->getFullURL(),
+				'href' => $edit['title']->getLocalURL(),
 				'text' => $edit['displayText'],
 				'title' => $edit['displayText'],
 				'classes' => ' bs-usersidebar-internal '
