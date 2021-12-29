@@ -3,13 +3,15 @@
 		"authors": [
 			"Rachmat.Wahidi",
 			"Rachmat04",
-			"Sonic Speedy"
+			"Sonic Speedy",
+			"Daud I.F. Argana"
 		]
 	},
 	"bs-smartlist-desc": "Menampilkan lima perubahan terakhir wiki dalam daftar",
 	"prefs-smartlist": "Daftar pintar",
 	"bs-smartlist-recent-changes": "Perubahan terbaru",
 	"bs-smartlist-no-entries": "Tidak ada hasil yang ditemukan.",
+	"bs-smartlist-invalid-namespaces": "{{PLURAL:$1|Ruang nama}} yang diberikan tidaklah valid: $2.",
 	"bs-smartlist-invalid-target": "Target yang diberikan bukan judul halaman yang valid",
 	"bs-smartlist-comment": "Komentar: $1.",
 	"bs-smartlist-sort-asc": "Menaik",
@@ -33,6 +35,7 @@
 	"bs-smartlist-mosteditedpagesdesc": "Daftar halaman yang paling banyak diedit diurutkan berdasarkan hasil editnya.",
 	"bs-smartlist-mostvisitedpagesdesc": "Daftar halaman yang paling banyak dilihat diurutkan berdasarkan tampilan mereka.",
 	"bs-smartlist-lasteditsdesc": "Daftar halaman yang telah Anda edit.",
+	"bs-smartlist-hitcounter-missing": "Ekstensi <a target='blank' href='https://www.mediawiki.org/wiki/Extension:HitCounters'>HitCounters</a> harus dipasang.",
 	"apihelp-bs-smartlist-tasks-description": "API berfungsi untuk menyajikan data portlet untuk halaman dan statistik pengguna.",
 	"apihelp-bs-smartlist-tasks-summary": "API berfungsi untuk menyajikan data portlet untuk halaman dan statistik pengguna."
 }
