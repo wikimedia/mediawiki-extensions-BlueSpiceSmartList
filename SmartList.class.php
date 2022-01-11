@@ -913,7 +913,7 @@ class SmartList extends BsExtensionMW {
 			$aTables         = [ 'h' => 'hit_counter', 'p' => 'page' ];
 			$aColumns        = [ 'p.page_title', 'h.page_counter', 'p.page_namespace' ];
 			$aConditions     = [ 'h.page_id = p.page_id' ];
-			$aOptions        = [ 'ORDER BY' => 'p.page_counter DESC' ];
+			$aOptions        = [ 'ORDER BY' => 'h.page_counter DESC' ];
 			$aJoinConditions = [];
 		}
 
