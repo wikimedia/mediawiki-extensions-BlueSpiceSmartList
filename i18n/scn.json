@@ -4,12 +4,13 @@
 			"Ajeje Brazorf"
 		]
 	},
-	"bs-smartlist-day": "Jornu",
-	"bs-smartlist-title": "Tìtulu",
 	"bs-smartlist-recent-changes": "Ùrtimi canciamenti",
+	"bs-smartlist-comment": "Cummentu: $1.",
+	"bs-smartlist-sort-asc": "criscenti",
+	"bs-smartlist-day": "Jornu",
 	"bs-smartlist-week": "Simana",
 	"bs-smartlist-month": "Misi",
-	"bs-smartlist-comment": "Cummentu: $1.",
+	"bs-smartlist-title": "Tìtulu",
 	"bs-smartlist-mostvisitedpages": "Pàggini cchiù taliati",
 	"bs-smartlist-mosteditedpages": "Pàggini cchiù canciati",
 	"bs-smartlist-mostactiveusers": "Utenti cchiù attivi (pi canciamenti)",
