@@ -527,8 +527,6 @@ class SmartList extends BsExtensionMW {
 				$aObjectList[] = $row;
 				$iCount++;
 			}
-			$dbr->freeResult( $res );
-
 		} elseif ( $aArgs['mode'] == 'whatlinkshere' ) {
 			// PW(25.02.2015) TODO:
 			// There could be filters - see Special:Whatlinkshere
@@ -616,9 +614,6 @@ class SmartList extends BsExtensionMW {
 				$aObjectList[] = $row;
 				$iCount++;
 			}
-
-			$dbr->freeResult( $res );
-
 		} else {
 			MediaWikiServices::getInstance()->getHookContainer()->run(
 				'BSSmartListCustomMode',
@@ -779,7 +774,7 @@ class SmartList extends BsExtensionMW {
 		);
 
 		$aEdits = [];
-		if ( $oDbr->numRows( $res ) > 0 ) {
+		if ( $res->numRows() > 0 ) {
 			foreach ( $res as $row ) {
 				$oTitle = Title::newFromID( $row->rev_page );
 				if ( !( $oTitle instanceof Title ) ) {
@@ -836,7 +831,6 @@ class SmartList extends BsExtensionMW {
 			);
 		}
 
-		$oDbr->freeResult( $res );
 		$oParser->getOutput()->setProperty( 'bs-newbies', FormatJson::encode( $aArgs ) );
 		return implode( ', ', $aOut );
 	}
@@ -952,7 +946,7 @@ class SmartList extends BsExtensionMW {
 			$aJoinConditions
 		);
 
-		if ( $oDbr->numRows( $res ) > 0 ) {
+		if ( $res->numRows() > 0 ) {
 			$bCategories = false;
 			if ( !empty( $aCategories ) ) {
 				$bCategories = true;
@@ -1047,11 +1041,9 @@ class SmartList extends BsExtensionMW {
 			}
 			$aList[] = '</ol>';
 
-			$oDbr->freeResult( $res );
 			return "\n" . implode( "\n", $aList );
 		}
 
-		$oDbr->freeResult( $res );
 		return wfMessage( 'bs-smartlist-no-entries' )->plain();
 	}
 
@@ -1088,7 +1080,7 @@ class SmartList extends BsExtensionMW {
 		);
 
 		$aList = [];
-		if ( $oDbr->numRows( $res ) > 0 ) {
+		if ( $res->numRows() > 0 ) {
 			$aList[] = '<ol>';
 
 			foreach ( $res as $row ) {
@@ -1102,7 +1094,6 @@ class SmartList extends BsExtensionMW {
 			$aList[] = '</ol>';
 		}
 
-		$oDbr->freeResult( $res );
 		return implode( "\n", $aList );
 	}
 
@@ -1139,7 +1130,7 @@ class SmartList extends BsExtensionMW {
 		);
 
 		$aList = [];
-		if ( $oDbr->numRows( $res ) > 0 ) {
+		if ( $res->numRows() > 0 ) {
 			$aList[] = '<ol>';
 
 			$i = 1;
@@ -1163,7 +1154,6 @@ class SmartList extends BsExtensionMW {
 			$aList[] = '</ol>';
 		}
 
-		$oDbr->freeResult( $res );
 		return implode( "\n", $aList );
 	}
 
