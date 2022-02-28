@@ -1,8 +1,10 @@
 {
 	"@metadata": {
 		"authors": [
-			"Yupik"
+			"Yupik",
+			"Seipinne"
 		]
 	},
-	"bs-smartlist-recent-changes": "Vorâs nubástusah"
+	"bs-smartlist-recent-changes": "Vorâs nubástusah",
+	"bs-smartlist-month": "Mánuppaje"
 }
