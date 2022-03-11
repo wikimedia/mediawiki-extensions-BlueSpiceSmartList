@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Daud I.F. Argana",
 			"Rachmat.Wahidi",
 			"Rachmat04",
 			"Sonic Speedy"
@@ -34,5 +35,7 @@
 	"bs-smartlist-mostvisitedpagesdesc": "Daftar halaman yang paling banyak dilihat diurutkan berdasarkan tampilan mereka.",
 	"bs-smartlist-lasteditsdesc": "Daftar halaman yang telah Anda edit.",
 	"apihelp-bs-smartlist-tasks-description": "API berfungsi untuk menyajikan data portlet untuk halaman dan statistik pengguna.",
-	"apihelp-bs-smartlist-tasks-summary": "API berfungsi untuk menyajikan data portlet untuk halaman dan statistik pengguna."
+	"apihelp-bs-smartlist-tasks-summary": "API berfungsi untuk menyajikan data portlet untuk halaman dan statistik pengguna.",
+	"bs-smartlist-invalid-namespaces": "{{PLURAL:$1|Ruang nama}} yang diberikan tidaklah valid: $2.",
+	"bs-smartlist-hitcounter-missing": "Ekstensi <a target='blank' href='https://www.mediawiki.org/wiki/Extension:HitCounters'>HitCounters</a> harus dipasang."
 }

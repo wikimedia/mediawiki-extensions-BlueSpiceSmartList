@@ -6,6 +6,7 @@
 			"McDutchie",
 			"MrLeopold",
 			"Osnard",
+			"Rots61",
 			"SPQRobin",
 			"Siebrand",
 			"Sjoerddebruin"
@@ -40,5 +41,6 @@
 	"bs-smartlist-hitcounter-missing": "Extensie <a target='blank' href='https://www.mediawiki.org/wiki/Extension:HitCounters'>HitCounters</a> moet geïnstalleerd zijn.",
 	"apihelp-bs-smartlist-tasks-description": "API-functies om portlet-gegevens te bedienen voor pagina- en gebruikersstatistieken",
 	"bs-smartlist-tag-smartlist-example-rc": "Modus: Recente wijzigingen",
-	"bs-smartlist-tag-smartlist-example-whatlinkshere": "Modus: Verwijzingen naar deze pagina"
+	"bs-smartlist-tag-smartlist-example-whatlinkshere": "Modus: Verwijzingen naar deze pagina",
+	"apihelp-bs-smartlist-tasks-summary": "API-functies om portlet-gegevens te bedienen voor pagina- en gebruikersstatistieken"
 }
