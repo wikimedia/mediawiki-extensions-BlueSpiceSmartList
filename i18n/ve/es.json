@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"DiegoAmbrocio",
 			"Jelou"
 		]
 	},
@@ -30,5 +31,11 @@
 	"bs-smartlist-ve-toplistinspector-cat": "Categoría",
 	"bs-smartlist-ve-toplistinspector-period": "Período",
 	"bs-smartlist-ve-mode-recentchanges-label": "Cambios recientes",
-	"bs-smartlist-ve-mode-changesofweek-label": "Cambios de la semana"
+	"bs-smartlist-ve-mode-changesofweek-label": "Cambios de la semana",
+	"bs-smartlist-ve-smartlistinspector-count": "Cantidad",
+	"bs-smartlist-ve-smartlistinspector-trim": "Recorte",
+	"bs-smartlist-ve-smartlistinspector-trimtext": "Recortar el texto",
+	"bs-smartlist-ve-newbiesinspector-count": "Cantidad",
+	"bs-smartlist-ve-toplistinspector-count": "Cantidad",
+	"bs-smartlist-ve-toplistinspector-portletperiod": "Periodo de Portlet"
 }
