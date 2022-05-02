@@ -6,7 +6,9 @@
 			"Tweety"
 		]
 	},
+	"bs-smartlist-ve-smartlistinspector-count": "ڳاڻيٽو",
 	"bs-smartlist-ve-smartlistinspector-period": "عرصو",
+	"bs-smartlist-ve-smartlistinspector-showtext": "متن ڏيکاريو",
 	"bs-smartlist-ve-smartlistinspector-meta": "ميٽا",
 	"bs-smartlist-ve-period-week-label": "هفتو",
 	"bs-smartlist-ve-period-month-label": "مھينو",
@@ -15,6 +17,5 @@
 	"bs-smartlist-ve-newbies-title": "نوان-ايندڙ",
 	"bs-smartlist-ve-newbiesinspector-count": "ڳڻيو",
 	"bs-smartlist-ve-toplistinspector-count": "ڳڻيو",
-	"bs-smartlist-ve-toplistinspector-period": "عرصو",
-	"bs-smartlist-ve-smartlistinspector-showtext": "متن ڏيکاريو"
+	"bs-smartlist-ve-toplistinspector-period": "عرصو"
 }
