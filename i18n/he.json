@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Amire80",
 			"Guycn2"
 		]
 	},
@@ -32,5 +33,5 @@
 	"bs-smartlist-mosteditedpagesdesc": "רשימה של הדפים הנערכים ביותר, הממוינת לפי מספר העריכות שבהם.",
 	"bs-smartlist-mostvisitedpagesdesc": "רשימה של הדפים הנצפים ביותר, הממוינת לפי מספר הצפיות בהם.",
 	"bs-smartlist-lasteditsdesc": "רשימת הדפים שערכת.",
-	"bs-smartlist-hitcounter-missing": "ההרחבה <a target='blank' href='https://www.mediawiki.org/wiki/Extension:HitCounters'>HitCounters</a> חייבת להיות מותקנת."
+	"bs-smartlist-hitcounter-missing": "ההרחבה <a target='blank' href='https://www.mediawiki.org/wiki/Special:MyLanguage/Extension:HitCounters'>HitCounters</a> חייבת להיות מותקנת."
 }
