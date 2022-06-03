@@ -34,7 +34,7 @@
 	"bs-smartlist-mosteditedpagesdesc": "Список самых редактируемых страниц, отсортированный по количеству правок.",
 	"bs-smartlist-mostvisitedpagesdesc": "Список самых просматриваемых страниц, отсортированный по количеству просмотров.",
 	"bs-smartlist-lasteditsdesc": "Список страниц, которые вы редактировали.",
-	"bs-smartlist-hitcounter-missing": "Должно быть установлено расширение <a target='blank' href='https://www.mediawiki.org/wiki/Extension:HitCounters'>HitCounters</a>.",
+	"bs-smartlist-hitcounter-missing": "Должно быть установлено расширение <a target='blank' href='https://www.mediawiki.org/wiki/Special:MyLanguage/Extension:HitCounters'>HitCounters</a>.",
 	"apihelp-bs-smartlist-tasks-description": "Функции API для обслуживания данных портала для страницы и пользовательской статистики.",
 	"apihelp-bs-smartlist-tasks-summary": "Функции API для обслуживания данных портала для страницы и пользовательской статистики."
 }
