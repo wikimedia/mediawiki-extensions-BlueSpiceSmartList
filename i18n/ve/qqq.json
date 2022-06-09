@@ -3,12 +3,13 @@
 		"authors": [
 			"Dejan Savuljesku <savuljesku@hallowelt.com>",
 			"McDutchie",
-			"Robby"
+			"Robby",
+			"Verdy p"
 		]
 	},
 	"bs-smartlist-ve-smartlist-title": "Title for VisualEditor inspector for bs:smartlist tag",
 	"bs-smartlist-ve-smartlistinspector-count": "Label for attribute \"count\" input - number of results to show",
-	"bs-smartlist-ve-smartlistinspector-ns": "Label for attribute \"ns\" input - namespaces to show results from",
+	"bs-smartlist-ve-smartlistinspector-ns": "Label for attribute \"ns\" input - namespaces to show results from\n{{Identical|Namespace}}",
 	"bs-smartlist-ve-smartlistinspector-cat": "Label for attribute \"cat\" input - categories to show results from",
 	"bs-smartlist-ve-smartlistinspector-minor": "Label for attribute \"minor\" input - if minor changes should be shown",
 	"bs-smartlist-ve-smartlistinspector-catmode": "Label for attribute \"catmode\" input - if results containing all or a one of categories given should be shown",
@@ -34,7 +35,7 @@
 	"bs-smartlist-ve-newbiesinspector-count": "Label for attribute \"count\" input - number of results to show",
 	"bs-smartlist-ve-toplist-title": "Title for VisualEditor inspector for bs:toplist tag",
 	"bs-smartlist-ve-toplistinspector-count": "Label for attribute \"count\" input - number of results to show",
-	"bs-smartlist-ve-toplistinspector-ns": "Label for attribute \"ns\" input - namespaces to show results from",
+	"bs-smartlist-ve-toplistinspector-ns": "Label for attribute \"ns\" input - namespaces to show results from\n{{Identical|Namespace}}",
 	"bs-smartlist-ve-toplistinspector-cat": "Label for attribute \"cat\" input - categories to show results from\n{{Identical|Category}}",
 	"bs-smartlist-ve-toplistinspector-period": "Label for attribute \"period\" input - what time period should be considered when retrieving changes",
 	"bs-smartlist-ve-toplistinspector-portletperiod": "Label for attribute \"portletperiod\" input - numeric - number of days in the past to retrieve changes",
