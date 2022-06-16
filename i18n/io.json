@@ -8,5 +8,6 @@
 	"bs-smartlist-sort-desc": "decensanta",
 	"bs-smartlist-day": "Dio",
 	"bs-smartlist-week": "Semano",
-	"bs-smartlist-month": "Monato"
+	"bs-smartlist-month": "Monato",
+	"bs-smartlist-title": "Titulo"
 }
