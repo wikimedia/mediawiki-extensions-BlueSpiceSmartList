@@ -3,6 +3,7 @@
 		"authors": [
 			"Ajeje Brazorf",
 			"Beta16",
+			"GpieroMW",
 			"Matteocng",
 			"Stefano"
 		]
@@ -18,5 +19,10 @@
 	"bs-smartlist-recent-changes": "Ultime modifiche",
 	"bs-smartlist-comment": "Commento: $1.",
 	"bs-smartlist-sort-asc": "crescente",
-	"bs-smartlist-sort-desc": "decrescente"
+	"bs-smartlist-sort-desc": "decrescente",
+	"bs-smartlist-desc": "Mostra le ultime cinque modifiche del wiki in un elenco",
+	"bs-smartlist-mostvisitedpages": "Pagine più viste",
+	"bs-smartlist-mosteditedpages": "Pagine più modificate",
+	"bs-smartlist-mostactiveusers": "Utenti più attivi (per modifiche)",
+	"bs-smartlist-lastedits": "Le mie modifiche"
 }
