@@ -3,9 +3,9 @@
 		"authors": [
 			"Ajeje Brazorf",
 			"Beta16",
+			"GpieroMW",
 			"Matteocng",
-			"Stefano",
-			"GpieroMW"
+			"Stefano"
 		]
 	},
 	"bs-smartlist-desc": "Mostra le ultime cinque modifiche del wiki in un elenco",
