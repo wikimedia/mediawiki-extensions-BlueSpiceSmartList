@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Duke of Wikipädia",
 			"Eduardo Addad de Oliveira",
 			"Eduardoaddad",
 			"Felipe L. Ewald"
@@ -34,7 +35,7 @@
 	"bs-smartlist-mosteditedpagesdesc": "Lista das páginas mais editadas ordenada pelo número de edições.",
 	"bs-smartlist-mostvisitedpagesdesc": "Lista das páginas mais visitadas ordenada pelo número de visitas.",
 	"bs-smartlist-lasteditsdesc": "Lista de páginas que editou.",
-	"bs-smartlist-hitcounter-missing": "A extensão <a target='blank' href='https://www.mediawiki.org/wiki/Extension:HitCounters'>HitCounters</a> precisa de ser instalada.",
+	"bs-smartlist-hitcounter-missing": "A extensão <a target='blank' href='https://www.mediawiki.org/wiki/Special:MyLanguage/Extension:HitCounters'>HitCounters</a> precisa de ser instalada.",
 	"apihelp-bs-smartlist-tasks-description": "Funções da API para fornecer a <i>portlets</i> dados estatísticos de páginas e utilizadores.",
 	"apihelp-bs-smartlist-tasks-summary": "Funções da API para servir dados de portlet para estatísticas de páginas e usuários."
 }
