@@ -1,7 +1,9 @@
 {
 	"@metadata": {
 		"authors": [
-			"Guycn2"
+			"Guycn2",
+			"Amire80",
+			"דגש"
 		]
 	},
 	"bs-smartlist-desc": "הצגת חמשת השינויים האחרונים של אתר הוויקי ברשימה",
@@ -20,7 +22,7 @@
 	"bs-smartlist-title": "כותרת",
 	"bs-smartlist-tag-smartlist-desc": "הצגת רשימה אוטומטית של ערכים. הגדרה זו עובדת עם כמה מצבים ופרמטרים.",
 	"bs-smartlist-tag-smartlist-example-rc": "מצב: שינויים אחרונים",
-	"bs-smartlist-tag-smartlist-example-whatlinkshere": "מצב: דפים המקשרים לכאן",
+	"bs-smartlist-tag-smartlist-example-whatlinkshere": "מצב: דפים המקושרים לכאן",
 	"bs-smartlist-tag-newbies-desc": "הצגת המשתמשים החדשים באתר. אפשר להגביל את זה למספר מסוים של משתמשים.",
 	"bs-smartlist-tag-toplist-desc": "הצגת הדפים הניצפים ביותר. אפשר להגביל את זה לפי פרמטרים מסוימים.",
 	"bs-smartlist-mostvisitedpages": "הדפים הנצפים ביותר",
