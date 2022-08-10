@@ -50,7 +50,7 @@ class SmartListHandler extends Handler {
 	 */
 	public function handle() {
 		$this->parser->getOutput()->updateCacheExpiry( 0 );
-		$this->parser->getOutput()->setProperty( 'bs-tag-smartlist', 1 );
+		$this->parser->getOutput()->setPageProperty( 'bs-tag-smartlist', 1 );
 
 		if ( !isset( $this->mode ) ) {
 			throw new MWException( 'No mode' );
@@ -63,7 +63,7 @@ class SmartListHandler extends Handler {
 			$this->processedArgs[$arg] = $this->parser->recursivePreprocess( $val );
 		}
 
-		$this->parser->getOutput()->setProperty( 'bs-smartlist', FormatJson::encode( $this->processedArgs ) );
+		$this->parser->getOutput()->setPageProperty( 'bs-smartlist', FormatJson::encode( $this->processedArgs ) );
 		$this->processedArgs['listType'] = $this->mode->getListType();
 		$this->processedArgs['mode'] = $this->mode->getKey();
 
