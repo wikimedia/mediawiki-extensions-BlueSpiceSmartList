@@ -154,7 +154,7 @@ class SmartList extends \BlueSpice\Extension {
 	 */
 	public function onTagSmartList( $sInput, $aArgs, $oParser ) {
 		$oParser->getOutput()->updateCacheExpiry( 0 );
-		$oParser->getOutput()->setProperty( 'bs-tag-smartlist', 1 );
+		$oParser->getOutput()->setPageProperty( 'bs-tag-smartlist', 1 );
 
 		foreach ( $aArgs as $sArg => $sVal ) {
 			// Allow Magic Words (Variables) and Parser Functions as arguments
@@ -300,7 +300,7 @@ class SmartList extends \BlueSpice\Extension {
 			]
 		);
 
-		$oParser->getOutput()->setProperty( 'bs-smartlist', FormatJson::encode( $aArgs ) );
+		$oParser->getOutput()->setPageProperty( 'bs-smartlist', FormatJson::encode( $aArgs ) );
 		return $oSmartListView->execute();
 	}
 
@@ -844,7 +844,7 @@ class SmartList extends \BlueSpice\Extension {
 			$aOut[] = $this->services->getLinkRenderer()->makeKnownLink( $oTitle );
 		}
 
-		$oParser->getOutput()->setProperty( 'bs-newbies', FormatJson::encode( $aArgs ) );
+		$oParser->getOutput()->setPageProperty( 'bs-newbies', FormatJson::encode( $aArgs ) );
 		return implode( ', ', $aOut );
 	}
 
@@ -858,7 +858,7 @@ class SmartList extends \BlueSpice\Extension {
 	public function onTagToplist( $sInput, $aArgs, $oParser ) {
 		$oParser->getOutput()->updateCacheExpiry( 0 );
 
-		$oParser->getOutput()->setProperty( 'bs-toplist', FormatJson::encode( $aArgs ) );
+		$oParser->getOutput()->setPageProperty( 'bs-toplist', FormatJson::encode( $aArgs ) );
 
 		try {
 			$sContent = $this->getToplist( $sInput, $aArgs, $oParser );
