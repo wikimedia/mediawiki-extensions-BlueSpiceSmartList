@@ -44,6 +44,19 @@
 			"WidgetRegistry": {
 				"YOUREDITS": "\\BlueSpice\\SmartList\\UserSidebar\\Widget\\YourEdits::factory"
 			}
+		},
+		"ContentDroplets": {
+			"Droplets": {
+				"smartlist": {
+					"class": "\\BlueSpice\\SmartList\\ContentDroplets\\SmartListDroplet"
+				},
+				"toplist": {
+					"class": "\\BlueSpice\\SmartList\\ContentDroplets\\TopListDroplet"
+				},
+				"newbies": {
+					"class": "\\BlueSpice\\SmartList\\ContentDroplets\\NewbiesDroplet"
+				}
+			}
 		}
 	},
 	"APIModules": {
