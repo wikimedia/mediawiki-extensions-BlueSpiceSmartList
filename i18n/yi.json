@@ -1,8 +1,10 @@
 {
 	"@metadata": {
 		"authors": [
-			"פוילישער"
+			"פוילישער",
+			"Pacha Tchernof"
 		]
 	},
-	"bs-smartlist-recent-changes": "לעצטע ענדערונגען"
+	"bs-smartlist-recent-changes": "לעצטע ענדערונגען",
+	"bs-smartlist-title": "טיטל"
 }
