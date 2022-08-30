@@ -38,6 +38,14 @@ use MediaWiki\MediaWikiServices;
  * @package BlueSpiceSmartList
  */
 class SmartList extends BsExtensionMW {
+
+	/** @var MediaWikiServices */
+	private $services = null;
+
+	public function __construct() {
+		$this->services = MediaWikiServices::getInstance();
+	}
+
 	/**
 	 * Initialization of ShoutBox extension
 	 */
@@ -319,7 +327,7 @@ class SmartList extends BsExtensionMW {
 		 */
 		$aObjectList = [];
 		$aNamespaceIds = [];
-		$permManager = MediaWikiServices::getInstance()->getPermissionManager();
+		$permManager = $this->services->getPermissionManager();
 
 		$oErrorListView = new ViewTagErrorList( $this );
 		$oValidationResult = BsValidator::isValid(
@@ -615,7 +623,7 @@ class SmartList extends BsExtensionMW {
 				$iCount++;
 			}
 		} else {
-			MediaWikiServices::getInstance()->getHookContainer()->run(
+			$this->services->getHookContainer()->run(
 				'BSSmartListCustomMode',
 				[
 					&$aObjectList,
@@ -683,7 +691,7 @@ class SmartList extends BsExtensionMW {
 					'META' => $sMeta,
 					'TEXT' => $sText
 				];
-				MediaWikiServices::getInstance()->getHookContainer()->run(
+				$this->services->getHookContainer()->run(
 					'BSSmartListBeforeEntryViewAddData',
 					[
 						&$aData,
@@ -725,7 +733,7 @@ class SmartList extends BsExtensionMW {
 			$sHtml = '';
 			$oTitle = $aEdit['title'];
 			$sHtml = $aEdit['displayText'];
-			$sLink = MediaWikiServices::getInstance()->getLinkRenderer()->makeLink(
+			$sLink = $this->services->getLinkRenderer()->makeLink(
 				$oTitle,
 				new HtmlArmor( $sHtml )
 			);
@@ -826,9 +834,7 @@ class SmartList extends BsExtensionMW {
 			$oUser = User::newFromId( $row->user_id );
 			$oTitle = Title::makeTitle( NS_USER, $oUser->getName() );
 
-			$aOut[] = MediaWikiServices::getInstance()->getLinkRenderer()->makeKnownLink(
-				$oTitle
-			);
+			$aOut[] = $this->services->getLinkRenderer()->makeKnownLink( $oTitle );
 		}
 
 		$oParser->getOutput()->setProperty( 'bs-newbies', FormatJson::encode( $aArgs ) );
@@ -961,7 +967,7 @@ class SmartList extends BsExtensionMW {
 			$aList = [];
 			$aInList = [];
 			$iCurrCount = 0;
-			$permManager = MediaWikiServices::getInstance()->getPermissionManager();
+			$permManager = $this->services->getPermissionManager();
 			if ( $bAlltime === false ) {
 				foreach ( $res as $row ) {
 					if ( $iCurrCount === $iCount ) {
@@ -991,9 +997,7 @@ class SmartList extends BsExtensionMW {
 						continue;
 					}
 					$aInList[] = $oTitle->getPrefixedText();
-					$sLink = MediaWikiServices::getInstance()->getLinkRenderer()->makeLink(
-						$oTitle
-					);
+					$sLink = $this->services->getLinkRenderer()->makeLink( $oTitle );
 					$aList['<li>' . $sLink . ' (' . $row->page_counter . ')</li>'] = (int)$row->page_counter;
 					$iCurrCount++;
 				}
@@ -1032,9 +1036,7 @@ class SmartList extends BsExtensionMW {
 					}
 					$aInList[] = $oTitle->getPrefixedText();
 
-					$sLink = MediaWikiServices::getInstance()->getLinkRenderer()->makeLink(
-						$oTitle
-					);
+					$sLink = $this->services->getLinkRenderer()->makeLink( $oTitle );
 					$aList[] = '<li>' . $sLink . ' (' . $row->page_counter . ')</li>';
 					$iCurrCount++;
 				}
@@ -1085,9 +1087,7 @@ class SmartList extends BsExtensionMW {
 
 			foreach ( $res as $row ) {
 				$oTitle = Title::newFromID( $row->rev_page );
-				$sLink = MediaWikiServices::getInstance()->getLinkRenderer()->makeLink(
-					$oTitle
-				);
+				$sLink = $this->services->getLinkRenderer()->makeLink( $oTitle );
 				$aList[] = '<li>' . $sLink . ' (' . $row->page_counter . ')</li>';
 			}
 
@@ -1114,7 +1114,7 @@ class SmartList extends BsExtensionMW {
 			$this->getTimestampForQuery( $aConditions, $iTime );
 		}
 
-		$query = $services->getRevisionStore()->getQueryInfo();
+		$query = $this->services->getRevisionStore()->getQueryInfo();
 		$query['fields'][] = 'COUNT(actor_rev_user.actor_name) as edit_count';
 		$options = [
 			'GROUP BY' => 'rev_user',
@@ -1134,19 +1134,18 @@ class SmartList extends BsExtensionMW {
 			$aList[] = '<ol>';
 
 			$i = 1;
+			$userNameUtils = $this->services->getUserNameUtils();
 			foreach ( $res as $row ) {
 				if ( $i > $iCount ) {
 					break;
 				}
 				$oUser = User::newFromId( $row->rev_user );
-				if ( $services->getUserNameUtils()->isIP( $oUser->getName() ) ) {
+				if ( $userNameUtils->isIP( $oUser->getName() ) ) {
 					continue;
 				}
 
 				$oTitle = Title::makeTitle( NS_USER, $oUser->getName() );
-				$sLink = $services->getLinkRenderer()->makeLink(
-					$oTitle
-				);
+				$sLink = $this->services->getLinkRenderer()->makeLink( $oTitle );
 				$aList[] = '<li>' . $sLink . ' (' . $row->edit_count . ')</li>';
 				$i++;
 			}
