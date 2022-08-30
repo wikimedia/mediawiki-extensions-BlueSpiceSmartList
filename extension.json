@@ -29,7 +29,8 @@
 			"TagRegistry": {
 				"newbies": "BlueSpice\\SmartList\\Tag\\Newbies",
 				"toplist": "BlueSpice\\SmartList\\Tag\\Toplist",
-				"smartlist": "BlueSpice\\SmartList\\Tag\\SmartList"
+				"smartlist": "BlueSpice\\SmartList\\Tag\\SmartList",
+				"userlist": "BlueSpice\\SmartList\\Tag\\Userlist"
 			}
 		},
 		"VisualEditor": {
@@ -60,6 +61,9 @@
 				},
 				"newbies": {
 					"class": "\\BlueSpice\\SmartList\\ContentDroplets\\NewbiesDroplet"
+				},
+				"userlist": {
+					"class": "\\BlueSpice\\SmartList\\ContentDroplets\\UserlistDroplet"
 				}
 			}
 		},
@@ -80,6 +84,10 @@
 				"newbies": {
 					"class": "BlueSpice\\SmartList\\Mode\\NewbiesMode",
 					"services": [ "DBLoadBalancer", "UserFactory", "TitleFactory" ]
+				},
+				"userlist": {
+					"class": "BlueSpice\\SmartList\\Mode\\UserlistMode",
+					"services": [ "TitleFactory"]
 				}
 			}
 		}
@@ -174,6 +182,26 @@
 			],
 			"dependencies": [
 				"ext.visualEditor.mwcore"
+			]
+		},
+		"ext.bluespice.smartList.userlist.visualEditor": {
+			"scripts": [
+				"nodes/bs.smartlist.ce.UserListNode.js",
+				"nodes/bs.smartlist.dm.UserListNode.js",
+				"nodes/bs.smartlist.ui.UserListInspector.js",
+				"nodes/bs.smartlist.ui.UserListInspectorTool.js"
+			],
+			"styles": [
+				"stylesheets/bs.smartlist.droplets.userlist.css"
+			],
+			"messages": [
+				"bs-smartlist-ve-userlist-title",
+				"bs-smartlist-ve-userlistinspector-groups",
+				"bs-smartlist-ve-userlistinspector-limit"
+			],
+			"dependencies": [
+				"ext.visualEditor.mwcore",
+				"ext.oOJSPlus.widgets"
 			]
 		}
 	},
