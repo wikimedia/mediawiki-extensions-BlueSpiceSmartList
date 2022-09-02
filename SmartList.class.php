@@ -838,8 +838,9 @@ class SmartList extends \BlueSpice\Extension {
 		);
 
 		$aOut = [];
+		$userFactory = $this->services->getUserFactory();
 		foreach ( $res as $row ) {
-			$oUser = User::newFromId( $row->user_id );
+			$oUser = $userFactory->newFromId( $row->user_id );
 			$oTitle = Title::makeTitle( NS_USER, $oUser->getName() );
 
 			$aOut[] = $this->services->getLinkRenderer()->makeKnownLink( $oTitle );
@@ -1145,12 +1146,13 @@ class SmartList extends \BlueSpice\Extension {
 			$aList[] = '<ol>';
 
 			$i = 1;
+			$userFactory = $this->services->getUserFactory();
 			$userNameUtils = $this->services->getUserNameUtils();
 			foreach ( $res as $row ) {
 				if ( $i > $iCount ) {
 					break;
 				}
-				$oUser = User::newFromId( $row->rev_user );
+				$oUser = $userFactory->newFromId( $row->rev_user );
 				if ( $userNameUtils->isIP( $oUser->getName() ) ) {
 					continue;
 				}
