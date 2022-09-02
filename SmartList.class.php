@@ -267,7 +267,6 @@ class SmartList extends BsExtensionMW {
 		$oDbr = wfGetDB( DB_REPLICA );
 		$iCount = BsCore::sanitize( $iCount, 10, BsPARAMTYPE::INT );
 		$iTime = BsCore::sanitize( $iTime, 0, BsPARAMTYPE::INT );
-		$services = MediaWikiServices::getInstance();
 
 		$aConditions = [];
 		if ( $iTime !== 0 ) {
@@ -294,12 +293,13 @@ class SmartList extends BsExtensionMW {
 			$aList[] = '<ol>';
 
 			$i = 1;
+			$userFactory = $this->services->getUserFactory();
 			$userNameUtils = $this->services->getUserNameUtils();
 			foreach ( $res as $row ) {
 				if ( $i > $iCount ) {
 					break;
 				}
-				$oUser = User::newFromId( $row->rev_user );
+				$oUser = $userFactory->newFromId( $row->rev_user );
 				if ( $userNameUtils->isIP( $oUser->getName() ) ) {
 					continue;
 				}
