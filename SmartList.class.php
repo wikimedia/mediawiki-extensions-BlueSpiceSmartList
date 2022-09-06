@@ -37,12 +37,18 @@ use MediaWiki\MediaWikiServices;
  * Base class for SmartList extension
  * @package BlueSpiceSmartList
  */
-class SmartList extends BsExtensionMW {
+class SmartList extends \BlueSpice\Extension {
 
 	/** @var MediaWikiServices */
 	private $services = null;
 
-	public function __construct() {
+	/**
+	 * @param array $definition
+	 * @param IContextSource $context
+	 * @param Config $config
+	 */
+	public function __construct( $definition, $context, $config ) {
+		parent::__construct( $definition, $context, $config );
 		$this->services = MediaWikiServices::getInstance();
 	}
 
