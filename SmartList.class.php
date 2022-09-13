@@ -39,13 +39,6 @@ use MediaWiki\MediaWikiServices;
  */
 class SmartList extends BsExtensionMW {
 
-	/** @var MediaWikiServices */
-	private $services = null;
-
-	public function __construct() {
-		$this->services = MediaWikiServices::getInstance();
-	}
-
 	/**
 	 * Initialization of ShoutBox extension
 	 */
