@@ -39,19 +39,6 @@ use MediaWiki\MediaWikiServices;
  */
 class SmartList extends \BlueSpice\Extension {
 
-	/** @var MediaWikiServices */
-	private $services = null;
-
-	/**
-	 * @param array $definition
-	 * @param IContextSource $context
-	 * @param Config $config
-	 */
-	public function __construct( $definition, $context, $config ) {
-		parent::__construct( $definition, $context, $config );
-		$this->services = MediaWikiServices::getInstance();
-	}
-
 	/**
 	 * Initialization of ShoutBox extension
 	 */
