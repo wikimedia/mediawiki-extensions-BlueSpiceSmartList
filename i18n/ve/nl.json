@@ -37,5 +37,7 @@
 	"bs-smartlist-ve-smartlistinspector-heading": "Kopje",
 	"bs-smartlist-ve-smartlistinspector-trim": "Trim",
 	"bs-smartlist-ve-smartlistinspector-showtext": "Toon tekst",
-	"bs-smartlist-ve-smartlistinspector-trimtext": "Trim tekst"
+	"bs-smartlist-ve-smartlistinspector-trimtext": "Trim tekst",
+	"bs-smartlist-ve-smartlist-title": "SlimmeLijst",
+	"bs-smartlist-ve-smartlistinspector-numwithtext": "Getal met tekst"
 }
