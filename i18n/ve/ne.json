@@ -1,0 +1,30 @@
+{
+	"@metadata": {
+		"authors": [
+			"बडा काजी"
+		]
+	},
+	"bs-smartlist-ve-smartlist-title": "स्मार्टसूची",
+	"bs-smartlist-ve-smartlistinspector-count": "गणना",
+	"bs-smartlist-ve-smartlistinspector-ns": "नामपद(हरू)",
+	"bs-smartlist-ve-smartlistinspector-cat": "श्रेणी",
+	"bs-smartlist-ve-smartlistinspector-minor": "सानो देखाउनुहोस्",
+	"bs-smartlist-ve-smartlistinspector-period": "अवधि",
+	"bs-smartlist-ve-smartlistinspector-new": "नयाँ लेखहरू मात्र देखाउनुहोस्",
+	"bs-smartlist-ve-smartlistinspector-heading": "शीर्षक",
+	"bs-smartlist-ve-smartlistinspector-showtext": "पाठ देखाउनुहोस्",
+	"bs-smartlist-ve-smartlistinspector-meta": "मेटा",
+	"bs-smartlist-ve-period-day-label": "दिन",
+	"bs-smartlist-ve-period-week-label": "हप्ता",
+	"bs-smartlist-ve-period-month-label": "महिना",
+	"bs-smartlist-ve-sort-time-label": "समय",
+	"bs-smartlist-ve-sort-title-label": "शीर्षक",
+	"bs-smartlist-ve-newbies-title": "नवजातहरू",
+	"bs-smartlist-ve-newbiesinspector-count": "गणना",
+	"bs-smartlist-ve-toplistinspector-count": "गणना",
+	"bs-smartlist-ve-toplistinspector-ns": "नामपद(हरू)",
+	"bs-smartlist-ve-toplistinspector-cat": "श्रेणी",
+	"bs-smartlist-ve-toplistinspector-period": "अवधि",
+	"bs-smartlist-ve-mode-recentchanges-label": "नयाँ परिवर्तनहरू",
+	"bs-smartlist-ve-mode-changesofweek-label": "साताको परिवर्तन"
+}
