@@ -6,6 +6,7 @@
 			"Romaine"
 		]
 	},
+	"bs-smartlist-ve-smartlist-title": "SlimmeLijst",
 	"bs-smartlist-ve-smartlistinspector-count": "Aantal",
 	"bs-smartlist-ve-smartlistinspector-ns": "Naamruimte(n)",
 	"bs-smartlist-ve-smartlistinspector-cat": "Categorie",
@@ -20,6 +21,7 @@
 	"bs-smartlist-ve-smartlistinspector-sort": "Sorteren op",
 	"bs-smartlist-ve-smartlistinspector-order": "Sorteervolgorde",
 	"bs-smartlist-ve-smartlistinspector-showns": "Toon naamruimten",
+	"bs-smartlist-ve-smartlistinspector-numwithtext": "Getal met tekst",
 	"bs-smartlist-ve-smartlistinspector-meta": "Meta",
 	"bs-smartlist-ve-smartlistinspector-target": "Doel",
 	"bs-smartlist-ve-smartlistinspector-excludens": "Uit te sluiten naamruimte(n)",
