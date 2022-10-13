@@ -6,5 +6,6 @@
 	},
 	"bs-smartlist-title": "Naslov",
 	"bs-smartlist-month": "Mesec",
-	"bs-smartlist-day": "Dan"
+	"bs-smartlist-day": "Dan",
+	"bs-smartlist-time": "Čas"
 }
