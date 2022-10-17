@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Amire80",
 			"Erelon",
 			"Steeve815",
 			"YaronSh"
@@ -24,5 +25,20 @@
 	"bs-smartlist-ve-toplistinspector-cat": "קטגוריה",
 	"bs-smartlist-ve-toplistinspector-period": "משך",
 	"bs-smartlist-ve-mode-recentchanges-label": "שינויים אחרונים",
-	"bs-smartlist-ve-mode-changesofweek-label": "שינויי השבוע"
+	"bs-smartlist-ve-mode-changesofweek-label": "שינויי השבוע",
+	"bs-smartlist-ve-smartlist-title": "רשימה חכמה",
+	"bs-smartlist-ve-smartlistinspector-count": "מספר",
+	"bs-smartlist-ve-smartlistinspector-heading": "כותרת",
+	"bs-smartlist-ve-smartlistinspector-trim": "קיצוץ",
+	"bs-smartlist-ve-smartlistinspector-showtext": "הצגת טקסט",
+	"bs-smartlist-ve-smartlistinspector-trimtext": "קיצוץ טקסט",
+	"bs-smartlist-ve-smartlistinspector-sort": "מיון לפי",
+	"bs-smartlist-ve-smartlistinspector-order": "סדר מיון",
+	"bs-smartlist-ve-smartlistinspector-showns": "הצגת מרחבי שם",
+	"bs-smartlist-ve-smartlistinspector-excludens": "לא לכלול מרחבי שם",
+	"bs-smartlist-ve-newbiesinspector-count": "מספר",
+	"bs-smartlist-ve-toplist-title": "רשימת מובילים",
+	"bs-smartlist-ve-toplistinspector-count": "מספר",
+	"bs-smartlist-ve-toplistinspector-ns": "מרחב(י) שם",
+	"bs-smartlist-ve-toplistinspector-portletperiod": "משך החלונית"
 }
