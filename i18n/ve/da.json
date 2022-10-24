@@ -18,5 +18,6 @@
 	"bs-smartlist-ve-sort-title-label": "Titel",
 	"bs-smartlist-ve-newbies-title": "Nybegyndere",
 	"bs-smartlist-ve-toplistinspector-ns": "Navnerum",
-	"bs-smartlist-ve-toplistinspector-cat": "Kategori"
+	"bs-smartlist-ve-toplistinspector-cat": "Kategori",
+	"bs-smartlist-ve-smartlistinspector-excludens": "Ekskluder navnerum"
 }
