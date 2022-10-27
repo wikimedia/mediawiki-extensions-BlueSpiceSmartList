@@ -3,6 +3,7 @@
 		"authors": [
 			"Ajeje Brazorf",
 			"Beta16",
+			"GpieroMW",
 			"Stefano"
 		]
 	},
@@ -20,5 +21,6 @@
 	"bs-smartlist-ve-toplistinspector-cat": "Categoria",
 	"bs-smartlist-ve-mode-recentchanges-label": "Ultime modifiche",
 	"bs-smartlist-ve-toplistinspector-period": "Periodo",
-	"bs-smartlist-ve-smartlistinspector-count": "Conteggio"
+	"bs-smartlist-ve-smartlistinspector-count": "Conteggio",
+	"bs-smartlist-ve-sort-time-label": "Ora"
 }
