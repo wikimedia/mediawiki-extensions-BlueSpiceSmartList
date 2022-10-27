@@ -28,5 +28,7 @@
 	"bs-smartlist-no-entries": "Nessun risultato trovato.",
 	"bs-smartlist-mostactiveusersdesc": "Elenco degli utenti più attivi ordinati in base alle loro modifiche.",
 	"bs-smartlist-mosteditedpagesdesc": "Elenco delle pagine più modificate ordinate in base alle modifiche.",
-	"bs-smartlist-mostvisitedpagesdesc": "Elenco delle pagine più visualizzate ordinate in base alle visualizzazioni."
+	"bs-smartlist-mostvisitedpagesdesc": "Elenco delle pagine più visualizzate ordinate in base alle visualizzazioni.",
+	"bs-smartlist-noedits": "Nessuna modifica trovata.",
+	"bs-smartlist-lasteditsdesc": "Elenco di pagine che hai modificato."
 }
