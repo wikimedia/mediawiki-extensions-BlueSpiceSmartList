@@ -25,6 +25,11 @@
 					"className": "SmartList",
 					"extPath": "/BlueSpiceSmartList"
 				}
+			},
+			"TagRegistry": {
+				"newbies": "BlueSpice\\SmartList\\Tag\\Newbies",
+				"toplist": "BlueSpice\\SmartList\\Tag\\Toplist",
+				"smartlist": "BlueSpice\\SmartList\\Tag\\SmartList"
 			}
 		},
 		"VisualEditor": {
@@ -57,11 +62,34 @@
 					"class": "\\BlueSpice\\SmartList\\ContentDroplets\\NewbiesDroplet"
 				}
 			}
+		},
+		"BlueSpiceSmartList": {
+			"ModeRegistry": {
+				"whatlinkshere": {
+					"class": "BlueSpice\\SmartList\\Mode\\WhatLinksHereMode",
+					"services": [ "PermissionManager", "DBLoadBalancer", "TitleFactory" ]
+				},
+				"recentchanges": {
+					"class": "BlueSpice\\SmartList\\Mode\\RecentChangesMode",
+					"services": [ "PermissionManager", "DBLoadBalancer", "TitleFactory" ]
+				},
+				"toplist": {
+					"class": "BlueSpice\\SmartList\\Mode\\ToplistMode",
+					"services": [ "PermissionManager", "DBLoadBalancer", "TitleFactory" ]
+				},
+				"newbies": {
+					"class": "BlueSpice\\SmartList\\Mode\\NewbiesMode",
+					"services": [ "DBLoadBalancer", "UserFactory", "TitleFactory" ]
+				}
+			}
 		}
 	},
 	"APIModules": {
 		"bs-smartlist-tasks": "BSApiTasksSmartList"
 	},
+	"ServiceWiringFiles": [
+		"includes/ServiceWiring.php"
+	],
 	"MessagesDirs": {
 		"BlueSpiceSmartList": [
 			"i18n", "i18n/ve"
@@ -92,7 +120,6 @@
 				"bs-smartlist-ve-smartlistinspector-minor",
 				"bs-smartlist-ve-smartlistinspector-catmode",
 				"bs-smartlist-ve-smartlistinspector-period",
-				"bs-smartlist-ve-smartlistinspector-mode",
 				"bs-smartlist-ve-smartlistinspector-new",
 				"bs-smartlist-ve-smartlistinspector-heading",
 				"bs-smartlist-ve-smartlistinspector-trim",

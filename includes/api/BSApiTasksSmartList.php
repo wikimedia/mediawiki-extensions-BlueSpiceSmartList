@@ -1,4 +1,9 @@
 <?php
+
+use BlueSpice\SmartList\ListRenderer;
+use BlueSpice\SmartList\Parser\DerivativeAPIRequestWrapper;
+use MediaWiki\MediaWikiServices;
+
 /**
  * Provides the smartlist api for BlueSpice.
  *
@@ -154,18 +159,26 @@ class BSApiTasksSmartList extends BSApiTasksBase {
 			? $oTaskData->period
 			: 'alltime';
 
+		$services = MediaWikiServices::getInstance();
+		$args['count'] = $iCount;
+		$args['portletperiod' ] = $sTime;
+		$args['ns'] = '';
+		$args['period' ] = 'alltime';
+		$context = RequestContext::getMain();
+
 		try {
-			$sContent =
-				$this->services->getService( 'BSExtensionFactory' )
-				->getExtension( 'BlueSpiceSmartList' )
-				->getToplist(
-					'',
-					[
-						'count' => $iCount,
-						'portletperiod' => $sTime
-					],
-					null
-				);
+			$factory = $services->getService( 'BlueSpiceSmartList.SmartlistMode' );
+			$mode = $factory->createMode( 'toplist' );
+			$content = $mode->getList( $args, $context );
+			$parser = new DerivativeAPIRequestWrapper( $this->getRequest() );
+			$hookContainer = $services->getHookContainer();
+			$listRenderer = new ListRenderer(
+				$parser,
+				PageProps::getInstance(),
+				$services->getTitleFactory(),
+				$hookContainer
+			);
+			$sContent = $listRenderer->render( $content, $args );
 			$oReturn->success = true;
 		} catch ( Exception $e ) {
 			$oErrorListView = new ViewTagErrorList();
