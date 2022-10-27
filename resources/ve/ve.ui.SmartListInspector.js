@@ -278,7 +278,9 @@ ve.ui.SmartListInspector.prototype.getSetupProcess = function ( data ) {
 			if( attributes.numwithtext ) {
 				this.numwithtextInput.setValue( attributes.numwithtext );
 			}
-			this.metaInput.setValue( attributes.meta || '' );
+			if( attributes.meta === 1 || attributes.meta === '1' ) {
+				this.metaInput.setValue( true );
+			}
 			this.targetInput.setValue( attributes.target || '' );
 			this.excludensInput.setValue( attributes.excludens || '' );
 
@@ -391,8 +393,8 @@ ve.ui.SmartListInspector.prototype.updateMwData = function ( mwData ) {
 	} else {
 		mwData.attrs.showns = "0";
 	}
-	if( this.metaInput.getValue() ) {
-		mwData.attrs.meta = this.metaInput.getValue();
+	if( this.metaInput.getValue() === true ) {
+		mwData.attrs.meta = "1";
 	} else {
 		delete( mwData.attrs.meta );
 	}

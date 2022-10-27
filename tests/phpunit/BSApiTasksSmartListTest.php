@@ -59,23 +59,6 @@ class BSApiTasksSmartListTest extends BSApiTasksTestBase {
 
 	/**
 	 *
-	 * @covers \BSApiTasksSmartList::task_gettMostVisitedPages
-	 * @return array
-	 */
-	public function testGetMostVisitedPages() {
-		$data = $this->executeTask(
-		  'getMostVisitedPages', [
-			'portletConfig' => [ json_encode( [] ) ]
-		  ]
-		);
-
-		$this->assertTrue( $data->success );
-
-		return $data;
-	}
-
-	/**
-	 *
 	 * @covers \BSApiTasksSmartList::task_getYourEditsPortlet
 	 * @return array
 	 */
