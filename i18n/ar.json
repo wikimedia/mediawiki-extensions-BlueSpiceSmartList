@@ -33,7 +33,7 @@
 	"bs-smartlist-mosteditedpagesdesc": "قائمة أكثر الصفحات تعديلا مرتبة حسب تعديلاتها.",
 	"bs-smartlist-mostvisitedpagesdesc": "قائمة أكثر الصفحات مشاهدة مرتبة حسب وجهات مشاهداتها.",
 	"bs-smartlist-lasteditsdesc": "قائمة الصفحات التي قمت بتحريرها.",
-	"bs-smartlist-hitcounter-missing": "يجب تثبيت الإضافة <a target='blank' href='https://www.mediawiki.org/wiki/Extension:HitCounters'>HitCounters</a>.",
+	"bs-smartlist-hitcounter-missing": "يجب تثبيت ملحق <a target='blank' href='https://www.mediawiki.org/wiki/Special:MyLanguage/Extension:HitCounters'>HitCounters</a> .",
 	"apihelp-bs-smartlist-tasks-description": "وظائف API لعرض بيانات المدخل لإحصاءات الصفحات والمستخدم.",
 	"apihelp-bs-smartlist-tasks-summary": "وظائف API لعرض بيانات المدخل لإحصاءات الصفحات والمستخدم."
 }
