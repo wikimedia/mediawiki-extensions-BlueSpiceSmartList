@@ -26,7 +26,9 @@
 	"bs-smartlist-mosteditedpages": "Pagine più modificate",
 	"bs-smartlist-mostactiveusers": "Utenti più attivi (per modifiche)",
 	"bs-smartlist-lastedits": "Le mie modifiche",
+	"bs-smartlist-noedits": "Nessuna modifica trovata.",
 	"bs-smartlist-mostactiveusersdesc": "Elenco degli utenti più attivi ordinati in base alle loro modifiche.",
 	"bs-smartlist-mosteditedpagesdesc": "Elenco delle pagine più modificate ordinate in base alle modifiche.",
-	"bs-smartlist-mostvisitedpagesdesc": "Elenco delle pagine più visualizzate ordinate in base alle visualizzazioni."
+	"bs-smartlist-mostvisitedpagesdesc": "Elenco delle pagine più visualizzate ordinate in base alle visualizzazioni.",
+	"bs-smartlist-lasteditsdesc": "Elenco di pagine che hai modificato."
 }

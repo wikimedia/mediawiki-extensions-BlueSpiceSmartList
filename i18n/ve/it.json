@@ -3,7 +3,8 @@
 		"authors": [
 			"Ajeje Brazorf",
 			"Beta16",
-			"Stefano"
+			"Stefano",
+			"GpieroMW"
 		]
 	},
 	"bs-smartlist-ve-smartlistinspector-count": "Conteggio",
@@ -16,6 +17,7 @@
 	"bs-smartlist-ve-period-day-label": "Giorno",
 	"bs-smartlist-ve-period-week-label": "Settimana",
 	"bs-smartlist-ve-period-month-label": "Mese",
+	"bs-smartlist-ve-sort-time-label": "Ora",
 	"bs-smartlist-ve-sort-title-label": "Titolo",
 	"bs-smartlist-ve-toplistinspector-ns": "Namespace",
 	"bs-smartlist-ve-toplistinspector-cat": "Categoria",
