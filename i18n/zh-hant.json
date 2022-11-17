@@ -6,7 +6,8 @@
 			"Kly",
 			"LNDDYL",
 			"Liuxinyu970226",
-			"Winston Sung"
+			"Winston Sung",
+			"Willy1018"
 		]
 	},
 	"bs-smartlist-desc": "顯示在清單裡 wiki 的最近 5 次更改",
@@ -37,7 +38,7 @@
 	"bs-smartlist-mosteditedpagesdesc": "依編輯次數所排序最多被編輯頁面的清單。",
 	"bs-smartlist-mostvisitedpagesdesc": "依瀏覽次數所排序最多被瀏覽頁面的清單。",
 	"bs-smartlist-lasteditsdesc": "您所編輯過頁面的清單。",
-	"bs-smartlist-hitcounter-missing": "需安裝擴充功能 <a target='blank' href='https://www.mediawiki.org/wiki/Extension:HitCounters'>HitCounters</a>。",
+	"bs-smartlist-hitcounter-missing": "需安裝擴充功能 <a target='blank' href='https://www.mediawiki.org/wiki/Special:MyLanguage/Extension:HitCounters'></a>。",
 	"apihelp-bs-smartlist-tasks-description": "為頁面與使用者統計狀態提供 portlet 資料的 API 功能。",
 	"apihelp-bs-smartlist-tasks-summary": "為頁面與使用者統計狀態提供 portlet 資料的 API 功能。"
 }
