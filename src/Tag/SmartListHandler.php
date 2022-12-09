@@ -22,6 +22,9 @@ class SmartListHandler extends Handler {
 	/** @var TitleFactory */
 	private $titleFactory = null;
 
+	/** @var HookContainer */
+	private $hookContainer;
+
 	/** @var IMode */
 	private $mode;
 
