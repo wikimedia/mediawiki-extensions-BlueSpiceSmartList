@@ -101,11 +101,14 @@ class RecentChangesMode extends GenericSmartlistMode {
 		$conditions = [];
 
 		switch ( $args['period'] ) {
-			case 'month': $minTimestamp = $dbr->timestamp( time() - 30 * 24 * 60 * 60 );
+			case 'month':
+				$minTimestamp = $dbr->timestamp( time() - 30 * 24 * 60 * 60 );
 				break;
-			case 'week': $minTimestamp = $dbr->timestamp( time() - 7 * 24 * 60 * 60 );
+			case 'week':
+				$minTimestamp = $dbr->timestamp( time() - 7 * 24 * 60 * 60 );
 				break;
-			case 'day': $minTimestamp = $dbr->timestamp( time() - 24 * 60 * 60 );
+			case 'day':
+				$minTimestamp = $dbr->timestamp( time() - 24 * 60 * 60 );
 				break;
 			default:
 				break;
