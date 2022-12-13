@@ -39,7 +39,7 @@ use MediaWiki\MediaWikiServices;
  * Base class for SmartList extension
  * @package BlueSpiceSmartList
  */
-class SmartList extends BsExtensionMW {
+class SmartList extends \BlueSpice\Extension {
 
 	/**
 	 * Initialization of ShoutBox extension
