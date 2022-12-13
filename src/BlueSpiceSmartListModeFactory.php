@@ -5,7 +5,7 @@ namespace BlueSpice\SmartList;
 use BlueSpice\SmartList\Mode\IMode;
 use ExtensionRegistry;
 use MWException;
-use Wikimedia\ObjectFactory;
+use Wikimedia\ObjectFactory\ObjectFactory;
 
 class BlueSpiceSmartListModeFactory {
 
