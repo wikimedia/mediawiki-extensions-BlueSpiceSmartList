@@ -10,8 +10,8 @@
 	"bs-smartlist-ve-smartlistinspector-heading": "Naslov",
 	"bs-smartlist-ve-smartlistinspector-showtext": "Prikaži tekst",
 	"bs-smartlist-ve-smartlistinspector-trimtext": "Skrati tekst",
-	"bs-smartlist-ve-smartlistinspector-sort": "Sortiraj po",
-	"bs-smartlist-ve-smartlistinspector-order": "Redosled sortiranja",
+	"bs-smartlist-ve-smartlistinspector-sort": "Poređaj po",
+	"bs-smartlist-ve-smartlistinspector-order": "Način ređanja",
 	"bs-smartlist-ve-smartlistinspector-showns": "Prikaži imenske prostore",
 	"bs-smartlist-ve-smartlistinspector-numwithtext": "Broj sa tekstom",
 	"bs-smartlist-ve-smartlistinspector-meta": "Meta",
@@ -27,5 +27,7 @@
 	"bs-smartlist-ve-toplistinspector-count": "Broj",
 	"bs-smartlist-ve-toplistinspector-ns": "Imenski prostor(i)",
 	"bs-smartlist-ve-toplistinspector-cat": "Kategorija",
-	"bs-smartlist-ve-toplistinspector-period": "Period"
+	"bs-smartlist-ve-toplistinspector-period": "Period",
+	"bs-smartlist-ve-mode-recentchanges-label": "Nedavne promene",
+	"bs-smartlist-ve-mode-changesofweek-label": "Promene nedelje"
 }
