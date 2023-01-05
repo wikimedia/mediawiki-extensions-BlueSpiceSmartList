@@ -5,11 +5,13 @@
 		]
 	},
 	"bs-smartlist-recent-changes": "Zadnje spremembe",
+	"bs-smartlist-invalid-target": "Podani cilj ni veljaven naslov strani",
 	"bs-smartlist-day": "Dan",
 	"bs-smartlist-month": "Mesec",
 	"bs-smartlist-time": "Čas",
 	"bs-smartlist-title": "Naslov",
 	"bs-smartlist-tag-smartlist-desc": "Prikaže samodejno ustvarjene sezname člankov. Konfiguracija deluje z več načini in parametri.",
+	"bs-smartlist-tag-smartlist-example-rc": "Način: Zadnje spremembe",
 	"bs-smartlist-tag-newbies-desc": "Prikaže nove uporabnike vikija. Seznam je mogoče omejiti na določeno število.",
 	"bs-smartlist-tag-toplist-desc": "Prikaže najbolj obiskane strani. Seznam je mogoče omejiti z več parametri."
 }
