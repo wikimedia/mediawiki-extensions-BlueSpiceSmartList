@@ -4,7 +4,6 @@ namespace BlueSpice\SmartList\ContentDroplets;
 
 use MediaWiki\Extension\ContentDroplets\Droplet\TagDroplet;
 use Message;
-use RawMessage;
 
 class TopListDroplet extends TagDroplet {
 
@@ -12,28 +11,31 @@ class TopListDroplet extends TagDroplet {
 	 * @inheritDoc
 	 */
 	public function getName(): Message {
-		return new RawMessage( 'Toplist' );
+		return Message::newFromKey( 'bs-smartlist-droplet-toplist-name' );
 	}
 
 	/**
 	 * @inheritDoc
 	 */
 	public function getDescription(): Message {
-		return new RawMessage( "Toplist description" );
+		return Message::newFromKey( 'bs-smartlist-droplet-toplist-desc' );
 	}
 
 	/**
 	 * @inheritDoc
 	 */
 	public function getIcon(): string {
-		return 'listNumbered';
+		return 'droplet-toplist';
 	}
 
 	/**
 	 * @inheritDoc
 	 */
-	public function getRLModule(): string {
-		return 'ext.bluespice.smartList.toplist.visualEditor';
+	public function getRLModules(): array {
+		return [
+			'ext.bluespice.smartList.toplist.visualEditor',
+			'ext.bluespice.smartList.dropelts.toplist'
+		];
 	}
 
 	/**
