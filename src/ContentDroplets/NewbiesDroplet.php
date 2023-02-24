@@ -4,7 +4,6 @@ namespace BlueSpice\SmartList\ContentDroplets;
 
 use MediaWiki\Extension\ContentDroplets\Droplet\TagDroplet;
 use Message;
-use RawMessage;
 
 class NewbiesDroplet extends TagDroplet {
 
@@ -12,28 +11,31 @@ class NewbiesDroplet extends TagDroplet {
 	 * @inheritDoc
 	 */
 	public function getName(): Message {
-		return new RawMessage( 'Newbies' );
+		return Message::newFromKey( 'bs-smartlist-droplet-newbies-name' );
 	}
 
 	/**
 	 * @inheritDoc
 	 */
 	public function getDescription(): Message {
-		return new RawMessage( "Newbies description" );
+		return Message::newFromKey( 'bs-smartlist-droplet-newbies-desc' );
 	}
 
 	/**
 	 * @inheritDoc
 	 */
 	public function getIcon(): string {
-		return 'flag';
+		return 'droplet-newbies';
 	}
 
 	/**
 	 * @inheritDoc
 	 */
-	public function getRLModule(): string {
-		return 'ext.bluespice.smartList.newbies.visualEditor';
+	public function getRLModules(): array {
+		return [
+			'ext.bluespice.smartList.newbies.visualEditor',
+			'ext.bluespice.smartList.dropelts.newbies'
+		];
 	}
 
 	/**
