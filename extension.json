@@ -53,8 +53,11 @@
 		},
 		"ContentDroplets": {
 			"Droplets": {
-				"smartlist": {
-					"class":  "\\BlueSpice\\SmartList\\ContentDroplets\\SmartListDroplet"
+				"whatlinkshere": {
+					"class":  "\\BlueSpice\\SmartList\\ContentDroplets\\WhatLinksHereDroplet"
+				},
+				"recent-changes": {
+					"class":  "\\BlueSpice\\SmartList\\ContentDroplets\\RecentChangesDroplet"
 				},
 				"toplist": {
 					"class":  "\\BlueSpice\\SmartList\\ContentDroplets\\TopListDroplet"
@@ -89,6 +92,13 @@
 					"class": "BlueSpice\\SmartList\\Mode\\UserlistMode",
 					"services": [ "TitleFactory"]
 				}
+			}
+		},
+		"MWStakeContentProvisioner": {
+			"ContentManifests": {
+				"DefaultContentProvisioner": [
+					"extensions/BlueSpiceSmartList/data/Content/ContentDropletsTemplates/manifest.json"
+				]
 			}
 		}
 	},
@@ -202,6 +212,28 @@
 			"dependencies": [
 				"ext.visualEditor.mwcore",
 				"ext.oOJSPlus.widgets"
+			]
+		},
+		"ext.bluespice.smartList.droplets.recentchanges": {
+			"scripts": "object/RecentChanges.js",
+			"styles": [
+				"stylesheets/bs.smartlist.droplets.recentchanges.css"
+			]
+		},
+		"ext.bluespice.smartList.droplets.whatlinkshere": {
+			"scripts": "object/WhatLinksHere.js",
+			"styles": [
+				"stylesheets/bs.smartlist.droplets.whatlinkshere.css"
+			]
+		},
+		"ext.bluespice.smartList.dropelts.newbies": {
+			"styles": [
+				"stylesheets/bs.smartlist.droplets.newbies.css"
+			]
+		},
+		"ext.bluespice.smartList.dropelts.toplist": {
+			"styles": [
+				"stylesheets/bs.smartlist.droplets.toplist.css"
 			]
 		}
 	},

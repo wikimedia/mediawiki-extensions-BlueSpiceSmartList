@@ -1,0 +1,3 @@
+<div>
+<bs:smartlist count="{{{count|5}}}" sort="{{{sort|time}}}" showns="{{{showns|0}}}" cat="{{{cat|-}}}" ns="{{{ns|all}}}" target="{{{target|}}}" catmode="{{{catmode|OR}}}" heading="{{{heading|}}}" trim="{{{trim|30}}}" showtext="{{{showtext|false}}}" trimtext="{{{trimtext|50}}}" order="{{{order|DESC}}}" numwithtext="{{{numwithtext|100}}}" excludens="{{{excludens|}}}" meta="{{{meta|false}}}" mode="whatlinkshere"/>
+</div>
