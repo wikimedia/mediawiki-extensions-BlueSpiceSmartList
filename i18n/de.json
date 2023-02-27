@@ -43,5 +43,15 @@
 	"bs-smartlist-ve-userlistinspector-groups": "Gruppen",
 	"bs-smartlist-ve-userlistinspector-limit": "Limit angezeigter Benutzer",
 	"bs-smartlist-ve-userlistinspector-no-users": "Keine Benutzer in der ausgewählten Gruppe. Wähle eine andere Gruppe, um ihre Benutzer aufzulisten",
-	"bs-smartlist-ve-userlistinspector-no-group": "Keine Gruppe ausgewählt. Wähle eine Gruppe, um ihre Benutzer aufzulisten"
+	"bs-smartlist-ve-userlistinspector-no-group": "Keine Gruppe ausgewählt. Wähle eine Gruppe, um ihre Benutzer aufzulisten",
+	"bs-smartlist-droplet-userlist-name": "Mitgliederliste",
+	"bs-smartlist-droplet-userlist-desc": "Mitgliederliste von auswählbaren Gruppen",
+	"bs-smartlist-droplet-newbies-name": "Neue Benutzer",
+	"bs-smartlist-droplet-newbies-desc": "Liste der neuen Benutzer im Wiki",
+	"bs-smartlist-droplet-recent-changes-name": "Letzte Änderungen",
+	"bs-smartlist-droplet-recent-changes-desc": "Liste mit zuletzt geänderten Seiten",
+	"bs-smartlist-droplet-toplist-name": "Meistbesuchte Seiten",
+	"bs-smartlist-droplet-toplist-desc": "Liste der meistbesuchten Seiten",
+	"bs-smartlist-droplet-what-links-here-name": "Verlinkungen auf diese Seite",
+	"bs-smartlist-droplet-what-links-here-desc": "Liste von Seiten, die auf diese Seite verlinken"
 }

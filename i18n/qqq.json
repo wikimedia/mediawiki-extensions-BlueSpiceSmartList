@@ -45,5 +45,15 @@
 	"bs-smartlist-ve-userlistinspector-groups": "Label for input field to set groups",
 	"bs-smartlist-ve-userlistinspector-limit": "Label for input field to set limit to shown results",
 	"bs-smartlist-ve-userlistinspector-no-users": "Label if no users are available in selected group",
-	"bs-smartlist-ve-userlistinspector-no-group": "Label if no group is selected"
+	"bs-smartlist-ve-userlistinspector-no-group": "Label if no group is selected",
+	"bs-smartlist-droplet-userlist-name": "Title of droplet for tag userlist",
+	"bs-smartlist-droplet-userlist-desc": "Description of droplet for tag userlist",
+	"bs-smartlist-droplet-newbies-name": "Title of droplet for tag newbies",
+	"bs-smartlist-droplet-newbies-desc": "Description of droplet for tag newbies",
+	"bs-smartlist-droplet-recent-changes-name": "Title of droplet for template recent changes",
+	"bs-smartlist-droplet-recent-changes-desc": "Description of droplet for template recent changes",
+	"bs-smartlist-droplet-toplist-name": "Title of droplet for tag toplist",
+	"bs-smartlist-droplet-toplist-desc": "Description of droplet for tag toplist",
+	"bs-smartlist-droplet-what-links-here-name": "Title of droplet for template what links here",
+	"bs-smartlist-droplet-what-links-here-desc": "Description of droplet for template what links here"
 }
