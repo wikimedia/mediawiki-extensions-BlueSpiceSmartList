@@ -71,6 +71,17 @@ class ListRenderer {
 			$smartListView->setTemplate( '<div class="bs-smartlist">{LIST}</div>' );
 		}
 
+		if ( empty( $items ) ) {
+			$smartListView->addData( [
+				'HEADING' => !empty( $args['heading'] )
+					? $args['heading']
+					: wfMessage( 'bs-smartlist-recent-changes' )->plain(),
+				'LIST' => wfMessage( 'bs-smartlist-no-entries' )->plain()
+				] );
+
+			return $smartListView->execute();
+		}
+
 		$smartListListView = new ViewBaseElement();
 		$smartListListView->setAutoElement( false );
 		foreach ( $items as $item ) {
