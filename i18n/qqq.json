@@ -40,5 +40,10 @@
 	"bs-smartlist-lasteditsdesc": "Used in [[Special:AdminDashboard]] and [[Special:UserDashboard]], text message for list of pages which you have edited.",
 	"bs-smartlist-hitcounter-missing": "Error and link to extension page when HitCounters is missing. Used on Users Dashboard Widget of SmartList Extension, most visited pages",
 	"apihelp-bs-smartlist-tasks-description": "Help description of API functions offered by SmartList extension.\n{{doc-apihelp-description|bs-smartlist-tasks}}",
-	"apihelp-bs-smartlist-tasks-summary": "Help description of API functions offered by SmartList extension.\n{{doc-apihelp-summary|bs-smartlist-tasks}}"
+	"apihelp-bs-smartlist-tasks-summary": "Help description of API functions offered by SmartList extension.\n{{doc-apihelp-summary|bs-smartlist-tasks}}",
+	"bs-smartlist-ve-userlist-title": "Title for userlist inspector to set groups",
+	"bs-smartlist-ve-userlistinspector-groups": "Label for input field to set groups",
+	"bs-smartlist-ve-userlistinspector-limit": "Label for input field to set limit to shown results",
+	"bs-smartlist-ve-userlistinspector-no-users": "Label if no users are available in selected group",
+	"bs-smartlist-ve-userlistinspector-no-group": "Label if no group is selected"
 }
