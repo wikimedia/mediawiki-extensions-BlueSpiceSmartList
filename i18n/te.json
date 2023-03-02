@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"V Bhavya",
 			"Veeven"
 		]
 	},
@@ -11,5 +12,9 @@
 	"bs-smartlist-month": "నెల",
 	"bs-smartlist-time": "సమయం",
 	"bs-smartlist-title": "శీర్షిక",
-	"bs-smartlist-lastedits": "నా మార్పులు"
+	"bs-smartlist-lastedits": "నా మార్పులు",
+	"bs-smartlist-ve-userlist-title": "వినియోగదారు జాబితా",
+	"bs-smartlist-ve-userlistinspector-groups": "గుంపులు",
+	"bs-smartlist-ve-userlistinspector-limit": "చూపబడిన వినియోగదారుల పరిమితి",
+	"bs-smartlist-ve-userlistinspector-no-group": "సమూహం ఏదీ ఎంచుకోబడలేదు. దాని వినియోగదారులను జాబితా చేయడానికి సమూహాన్ని ఎంచుకోండి"
 }
