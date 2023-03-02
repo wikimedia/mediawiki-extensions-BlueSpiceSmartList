@@ -34,5 +34,10 @@
 	"bs-smartlist-lasteditsdesc": "Lista de paginas que tu ha modificate.",
 	"bs-smartlist-hitcounter-missing": "Le extension <a target='blank' href='https://www.mediawiki.org/wiki/Special:MyLanguage/Extension:HitCounters'>HitCounters</a> debe esser installate.",
 	"apihelp-bs-smartlist-tasks-description": "Functiones API que forni datos de portlet pro statisticas sur paginas e usatores.",
-	"apihelp-bs-smartlist-tasks-summary": "Functiones API que forni datos de portlet pro statisticas sur paginas e usatores."
+	"apihelp-bs-smartlist-tasks-summary": "Functiones API que forni datos de portlet pro statisticas sur paginas e usatores.",
+	"bs-smartlist-ve-userlist-title": "Lista de usatores",
+	"bs-smartlist-ve-userlistinspector-groups": "Gruppos",
+	"bs-smartlist-ve-userlistinspector-limit": "Limite de usatores monstrate",
+	"bs-smartlist-ve-userlistinspector-no-users": "Il non ha usatores in le gruppo seligite. Elige un altere gruppo pro listar su usatores",
+	"bs-smartlist-ve-userlistinspector-no-group": "Necun gruppo seligite. Elige un gruppo pro listar su usatores"
 }

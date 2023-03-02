@@ -3,6 +3,7 @@
 		"authors": [
 			"2nd-player",
 			"Aefgh39622",
+			"MathXplore",
 			"Shirayuki",
 			"つぶあん派"
 		]
@@ -24,5 +25,7 @@
 	"bs-smartlist-mostvisitedpages": "最も閲覧されているページ",
 	"bs-smartlist-mosteditedpages": "最も編集されているページ",
 	"bs-smartlist-lastedits": "自分の編集",
-	"bs-smartlist-noedits": "編集が見つかりません。"
+	"bs-smartlist-noedits": "編集が見つかりません。",
+	"bs-smartlist-ve-userlist-title": "ユーザーリスト",
+	"bs-smartlist-ve-userlistinspector-groups": "グループ"
 }
