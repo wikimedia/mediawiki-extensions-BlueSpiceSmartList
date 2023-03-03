@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"ElangoRamanujam"
+			"ElangoRamanujam",
+			"Sridhar G"
 		]
 	},
 	"bs-smartlist-no-entries": "முடிவுகள் எதுவும் காணப்படவில்லை.",
@@ -14,5 +15,8 @@
 	"bs-smartlist-title": "தலைப்பு",
 	"bs-smartlist-mostvisitedpages": "அதிகம் பார்க்கப்பட்ட பக்கங்கள்",
 	"bs-smartlist-mosteditedpages": "அதிகம் தொகுக்கப்பட்ட பக்கங்கள்",
-	"bs-smartlist-lastedits": "எனது தொகுப்புகள்"
+	"bs-smartlist-lastedits": "எனது தொகுப்புகள்",
+	"bs-smartlist-ve-userlist-title": "பயனர் பட்டியல்",
+	"bs-smartlist-ve-userlistinspector-groups": "குழுக்கள்",
+	"bs-smartlist-ve-userlistinspector-no-users": "நீங்கள் தேர்வு செய்த குழுவில் பயனர்கள் யாரும் இல்லை. வேறு பயனர்களின் பட்டியலைப் பார்வையிட மற்றொரு குழுவினைத் தேர்வு செய்யவும்."
 }
