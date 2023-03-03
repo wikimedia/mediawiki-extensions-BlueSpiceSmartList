@@ -244,7 +244,6 @@ class ToplistMode extends SmartListBaseMode {
 			}
 		}
 
-		$dbr->freeResult( $res );
 		return $objectList;
 	}
 

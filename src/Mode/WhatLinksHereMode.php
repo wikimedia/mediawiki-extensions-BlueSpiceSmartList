@@ -153,7 +153,6 @@ class WhatLinksHereMode extends GenericSmartlistMode {
 			$count++;
 		}
 
-		$dbr->freeResult( $res );
 		return $objectList;
 	}
 

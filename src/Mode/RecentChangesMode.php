@@ -201,7 +201,7 @@ class RecentChangesMode extends GenericSmartlistMode {
 			$objectList[] = $row;
 			$count++;
 		}
-		$dbr->freeResult( $res );
+
 		return $objectList;
 	}
 
