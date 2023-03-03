@@ -45,6 +45,6 @@
 	"bs-smartlist-ve-userlist-title": "Liste d’utilisateurs",
 	"bs-smartlist-ve-userlistinspector-groups": "Groupes",
 	"bs-smartlist-ve-userlistinspector-limit": "Limite d’utilisateurs affichés",
-	"bs-smartlist-ve-userlistinspector-no-users": "Aucun utilisateur dans le groupe sélectionné. Choisir un autre groupe pour lister ses utilisateurs",
-	"bs-smartlist-ve-userlistinspector-no-group": "Aucun groupe sélectionné. Choisissez un groupe pour lister ses utilisateurs"
+	"bs-smartlist-ve-userlistinspector-no-users": "Aucun utilisateur dans le groupe sélectionné. Choisir un autre groupe pour lister ses utilisateurs.",
+	"bs-smartlist-ve-userlistinspector-no-group": "Aucun groupe sélectionné. Choisissez un groupe pour lister ses utilisateurs."
 }

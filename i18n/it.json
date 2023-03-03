@@ -30,5 +30,9 @@
 	"bs-smartlist-mostactiveusersdesc": "Elenco degli utenti più attivi ordinati in base alle loro modifiche.",
 	"bs-smartlist-mosteditedpagesdesc": "Elenco delle pagine più modificate ordinate in base alle modifiche.",
 	"bs-smartlist-mostvisitedpagesdesc": "Elenco delle pagine più visualizzate ordinate in base alle visualizzazioni.",
-	"bs-smartlist-lasteditsdesc": "Elenco di pagine che hai modificato."
+	"bs-smartlist-lasteditsdesc": "Elenco di pagine che hai modificato.",
+	"bs-smartlist-ve-userlist-title": "Elenco degli utenti",
+	"bs-smartlist-ve-userlistinspector-groups": "Gruppi",
+	"bs-smartlist-ve-userlistinspector-limit": "Limite di utenti mostrati",
+	"bs-smartlist-ve-userlistinspector-no-group": "Nessun gruppo selezionato. Scegli un gruppo per elencare i suoi utenti"
 }
