@@ -4,7 +4,8 @@
 			"Duke of Wikipädia",
 			"Eduardo Addad de Oliveira",
 			"Eduardoaddad",
-			"Felipe L. Ewald"
+			"Felipe L. Ewald",
+			"Re demz"
 		]
 	},
 	"bs-smartlist-desc": "Mostra as cinco últimas alterações da wiki numa lista",
@@ -37,5 +38,8 @@
 	"bs-smartlist-lasteditsdesc": "Lista de páginas que editou.",
 	"bs-smartlist-hitcounter-missing": "A extensão <a target='blank' href='https://www.mediawiki.org/wiki/Special:MyLanguage/Extension:HitCounters'>HitCounters</a> precisa de ser instalada.",
 	"apihelp-bs-smartlist-tasks-description": "Funções da API para fornecer a <i>portlets</i> dados estatísticos de páginas e utilizadores.",
-	"apihelp-bs-smartlist-tasks-summary": "Funções da API para servir dados de portlet para estatísticas de páginas e usuários."
+	"apihelp-bs-smartlist-tasks-summary": "Funções da API para servir dados de portlet para estatísticas de páginas e usuários.",
+	"bs-smartlist-ve-userlist-title": "Lista de usuários",
+	"bs-smartlist-ve-userlistinspector-groups": "Grupos",
+	"bs-smartlist-ve-userlistinspector-no-group": "Nenhum grupo selecionado. Escolha um grupo para lista seus usuários"
 }
