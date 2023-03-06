@@ -36,5 +36,10 @@
 	"bs-smartlist-lasteditsdesc": "רשימת הדפים שערכת.",
 	"bs-smartlist-hitcounter-missing": "ההרחבה <a target='blank' href='https://www.mediawiki.org/wiki/Special:MyLanguage/Extension:HitCounters'>HitCounters</a> חייבת להיות מותקנת.",
 	"apihelp-bs-smartlist-tasks-description": "פונקציות API לאספקת נתוני תיבות עבור סטטיסטיקות דף ומשתמשים.",
-	"apihelp-bs-smartlist-tasks-summary": "פונקציות API לשרת נתוני חלונית עבור סטטיסטיקות דף ומשתמשים."
+	"apihelp-bs-smartlist-tasks-summary": "פונקציות API לשרת נתוני חלונית עבור סטטיסטיקות דף ומשתמשים.",
+	"bs-smartlist-ve-userlist-title": "רשימת משתמשים",
+	"bs-smartlist-ve-userlistinspector-groups": "קבוצות",
+	"bs-smartlist-ve-userlistinspector-limit": "מגבלה של המשתמשים המוצגים",
+	"bs-smartlist-ve-userlistinspector-no-users": "אין משתמשים בקבוצה שנבחרה. נא לבחור קבוצה אחרת כדי לקבל רשימה של המשתמשים שלה",
+	"bs-smartlist-ve-userlistinspector-no-group": "לא נבחרה קבוצה. נא לבחור קבוצה אחרת כדי לקבל רשימה של המשתמשים שלה"
 }
