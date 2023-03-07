@@ -7,7 +7,8 @@
 			"Verdy p",
 			"Wladek92",
 			"Wyz",
-			"Yasten"
+			"Yasten",
+			"Lewis2013"
 		]
 	},
 	"bs-smartlist-desc": "Affiche une liste des cinq dernières modifications du wiki",
@@ -40,5 +41,10 @@
 	"bs-smartlist-lasteditsdesc": "Liste des pages que vous avez modifiées.",
 	"bs-smartlist-hitcounter-missing": "L’extension <a target=\"blank\" href=\"https://www.mediawiki.org/wiki/Special:MyLanguage/Extension:HitCounters\">HitCounters</a> doit être installée.",
 	"apihelp-bs-smartlist-tasks-description": "Fonctions de l’API pour fournir des données de portlet sur les pages et les statistiques utilisateur.",
-	"apihelp-bs-smartlist-tasks-summary": "Fonctions API pour servir les données de portlet pour la page et les statistiques utilisateur."
+	"apihelp-bs-smartlist-tasks-summary": "Fonctions API pour servir les données de portlet pour la page et les statistiques utilisateur.",
+	"bs-smartlist-ve-userlist-title": "Liste d’utilisateurs",
+	"bs-smartlist-ve-userlistinspector-groups": "Groupes",
+	"bs-smartlist-ve-userlistinspector-limit": "Limite d’utilisateurs affichés",
+	"bs-smartlist-ve-userlistinspector-no-users": "Aucun utilisateur dans le groupe sélectionné. Choisir un autre groupe pour lister ses utilisateurs.",
+	"bs-smartlist-ve-userlistinspector-no-group": "Aucun groupe sélectionné. Choisissez un groupe pour lister ses utilisateurs."
 }
