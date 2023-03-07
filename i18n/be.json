@@ -1,9 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
+			"Kareyac",
 			"Дзяніс Тутэйшы"
 		]
 	},
 	"bs-smartlist-mostactiveusersdesc": "Спіс найбольш актыўных карыстальнікаў, упарадкаваны па колькасці правак.",
-	"bs-smartlist-mosteditedpagesdesc": "Спіс найбольш рэдагаваных старонак, упарадкаваны па колькасці правак."
+	"bs-smartlist-mosteditedpagesdesc": "Спіс найбольш рэдагаваных старонак, упарадкаваны па колькасці правак.",
+	"bs-smartlist-ve-userlistinspector-groups": "Групы"
 }
