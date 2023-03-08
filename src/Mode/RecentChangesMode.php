@@ -183,6 +183,7 @@ class RecentChangesMode extends GenericSmartlistMode {
 		);
 
 		$count = 0;
+		$objectList = [];
 		foreach ( $res as $row ) {
 			if ( $count == $args['count'] ) {
 				break;
