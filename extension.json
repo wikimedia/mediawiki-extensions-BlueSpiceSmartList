@@ -54,10 +54,10 @@
 		"ContentDroplets": {
 			"Droplets": {
 				"whatlinkshere": {
-					"class":  "\\BlueSpice\\SmartList\\ContentDroplets\\WhatLinksHereDroplet"
+					"class": "\\BlueSpice\\SmartList\\ContentDroplets\\WhatLinksHereDroplet"
 				},
 				"recent-changes": {
-					"class":  "\\BlueSpice\\SmartList\\ContentDroplets\\RecentChangesDroplet"
+					"class": "\\BlueSpice\\SmartList\\ContentDroplets\\RecentChangesDroplet"
 				},
 				"toplist": {
 					"class": "\\BlueSpice\\SmartList\\ContentDroplets\\TopListDroplet"
@@ -90,7 +90,7 @@
 				},
 				"userlist": {
 					"class": "BlueSpice\\SmartList\\Mode\\UserlistMode",
-					"services": [ "TitleFactory"]
+					"services": [ "TitleFactory" ]
 				}
 			}
 		},
