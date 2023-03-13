@@ -36,5 +36,9 @@
 	"bs-smartlist-mosteditedpagesdesc": "Lista de las páginas más editadas ordenadas por sus ediciones.",
 	"bs-smartlist-mostvisitedpagesdesc": "Lista de las páginas más vistas ordenadas por sus vistas.",
 	"bs-smartlist-lasteditsdesc": "Lista de páginas que has editado.",
-	"bs-smartlist-hitcounter-missing": "Debe instalarse la extensión <a target='blank' href='https://www.mediawiki.org/wiki/Extension:HitCounters'>HitCounters</a> ."
+	"bs-smartlist-hitcounter-missing": "Debe instalarse la extensión <a target='blank' href='https://www.mediawiki.org/wiki/Extension:HitCounters'>HitCounters</a> .",
+	"bs-smartlist-ve-userlist-title": "Lista de cuentas",
+	"bs-smartlist-ve-userlistinspector-groups": "Grupos",
+	"bs-smartlist-ve-userlistinspector-limit": "Límite de cuentas mostradas",
+	"bs-smartlist-ve-userlistinspector-no-group": "No se seleccionó ningún grupo. Elige un grupo para enumerar las cuentas asociadas"
 }
