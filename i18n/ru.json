@@ -3,7 +3,8 @@
 		"authors": [
 			"Facenapalm",
 			"Okras",
-			"Striking Blue"
+			"Striking Blue",
+			"Kareyac"
 		]
 	},
 	"bs-smartlist-desc": "Отображает в списке последние пять изменений вики.",
@@ -36,5 +37,6 @@
 	"bs-smartlist-lasteditsdesc": "Список страниц, которые вы редактировали.",
 	"bs-smartlist-hitcounter-missing": "Должно быть установлено расширение <a target='blank' href='https://www.mediawiki.org/wiki/Special:MyLanguage/Extension:HitCounters'>HitCounters</a>.",
 	"apihelp-bs-smartlist-tasks-description": "Функции API для обслуживания данных портала для страницы и пользовательской статистики.",
-	"apihelp-bs-smartlist-tasks-summary": "Функции API для обслуживания данных портала для страницы и пользовательской статистики."
+	"apihelp-bs-smartlist-tasks-summary": "Функции API для обслуживания данных портала для страницы и пользовательской статистики.",
+	"bs-smartlist-ve-userlistinspector-groups": "Группы"
 }
