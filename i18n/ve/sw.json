@@ -1,9 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"Rance"
+			"Rance",
+			"Wangombe"
 		]
 	},
+	"bs-smartlist-ve-smartlist-title": "Orodha ya Smart",
 	"bs-smartlist-ve-smartlistinspector-cat": "Kundi",
 	"bs-smartlist-ve-smartlistinspector-period": "Wakati",
 	"bs-smartlist-ve-smartlistinspector-new": "Onyesha makala mpya tu",
