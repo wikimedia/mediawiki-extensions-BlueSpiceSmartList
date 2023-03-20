@@ -2,11 +2,13 @@
 	"@metadata": {
 		"authors": [
 			"MITO",
+			"Pyscowicz",
 			"Silvonen"
 		]
 	},
 	"bs-smartlist-day": "Päivä",
 	"bs-smartlist-week": "Viikko",
 	"bs-smartlist-month": "Kuukausi",
-	"bs-smartlist-hitcounter-missing": "Laajennuksen <a target='blank' href='https://www.mediawiki.org/wiki/Special:MyLanguage/Extension:HitCounters'>HitCounters</a> tulee olla asennettu."
+	"bs-smartlist-hitcounter-missing": "Laajennuksen <a target='blank' href='https://www.mediawiki.org/wiki/Special:MyLanguage/Extension:HitCounters'>HitCounters</a> tulee olla asennettu.",
+	"bs-smartlist-ve-userlistinspector-groups": "Ryhmät"
 }
