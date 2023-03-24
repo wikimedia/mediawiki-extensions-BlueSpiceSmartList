@@ -39,5 +39,15 @@
 	"bs-smartlist-ve-userlistinspector-groups": "Skupine",
 	"bs-smartlist-ve-userlistinspector-limit": "Omejitev prikazanih uporabnikov",
 	"bs-smartlist-ve-userlistinspector-no-users": "V izbrani skupini ni uporabnikov. Izberite drugo skupino za navedbo njenih uporabnikov.",
-	"bs-smartlist-ve-userlistinspector-no-group": "Izbrana ni nobena skupina. Izberite skupino za navedbo njenih uporabnikov"
+	"bs-smartlist-ve-userlistinspector-no-group": "Izbrana ni nobena skupina. Izberite skupino za navedbo njenih uporabnikov",
+	"bs-smartlist-droplet-userlist-name": "Seznam članov",
+	"bs-smartlist-droplet-userlist-desc": "Seznam članov izbirnih skupin.",
+	"bs-smartlist-droplet-newbies-name": "Novi uporabniki",
+	"bs-smartlist-droplet-newbies-desc": "Seznam novih uporabnikov v vikiju",
+	"bs-smartlist-droplet-recent-changes-name": "Zadnje spremembe",
+	"bs-smartlist-droplet-recent-changes-desc": "Seznam pred kratkim spremenjenih strani",
+	"bs-smartlist-droplet-toplist-name": "Najbolj obiskane strani",
+	"bs-smartlist-droplet-toplist-desc": "Seznam najbolj obiskanih vikistrani",
+	"bs-smartlist-droplet-what-links-here-name": "Povezave na to stran",
+	"bs-smartlist-droplet-what-links-here-desc": "Seznam strani, ki se povezujejo na to stran"
 }
