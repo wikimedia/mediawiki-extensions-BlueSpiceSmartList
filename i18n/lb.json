@@ -30,5 +30,15 @@
 	"bs-smartlist-lasteditsdesc": "Lëscht vu Säiten déi Dir geännert hutt.",
 	"bs-smartlist-hitcounter-missing": "D'Erweiderung <a target='blank' href='https://www.mediawiki.org/wiki/Extension:HitCounters'>HitCounters</a> muss installéiert sinn.",
 	"bs-smartlist-ve-userlistinspector-groups": "Gruppen",
-	"bs-smartlist-ve-userlist-title": "Benotzerlëscht"
+	"bs-smartlist-ve-userlist-title": "Benotzerlëscht",
+	"bs-smartlist-droplet-userlist-name": "Memberslëscht",
+	"bs-smartlist-droplet-userlist-desc": "Memberslëscht vun auswielbare Gruppen",
+	"bs-smartlist-droplet-newbies-name": "Nei Benotzer",
+	"bs-smartlist-droplet-newbies-desc": "Lëscht vun neie Benotzer op der Wiki",
+	"bs-smartlist-droplet-recent-changes-name": "Rezent Ännerungen",
+	"bs-smartlist-droplet-recent-changes-desc": "Lëscht vu rezent geännerte Säiten",
+	"bs-smartlist-droplet-toplist-name": "Meeschtbesichte Säiten",
+	"bs-smartlist-droplet-toplist-desc": "Lëscht vun de meeschtbesichte Wikisäiten",
+	"bs-smartlist-droplet-what-links-here-name": "Linken op dës Säit",
+	"bs-smartlist-droplet-what-links-here-desc": "Lëscht vu Säiten, déi op dës Säit verlinken"
 }

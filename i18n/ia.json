@@ -39,5 +39,9 @@
 	"bs-smartlist-ve-userlistinspector-groups": "Gruppos",
 	"bs-smartlist-ve-userlistinspector-limit": "Limite de usatores monstrate",
 	"bs-smartlist-ve-userlistinspector-no-users": "Il non ha usatores in le gruppo seligite. Elige un altere gruppo pro listar su usatores",
-	"bs-smartlist-ve-userlistinspector-no-group": "Necun gruppo seligite. Elige un gruppo pro listar su usatores"
+	"bs-smartlist-ve-userlistinspector-no-group": "Necun gruppo seligite. Elige un gruppo pro listar su usatores",
+	"bs-smartlist-droplet-userlist-name": "Lista de membros",
+	"bs-smartlist-droplet-userlist-desc": "Lista de membros del gruppos seligibile",
+	"bs-smartlist-droplet-newbies-name": "Nove usatores",
+	"bs-smartlist-droplet-newbies-desc": "Lista de nove usatores del wiki"
 }
