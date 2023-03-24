@@ -97,7 +97,7 @@ class RecentChangesMode extends GenericSmartlistMode {
 		$args['period'] = $args[self::ATTR_PERIOD];
 		$args['showOnlyNewArticles'] = $args[self::ATTR_SHOW_ARTICLES];
 
-		$dbr = $this->lb->getConnectionRef( DB_REPLICA );
+		$dbr = $this->lb->getConnection( DB_REPLICA );
 		$conditions = [];
 
 		switch ( $args['period'] ) {

@@ -81,7 +81,7 @@ class WhatLinksHereMode extends GenericSmartlistMode {
 			return [];
 		}
 
-		$dbr = $this->lb->getConnectionRef( DB_REPLICA );
+		$dbr = $this->lb->getConnection( DB_REPLICA );
 		$tables = [
 			'pagelinks',
 			'page',

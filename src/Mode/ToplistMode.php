@@ -89,7 +89,7 @@ class ToplistMode extends SmartListBaseMode {
 		$args['alltime'] = true;
 
 		$objectList = [];
-		$dbr = $this->lb->getConnectionRef( DB_REPLICA );
+		$dbr = $this->lb->getConnection( DB_REPLICA );
 		if ( in_array( $args['period'], [ 'week', 'month' ] ) || in_array( $args['portletPeriod'], [ 7, 30 ] ) ) {
 			$tables = [ 'bs_whoisonline' ];
 			$columns = [
@@ -153,7 +153,7 @@ class ToplistMode extends SmartListBaseMode {
 			$joinConditions
 		);
 
-		if ( $dbr->numRows( $res ) > 0 ) {
+		if ( $dbr->affectedRows() > 0 ) {
 			$hasCategories = false;
 			if ( !empty( $cat ) ) {
 				$hasCategories = true;
