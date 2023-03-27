@@ -4,5 +4,12 @@
 			"Ella Lachow"
 		]
 	},
-	"bs-smartlist-ve-userlistinspector-groups": "Citata"
+	"bs-smartlist-ve-userlistinspector-groups": "Citata",
+	"bs-smartlist-droplet-newbies-name": "Ooratta yarata",
+	"bs-smartlist-droplet-newbies-desc": "Wikkii ooratta yaratu paatettaa",
+	"bs-smartlist-droplet-recent-changes-name": "Mata wode laamettidabata",
+	"bs-smartlist-droplet-recent-changes-desc": "Mata wode laamettidabatu paatettaa",
+	"bs-smartlist-droplet-toplist-name": "Daroppe xomoosettida sinttata",
+	"bs-smartlist-droplet-toplist-desc": "Darotoo xomoosettida Wikkii sinttaa paatettaa",
+	"bs-smartlist-droplet-what-links-here-name": "Ha sinttaakko gattiyaageeta"
 }
