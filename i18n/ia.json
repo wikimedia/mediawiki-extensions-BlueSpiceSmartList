@@ -43,5 +43,11 @@
 	"bs-smartlist-droplet-userlist-name": "Lista de membros",
 	"bs-smartlist-droplet-userlist-desc": "Lista de membros del gruppos seligibile",
 	"bs-smartlist-droplet-newbies-name": "Nove usatores",
-	"bs-smartlist-droplet-newbies-desc": "Lista de nove usatores del wiki"
+	"bs-smartlist-droplet-newbies-desc": "Lista de nove usatores del wiki",
+	"bs-smartlist-droplet-recent-changes-name": "Modificationes recente",
+	"bs-smartlist-droplet-recent-changes-desc": "Lista de paginas recentemente modificate",
+	"bs-smartlist-droplet-toplist-name": "Paginas le plus visitate",
+	"bs-smartlist-droplet-toplist-desc": "Lista del paginas wiki le plus visitate",
+	"bs-smartlist-droplet-what-links-here-name": "Ligamines a iste pagina",
+	"bs-smartlist-droplet-what-links-here-desc": "Lista de paginas que liga a iste pagina"
 }
