@@ -37,5 +37,6 @@
 	"apihelp-bs-smartlist-tasks-description": "API-funksjoner for å tilby portletdata for side- og brukerstatistikk.",
 	"apihelp-bs-smartlist-tasks-summary": "API-funksjoner for å tilby portletdata for side- og brukerstatistikk.",
 	"bs-smartlist-ve-userlist-title": "Brukerliste",
-	"bs-smartlist-ve-userlistinspector-groups": "Grupper"
+	"bs-smartlist-ve-userlistinspector-groups": "Grupper",
+	"bs-smartlist-droplet-newbies-name": "Nye brukere"
 }

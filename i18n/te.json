@@ -16,5 +16,15 @@
 	"bs-smartlist-ve-userlist-title": "వినియోగదారు జాబితా",
 	"bs-smartlist-ve-userlistinspector-groups": "గుంపులు",
 	"bs-smartlist-ve-userlistinspector-limit": "చూపబడిన వినియోగదారుల పరిమితి",
-	"bs-smartlist-ve-userlistinspector-no-group": "సమూహం ఎంచుకోబడలేదు. దాని వినియోగదారులను జాబితా చేయడానికి ఒక సమూహాన్ని ఎంచుకోండి."
+	"bs-smartlist-ve-userlistinspector-no-group": "సమూహం ఎంచుకోబడలేదు. దాని వినియోగదారులను జాబితా చేయడానికి ఒక సమూహాన్ని ఎంచుకోండి.",
+	"bs-smartlist-droplet-userlist-name": "సభ్యుల జాబితా",
+	"bs-smartlist-droplet-userlist-desc": "ఎంచుకోదగిన సమూహాల సభ్యుల జాబితా",
+	"bs-smartlist-droplet-newbies-name": "కొత్త వాడుకరులు",
+	"bs-smartlist-droplet-newbies-desc": "వికీలో కొత్త వినియోగదారుల జాబితా",
+	"bs-smartlist-droplet-recent-changes-name": "ఇటీవలి మార్పులు",
+	"bs-smartlist-droplet-recent-changes-desc": "ఇటీవల మార్చబడిన పేజీల జాబితా",
+	"bs-smartlist-droplet-toplist-name": "అత్యధికంగా చూసిన పేజీలు",
+	"bs-smartlist-droplet-toplist-desc": "అత్యధికంగా సందర్శించే వికీ పేజీల జాబితా",
+	"bs-smartlist-droplet-what-links-here-name": "ఈ పేజికి ఉన్న లంకెలు",
+	"bs-smartlist-droplet-what-links-here-desc": "ఈ పేజీకి లింక్ చేసే పేజీల జాబితా"
 }

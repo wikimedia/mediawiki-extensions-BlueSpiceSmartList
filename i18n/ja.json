@@ -31,5 +31,12 @@
 	"bs-smartlist-ve-userlistinspector-groups": "グループ",
 	"bs-smartlist-ve-userlistinspector-limit": "表示されるユーザーの上限",
 	"bs-smartlist-ve-userlistinspector-no-users": "選択されたグループにユーザーがいません。他のグループを選択してください。",
-	"bs-smartlist-ve-userlistinspector-no-group": "グループが未選択です。リストを表示するユーザーを選択してください"
+	"bs-smartlist-ve-userlistinspector-no-group": "グループが未選択です。リストを表示するユーザーを選択してください",
+	"bs-smartlist-droplet-userlist-name": "メンバーリスト",
+	"bs-smartlist-droplet-newbies-name": "新しい利用者",
+	"bs-smartlist-droplet-recent-changes-name": "最近の更新",
+	"bs-smartlist-droplet-recent-changes-desc": "最近更新されたページのリスト",
+	"bs-smartlist-droplet-toplist-name": "最も閲覧されているページ",
+	"bs-smartlist-droplet-what-links-here-name": "このページへのリンク",
+	"bs-smartlist-droplet-what-links-here-desc": "このページにリンクしているページのリスト"
 }
