@@ -38,5 +38,6 @@
 	"bs-smartlist-hitcounter-missing": "Должно быть установлено расширение <a target='blank' href='https://www.mediawiki.org/wiki/Special:MyLanguage/Extension:HitCounters'>HitCounters</a>.",
 	"apihelp-bs-smartlist-tasks-description": "Функции API для обслуживания данных портала для страницы и пользовательской статистики.",
 	"apihelp-bs-smartlist-tasks-summary": "Функции API для обслуживания данных портала для страницы и пользовательской статистики.",
-	"bs-smartlist-ve-userlistinspector-groups": "Группы"
+	"bs-smartlist-ve-userlistinspector-groups": "Группы",
+	"bs-smartlist-droplet-newbies-name": "Новые участники"
 }
