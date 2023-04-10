@@ -29,5 +29,8 @@
 	"bs-smartlist-mostactiveusersdesc": "فهرست فعال‌ترین کاربران به ترتیب تعداد ویرایش‌های آن‌ها.",
 	"bs-smartlist-mosteditedpagesdesc": "فهرست صفحه‌های دارای بیشترین تعداد ویرایش‌ها.",
 	"bs-smartlist-mostvisitedpagesdesc": "فهرست پربازدیدترین صفحه‌ها.",
-	"bs-smartlist-lasteditsdesc": "فهرست صفحه‌هایی که ویرایش کرده‌اید."
+	"bs-smartlist-lasteditsdesc": "فهرست صفحه‌هایی که ویرایش کرده‌اید.",
+	"bs-smartlist-droplet-userlist-name": "فهرست اعضا",
+	"bs-smartlist-droplet-newbies-name": "کاربران جدید",
+	"bs-smartlist-droplet-recent-changes-name": "تغییرات اخیر"
 }
