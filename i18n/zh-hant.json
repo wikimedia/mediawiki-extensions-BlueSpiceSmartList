@@ -40,5 +40,10 @@
 	"bs-smartlist-lasteditsdesc": "您所編輯過頁面的清單。",
 	"bs-smartlist-hitcounter-missing": "需安裝擴充功能 <a target='blank' href='https://www.mediawiki.org/wiki/Special:MyLanguage/Extension:HitCounters'></a>。",
 	"apihelp-bs-smartlist-tasks-description": "為頁面與使用者統計狀態提供 portlet 資料的 API 功能。",
-	"apihelp-bs-smartlist-tasks-summary": "為頁面與使用者統計狀態提供 portlet 資料的 API 功能。"
+	"apihelp-bs-smartlist-tasks-summary": "為頁面與使用者統計狀態提供 portlet 資料的 API 功能。",
+	"bs-smartlist-ve-userlist-title": "使用者清單",
+	"bs-smartlist-ve-userlistinspector-groups": "群組",
+	"bs-smartlist-droplet-userlist-name": "成員清單",
+	"bs-smartlist-droplet-newbies-name": "新使用者",
+	"bs-smartlist-droplet-recent-changes-name": "近期變更"
 }
