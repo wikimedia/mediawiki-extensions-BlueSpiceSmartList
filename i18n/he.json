@@ -41,5 +41,15 @@
 	"bs-smartlist-ve-userlistinspector-groups": "קבוצות",
 	"bs-smartlist-ve-userlistinspector-limit": "מגבלה של המשתמשים המוצגים",
 	"bs-smartlist-ve-userlistinspector-no-users": "אין משתמשים בקבוצה שנבחרה. נא לבחור קבוצה אחרת כדי לקבל רשימה של המשתמשים שלה",
-	"bs-smartlist-ve-userlistinspector-no-group": "לא נבחרה קבוצה. נא לבחור קבוצה אחרת כדי לקבל רשימה של המשתמשים שלה"
+	"bs-smartlist-ve-userlistinspector-no-group": "לא נבחרה קבוצה. נא לבחור קבוצה אחרת כדי לקבל רשימה של המשתמשים שלה",
+	"bs-smartlist-droplet-userlist-name": "רשימת חברים",
+	"bs-smartlist-droplet-userlist-desc": "רשימת חברים של קבוצות שאפשר לבחור",
+	"bs-smartlist-droplet-newbies-name": "משתמשים חדשים",
+	"bs-smartlist-droplet-newbies-desc": "רשימת המשתמשים החדשים בוויקי",
+	"bs-smartlist-droplet-recent-changes-name": "שינויים אחרונים",
+	"bs-smartlist-droplet-recent-changes-desc": "רשימת הדפים שהשתנו לאחרונה",
+	"bs-smartlist-droplet-toplist-name": "הדפים הנצפים ביותר",
+	"bs-smartlist-droplet-toplist-desc": "רשימה של דפי הוויקי הנצפים ביותר",
+	"bs-smartlist-droplet-what-links-here-name": "קישורים לדף הזה",
+	"bs-smartlist-droplet-what-links-here-desc": "רשימת הדפים המקשרים לדף הזה"
 }

@@ -29,5 +29,8 @@
 	"bs-smartlist-sort-asc": "صعودی",
 	"bs-smartlist-sort-desc": "نزولی",
 	"bs-smartlist-tag-smartlist-example-rc": "حالت: تغییرات اخیر",
-	"bs-smartlist-tag-smartlist-example-whatlinkshere": "حالت: پیوندها به این صفحه"
+	"bs-smartlist-tag-smartlist-example-whatlinkshere": "حالت: پیوندها به این صفحه",
+	"bs-smartlist-droplet-userlist-name": "فهرست اعضا",
+	"bs-smartlist-droplet-newbies-name": "کاربران جدید",
+	"bs-smartlist-droplet-recent-changes-name": "تغییرات اخیر"
 }

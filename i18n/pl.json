@@ -3,7 +3,8 @@
 		"authors": [
 			"Chrumps",
 			"Matik7",
-			"Osnard"
+			"Osnard",
+			"WaldiSt"
 		]
 	},
 	"prefs-smartlist": "Inteligentna lista",
@@ -28,5 +29,11 @@
 	"bs-smartlist-noedits": "Nie znaleziono zmian.",
 	"bs-smartlist-mosteditedpagesdesc": "Lista najczęściej edytowanych stron posortowana według liczby edycji.",
 	"bs-smartlist-mostvisitedpagesdesc": "Lista najczęściej oglądanych stron posortowana według liczby odsłon.",
-	"bs-smartlist-hitcounter-missing": "Musi być zainstalowane rozszerzenie <a target='blank' href='https://www.mediawiki.org/wiki/Extension:HitCounters'>HitCounters</a>."
+	"bs-smartlist-hitcounter-missing": "Musi być zainstalowane rozszerzenie <a target='blank' href='https://www.mediawiki.org/wiki/Extension:HitCounters'>HitCounters</a>.",
+	"bs-smartlist-droplet-newbies-name": "Nowi użytkownicy",
+	"bs-smartlist-droplet-newbies-desc": "Lista nowych użytkowników na wiki",
+	"bs-smartlist-droplet-toplist-name": "Najczęściej odwiedzane strony",
+	"bs-smartlist-droplet-toplist-desc": "Lista najczęściej odwiedzanych stron wiki",
+	"bs-smartlist-droplet-what-links-here-name": "Linki do tej strony",
+	"bs-smartlist-droplet-what-links-here-desc": "Lista stron, które prowadzą do tej strony"
 }
