@@ -8,5 +8,8 @@
 	"bs-smartlist-recent-changes": "Скорашње измене",
 	"bs-smartlist-mostvisitedpages": "Најпосећеније странице",
 	"bs-smartlist-hitcounter-missing": "Проширење <a target='blank' href='https://www.mediawiki.org/wiki/Special:MyLanguage/Extension:HitCounters'>HitCounters</a> мора да буде инсталирано.",
-	"bs-smartlist-ve-userlistinspector-groups": "Групе"
+	"bs-smartlist-ve-userlistinspector-groups": "Групе",
+	"bs-smartlist-droplet-newbies-name": "Нови корисници",
+	"bs-smartlist-droplet-recent-changes-name": "Скорашње измене",
+	"bs-smartlist-droplet-toplist-name": "Најпосећеније странице"
 }
