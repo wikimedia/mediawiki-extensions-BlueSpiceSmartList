@@ -86,7 +86,7 @@ class ToplistMode extends SmartListBaseMode {
 		$args['namespaces'] = $args[self::ATTR_NS];
 		$args['portletPeriod'] = $args[self::ATTR_PORTLET_PERIOD];
 		$args['period'] = $args[self::ATTR_PERIOD];
-		$args['alltime'] = true;
+		$alltime = true;
 
 		$objectList = [];
 		$dbr = $this->lb->getConnectionRef( DB_REPLICA );
@@ -168,7 +168,7 @@ class ToplistMode extends SmartListBaseMode {
 			$list = [];
 			$inList = [];
 			$currCount = 0;
-			if ( $args['alltime'] === false ) {
+			if ( $alltime === false ) {
 				foreach ( $res as $row ) {
 					if ( $currCount === $args['count'] ) {
 						break;
