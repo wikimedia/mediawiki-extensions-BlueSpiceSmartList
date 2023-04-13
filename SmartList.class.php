@@ -71,9 +71,7 @@ class SmartList extends \BlueSpice\Extension {
 				$services->getTitleFactory(), $services->getHookContainer() );
 			$sContent = $listRenderer->render( $content, $args );
 		} catch ( Exception $e ) {
-			$oErrorListView = new ViewTagErrorList();
-			$oErrorListView->addItem( new ViewTagError( $e->getMessage() ) );
-			$sContent = $oErrorListView->execute();
+			$context->getOutput()->addHTML( $e->getMessage() );
 		}
 		return $sContent;
 	}
