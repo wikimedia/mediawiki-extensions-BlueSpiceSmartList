@@ -181,9 +181,7 @@ class BSApiTasksSmartList extends BSApiTasksBase {
 			$sContent = $listRenderer->render( $content, $args );
 			$oReturn->success = true;
 		} catch ( Exception $e ) {
-			$oErrorListView = new ViewTagErrorList();
-			$oErrorListView->addItem( new ViewTagError( $e->getMessage() ) );
-			$sContent = $oErrorListView->execute();
+			$context->getOutput()->addHTML( $e->getMessage() );
 			$oReturn->success = false;
 		}
 
