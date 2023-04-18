@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"850710247liu",
 			"GuoPC",
 			"John Smith Ri",
 			"Kishinsagi",
@@ -44,5 +45,6 @@
 	"bs-smartlist-ve-userlistinspector-no-group": "未选择组。选择一个组以列出其用户",
 	"bs-smartlist-droplet-userlist-name": "成员列表",
 	"bs-smartlist-droplet-newbies-name": "新用户",
-	"bs-smartlist-droplet-recent-changes-name": "最近更改"
+	"bs-smartlist-droplet-recent-changes-name": "最近更改",
+	"bs-smartlist-ve-userlist-title": "用户列表"
 }
