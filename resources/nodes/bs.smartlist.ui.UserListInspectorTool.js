@@ -8,7 +8,7 @@
 	bs.smartlist.ui.UserlistInspectorTool.static.name = 'userlistTool';
 	bs.smartlist.ui.UserlistInspectorTool.static.group = 'none';
 	bs.smartlist.ui.UserlistInspectorTool.static.autoAddToCatchall = false;
-	bs.smartlist.ui.UserlistInspectorTool.static.icon = 'users';
+	bs.smartlist.ui.UserlistInspectorTool.static.icon = 'bluespice';
 	bs.smartlist.ui.UserlistInspectorTool.static.title = OO.ui.deferMsg(
 		'bs-smartlist-ve-userlist-title'
 	);
