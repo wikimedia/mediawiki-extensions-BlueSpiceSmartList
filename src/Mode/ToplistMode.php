@@ -74,6 +74,11 @@ class ToplistMode extends SmartListBaseMode {
 				ParamType::INTEGER,
 				static::ATTR_PORTLET_PERIOD,
 				0
+			),
+			new ParamDefinition(
+				ParamType::STRING,
+				static::ATTR_CAT,
+				''
 			)
 		] );
 	}
@@ -86,6 +91,7 @@ class ToplistMode extends SmartListBaseMode {
 		$args['namespaces'] = $args[self::ATTR_NS];
 		$args['portletPeriod'] = $args[self::ATTR_PORTLET_PERIOD];
 		$args['period'] = $args[self::ATTR_PERIOD];
+		$args['categories'] = $args[self::ATTR_CAT];
 		$alltime = true;
 
 		$objectList = [];
@@ -118,19 +124,19 @@ class ToplistMode extends SmartListBaseMode {
 			$joinConditions = [];
 		}
 
-		if ( !empty( $categories ) ) {
-			$cat = explode( ',', $categories );
+		if ( !empty( $args['categories'] ) ) {
+			$cat = explode( ',', $args['categories'] );
 			$cat = array_map( 'trim', $cat );
 			$cat = str_replace( ' ', '_', $cat );
 
 			if ( $alltime === false ) {
 				$columns[] = 'wo_page_id';
 				$joinConditions = [ 'categorylinks' => [ 'INNER JOIN ', 'wo_page_id = cl_from' ] ];
-				$tables[]            = 'categorylinks';
+				$tables[] = 'categorylinks';
 				$conditions['cl_to'] = $cat;
 			} else {
-				$tables[]            = 'categorylinks';
-				$conditions[]        = 'p.page_id = cl_from';
+				$tables[] = 'categorylinks';
+				$conditions[] = 'p.page_id = cl_from';
 				$conditions['cl_to'] = $cat;
 			}
 		}
