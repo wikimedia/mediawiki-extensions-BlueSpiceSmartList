@@ -138,7 +138,7 @@ class ListRenderer {
 			}
 			if ( $args['listType'] === 'csv' ) {
 				if ( $count + 1 < $args['count'] || $count + 1 < count( $items ) ) {
-					$template .= ',';
+					$template .= ', ';
 				}
 			} else {
 				$template .= "\n";

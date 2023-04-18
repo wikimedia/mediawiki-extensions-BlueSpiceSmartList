@@ -102,12 +102,11 @@ class ListRendererTest extends MediaWikiIntegrationTestCase {
 					]
 				],
 				[
-					'heading' => 'Newbie',
 					'count' => 10,
 					'listType' => 'csv',
 					'mode' => 'newbies'
 				],
-				'<div class="bs-smartlist"><h3>Newbie</h3>[[User 1|User 1]],[[User 2|User 2]],[[User 3|User 3]],</div>'
+				'<div class="bs-smartlist">[[User 1|User 1]], [[User 2|User 2]], [[User 3|User 3]], </div>'
 			],
 			'parser-wrapper-with-more-items-than-shown' => [
 				$parserWrapper,
