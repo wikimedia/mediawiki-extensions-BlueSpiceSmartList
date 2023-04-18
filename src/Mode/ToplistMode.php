@@ -4,8 +4,10 @@ namespace BlueSpice\SmartList\Mode;
 
 use BlueSpice\ParamProcessor\ParamDefinition;
 use BlueSpice\ParamProcessor\ParamType;
+use BsInvalidNamespaceException;
 use BsNamespaceHelper;
 use MediaWiki\Permissions\PermissionManager;
+use RequestContext;
 use TitleFactory;
 use Wikimedia\Rdbms\ILoadBalancer;
 
@@ -23,6 +25,9 @@ class ToplistMode extends SmartListBaseMode {
 	/** @var TitleFactory */
 	private $titleFactory = null;
 
+	/** @var MessageLocalizer */
+	private $messageLocalizer;
+
 	/**
 	 *
 	 * @param PermissionManager $permissionManager
@@ -37,6 +42,7 @@ class ToplistMode extends SmartListBaseMode {
 		$this->permissionManager = $permissionManager;
 		$this->lb = $lb;
 		$this->titleFactory = $titleFactory;
+		$this->messageLocalizer = RequestContext::getMain();
 	}
 
 	/**
@@ -143,10 +149,18 @@ class ToplistMode extends SmartListBaseMode {
 
 		// string 0 is empty
 		if ( !empty( $args['namespaces'] ) || $args['namespaces'] === '0' ) {
-			$nsIds = BsNamespaceHelper::getNamespaceIdsFromAmbiguousCSVString( $args['namespaces'] );
-			if ( !empty( $nsIds ) ) {
+			try {
+				$nsIds = BsNamespaceHelper::getNamespaceIdsFromAmbiguousCSVString( $args['namespaces'] );
 				$sField = $alltime ? 'page_namespace' : 'wo_page_namespace';
 				$conditions[$sField] = $nsIds;
+			} catch ( BsInvalidNamespaceException $ex ) {
+				$sInvalidNamespaces = implode( ', ', $ex->getListOfInvalidNamespaces() );
+				return [ 'error' =>
+					$this->messageLocalizer->msg( 'bs-smartlist-invalid-namespaces' )
+						->numParams( count( $ex->getListOfInvalidNamespaces() ) )
+						->params( $sInvalidNamespaces )
+						->text()
+				];
 			}
 		}
 

@@ -145,6 +145,10 @@ class GenericSmartlistMode extends SmartListBaseMode {
 		$args = $this->validateArgs( $args );
 		$objectList = $this->getItems( $args, $context );
 
+		if ( isset( $objectList['error'] ) ) {
+			return $objectList;
+		}
+
 		$list = [];
 		if ( count( $objectList ) ) {
 			foreach ( $objectList as $row ) {
