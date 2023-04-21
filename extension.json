@@ -30,7 +30,9 @@
 				"newbies": "BlueSpice\\SmartList\\Tag\\Newbies",
 				"toplist": "BlueSpice\\SmartList\\Tag\\Toplist",
 				"smartlist": "BlueSpice\\SmartList\\Tag\\SmartList",
-				"userlist": "BlueSpice\\SmartList\\Tag\\Userlist"
+				"userlist": "BlueSpice\\SmartList\\Tag\\Userlist",
+				"recentchanges": "BlueSpice\\SmartList\\Tag\\RecentChanges",
+				"whatlinkshere": "BlueSpice\\SmartList\\Tag\\Whatlinkshere"
 			}
 		},
 		"VisualEditor": {
@@ -93,13 +95,6 @@
 					"services": [ "TitleFactory" ]
 				}
 			}
-		},
-		"MWStakeContentProvisioner": {
-			"ContentManifests": {
-				"DefaultContentProvisioner": [
-					"extensions/BlueSpiceSmartList/data/Content/ContentDropletsTemplates/manifest.json"
-				]
-			}
 		}
 	},
 	"APIModules": {
@@ -126,7 +121,15 @@
 				"ve/ve.ce.SmartListNode.js",
 				"ve/ve.dm.SmartListNode.js",
 				"ve/ve.ui.SmartListInspector.js",
-				"ve/ve.ui.SmartListInspectorTool.js"
+				"ve/ve.ui.SmartListInspectorTool.js",
+				"nodes/bs.smartlist.ce.RecentChangesNode.js",
+				"nodes/bs.smartlist.dm.RecentChangesNode.js",
+				"nodes/bs.smartlist.ui.RecentChangesInspector.js",
+				"nodes/bs.smartlist.ui.RecentChangesInspectorTool.js",
+				"nodes/bs.smartlist.ce.WhatlinkshereNode.js",
+				"nodes/bs.smartlist.dm.WhatlinkshereNode.js",
+				"nodes/bs.smartlist.ui.WhatlinkshereInspector.js",
+				"nodes/bs.smartlist.ui.WhatlinkshereInspectorTool.js"
 			],
 			"messages": [
 				"bs-smartlist-ve-smartlist-title",
@@ -154,7 +157,9 @@
 				"bs-smartlist-ve-period-week-label",
 				"bs-smartlist-ve-period-month-label",
 				"bs-smartlist-ve-sort-time-label",
-				"bs-smartlist-ve-sort-title-label"
+				"bs-smartlist-ve-sort-title-label",
+				"bs-smartlist-ve-recentchanges-title",
+				"bs-smartlist-ve-whatlinkshere-title"
 			],
 			"dependencies": [
 				"ext.visualEditor.mwcore"
@@ -215,18 +220,16 @@
 			]
 		},
 		"ext.bluespice.smartList.droplets.recentchanges": {
-			"scripts": "object/RecentChanges.js",
 			"styles": [
 				"stylesheets/bs.smartlist.droplets.recentchanges.css"
 			]
 		},
 		"ext.bluespice.smartList.droplets.whatlinkshere": {
-			"scripts": "object/WhatLinksHere.js",
 			"styles": [
 				"stylesheets/bs.smartlist.droplets.whatlinkshere.css"
 			]
 		},
-		"ext.bluespice.smartList.dropelts.newbies": {
+		"ext.bluespice.smartList.droplets.newbies": {
 			"styles": [
 				"stylesheets/bs.smartlist.droplets.newbies.css"
 			]

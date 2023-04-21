@@ -2,10 +2,10 @@
 
 namespace BlueSpice\SmartList\ContentDroplets;
 
-use MediaWiki\Extension\ContentDroplets\Droplet\TemplateDroplet;
+use MediaWiki\Extension\ContentDroplets\Droplet\TagDroplet;
 use Message;
 
-class WhatLinksHereDroplet extends TemplateDroplet {
+class WhatLinksHereDroplet extends TagDroplet {
 
 	/**
 	 * @inheritDoc
@@ -32,7 +32,9 @@ class WhatLinksHereDroplet extends TemplateDroplet {
 	 * @inheritDoc
 	 */
 	public function getRLModules(): array {
-		return [ 'ext.bluespice.smartList.droplets.whatlinkshere' ];
+		return [ 'ext.bluespice.smartList.visualEditor',
+			'ext.bluespice.smartList.droplets.whatlinkshere'
+		];
 	}
 
 	/**
@@ -43,18 +45,18 @@ class WhatLinksHereDroplet extends TemplateDroplet {
 	}
 
 	/**
-	 * Get target for the template
+	 *
 	 * @return string
 	 */
-	protected function getTarget(): string {
-		return 'Whatlinkshere';
+	protected function getTagName(): string {
+		return 'whatlinkshere';
 	}
 
 	/**
-	 * Template params
+	 *
 	 * @return array
 	 */
-	protected function getParams(): array {
+	protected function getAttributes(): array {
 		return [
 			'count' => 5,
 			'cat' => '-',
@@ -72,5 +74,19 @@ class WhatLinksHereDroplet extends TemplateDroplet {
 			'excludens' => '',
 			'meta' => false
 		];
+	}
+
+	/**
+	 * @return bool
+	 */
+	protected function hasContent(): bool {
+		return false;
+	}
+
+	/**
+	 * @return string|null
+	 */
+	public function getVeCommand(): ?string {
+		return 'whatlinkshereCommand';
 	}
 }
