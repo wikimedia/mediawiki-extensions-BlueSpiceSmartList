@@ -53,5 +53,7 @@
 	"bs-smartlist-droplet-toplist-name": "Meistbesuchte Seiten",
 	"bs-smartlist-droplet-toplist-desc": "Liste der meistbesuchten Seiten",
 	"bs-smartlist-droplet-what-links-here-name": "Verlinkungen auf diese Seite",
-	"bs-smartlist-droplet-what-links-here-desc": "Liste von Seiten, die auf diese Seite verlinken"
+	"bs-smartlist-droplet-what-links-here-desc": "Liste von Seiten, die auf diese Seite verlinken",
+	"bs-smartlist-ve-recentchanges-title": "Letzte Änderungen",
+	"bs-smartlist-ve-whatlinkshere-title": "Links auf diese Seite"
 }
