@@ -2,10 +2,10 @@
 
 namespace BlueSpice\SmartList\ContentDroplets;
 
-use MediaWiki\Extension\ContentDroplets\Droplet\TemplateDroplet;
+use MediaWiki\Extension\ContentDroplets\Droplet\TagDroplet;
 use Message;
 
-class RecentChangesDroplet extends TemplateDroplet {
+class RecentChangesDroplet extends TagDroplet {
 
 	/**
 	 * @inheritDoc
@@ -32,7 +32,9 @@ class RecentChangesDroplet extends TemplateDroplet {
 	 * @inheritDoc
 	 */
 	public function getRLModules(): array {
-		return [ 'ext.bluespice.smartList.droplets.recentchanges' ];
+		return [ 'ext.bluespice.smartList.visualEditor',
+			'ext.bluespice.smartList.droplets.recentchanges'
+		];
 	}
 
 	/**
@@ -43,37 +45,33 @@ class RecentChangesDroplet extends TemplateDroplet {
 	}
 
 	/**
-	 * Get target for the template
+	 *
 	 * @return string
 	 */
-	protected function getTarget(): string {
-		return 'RecentChanges';
+	protected function getTagName(): string {
+		return 'recentchanges';
 	}
 
 	/**
-	 * Template params
+	 *
 	 * @return array
 	 */
-	protected function getParams(): array {
-		return [
-			'count' => 5,
-			'cat' => '-',
-			'ns' => 'all',
-			'catmode' => 'OR',
-			'heading' => '',
-			'trim' => 30,
-			'showtext' => false,
-			'trimtext' => 50,
-			'sort' => 'time',
-			'order' => 'DESC',
-			'showns' => true,
-			'numwithtext' => 100,
-			'excludens' => '',
-			'meta' => false,
-			'period' => '-',
-			'minor' => true,
-			'new' => false
-		];
+	protected function getAttributes(): array {
+		return [];
+	}
+
+	/**
+	 * @return bool
+	 */
+	protected function hasContent(): bool {
+		return false;
+	}
+
+	/**
+	 * @return string|null
+	 */
+	public function getVeCommand(): ?string {
+		return 'recentChangesCommand';
 	}
 
 }
