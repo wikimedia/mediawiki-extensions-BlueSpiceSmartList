@@ -1,0 +1,38 @@
+{
+	"@metadata": {
+		"authors": [
+			"Nokeoo"
+		]
+	},
+	"bs-smartlist-ve-smartlist-title": "Išmanusis sąrašas",
+	"bs-smartlist-ve-smartlistinspector-count": "Skaičius",
+	"bs-smartlist-ve-smartlistinspector-ns": "Vardų sritis (-ys)",
+	"bs-smartlist-ve-smartlistinspector-cat": "Kategorija",
+	"bs-smartlist-ve-smartlistinspector-minor": "Rodyti smulkius",
+	"bs-smartlist-ve-smartlistinspector-catmode": "Kategorijos režimas",
+	"bs-smartlist-ve-smartlistinspector-period": "Laikotarpis",
+	"bs-smartlist-ve-smartlistinspector-new": "Rodyti tik naujus straipsnius",
+	"bs-smartlist-ve-smartlistinspector-heading": "Antraštė",
+	"bs-smartlist-ve-smartlistinspector-showtext": "Rodyti tekstą",
+	"bs-smartlist-ve-smartlistinspector-sort": "Rūšiuoti pagal",
+	"bs-smartlist-ve-smartlistinspector-order": "Rūšiavimo tvarka",
+	"bs-smartlist-ve-smartlistinspector-showns": "Rodyti vardų sritis",
+	"bs-smartlist-ve-smartlistinspector-numwithtext": "Skaičius su tekstu",
+	"bs-smartlist-ve-smartlistinspector-meta": "Meta",
+	"bs-smartlist-ve-smartlistinspector-target": "Tikslas",
+	"bs-smartlist-ve-smartlistinspector-excludens": "Neįtraukti vardų srities (-čių)",
+	"bs-smartlist-ve-period-day-label": "Diena",
+	"bs-smartlist-ve-period-week-label": "Savaitė",
+	"bs-smartlist-ve-period-month-label": "Mėnuo",
+	"bs-smartlist-ve-sort-time-label": "Laikas",
+	"bs-smartlist-ve-sort-title-label": "Pavadinimas",
+	"bs-smartlist-ve-newbies-title": "Naujokai",
+	"bs-smartlist-ve-newbiesinspector-count": "Skaičius",
+	"bs-smartlist-ve-toplist-title": "TopSąrašas",
+	"bs-smartlist-ve-toplistinspector-count": "Skaičius",
+	"bs-smartlist-ve-toplistinspector-ns": "Vardų sritis (-ys)",
+	"bs-smartlist-ve-toplistinspector-cat": "Kategorija",
+	"bs-smartlist-ve-toplistinspector-period": "Laikotarpis",
+	"bs-smartlist-ve-mode-recentchanges-label": "Naujausi keitimai",
+	"bs-smartlist-ve-mode-changesofweek-label": "Savaitės pokyčiai"
+}
