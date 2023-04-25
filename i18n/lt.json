@@ -3,7 +3,8 @@
 		"authors": [
 			"Eitvys200",
 			"Hugo.arg",
-			"Osnard"
+			"Osnard",
+			"Nokeoo"
 		]
 	},
 	"bs-smartlist-desc": "Rodo paskutinius penkis viki pakeitimus sąraše",
@@ -32,5 +33,20 @@
 	"bs-smartlist-mosteditedpagesdesc": "Daugiausia redaguojamų puslapių sąrašas, išrūšiuotas pagal jų pakeitimus.",
 	"bs-smartlist-mostvisitedpagesdesc": "Daugiausia peržiūrėtų puslapių sąrašas, išrūšiuotas pagal jų peržiūras.",
 	"bs-smartlist-lasteditsdesc": "Puslapių, kuriuos jūs redagavote, sąrašas.",
-	"bs-smartlist-hitcounter-missing": "Plėtinys <a target='blank' href='https://www.mediawiki.org/wiki/Extension:HitCounters'>HitCounters</a> turi būti įdiegtas."
+	"bs-smartlist-hitcounter-missing": "Plėtinys <a target='blank' href='https://www.mediawiki.org/wiki/Special:MyLanguage/Extension:HitCounters'>HitCounters</a> turi būti įdiegtas.",
+	"bs-smartlist-ve-userlist-title": "Naudotojų sąrašas",
+	"bs-smartlist-ve-userlistinspector-groups": "Grupės",
+	"bs-smartlist-ve-userlistinspector-limit": "Rodomų naudotojų limitas",
+	"bs-smartlist-ve-userlistinspector-no-users": "Pasirinktoje grupėje nėra naudotojų. Pasirinkite kitą grupę, kad būtų pateiktas jos naudotojų sąrašas",
+	"bs-smartlist-ve-userlistinspector-no-group": "Nepasirinkta jokia grupė. Pasirinkite grupę, kad pateiktumėte jos naudotojų sąrašą",
+	"bs-smartlist-droplet-userlist-name": "Narių sąrašas",
+	"bs-smartlist-droplet-userlist-desc": "Pasirinktinų grupių narių sąrašas",
+	"bs-smartlist-droplet-newbies-name": "Nauji naudotojai",
+	"bs-smartlist-droplet-newbies-desc": "Naujų naudotojų sąrašas viki",
+	"bs-smartlist-droplet-recent-changes-name": "Naujausi keitimai",
+	"bs-smartlist-droplet-recent-changes-desc": "Neseniai pakeistų puslapių sąrašas",
+	"bs-smartlist-droplet-toplist-name": "Lankomiausi puslapiai",
+	"bs-smartlist-droplet-toplist-desc": "Lankomiausių viki puslapių sąrašas",
+	"bs-smartlist-droplet-what-links-here-name": "Nuorodos į šį puslapį",
+	"bs-smartlist-droplet-what-links-here-desc": "Puslapių, kuriuose pateikiamos nuorodos į šį puslapį, sąrašas"
 }
