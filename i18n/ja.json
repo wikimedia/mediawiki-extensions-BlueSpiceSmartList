@@ -38,5 +38,7 @@
 	"bs-smartlist-droplet-recent-changes-desc": "最近更新されたページのリスト",
 	"bs-smartlist-droplet-toplist-name": "最も閲覧されているページ",
 	"bs-smartlist-droplet-what-links-here-name": "このページへのリンク",
-	"bs-smartlist-droplet-what-links-here-desc": "このページにリンクしているページのリスト"
+	"bs-smartlist-droplet-what-links-here-desc": "このページにリンクしているページのリスト",
+	"bs-smartlist-ve-recentchanges-title": "最近の更新",
+	"bs-smartlist-ve-whatlinkshere-title": "このページへのリンク"
 }

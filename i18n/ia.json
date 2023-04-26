@@ -49,5 +49,7 @@
 	"bs-smartlist-droplet-toplist-name": "Paginas le plus visitate",
 	"bs-smartlist-droplet-toplist-desc": "Lista del paginas wiki le plus visitate",
 	"bs-smartlist-droplet-what-links-here-name": "Ligamines a iste pagina",
-	"bs-smartlist-droplet-what-links-here-desc": "Lista de paginas que liga a iste pagina"
+	"bs-smartlist-droplet-what-links-here-desc": "Lista de paginas que liga a iste pagina",
+	"bs-smartlist-ve-recentchanges-title": "Modificationes recente",
+	"bs-smartlist-ve-whatlinkshere-title": "Ligamines a iste pagina"
 }
