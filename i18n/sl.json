@@ -49,5 +49,7 @@
 	"bs-smartlist-droplet-toplist-name": "Najbolj obiskane strani",
 	"bs-smartlist-droplet-toplist-desc": "Seznam najbolj obiskanih vikistrani",
 	"bs-smartlist-droplet-what-links-here-name": "Povezave na to stran",
-	"bs-smartlist-droplet-what-links-here-desc": "Seznam strani, ki se povezujejo na to stran"
+	"bs-smartlist-droplet-what-links-here-desc": "Seznam strani, ki se povezujejo na to stran",
+	"bs-smartlist-ve-recentchanges-title": "Zadnje spremembe",
+	"bs-smartlist-ve-whatlinkshere-title": "Povezave na to stran"
 }
