@@ -32,5 +32,6 @@
 	"bs-smartlist-mostactiveusersdesc": "편집별로 정렬된 가장 활동이 많은 사용자 목록입니다.",
 	"bs-smartlist-mosteditedpagesdesc": "편집별로 정렬된 가장 많이 편집된 문서 목록입니다.",
 	"bs-smartlist-mostvisitedpagesdesc": "조회수별로 정렬된 가장 조회수가 많은 문서 목록입니다.",
-	"bs-smartlist-lasteditsdesc": "편집한 문서 목록입니다."
+	"bs-smartlist-lasteditsdesc": "편집한 문서 목록입니다.",
+	"bs-smartlist-ve-recentchanges-title": "최근 바뀜"
 }
