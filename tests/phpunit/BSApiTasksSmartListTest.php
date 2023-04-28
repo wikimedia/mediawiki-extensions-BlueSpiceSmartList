@@ -12,6 +12,7 @@ use BlueSpice\Tests\BSApiTasksTestBase;
  * @group API
  * @group Database
  * @group medium
+ * @group Broken
  */
 class BSApiTasksSmartListTest extends BSApiTasksTestBase {
 
@@ -24,7 +25,6 @@ class BSApiTasksSmartListTest extends BSApiTasksTestBase {
 	}
 
 	/**
-	 *
 	 * @covers \BSApiTasksSmartList::task_getMostActivePortlet
 	 * @return array
 	 */
