@@ -51,5 +51,7 @@
 	"bs-smartlist-droplet-toplist-name": "הדפים הנצפים ביותר",
 	"bs-smartlist-droplet-toplist-desc": "רשימה של דפי הוויקי הנצפים ביותר",
 	"bs-smartlist-droplet-what-links-here-name": "קישורים לדף הזה",
-	"bs-smartlist-droplet-what-links-here-desc": "רשימת הדפים המקשרים לדף הזה"
+	"bs-smartlist-droplet-what-links-here-desc": "רשימת הדפים המקשרים לדף הזה",
+	"bs-smartlist-ve-recentchanges-title": "שינויים אחרונים",
+	"bs-smartlist-ve-whatlinkshere-title": "קישורים לדף הזה"
 }

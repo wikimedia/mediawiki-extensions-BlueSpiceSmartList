@@ -47,5 +47,7 @@
 	"bs-smartlist-ve-userlistinspector-groups": "Groepen",
 	"bs-smartlist-ve-userlistinspector-limit": "Limiet van getoonde gebruikers",
 	"bs-smartlist-ve-userlistinspector-no-users": "Geen gebruikers in geselecteerde groep. Kies een andere groep om de gebruikers weer te geven",
-	"bs-smartlist-ve-userlistinspector-no-group": "Geen groep geselecteerd. Kies een groep om de gebruikers weer te geven"
+	"bs-smartlist-ve-userlistinspector-no-group": "Geen groep geselecteerd. Kies een groep om de gebruikers weer te geven",
+	"bs-smartlist-droplet-recent-changes-name": "Recente wijzigingen",
+	"bs-smartlist-ve-recentchanges-title": "Recente wijzigingen"
 }

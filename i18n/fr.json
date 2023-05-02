@@ -56,5 +56,7 @@
 	"bs-smartlist-droplet-toplist-name": "Pages les plus visitées",
 	"bs-smartlist-droplet-toplist-desc": "Liste des pages wiki les plus visitées",
 	"bs-smartlist-droplet-what-links-here-name": "Liens vers cette page",
-	"bs-smartlist-droplet-what-links-here-desc": "Liste des pages qui sont liées à cette page"
+	"bs-smartlist-droplet-what-links-here-desc": "Liste des pages qui sont liées à cette page",
+	"bs-smartlist-ve-recentchanges-title": "Modifications récentes",
+	"bs-smartlist-ve-whatlinkshere-title": "Liens vers cette page"
 }

@@ -32,5 +32,7 @@
 	"bs-smartlist-mostvisitedpagesdesc": "조회수별로 정렬된 가장 조회수가 많은 문서 목록입니다.",
 	"bs-smartlist-lasteditsdesc": "편집한 문서 목록입니다.",
 	"bs-smartlist-hitcounter-missing": "확장 기능 <a target='blank' href='https://www.mediawiki.org/wiki/Extension:HitCounters'>HitCounters</a>를 설치해야 합니다.",
-	"apihelp-bs-smartlist-tasks-description": "문서와 사용자 통계의 포틀릿 데이터를 제공할 API 함수들입니다."
+	"apihelp-bs-smartlist-tasks-description": "문서와 사용자 통계의 포틀릿 데이터를 제공할 API 함수들입니다.",
+	"bs-smartlist-ve-recentchanges-title": "최근 바뀜",
+	"bs-smartlist-ve-whatlinkshere-title": "이 문서의 링크"
 }
