@@ -26,6 +26,9 @@ class RecentChangesMode extends GenericSmartlistMode {
 	/** @var TitleFactory */
 	private $titleFactory;
 
+	/** @var MessageLocalizer */
+	private $messageLocalizer;
+
 	/**
 	 *
 	 * @param PermissionManager $permissionManager
@@ -36,6 +39,7 @@ class RecentChangesMode extends GenericSmartlistMode {
 		$this->permissionManager = $permissionManager;
 		$this->lb = $lb;
 		$this->titleFactory = $titleFactory;
+		$this->messageLocalizer = RequestContext::getMain();
 	}
 
 	/**
@@ -118,7 +122,14 @@ class RecentChangesMode extends GenericSmartlistMode {
 			$namespaceIds = $this->makeNamespaceArrayDiff( $args );
 			$conditions[] = 'rc_namespace IN (' . implode( ',', $namespaceIds ) . ')';
 		} catch ( BsInvalidNamespaceException $ex ) {
-			// what to do here
+			$sInvalidNamespaces = implode( ', ', $ex->getListOfInvalidNamespaces() );
+
+			return [ 'error' =>
+				$this->messageLocalizer->msg( 'bs-smartlist-invalid-namespaces' )
+					->numParams( count( $ex->getListOfInvalidNamespaces() ) )
+					->params( $sInvalidNamespaces )
+					->text()
+			];
 		}
 
 		$this->makeCategoriesFilterCondition( $conditions, 'rc_cur_id', $args );

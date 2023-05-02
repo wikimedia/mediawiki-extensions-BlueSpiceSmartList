@@ -103,7 +103,7 @@ class WhatLinksHereMode extends GenericSmartlistMode {
 		} catch ( BsInvalidNamespaceException $ex ) {
 			$sInvalidNamespaces = implode( ', ', $ex->getListOfInvalidNamespaces() );
 
-			return [
+			return [ 'error' =>
 				$this->messageLocalizer->msg( 'bs-smartlist-invalid-namespaces' )
 					->numParams( count( $ex->getListOfInvalidNamespaces() ) )
 					->params( $sInvalidNamespaces )
