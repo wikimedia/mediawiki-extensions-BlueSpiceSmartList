@@ -66,7 +66,9 @@ class ListRendererTest extends MediaWikiIntegrationTestCase {
 					'mode' => 'recentchanges'
 				],
 				// output what is expected
-				'<div class="bs-smartlist"><h3>ListRendererTest</h3>* [[Dummy|Dummy]]
+				// escaping of links necessary for category links
+				// https://www.mediawiki.org/wiki/Help:Categories#Linking_to_a_category
+				'<div class="bs-smartlist"><h3>ListRendererTest</h3>* [[:Dummy|Dummy]]
 </div>'
 			],
 			'parser-wrapper-with-visible-text' => [
@@ -85,7 +87,7 @@ class ListRendererTest extends MediaWikiIntegrationTestCase {
 					'showtext' => true,
 					'numwithtext' => 10
 				],
-				'<div class="bs-smartlist"><h3>ListRendererTest - 2</h3>* [[Dummy|Dummy]]<br/>Lorem ipsum text
+				'<div class="bs-smartlist"><h3>ListRendererTest - 2</h3>* [[:Dummy|Dummy]]<br/>Lorem ipsum text
 </div>'
 			],
 			'parser-wrapper-newbies' => [
@@ -106,7 +108,7 @@ class ListRendererTest extends MediaWikiIntegrationTestCase {
 					'listType' => 'csv',
 					'mode' => 'newbies'
 				],
-				'<div class="bs-smartlist">[[User 1|User 1]], [[User 2|User 2]], [[User 3|User 3]], </div>'
+				'<div class="bs-smartlist">[[:User 1|User 1]], [[:User 2|User 2]], [[:User 3|User 3]], </div>'
 			],
 			'parser-wrapper-with-more-items-than-shown' => [
 				$parserWrapper,
@@ -127,8 +129,8 @@ class ListRendererTest extends MediaWikiIntegrationTestCase {
 					'listType' => 'ul',
 					'mode' => 'recentchanges'
 				],
-				'<div class="bs-smartlist"><h3>ListRendererTest</h3>* [[Dummy 1|Dummy 1]]
-* [[Dummy 2|Dummy 2]]
+				'<div class="bs-smartlist"><h3>ListRendererTest</h3>* [[:Dummy 1|Dummy 1]]
+* [[:Dummy 2|Dummy 2]]
 </div>'
 			]
 		];

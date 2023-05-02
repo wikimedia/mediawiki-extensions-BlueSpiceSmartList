@@ -35,7 +35,7 @@ class BlueSpiceSmartListModeFactory {
 	 */
 	public function createMode( $mode ): IMode {
 		if ( !isset( $this->modeRegistry[$mode] ) ) {
-			throw new MWException( 'No mode' );
+			throw new MWException( 'No such mode: ' . $mode );
 		}
 		if ( !isset( $this->modes[$mode] ) ) {
 			$this->modes[$mode] = $this->objectFactory->createObject( $this->modeRegistry[$mode] );
