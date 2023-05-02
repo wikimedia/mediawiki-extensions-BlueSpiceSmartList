@@ -121,7 +121,12 @@ class ListRenderer {
 			}
 
 			$template = "$listType";
-			$template .= "[[{PREFIXEDTITLE}|{DISPLAYTITLE}]]";
+			/*
+			 * escaping of links necessary for category links
+			 * to link to the page instead of adding it
+			 * https://www.mediawiki.org/wiki/Help:Categories#Linking_to_a_category
+			*/
+			$template .= "[[:{PREFIXEDTITLE}|{DISPLAYTITLE}]]";
 
 			if ( isset( $item[ 'COMMENT' ] ) ) {
 				$template .= " {COMMENT} ";
