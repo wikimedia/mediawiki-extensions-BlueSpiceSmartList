@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Meno25",
-			"ديفيد"
+			"ديفيد",
+			"Alshamiri1"
 		]
 	},
 	"bs-smartlist-desc": "يعرض آخر خمس تغييرات في الويكي في قائمة",
@@ -35,5 +36,19 @@
 	"bs-smartlist-lasteditsdesc": "قائمة الصفحات التي قمت بتحريرها.",
 	"bs-smartlist-hitcounter-missing": "يجب تثبيت ملحق <a target='blank' href='https://www.mediawiki.org/wiki/Special:MyLanguage/Extension:HitCounters'>HitCounters</a> .",
 	"apihelp-bs-smartlist-tasks-description": "وظائف API لعرض بيانات المدخل لإحصاءات الصفحات والمستخدم.",
-	"apihelp-bs-smartlist-tasks-summary": "وظائف API لعرض بيانات المدخل لإحصاءات الصفحات والمستخدم."
+	"apihelp-bs-smartlist-tasks-summary": "وظائف API لعرض بيانات المدخل لإحصاءات الصفحات والمستخدم.",
+	"bs-smartlist-ve-userlistinspector-no-users": "لا يوجد مستخدمون في المجموعة المختارة. اختر مجموعة أخرى لسرد مستخدميها",
+	"bs-smartlist-ve-userlistinspector-no-group": "لم يتم اختيار أي مجموعة. اختر مجموعة لسرد مستخدميها",
+	"bs-smartlist-droplet-userlist-name": "قائمة الأعضاء",
+	"bs-smartlist-droplet-userlist-desc": "قائمة الأعضاء من المجموعات المختارة",
+	"bs-smartlist-droplet-newbies-name": "مستخدمون جدد",
+	"bs-smartlist-droplet-newbies-desc": "قائمة المستخدمين الجدد في الويكي",
+	"bs-smartlist-droplet-recent-changes-name": "التغييرات الأخيرة",
+	"bs-smartlist-droplet-recent-changes-desc": "قائمة الصفحات التي تم تغييرها مؤخرًا",
+	"bs-smartlist-droplet-toplist-name": "الصفحات الأكثر زيارة",
+	"bs-smartlist-droplet-toplist-desc": "قائمة صفحات الويكي الأكثر زيارة",
+	"bs-smartlist-droplet-what-links-here-name": "روابط لهذه الصفحة",
+	"bs-smartlist-droplet-what-links-here-desc": "قائمة الصفحات التي تصل إلى هذه الصفحة",
+	"bs-smartlist-ve-recentchanges-title": "التغييرات الأخيرة",
+	"bs-smartlist-ve-whatlinkshere-title": "روابط لهذه الصفحة"
 }
