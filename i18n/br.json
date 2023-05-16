@@ -3,7 +3,8 @@
 		"authors": [
 			"Fohanno",
 			"Huñvreüs",
-			"Y-M D"
+			"Y-M D",
+			"Adriendelucca"
 		]
 	},
 	"prefs-smartlist": "Roll speredek",
@@ -22,5 +23,7 @@
 	"bs-smartlist-mosteditedpages": "Pajennoù muiañ aozet",
 	"bs-smartlist-mostactiveusers": "Implijerien oberiantañ (dre aozadennoù)",
 	"bs-smartlist-lastedits": "Ma aozadennoù",
-	"bs-smartlist-noedits": "N'eus bet kavet aozadenn ebet."
+	"bs-smartlist-noedits": "N'eus bet kavet aozadenn ebet.",
+	"bs-smartlist-ve-recentchanges-title": "Kemmoù diwezhañ",
+	"bs-smartlist-ve-whatlinkshere-title": "Liammoù war-zu ar bajenn-mañ"
 }
