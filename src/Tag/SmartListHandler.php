@@ -66,14 +66,16 @@ class SmartListHandler extends Handler {
 			$this->processedArgs[$arg] = $this->parser->recursivePreprocess( $val );
 		}
 
-		$this->parser->getOutput()->setProperty( 'bs-smartlist', FormatJson::encode( $this->processedArgs ) );
-		$this->processedArgs['listType'] = $this->mode->getListType();
+		$this->parser->getOutput()->setPageProperty( 'bs-smartlist', FormatJson::encode( $this->processedArgs ) );
 		$this->processedArgs['mode'] = $this->mode->getKey();
 
 		$outputList = $this->mode->getList( $this->processedArgs, $this->context );
 		if ( isset( $outputList['error'] ) ) {
 			return $outputList['error'];
 		}
+
+		$this->processedArgs['listType'] = $this->mode->getListType();
+
 		$parser = new ParserObjectWrapper( $this->parser );
 		$listRenderer = new ListRenderer(
 			$parser,
