@@ -67,13 +67,15 @@ class SmartListHandler extends Handler {
 		}
 
 		$this->parser->getOutput()->setPageProperty( 'bs-smartlist', FormatJson::encode( $this->processedArgs ) );
-		$this->processedArgs['listType'] = $this->mode->getListType();
 		$this->processedArgs['mode'] = $this->mode->getKey();
 
 		$outputList = $this->mode->getList( $this->processedArgs, $this->context );
 		if ( isset( $outputList['error'] ) ) {
 			return $outputList['error'];
 		}
+
+		$this->processedArgs['listType'] = $this->mode->getListType();
+
 		$parser = new ParserObjectWrapper( $this->parser );
 		$listRenderer = new ListRenderer(
 			$parser,
