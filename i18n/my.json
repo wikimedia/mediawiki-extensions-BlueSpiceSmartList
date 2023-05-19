@@ -14,5 +14,11 @@
 	"bs-smartlist-month": "လ",
 	"bs-smartlist-time": "အချိန်",
 	"bs-smartlist-title": "ခေါင်းစဉ်",
-	"bs-smartlist-noedits": "တည်းဖြတ်မှုများ မတွေ့ပါ။"
+	"bs-smartlist-noedits": "တည်းဖြတ်မှုများ မတွေ့ပါ။",
+	"bs-smartlist-droplet-recent-changes-name": "လတ်တလော အပြောင်းအလဲများ",
+	"bs-smartlist-droplet-toplist-name": "အကြည့်အများဆုံး စာမျက်နှာများ",
+	"bs-smartlist-droplet-what-links-here-name": "ဤစာမျက်နှာသို့ လင့်ခ်ချိတ်ထားမှုများ",
+	"bs-smartlist-droplet-what-links-here-desc": "ဤစာမျက်နှာသို့ လင့်ခ်ချိတ်ထားသော စာမျက်နှာများစာရင်း",
+	"bs-smartlist-ve-recentchanges-title": "လတ်တလော အပြောင်းအလဲများ",
+	"bs-smartlist-ve-whatlinkshere-title": "ဤစာမျက်နှာသို့ လင့်ခ်ချိတ်ထားမှုများ"
 }
