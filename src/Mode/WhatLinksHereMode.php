@@ -73,9 +73,16 @@ class WhatLinksHereMode extends GenericSmartlistMode {
 	public function getItems( $args, $context ): array {
 		$args['target'] = $args[self::ATTR_TARGET];
 
-		$targetTitle = empty( $args['target'] )
-			? $context->getTitle()
-			: $this->titleFactory->newFromText( $args['target'] );
+		if ( empty( $args['target'] ) ) {
+			$targetTitle = $context->getTitle();
+			if ( $targetTitle->getArticleID() === 0 ) {
+				// edit mode API context
+				$titleText = $context->getRequest()->getRawVal( 'page' );
+				$targetTitle = $this->titleFactory->newFromText( $titleText );
+			}
+		} else {
+			$targetTitle = $this->titleFactory->newFromText( $args['target'] );
+		}
 
 		if ( $targetTitle === null ) {
 			return [];
