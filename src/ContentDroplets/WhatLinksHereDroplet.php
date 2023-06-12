@@ -57,23 +57,7 @@ class WhatLinksHereDroplet extends TagDroplet {
 	 * @return array
 	 */
 	protected function getAttributes(): array {
-		return [
-			'count' => 5,
-			'cat' => '-',
-			'ns' => 'all',
-			'target' => '',
-			'catmode' => 'OR',
-			'heading' => '',
-			'trim' => 30,
-			'showtext' => false,
-			'trimtext' => 50,
-			'sort' => 'time',
-			'order' => 'DESC',
-			'showns' => true,
-			'numwithtext' => 100,
-			'excludens' => '',
-			'meta' => false
-		];
+		return [];
 	}
 
 	/**
