@@ -53,7 +53,7 @@ class SmartListHandler extends Handler {
 	 */
 	public function handle() {
 		$this->parser->getOutput()->updateCacheExpiry( 0 );
-		$this->parser->getOutput()->setProperty( 'bs-tag-smartlist', 1 );
+		$this->parser->getOutput()->setPageProperty( 'bs-tag-smartlist', 1 );
 
 		if ( !isset( $this->mode ) ) {
 			throw new MWException( 'No mode' );
