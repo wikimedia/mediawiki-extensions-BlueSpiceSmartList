@@ -43,7 +43,19 @@
 	"apihelp-bs-smartlist-tasks-summary": "為頁面與使用者統計狀態提供 portlet 資料的 API 功能。",
 	"bs-smartlist-ve-userlist-title": "使用者清單",
 	"bs-smartlist-ve-userlistinspector-groups": "群組",
+	"bs-smartlist-ve-userlistinspector-limit": "顯示使用者限制",
+	"bs-smartlist-ve-userlistinspector-no-users": "所選群組裡沒有使用者。請挑選另個群組來列出其使用者",
+	"bs-smartlist-ve-userlistinspector-no-group": "未選擇群組。請挑選群組來列出其使用者",
 	"bs-smartlist-droplet-userlist-name": "成員清單",
+	"bs-smartlist-droplet-userlist-desc": "可選擇群組的成員清單",
 	"bs-smartlist-droplet-newbies-name": "新使用者",
-	"bs-smartlist-droplet-recent-changes-name": "近期變更"
+	"bs-smartlist-droplet-newbies-desc": "wiki 中的新使用者清單",
+	"bs-smartlist-droplet-recent-changes-name": "近期變更",
+	"bs-smartlist-droplet-recent-changes-desc": "最近更改頁面的清單",
+	"bs-smartlist-droplet-toplist-name": "最多人瀏覽的頁面",
+	"bs-smartlist-droplet-toplist-desc": "最多瀏覽的 wiki 頁面清單",
+	"bs-smartlist-droplet-what-links-here-name": "連至此頁面的連結",
+	"bs-smartlist-droplet-what-links-here-desc": "連至此頁面的頁面清單",
+	"bs-smartlist-ve-recentchanges-title": "近期變更",
+	"bs-smartlist-ve-whatlinkshere-title": "連至此頁面的連結"
 }
