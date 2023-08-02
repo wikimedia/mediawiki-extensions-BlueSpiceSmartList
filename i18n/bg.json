@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"Kareyac",
+			"NikiTricky",
 			"StanProg"
 		]
 	},
@@ -10,5 +11,21 @@
 	"bs-smartlist-day": "Ден",
 	"bs-smartlist-month": "Месец",
 	"bs-smartlist-tag-smartlist-example-rc": "Режим: Последни промени",
-	"bs-smartlist-ve-userlistinspector-groups": "Групи"
+	"bs-smartlist-ve-userlistinspector-groups": "Групи",
+	"bs-smartlist-sort-asc": "възходящо",
+	"bs-smartlist-sort-desc": "низходящо",
+	"bs-smartlist-week": "Седмица",
+	"bs-smartlist-time": "Време",
+	"bs-smartlist-title": "Заглавие",
+	"bs-smartlist-tag-smartlist-desc": "Показва автоматично генерирани списъци със статии. Конфигурацията работи чрез няколко режима и параметри.",
+	"bs-smartlist-tag-smartlist-example-whatlinkshere": "Режим: Какво води тук",
+	"bs-smartlist-mostvisitedpages": "Най-гледани страници",
+	"bs-smartlist-mosteditedpages": "Най-редактирани страници",
+	"bs-smartlist-mostactiveusers": "Най-активни потребители (по редакции)",
+	"bs-smartlist-lastedits": "Мои промени",
+	"bs-smartlist-noedits": "Няма намерени промени.",
+	"bs-smartlist-mostactiveusersdesc": "Списък с най-активните потребители, сортирани по техните редакции.",
+	"bs-smartlist-ve-userlist-title": "Потребителски списък",
+	"bs-smartlist-droplet-newbies-name": "Нови потребители",
+	"bs-smartlist-droplet-recent-changes-name": "Последни промени"
 }
