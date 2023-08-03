@@ -42,5 +42,8 @@
 	"apihelp-bs-smartlist-tasks-description": "為頁面與使用者統計狀態提供 portlet 資料的 API 功能。",
 	"apihelp-bs-smartlist-tasks-summary": "為頁面與使用者統計狀態提供 portlet 資料的 API 功能。",
 	"bs-smartlist-ve-userlist-title": "使用者清單",
-	"bs-smartlist-ve-userlistinspector-groups": "群組"
+	"bs-smartlist-ve-userlistinspector-groups": "群組",
+	"bs-smartlist-ve-userlistinspector-limit": "顯示使用者限制",
+	"bs-smartlist-ve-userlistinspector-no-users": "所選群組裡沒有使用者。請挑選另個群組來列出其使用者",
+	"bs-smartlist-ve-userlistinspector-no-group": "未選擇群組。請挑選群組來列出其使用者"
 }
