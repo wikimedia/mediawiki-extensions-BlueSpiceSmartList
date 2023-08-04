@@ -5,5 +5,7 @@
 		]
 	},
 	"bs-smartlist-title": "Аталыш",
-	"bs-smartlist-day": "Күн"
+	"bs-smartlist-day": "Күн",
+	"bs-smartlist-week": "Апта",
+	"bs-smartlist-month": "Ай"
 }
