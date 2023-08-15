@@ -48,6 +48,16 @@
 	"bs-smartlist-ve-userlistinspector-limit": "Limiet van getoonde gebruikers",
 	"bs-smartlist-ve-userlistinspector-no-users": "Geen gebruikers in geselecteerde groep. Kies een andere groep om de gebruikers weer te geven",
 	"bs-smartlist-ve-userlistinspector-no-group": "Geen groep geselecteerd. Kies een groep om de gebruikers weer te geven",
+	"bs-smartlist-droplet-userlist-name": "Ledenlijst",
+	"bs-smartlist-droplet-userlist-desc": "Ledenlijst van selecteerbare groepen",
+	"bs-smartlist-droplet-newbies-name": "Nieuwe gebruikers",
+	"bs-smartlist-droplet-newbies-desc": "Lijst met nieuwe gebruikers in de wiki",
 	"bs-smartlist-droplet-recent-changes-name": "Recente wijzigingen",
-	"bs-smartlist-ve-recentchanges-title": "Recente wijzigingen"
+	"bs-smartlist-droplet-recent-changes-desc": "Lijst met onlangs gewijzigde pagina's",
+	"bs-smartlist-droplet-toplist-name": "Meest bezochte pagina's",
+	"bs-smartlist-droplet-toplist-desc": "Lijst met de meest bezochte wikipagina's",
+	"bs-smartlist-droplet-what-links-here-name": "Links naar deze pagina",
+	"bs-smartlist-droplet-what-links-here-desc": "Lijst met pagina's die naar deze pagina linken",
+	"bs-smartlist-ve-recentchanges-title": "Recente wijzigingen",
+	"bs-smartlist-ve-whatlinkshere-title": "Links naar deze pagina"
 }
