@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Sagan",
-			"Азат Хәлилов"
+			"Азат Хәлилов",
+			"З. ӘЙЛЕ"
 		]
 	},
 	"bs-smartlist-desc": "Исемлектә һуңғы биш вики төҙәтеүҙе күрһәтә",
@@ -19,9 +20,9 @@
 	"bs-smartlist-month": "Ай",
 	"bs-smartlist-time": "Ваҡыт",
 	"bs-smartlist-title": "Исеме",
-	"bs-smartlist-tag-smartlist-desc": "Һуңғы үҙгәртеүҙәр тураһында көйләнгән мәғлүмәтте күрһәтә",
-	"bs-smartlist-tag-newbies-desc": "Һуңғы ҡатнашыусыларҙы күрһәтә",
-	"bs-smartlist-tag-toplist-desc": "Иң күп ҡаралған биттәрҙе күһәтә",
+	"bs-smartlist-tag-smartlist-desc": "Мәҡәләләрҙең автоматик булдырылған исемлеген күрһәтә. Ғәмәл бер нисә модификатор һәм параметр аша башҡарыла.",
+	"bs-smartlist-tag-newbies-desc": "Яңы ҡатнашыусыларҙы күрһәтә. Исемлек билдәле бер һанға тиклем генә тултырыла",
+	"bs-smartlist-tag-toplist-desc": "Иң күп ҡаралған биттәрҙе күрһәтә. Бер нисә параметр менән сикләнеүе мөмкин.",
 	"bs-smartlist-mostvisitedpages": "Иң күп ҡаралған биттәр",
 	"bs-smartlist-mosteditedpages": "Иң йыш мөхәррирләнгән биттәр",
 	"bs-smartlist-mostactiveusers": "Иң әүҙем ҡатнашыусылар (төҙәтеүҙәр һаны буйынса)",
