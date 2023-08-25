@@ -298,7 +298,7 @@ class SmartList extends \BlueSpice\Extension {
 				if ( $i > $iCount ) {
 					break;
 				}
-				$oUser = $userFactory->newFromId( $row->rev_user );
+				$oUser = $userFactory->newFromActorId( $row->rev_actor );
 				if ( $userNameUtils->isIP( $oUser->getName() ) ) {
 					continue;
 				}
