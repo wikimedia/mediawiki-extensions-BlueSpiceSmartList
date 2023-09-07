@@ -6,15 +6,15 @@
 			"З. ӘЙЛЕ"
 		]
 	},
-	"bs-smartlist-desc": "Исемлектә һуңғы биш вики төҙәтеүҙе күрһәтә",
+	"bs-smartlist-desc": "Исемлектә викиҙағы һуңғы биш төҙәтеүҙе күрһәтә",
 	"prefs-smartlist": "«Аҡыллы» исемлек",
 	"bs-smartlist-recent-changes": "Һуңғы үҙгәртеүҙәр",
-	"bs-smartlist-no-entries": "Бер нәмә лә табылманы",
+	"bs-smartlist-no-entries": "Бер нәмә лә табылманы.",
 	"bs-smartlist-invalid-namespaces": "{{PLURAL:$1|Исемдәр арауығы }} дөрөҫ түгел: $2.",
-	"bs-smartlist-invalid-target": "Күрһәтелгән маҡсат биттәге атама була алмай",
+	"bs-smartlist-invalid-target": "Күрһәтелгән маҡсат биттең атамаһы була алмай",
 	"bs-smartlist-comment": "Комментарий: $1.",
 	"bs-smartlist-sort-asc": "үҫеш буйынса",
-	"bs-smartlist-sort-desc": "түбәнәйеү буйынса",
+	"bs-smartlist-sort-desc": "кәмеү буйынса",
 	"bs-smartlist-day": "Көн",
 	"bs-smartlist-week": "Аҙна",
 	"bs-smartlist-month": "Ай",
@@ -26,10 +26,10 @@
 	"bs-smartlist-mostvisitedpages": "Иң күп ҡаралған биттәр",
 	"bs-smartlist-mosteditedpages": "Иң йыш мөхәррирләнгән биттәр",
 	"bs-smartlist-mostactiveusers": "Иң әүҙем ҡатнашыусылар (төҙәтеүҙәр һаны буйынса)",
-	"bs-smartlist-lastedits": "Минең төҙәтеүҙәр",
-	"bs-smartlist-noedits": "Төҙәтеүҙәр табылманы",
-	"bs-smartlist-mostactiveusersdesc": "Төҙәтеүҙәр һаны буйынса һайлап алынған иң әүҙем ҡатнашыусылар исемлеге",
-	"bs-smartlist-mosteditedpagesdesc": "Төҙәтеүҙәр һаны буйынса һайланған иң күп мөхәррирләнгән биттәр исемлеге",
-	"bs-smartlist-mostvisitedpagesdesc": "Ҡаралған биттәр һаны буйынса һайланған иң күп ҡаралған биттәр исемлеге",
-	"bs-smartlist-lasteditsdesc": "Һеҙ мөхәррирләгән биттәр исемлеге"
+	"bs-smartlist-lastedits": "Минең төҙәтеүҙәрем",
+	"bs-smartlist-noedits": "Төҙәтеүҙәр табылманы.",
+	"bs-smartlist-mostactiveusersdesc": "Төҙәтеүҙәр һаны буйынса һайлап алынған иң әүҙем ҡатнашыусылар исемлеге.",
+	"bs-smartlist-mosteditedpagesdesc": "Төҙәтеүҙәр һаны буйынса һайланған иң күп мөхәррирләнгән биттәр исемлеге.",
+	"bs-smartlist-mostvisitedpagesdesc": "Ҡарау иҫәбе буйынса һайланған иң күп ҡаралған биттәр исемлеге.",
+	"bs-smartlist-lasteditsdesc": "Һеҙ мөхәррирләгән биттәр исемлеге."
 }
