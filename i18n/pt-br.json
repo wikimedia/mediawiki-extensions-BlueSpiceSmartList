@@ -5,7 +5,8 @@
 			"Eduardo Addad de Oliveira",
 			"Eduardoaddad",
 			"Felipe L. Ewald",
-			"Re demz"
+			"Re demz",
+			"VasbXBR"
 		]
 	},
 	"bs-smartlist-desc": "Mostra as cinco últimas alterações da wiki numa lista",
@@ -40,5 +41,8 @@
 	"apihelp-bs-smartlist-tasks-summary": "Funções da API para servir dados de portlet para estatísticas de páginas e usuários.",
 	"bs-smartlist-ve-userlist-title": "Lista de usuários",
 	"bs-smartlist-ve-userlistinspector-groups": "Grupos",
-	"bs-smartlist-ve-userlistinspector-no-group": "Nenhum grupo selecionado. Escolha um grupo para lista seus usuários"
+	"bs-smartlist-ve-userlistinspector-no-group": "Nenhum grupo selecionado. Escolha um grupo para lista seus usuários",
+	"bs-smartlist-droplet-newbies-name": "Novos usuários",
+	"bs-smartlist-droplet-toplist-name": "Páginas mais visualizadas",
+	"bs-smartlist-droplet-toplist-desc": "Lista das páginas wiki mais visualizadas"
 }
