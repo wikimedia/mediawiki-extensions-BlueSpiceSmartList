@@ -245,11 +245,6 @@
 		"remoteExtPath": "BlueSpiceSmartList/resources"
 	},
 	"Hooks": {
-		"BSInsertMagicAjaxGetData": [
-			"\\BlueSpice\\SmartList\\Hook\\BSInsertMagicAjaxGetData\\AddSmartListTag::callback",
-			"\\BlueSpice\\SmartList\\Hook\\BSInsertMagicAjaxGetData\\AddNewbiesTag::callback",
-			"\\BlueSpice\\SmartList\\Hook\\BSInsertMagicAjaxGetData\\AddToplistTag::callback"
-		],
 		"BSUsageTrackerRegisterCollectors": "\\BlueSpice\\SmartList\\Hook\\BSUsageTrackerRegisterCollectors\\AddSmartlistTag::callback",
 		"BSDashboardsAdminDashboardPortalPortlets": "\\BlueSpice\\SmartList\\Hook\\BSDashboardsAdminDashboardPortalPortlets\\AddPortlets::callback",
 		"BSDashboardsAdminDashboardPortalConfig": "\\BlueSpice\\SmartList\\Hook\\BSDashboardsAdminDashboardPortalConfig\\AddConfigs::callback",
