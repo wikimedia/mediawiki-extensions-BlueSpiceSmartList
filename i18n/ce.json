@@ -5,6 +5,7 @@
 			"Умар"
 		]
 	},
+	"prefs-smartlist": "«Хьекъале» могӀам",
 	"bs-smartlist-recent-changes": "Керла нисдарш",
 	"bs-smartlist-no-entries": "ХӀума ца карийна.",
 	"bs-smartlist-comment": "Коммент: $1.",
@@ -15,7 +16,11 @@
 	"bs-smartlist-month": "Бутт",
 	"bs-smartlist-time": "Хан",
 	"bs-smartlist-title": "Корта",
+	"bs-smartlist-mostvisitedpages": "Сих-сиха хьовсу агӀонаш",
 	"bs-smartlist-mosteditedpages": "Сих-сиха тайо агӀонаш",
+	"bs-smartlist-mostactiveusers": "Уггаре жигара декъашхой (нисдарийн дукхаллица)",
 	"bs-smartlist-lastedits": "Сан нисдарш",
-	"bs-smartlist-noedits": "Нисдарш цакарий"
+	"bs-smartlist-noedits": "Нисдарш цакарий",
+	"bs-smartlist-ve-userlistinspector-groups": "Тобанаш",
+	"bs-smartlist-droplet-newbies-name": "Керла декъашхой"
 }
