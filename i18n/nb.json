@@ -38,5 +38,19 @@
 	"apihelp-bs-smartlist-tasks-summary": "API-funksjoner for å tilby portletdata for side- og brukerstatistikk.",
 	"bs-smartlist-ve-userlist-title": "Brukerliste",
 	"bs-smartlist-ve-userlistinspector-groups": "Grupper",
-	"bs-smartlist-droplet-newbies-name": "Nye brukere"
+	"bs-smartlist-droplet-newbies-name": "Nye brukere",
+	"bs-smartlist-ve-userlistinspector-limit": "Grense på viste brukere",
+	"bs-smartlist-ve-userlistinspector-no-users": "Ingen brukere i den valgte gruppa. Velg en annen gruppe for å liste opp brukerne dens",
+	"bs-smartlist-ve-userlistinspector-no-group": "Ingen grupper valgt. Velg en gruppe for å liste opp brukerne dens",
+	"bs-smartlist-droplet-userlist-name": "Medlemsliste",
+	"bs-smartlist-droplet-userlist-desc": "Medlemsliste for valgbare grupper",
+	"bs-smartlist-droplet-newbies-desc": "Liste over nye brukere på wikien",
+	"bs-smartlist-droplet-recent-changes-name": "Siste endringer",
+	"bs-smartlist-droplet-recent-changes-desc": "Liste over nylig endrede sider",
+	"bs-smartlist-droplet-toplist-name": "Mest besøkte sider",
+	"bs-smartlist-droplet-toplist-desc": "Liste over de mest besøkte sidene på wikien",
+	"bs-smartlist-droplet-what-links-here-name": "Lenker til denne siden",
+	"bs-smartlist-droplet-what-links-here-desc": "Liste over sider som lenker til denne siden",
+	"bs-smartlist-ve-recentchanges-title": "Siste endringer",
+	"bs-smartlist-ve-whatlinkshere-title": "Lenker til denne siden"
 }

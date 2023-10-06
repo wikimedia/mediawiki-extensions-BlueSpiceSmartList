@@ -8,6 +8,7 @@
 			"Liuxinyu970226",
 			"Osnard",
 			"Xiplus",
+			"Xyb",
 			"Yfdyh000"
 		]
 	},
@@ -46,5 +47,7 @@
 	"bs-smartlist-droplet-userlist-name": "成员列表",
 	"bs-smartlist-droplet-newbies-name": "新用户",
 	"bs-smartlist-droplet-recent-changes-name": "最近更改",
-	"bs-smartlist-ve-userlist-title": "用户列表"
+	"bs-smartlist-ve-userlist-title": "用户列表",
+	"bs-smartlist-ve-recentchanges-title": "最近更改",
+	"bs-smartlist-ve-whatlinkshere-title": "本页的链入页面"
 }
