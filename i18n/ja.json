@@ -21,8 +21,6 @@
 	"bs-smartlist-week": "週",
 	"bs-smartlist-month": "月",
 	"bs-smartlist-time": "時刻",
-	"bs-smartlist-tag-newbies-desc": "ウィキの新しい利用者を表示します。リストは特定の数に制限することができます。",
-	"bs-smartlist-tag-toplist-desc": "最も訪問されたページを表示します。いくつかのパラメータで制限することができます。",
 	"bs-smartlist-mostvisitedpages": "最も閲覧されているページ",
 	"bs-smartlist-mosteditedpages": "最も編集されているページ",
 	"bs-smartlist-lastedits": "自分の編集",
