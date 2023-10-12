@@ -75,7 +75,7 @@ class WhatLinksHereMode extends GenericSmartlistMode {
 
 		if ( empty( $args['target'] ) ) {
 			$targetTitle = $context->getTitle();
-			if ( $targetTitle->getArticleID() === 0 ) {
+			if ( !$targetTitle || !$targetTitle->exists() ) {
 				// edit mode API context
 				$titleText = $context->getRequest()->getRawVal( 'page' );
 				$targetTitle = $this->titleFactory->newFromText( $titleText );
