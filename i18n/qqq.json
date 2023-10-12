@@ -52,5 +52,6 @@
 	"bs-smartlist-droplet-what-links-here-name": "Title of droplet for template what links here",
 	"bs-smartlist-droplet-what-links-here-desc": "Description of droplet for template what links here",
 	"bs-smartlist-ve-recentchanges-title": "Title for recent changes inspector",
-	"bs-smartlist-ve-whatlinkshere-title": "Title for what links here inspector"
+	"bs-smartlist-ve-whatlinkshere-title": "Title for what links here inspector",
+	"bs-smartlist-error-mode-not-found": "Error shown if smartlist is passed a mode that doesn't exist"
 }

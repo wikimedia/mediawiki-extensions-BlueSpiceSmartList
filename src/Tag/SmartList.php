@@ -8,6 +8,7 @@ use MediaWiki\MediaWikiServices;
 use Parser;
 use PPFrame;
 use RequestContext;
+use Throwable;
 
 class SmartList extends Tag {
 
@@ -45,7 +46,12 @@ class SmartList extends Tag {
 		$hookContainer = $this->services->getHookContainer();
 
 		if ( isset( $processedArgs['mode'] ) ) {
-			$mode = $this->factory->createMode( $processedArgs['mode'] );
+			try {
+				$mode = $this->factory->createMode( $processedArgs['mode'] );
+			} catch ( Throwable $e ) {
+				$mode = null;
+			}
+
 		} else {
 			$mode = $this->factory->createMode( 'recentchanges' );
 		}

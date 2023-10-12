@@ -7,7 +7,8 @@ use BlueSpice\SmartList\Parser\ParserObjectWrapper;
 use BlueSpice\Tag\Handler;
 use FormatJson;
 use MediaWiki\HookContainer\HookContainer;
-use MWException;
+use OOUI\MessageWidget;
+use OutputPage;
 use PageProps;
 use Parser;
 use PPFrame;
@@ -56,7 +57,12 @@ class SmartListHandler extends Handler {
 		$this->parser->getOutput()->setPageProperty( 'bs-tag-smartlist', 1 );
 
 		if ( !isset( $this->mode ) ) {
-			throw new MWException( 'No mode' );
+			OutputPage::setupOOUI();
+			$this->parser->getOutput()->setEnableOOUI( true );
+			return ( new MessageWidget( [
+				'label' => wfMessage( 'bs-smartlist-error-mode-not-found' )->text(),
+				'type' => 'error',
+			] ) )->toString();
 		}
 
 		$this->processedArgs['count'] = $this->processedArgs[$this->mode::ATTR_COUNT];
