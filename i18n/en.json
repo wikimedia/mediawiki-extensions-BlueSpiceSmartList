@@ -51,5 +51,6 @@
 	"bs-smartlist-droplet-what-links-here-name": "Links to this page",
 	"bs-smartlist-droplet-what-links-here-desc": "List of pages that link to this page",
 	"bs-smartlist-ve-recentchanges-title": "Recent changes",
-	"bs-smartlist-ve-whatlinkshere-title": "Links to this page"
+	"bs-smartlist-ve-whatlinkshere-title": "Links to this page",
+	"bs-smartlist-error-mode-not-found": "Mode specified not found"
 }
