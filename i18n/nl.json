@@ -59,5 +59,6 @@
 	"bs-smartlist-droplet-toplist-desc": "Lijst met de meest bezochte wikipagina's",
 	"bs-smartlist-droplet-what-links-here-name": "Links naar deze pagina",
 	"bs-smartlist-droplet-what-links-here-desc": "Lijst met pagina's die naar deze pagina linken",
-	"bs-smartlist-ve-whatlinkshere-title": "Links naar deze pagina"
+	"bs-smartlist-ve-whatlinkshere-title": "Links naar deze pagina",
+	"bs-smartlist-error-mode-not-found": "Opgegeven modus niet gevonden"
 }
