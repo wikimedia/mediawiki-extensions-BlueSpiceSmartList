@@ -52,5 +52,6 @@
 	"bs-smartlist-droplet-what-links-here-name": "Lenker til denne siden",
 	"bs-smartlist-droplet-what-links-here-desc": "Liste over sider som lenker til denne siden",
 	"bs-smartlist-ve-recentchanges-title": "Siste endringer",
-	"bs-smartlist-ve-whatlinkshere-title": "Lenker til denne siden"
+	"bs-smartlist-ve-whatlinkshere-title": "Lenker til denne siden",
+	"bs-smartlist-error-mode-not-found": "Den angitte modusen finnes ikke"
 }
