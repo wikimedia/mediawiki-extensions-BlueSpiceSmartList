@@ -5,6 +5,7 @@
 			"Hwboehm",
 			"Metalhead64",
 			"Purodha",
+			"SehrGuterCode",
 			"Stephan Muggli <muggli@hallowelt.biz>"
 		]
 	},
@@ -49,5 +50,6 @@
 	"bs-smartlist-droplet-what-links-here-name": "Verlinkungen auf diese Seite",
 	"bs-smartlist-droplet-what-links-here-desc": "Liste von Seiten, die auf diese Seite verlinken",
 	"bs-smartlist-ve-recentchanges-title": "Letzte Änderungen",
-	"bs-smartlist-ve-whatlinkshere-title": "Links auf diese Seite"
+	"bs-smartlist-ve-whatlinkshere-title": "Links auf diese Seite",
+	"bs-smartlist-error-mode-not-found": "Der angegebene Modus wurde nicht gefunden"
 }
