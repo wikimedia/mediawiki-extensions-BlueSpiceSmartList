@@ -5,7 +5,8 @@
 			"Metalhead64",
 			"Purodha",
 			"Stephan Muggli <muggli@hallowelt.biz>",
-			"*Surak*"
+			"*Surak*",
+			"SehrGuterCode"
 		]
 	},
 	"bs-smartlist-desc": "Zeigt die letzten fünf Änderungen des Wikis in einer Liste an",
@@ -22,11 +23,6 @@
 	"bs-smartlist-month": "Monat",
 	"bs-smartlist-time": "Zeit",
 	"bs-smartlist-title": "Titel",
-	"bs-smartlist-tag-smartlist-desc": "Zeigt automatisch erzeugte Artikellisten an. Die Konfiguration funktioniert mit verschiedenen Modi und Parametern.",
-	"bs-smartlist-tag-smartlist-example-rc": "Modus: Letzte Änderungen",
-	"bs-smartlist-tag-smartlist-example-whatlinkshere": "Modus: Links auf diese Seite",
-	"bs-smartlist-tag-newbies-desc": "Zeigt die neuen Benutzer des Wikis an. Die Liste kann auf eine bestimmte Anzahl beschränkt werden.",
-	"bs-smartlist-tag-toplist-desc": "Zeigt die meistbesuchten Seiten an. Kann durch verschiedene Parameter begrenzt werden.",
 	"bs-smartlist-mostvisitedpages": "Meist aufgerufene Seiten",
 	"bs-smartlist-mosteditedpages": "Meist editierte Seiten",
 	"bs-smartlist-mostactiveusers": "Aktivste Benutzer (nach Bearbeitungen)",
@@ -55,5 +51,6 @@
 	"bs-smartlist-droplet-what-links-here-name": "Verlinkungen auf diese Seite",
 	"bs-smartlist-droplet-what-links-here-desc": "Liste von Seiten, die auf diese Seite verlinken",
 	"bs-smartlist-ve-recentchanges-title": "Letzte Änderungen",
-	"bs-smartlist-ve-whatlinkshere-title": "Links auf diese Seite"
+	"bs-smartlist-ve-whatlinkshere-title": "Links auf diese Seite",
+	"bs-smartlist-error-mode-not-found": "Der angegebene Modus wurde nicht gefunden"
 }
