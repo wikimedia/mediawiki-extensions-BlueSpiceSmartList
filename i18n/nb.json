@@ -1,8 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Jon Harald Søby",
-			"EdoAug"
+			"EdoAug",
+			"Jon Harald Søby"
 		]
 	},
 	"bs-smartlist-desc": "Viser de fem siste endringene på wikien i en liste",
@@ -47,5 +47,6 @@
 	"bs-smartlist-droplet-what-links-here-name": "Lenker til denne siden",
 	"bs-smartlist-droplet-what-links-here-desc": "Liste over sider som lenker til denne siden",
 	"bs-smartlist-ve-recentchanges-title": "Siste endringer",
-	"bs-smartlist-ve-whatlinkshere-title": "Lenker til denne siden"
+	"bs-smartlist-ve-whatlinkshere-title": "Lenker til denne siden",
+	"bs-smartlist-error-mode-not-found": "Den angitte modusen finnes ikke"
 }
