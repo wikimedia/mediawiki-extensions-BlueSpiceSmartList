@@ -1,12 +1,12 @@
 {
 	"@metadata": {
 		"authors": [
+			"*Surak*",
 			"Hwboehm",
 			"Metalhead64",
 			"Purodha",
-			"Stephan Muggli <muggli@hallowelt.biz>",
-			"*Surak*",
-			"SehrGuterCode"
+			"SehrGuterCode",
+			"Stephan Muggli <muggli@hallowelt.biz>"
 		]
 	},
 	"bs-smartlist-desc": "Zeigt die letzten fünf Änderungen des Wikis in einer Liste an",
