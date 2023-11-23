@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Kizule",
 			"Milicevic01",
 			"Obsuser"
 		]
@@ -12,5 +13,26 @@
 	"bs-smartlist-droplet-newbies-name": "Нови корисници",
 	"bs-smartlist-droplet-recent-changes-name": "Скорашње измене",
 	"bs-smartlist-droplet-toplist-name": "Најпосећеније странице",
-	"bs-smartlist-ve-recentchanges-title": "Скорашње измене"
+	"bs-smartlist-ve-recentchanges-title": "Скорашње измене",
+	"bs-smartlist-desc": "Приказује последњих пет измена на викију у списку",
+	"prefs-smartlist": "Паметан списак",
+	"bs-smartlist-no-entries": "Резултати нису пронађени.",
+	"bs-smartlist-invalid-namespaces": "Дати {{PLURAL:$1|именски простор није исправан|именски простори нису исправни}}: $2.",
+	"bs-smartlist-invalid-target": "Дати циљ није исправно име странице",
+	"bs-smartlist-comment": "Коментар: $1",
+	"bs-smartlist-sort-asc": "растуће",
+	"bs-smartlist-sort-desc": "опадајуће",
+	"bs-smartlist-day": "Дан",
+	"bs-smartlist-week": "Недеља",
+	"bs-smartlist-month": "Месец",
+	"bs-smartlist-time": "Време",
+	"bs-smartlist-title": "Наслов",
+	"bs-smartlist-mosteditedpages": "Најуређеније странице",
+	"bs-smartlist-mostactiveusers": "Најактивнији корисници (по изменама)",
+	"bs-smartlist-lastedits": "Моје измене",
+	"bs-smartlist-noedits": "Нема пронађених измена.",
+	"bs-smartlist-mostactiveusersdesc": "Списак најактивнијих корисника сортиран по њиховим изменама.",
+	"bs-smartlist-mosteditedpagesdesc": "Списак најуређенијих страница сортиран по њиховим изменама.",
+	"bs-smartlist-mostvisitedpagesdesc": "Списак највише прегледаних страница сортиран по њиховим прегледима.",
+	"bs-smartlist-lasteditsdesc": "Списак страница које сте уредили."
 }

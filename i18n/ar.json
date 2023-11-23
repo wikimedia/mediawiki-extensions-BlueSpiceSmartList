@@ -1,9 +1,9 @@
 {
 	"@metadata": {
 		"authors": [
+			"Alshamiri1",
 			"Meno25",
-			"ديفيد",
-			"Alshamiri1"
+			"ديفيد"
 		]
 	},
 	"bs-smartlist-desc": "يعرض آخر خمس تغييرات في الويكي في قائمة",
@@ -50,5 +50,8 @@
 	"bs-smartlist-droplet-what-links-here-name": "روابط لهذه الصفحة",
 	"bs-smartlist-droplet-what-links-here-desc": "قائمة الصفحات التي تصل إلى هذه الصفحة",
 	"bs-smartlist-ve-recentchanges-title": "التغييرات الأخيرة",
-	"bs-smartlist-ve-whatlinkshere-title": "روابط لهذه الصفحة"
+	"bs-smartlist-ve-whatlinkshere-title": "روابط لهذه الصفحة",
+	"bs-smartlist-ve-userlist-title": "قائمة المستخدم",
+	"bs-smartlist-ve-userlistinspector-groups": "المجموعات",
+	"bs-smartlist-ve-userlistinspector-limit": "حد المستخدمين المعروضين"
 }

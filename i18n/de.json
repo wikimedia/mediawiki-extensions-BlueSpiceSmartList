@@ -1,11 +1,12 @@
 {
 	"@metadata": {
 		"authors": [
+			"*Surak*",
 			"Hwboehm",
 			"Metalhead64",
 			"Purodha",
-			"Stephan Muggli <muggli@hallowelt.biz>",
-			"*Surak*"
+			"SehrGuterCode",
+			"Stephan Muggli <muggli@hallowelt.biz>"
 		]
 	},
 	"bs-smartlist-desc": "Zeigt die letzten fünf Änderungen des Wikis in einer Liste an",
@@ -55,5 +56,6 @@
 	"bs-smartlist-droplet-what-links-here-name": "Verlinkungen auf diese Seite",
 	"bs-smartlist-droplet-what-links-here-desc": "Liste von Seiten, die auf diese Seite verlinken",
 	"bs-smartlist-ve-recentchanges-title": "Letzte Änderungen",
-	"bs-smartlist-ve-whatlinkshere-title": "Links auf diese Seite"
+	"bs-smartlist-ve-whatlinkshere-title": "Links auf diese Seite",
+	"bs-smartlist-error-mode-not-found": "Der angegebene Modus wurde nicht gefunden"
 }

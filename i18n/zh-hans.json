@@ -1,14 +1,15 @@
 {
 	"@metadata": {
 		"authors": [
+			"850710247liu",
 			"GuoPC",
+			"John Smith Ri",
+			"Kishinsagi",
 			"Liuxinyu970226",
 			"Osnard",
 			"Xiplus",
-			"Yfdyh000",
-			"John Smith Ri",
-			"Kishinsagi",
-			"850710247liu"
+			"Xyb",
+			"Yfdyh000"
 		]
 	},
 	"bs-smartlist-desc": "列表显示wiki最近5次更改",
@@ -46,5 +47,7 @@
 	"bs-smartlist-ve-userlistinspector-no-group": "未选择组。选择一个组以列出其用户",
 	"bs-smartlist-droplet-userlist-name": "成员列表",
 	"bs-smartlist-droplet-newbies-name": "新用户",
-	"bs-smartlist-droplet-recent-changes-name": "最近更改"
+	"bs-smartlist-droplet-recent-changes-name": "最近更改",
+	"bs-smartlist-ve-recentchanges-title": "最近更改",
+	"bs-smartlist-ve-whatlinkshere-title": "本页的链入页面"
 }

@@ -3,9 +3,9 @@
 		"authors": [
 			"2nd-player",
 			"Aefgh39622",
+			"MathXplore",
 			"Shirayuki",
 			"つぶあん派",
-			"MathXplore",
 			"もなー(偽物)"
 		]
 	},
@@ -27,11 +27,11 @@
 	"bs-smartlist-mosteditedpages": "最も編集されているページ",
 	"bs-smartlist-lastedits": "自分の編集",
 	"bs-smartlist-noedits": "編集が見つかりません。",
-	"bs-smartlist-ve-userlist-title": "ユーザーリスト",
+	"bs-smartlist-ve-userlist-title": "利用者リスト",
 	"bs-smartlist-ve-userlistinspector-groups": "グループ",
-	"bs-smartlist-ve-userlistinspector-limit": "表示されるユーザーの上限",
-	"bs-smartlist-ve-userlistinspector-no-users": "選択されたグループにユーザーがいません。他のグループを選択してください。",
-	"bs-smartlist-ve-userlistinspector-no-group": "グループが未選択です。リストを表示するユーザーを選択してください",
+	"bs-smartlist-ve-userlistinspector-limit": "表示される利用者の上限",
+	"bs-smartlist-ve-userlistinspector-no-users": "選択されたグループには利用者がいません。他のグループを選択してください。",
+	"bs-smartlist-ve-userlistinspector-no-group": "グループが未選択です。リストを表示する利用者を選択してください",
 	"bs-smartlist-droplet-userlist-name": "メンバーリスト",
 	"bs-smartlist-droplet-newbies-name": "新しい利用者",
 	"bs-smartlist-droplet-recent-changes-name": "最近の更新",
