@@ -4,7 +4,6 @@ namespace BlueSpice\SmartList\Mode;
 
 use BlueSpice\ParamProcessor\ParamDefinition;
 use BlueSpice\ParamProcessor\ParamType;
-use RequestContext;
 use TitleFactory;
 use User;
 
@@ -20,7 +19,6 @@ class UserlistMode extends SmartListBaseMode {
 	 */
 	public function __construct( TitleFactory $titleFactory ) {
 		$this->titleFactory = $titleFactory;
-		$this->messageLocalizer = RequestContext::getMain();
 	}
 
 	/**
