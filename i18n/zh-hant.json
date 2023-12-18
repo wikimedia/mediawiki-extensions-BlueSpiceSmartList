@@ -51,5 +51,6 @@
 	"bs-smartlist-droplet-what-links-here-name": "連至此頁面的連結",
 	"bs-smartlist-droplet-what-links-here-desc": "連至此頁面的頁面清單",
 	"bs-smartlist-ve-recentchanges-title": "近期變更",
-	"bs-smartlist-ve-whatlinkshere-title": "連至此頁面的連結"
+	"bs-smartlist-ve-whatlinkshere-title": "連至此頁面的連結",
+	"bs-smartlist-error-mode-not-found": "未找到指定模式"
 }
