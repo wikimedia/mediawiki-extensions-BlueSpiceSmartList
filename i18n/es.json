@@ -4,6 +4,7 @@
 			"AVIADOR",
 			"Fitoschido",
 			"Jakeukalane",
+			"Jmabel",
 			"Macofe",
 			"Osnard"
 		]
@@ -42,5 +43,15 @@
 	"bs-smartlist-ve-userlistinspector-limit": "Límite de cuentas mostradas",
 	"bs-smartlist-ve-userlistinspector-no-group": "No se seleccionó ningún grupo. Elige un grupo para enumerar las cuentas asociadas",
 	"bs-smartlist-ve-recentchanges-title": "Cambios recientes",
-	"bs-smartlist-ve-whatlinkshere-title": "Enlaces a esta página"
+	"bs-smartlist-ve-whatlinkshere-title": "Enlaces a esta página",
+	"bs-smartlist-droplet-userlist-name": "Lista de miembros",
+	"bs-smartlist-droplet-userlist-desc": "Lista de miembros de grupos seleccionables",
+	"bs-smartlist-droplet-newbies-name": "Usuarios nuevos",
+	"bs-smartlist-droplet-recent-changes-name": "Cambios recientes",
+	"bs-smartlist-droplet-recent-changes-desc": "Lista de páginas recientemente modificadas",
+	"bs-smartlist-droplet-toplist-name": "Paginas mas visitadas",
+	"bs-smartlist-droplet-toplist-desc": "Lista de las páginas de wiki más visitadas",
+	"bs-smartlist-droplet-what-links-here-name": "Enlaces hacia esta página",
+	"bs-smartlist-droplet-what-links-here-desc": "Lista de páginas que enlazan a esta página",
+	"bs-smartlist-error-mode-not-found": "Modo especificado no encontrado"
 }
