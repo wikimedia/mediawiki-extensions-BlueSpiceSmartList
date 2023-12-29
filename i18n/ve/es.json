@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"DiegoAmbrocio",
-			"Jelou"
+			"Jelou",
+			"Jmabel"
 		]
 	},
 	"bs-smartlist-ve-smartlist-title": "Lista inteligente",
@@ -31,6 +32,7 @@
 	"bs-smartlist-ve-sort-title-label": "Título",
 	"bs-smartlist-ve-newbies-title": "Principiantes",
 	"bs-smartlist-ve-newbiesinspector-count": "Cantidad",
+	"bs-smartlist-ve-toplist-title": "Más vistos",
 	"bs-smartlist-ve-toplistinspector-count": "Cantidad",
 	"bs-smartlist-ve-toplistinspector-ns": "Espacio(s) de nombres",
 	"bs-smartlist-ve-toplistinspector-cat": "Categoría",
