@@ -104,6 +104,7 @@ class RecentChangesMode extends GenericSmartlistMode {
 		$dbr = $this->lb->getConnection( DB_REPLICA );
 		$conditions = [];
 
+		$minTimestamp = '';
 		switch ( $args['period'] ) {
 			case 'month':
 				$minTimestamp = $dbr->timestamp( time() - 30 * 24 * 60 * 60 );
@@ -161,7 +162,7 @@ class RecentChangesMode extends GenericSmartlistMode {
 			$orderSQL = 'MIN(rc_timestamp) DESC';
 			$conditions['rc_source'] = RecentChange::SRC_NEW;
 		}
-		if ( !empty( $args['period'] ) && $args['period'] !== '-' ) {
+		if ( !empty( $minTimestamp ) ) {
 			$conditions[] = "rc_timestamp > '" . $minTimestamp . "'";
 		}
 
