@@ -162,7 +162,8 @@
 				"bs-smartlist-ve-whatlinkshere-title"
 			],
 			"dependencies": [
-				"ext.visualEditor.mwcore"
+				"ext.visualEditor.mwcore",
+				"ext.bluespice"
 			]
 		},
 		"ext.bluespice.smartList.newbies.visualEditor": {
