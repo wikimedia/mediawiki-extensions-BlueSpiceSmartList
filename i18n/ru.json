@@ -3,6 +3,7 @@
 		"authors": [
 			"Facenapalm",
 			"Kareyac",
+			"Mitte27",
 			"Okras",
 			"Striking Blue"
 		]
@@ -39,5 +40,6 @@
 	"apihelp-bs-smartlist-tasks-description": "Функции API для обслуживания данных портала для страницы и пользовательской статистики.",
 	"apihelp-bs-smartlist-tasks-summary": "Функции API для обслуживания данных портала для страницы и пользовательской статистики.",
 	"bs-smartlist-ve-userlistinspector-groups": "Группы",
-	"bs-smartlist-droplet-newbies-name": "Новые участники"
+	"bs-smartlist-droplet-newbies-name": "Новые участники",
+	"bs-smartlist-ve-userlist-title": "Список пользователей"
 }
