@@ -67,8 +67,12 @@ class SmartList extends \BlueSpice\Extension {
 			$mode = $factory->createMode( 'toplist' );
 			$content = $mode->getList( $args, $context );
 			$parser = new DerivativeAPIRequestWrapper( $context->getRequest() );
-			$listRenderer = new ListRenderer( $parser, PageProps::getInstance(),
-				$services->getTitleFactory(), $services->getHookContainer() );
+			$listRenderer = new ListRenderer(
+				$parser,
+				$services->getPageProps(),
+				$services->getTitleFactory(),
+				$services->getHookContainer()
+			);
 			$sContent = $listRenderer->render( $content, $args );
 		} catch ( Exception $e ) {
 			$context->getOutput()->addHTML( $e->getMessage() );
