@@ -7,9 +7,9 @@ use BlueSpice\SmartList\Parser\ParserObjectWrapper;
 use BlueSpice\Tag\Handler;
 use FormatJson;
 use MediaWiki\HookContainer\HookContainer;
+use MediaWiki\MediaWikiServices;
 use OOUI\MessageWidget;
 use OutputPage;
-use PageProps;
 use Parser;
 use PPFrame;
 use RequestContext;
@@ -85,7 +85,7 @@ class SmartListHandler extends Handler {
 		$parser = new ParserObjectWrapper( $this->parser );
 		$listRenderer = new ListRenderer(
 			$parser,
-			PageProps::getInstance(),
+			MediaWikiServices::getInstance()->getPageProps(),
 			$this->titleFactory,
 			$this->hookContainer
 		);
