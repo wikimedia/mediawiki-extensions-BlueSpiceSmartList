@@ -102,7 +102,8 @@ class ToplistMode extends SmartListBaseMode {
 
 		$objectList = [];
 		$dbr = $this->lb->getConnection( DB_REPLICA );
-		if ( in_array( $args['period'], [ 'week', 'month' ] ) || in_array( $args['portletPeriod'], [ 7, 30 ] ) ) {
+		if ( in_array( $args['period'], [ 'day', 'week', 'month' ] ) ||
+			in_array( $args['portletPeriod'], [ 7, 30 ] ) ) {
 			$tables = [ 'bs_whoisonline' ];
 			$columns = [
 				'COUNT( wo_page_title ) AS page_counter',
@@ -116,9 +117,19 @@ class ToplistMode extends SmartListBaseMode {
 			];
 			$joinConditions = [];
 
+			if ( $args['period'] === 'day' ) {
+				$maxTS = \BlueSpice\Timestamp::getInstance();
+				$maxTS->timestamp->modify( '- 1 day' );
+				$conditions[] = 'wo_log_ts >= ' . $maxTS->getTimestamp( TS_MW );
+			}
 			if ( $args['period'] === 'week' || $args['portletPeriod'] === 7 ) {
 				$maxTS = \BlueSpice\Timestamp::getInstance();
 				$maxTS->timestamp->modify( "- 7 days" );
+				$conditions[] = 'wo_log_ts >= ' . $maxTS->getTimestamp( TS_MW );
+			}
+			if ( $args['period'] === 'month' || $args['portletPeriod'] === 30 ) {
+				$maxTS = \BlueSpice\Timestamp::getInstance();
+				$maxTS->timestamp->modify( "- 30 days" );
 				$conditions[] = 'wo_log_ts >= ' . $maxTS->getTimestamp( TS_MW );
 			}
 			$alltime = false;
@@ -185,82 +196,50 @@ class ToplistMode extends SmartListBaseMode {
 				}
 			}
 
-			$list = [];
 			$inList = [];
 			$currCount = 0;
-			if ( $alltime === false ) {
-				foreach ( $res as $row ) {
-					if ( $currCount === $args['count'] ) {
-						break;
-					}
+			foreach ( $res as $row ) {
+				if ( $currCount === $args['count'] ) {
+					break;
+				}
+				if ( $row->page_counter == '0' ) {
+					continue;
+				}
+
+				if ( !$alltime ) {
 					if ( empty( $row->wo_page_title ) ) {
 						continue;
 					}
 					$title = $this->titleFactory->makeTitle( $row->wo_page_namespace, $row->wo_page_title );
-
-					if ( !$this->permissionManager->quickUserCan(
-						'read',
-						$context->getUser(),
-						$title
-					) ) {
-						continue;
-					}
-
-					if ( $hasCategories === true ) {
-						$parents = array_keys( $title->getParentCategories() );
-						$result  = array_diff( $prefixedCategories, $parents );
-						if ( !empty( $result ) ) {
-							continue;
-						}
-					}
-					if ( in_array( $title->getPrefixedText(), $inList ) ) {
-						continue;
-					}
-					$inList[] = $title->getPrefixedText();
-					$data = [
-						'PREFIXEDTITLE' => $title->getPrefixedText()
-					];
-					$objectList[] = $data;
-					$currCount++;
-				}
-			} else {
-				$list[] = '<ol>';
-				foreach ( $res as $row ) {
-					if ( $currCount == $args['count'] ) {
-						break;
-					}
-					if ( $row->page_counter == '0' ) {
-						continue;
-					}
-
+				} else {
 					$title = $this->titleFactory->makeTitle( $row->page_namespace, $row->page_title );
-					if ( !$this->permissionManager->quickUserCan(
-						'read',
-						$context->getUser(),
-						$title
-					) ) {
-						continue;
-					}
-
-					if ( $hasCategories === true ) {
-						$aParents = array_keys( $title->getParentCategories() );
-						$aResult  = array_diff( $prefixedCategories, $aParents );
-						if ( !empty( $aResult ) ) {
-							continue;
-						}
-					}
-
-					if ( in_array( $title->getPrefixedText(), $inList ) ) {
-						continue;
-					}
-					$inList[] = $title->getPrefixedText();
-
-					$data = [
-						'PREFIXEDTITLE' => $title->getPrefixedText()
-					];
-					$objectList[] = $data;
-					$currCount++;
 				}
+
+				if ( !$this->permissionManager->quickUserCan(
+					'read',
+					$context->getUser(),
+					$title
+				) ) {
+					continue;
+				}
+
+				if ( $hasCategories === true ) {
+					$parents = array_keys( $title->getParentCategories() );
+					$result  = array_diff( $prefixedCategories, $parents );
+					if ( !empty( $result ) ) {
+						continue;
+					}
+				}
+				if ( in_array( $title->getPrefixedText(), $inList ) ) {
+					continue;
+				}
+				$inList[] = $title->getPrefixedText();
+				$data = [
+					'PREFIXEDTITLE' => $title->getPrefixedText(),
+					'META' => '(' . $row->page_counter . ')'
+				];
+				$objectList[] = $data;
+				$currCount++;
 			}
 		}
 
