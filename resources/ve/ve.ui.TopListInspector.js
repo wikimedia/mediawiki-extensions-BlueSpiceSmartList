@@ -29,7 +29,7 @@ ve.ui.TopListInspector.static.selfCloseEmptyBody = true;
 ve.ui.TopListInspector.prototype.initialize = function () {
 
 	// Parent method
-	ve.ui.SmartListInspector.super.prototype.initialize.call( this );
+	ve.ui.TopListInspector.super.prototype.initialize.call( this );
 
 	this.input.$element.remove();
 	// Index layout
@@ -50,8 +50,7 @@ ve.ui.TopListInspector.prototype.initialize = function () {
 		this.countLayout.$element,
 		this.nsLayout.$element,
 		this.catLayout.$element,
-		this.periodLayout.$element,
-		this.portletperiodLayout.$element
+		this.periodLayout.$element
 	);
 	this.form.$element.append(
 		this.indexLayout.$element
@@ -83,8 +82,6 @@ ve.ui.TopListInspector.prototype.createFields = function() {
 			}
 		]
 	} );
-
-	this.portletperiodInput = new OO.ui.NumberInputWidget( { min: 1, max: 250, isInteger: true } );
 }
 
 ve.ui.TopListInspector.prototype.setLayouts = function() {
@@ -105,10 +102,6 @@ ve.ui.TopListInspector.prototype.setLayouts = function() {
 		align: 'right',
 		label: ve.msg( 'bs-smartlist-ve-toplistinspector-period' )
 	} );
-	this.portletperiodLayout = new OO.ui.FieldLayout( this.portletperiodInput, {
-		align: 'right',
-		label: ve.msg( 'bs-smartlist-ve-toplistinspector-portletperiod' )
-	} );
 }
 
 /**
@@ -124,9 +117,6 @@ ve.ui.TopListInspector.prototype.getSetupProcess = function ( data ) {
 			if( attributes.count ) {
 				this.countInput.setValue( attributes.count );
 			}
-			if( attributes.portletperiod ) {
-				this.portletperiodLInput.setValue( attributes.portletperiod );
-			}
 			if( attributes.period ) {
 				this.periodInput.setValue( attributes.period );
 			}
@@ -134,7 +124,6 @@ ve.ui.TopListInspector.prototype.getSetupProcess = function ( data ) {
 			this.nsInput.on( 'change', this.onChangeHandler );
 			this.catInput.on( 'change', this.onChangeHandler );
 			this.countInput.on( 'change', this.onChangeHandler );
-			this.portletperiodInput.on( 'change', this.onChangeHandler );
 			this.periodInput.on( 'change', this.onChangeHandler );
 
 			//Get this out of here
@@ -165,11 +154,6 @@ ve.ui.TopListInspector.prototype.updateMwData = function ( mwData ) {
 		mwData.attrs.period = this.periodInput.getValue();
 	} else {
 		delete( mwData.attrs.period );
-	}
-	if( this.portletperiodInput.getValue() ) {
-		mwData.attrs.portletperiod = this.portletperiodInput.getValue();
-	} else {
-		delete( mwData.attrs.portletperiod );
 	}
 };
 
