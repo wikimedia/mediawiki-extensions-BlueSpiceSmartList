@@ -38,11 +38,11 @@ class ListRendererTest extends MediaWikiIntegrationTestCase {
 	public function provideRenderTestData() {
 		$mediawikiParserMock = $this->createMock( Parser::class );
 		$mediawikiParserMock->method( 'recursiveTagParseFully' )
-			->will( $this->returnCallback(
+			->willReturnCallback(
 				static function ( $wikitext ) {
 					return $wikitext;
 				}
-		) );
+			);
 		$parserWrapper = new ParserObjectWrapper( $mediawikiParserMock );
 
 		$mockRequest = $this->createMock( WebRequest::class );
