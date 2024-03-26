@@ -48,7 +48,7 @@ class NewbiesMode extends BaseMode {
 	 * @inheritDoc
 	 */
 	public function getList( $args, $context ): array {
-		$dbr = $this->lb->getConnectionRef( DB_REPLICA );
+		$dbr = $this->lb->getConnection( DB_REPLICA );
 		$res = $dbr->select(
 			'user',
 			'user_id',
