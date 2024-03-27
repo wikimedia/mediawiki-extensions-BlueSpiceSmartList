@@ -159,15 +159,16 @@ class SmartList extends \BlueSpice\Extension {
 		$iCount = BsCore::sanitize( $iCount, 0, BsPARAMTYPE::INT );
 
 		$oDbr = wfGetDB( DB_REPLICA );
-		$query = MediaWikiServices::getInstance()->getRevisionStore()->getQueryInfo();
-		$actor = ActorMigration::newMigration()->getWhere( $oDbr, 'rev_user', $user );
+		$services = MediaWikiServices::getInstance();
+		$query = $services->getRevisionStore()->getQueryInfo();
+		$actorID = $services->getActorNormalization()->findActorId( $user, $oDbr );
 		$query['tables'][] = 'page';
 		$query['joins']['page'] = [ 'JOIN', 'rev_page = page_id' ];
 		$query['fields'][] = 'page_id';
 		$query['fields'][] = 'page_content_model';
 		$conds = [
 			'page_content_model' => [ '', 'wikitext' ],
-			$actor['conds']
+			'rev_actor' => $actorID
 		];
 		$options = [
 			'GROUP BY' => 'page_id',
