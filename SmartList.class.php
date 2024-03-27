@@ -158,10 +158,10 @@ class SmartList extends \BlueSpice\Extension {
 		$iDisplayLength = 18 ) {
 		$iCount = BsCore::sanitize( $iCount, 0, BsPARAMTYPE::INT );
 
-		$oDbr = wfGetDB( DB_REPLICA );
 		$services = MediaWikiServices::getInstance();
+		$dbr = $services->getDBLoadBalancer()->getConnection( DB_REPLICA );
 		$query = $services->getRevisionStore()->getQueryInfo();
-		$actorID = $services->getActorNormalization()->findActorId( $user, $oDbr );
+		$actorID = $services->getActorNormalization()->findActorId( $user, $dbr );
 		$query['tables'][] = 'page';
 		$query['joins']['page'] = [ 'JOIN', 'rev_page = page_id' ];
 		$query['fields'][] = 'page_id';
@@ -175,7 +175,7 @@ class SmartList extends \BlueSpice\Extension {
 			'ORDER BY' => 'MAX(rev_timestamp) DESC',
 			'LIMIT' => $iCount
 		];
-		$res = $oDbr->select(
+		$res = $dbr->select(
 			$query['tables'],
 			$query['fields'],
 			$conds,
@@ -216,7 +216,7 @@ class SmartList extends \BlueSpice\Extension {
 	 * @return string list of pages or empty
 	 */
 	public function getEditedPages( $iCount, $iTime ) {
-		$oDbr = wfGetDB( DB_REPLICA );
+		$dbr = $this->services->getDBLoadBalancer()->getConnection( DB_REPLICA );
 		$iCount = BsCore::sanitize( $iCount, 10, BsPARAMTYPE::INT );
 		$iTime = BsCore::sanitize( $iTime, 0, BsPARAMTYPE::INT );
 
@@ -226,7 +226,7 @@ class SmartList extends \BlueSpice\Extension {
 		}
 
 		$aConditions['page_content_model'] = [ '', 'wikitext' ];
-		$res = $oDbr->select(
+		$res = $dbr->select(
 				[ 'revision', 'page' ],
 				[
 					'COUNT(rev_page) as page_counter',
@@ -264,7 +264,7 @@ class SmartList extends \BlueSpice\Extension {
 	 * @return string list of pages or empty
 	 */
 	public function getActivePortlet( $iCount, $iTime ) {
-		$oDbr = wfGetDB( DB_REPLICA );
+		$dbr = $this->services->getDBLoadBalancer()->getConnection( DB_REPLICA );
 		$iCount = BsCore::sanitize( $iCount, 10, BsPARAMTYPE::INT );
 		$iTime = BsCore::sanitize( $iTime, 0, BsPARAMTYPE::INT );
 
@@ -279,7 +279,7 @@ class SmartList extends \BlueSpice\Extension {
 			'GROUP BY' => 'rev_user',
 			'ORDER BY' => 'edit_count DESC'
 		];
-		$res = $oDbr->select(
+		$res = $dbr->select(
 			$query['tables'],
 			$query['fields'],
 			$aConditions,

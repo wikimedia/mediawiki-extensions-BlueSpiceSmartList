@@ -249,7 +249,7 @@ class GenericSmartlistMode extends SmartListBaseMode {
 			}
 			$args['categories'] = implode( ',', $categories );
 
-			$dbr = wfGetDB( DB_REPLICA );
+			$dbr = $this->services->getDBLoadBalancer()->getConnection( DB_REPLICA );
 			if ( $args['categoryMode'] == 'OR' ) {
 				$conditions[] = $pageIdFileName
 					. ' IN ( SELECT cl_from FROM '
