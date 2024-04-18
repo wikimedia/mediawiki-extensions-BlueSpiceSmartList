@@ -2,9 +2,11 @@
 	"@metadata": {
 		"authors": [
 			"Robby",
-			"Soued031"
+			"Soued031",
+			"Volvox"
 		]
 	},
+	"bs-smartlist-ve-smartlistinspector-ns": "Nummraum/-raim",
 	"bs-smartlist-ve-smartlistinspector-cat": "Kategorie",
 	"bs-smartlist-ve-smartlistinspector-period": "Period",
 	"bs-smartlist-ve-smartlistinspector-new": "Nëmmen nei Artikele weisen",
@@ -21,6 +23,7 @@
 	"bs-smartlist-ve-sort-title-label": "Titel",
 	"bs-smartlist-ve-newbies-title": "Ufänger",
 	"bs-smartlist-ve-newbiesinspector-count": "Zuel",
+	"bs-smartlist-ve-toplistinspector-ns": "Nummraum/-raim",
 	"bs-smartlist-ve-toplistinspector-cat": "Kategorie",
 	"bs-smartlist-ve-toplistinspector-period": "Period",
 	"bs-smartlist-ve-mode-recentchanges-label": "Rezent Ännerungen",
