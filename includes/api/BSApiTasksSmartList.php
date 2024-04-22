@@ -174,7 +174,7 @@ class BSApiTasksSmartList extends BSApiTasksBase {
 			$hookContainer = $services->getHookContainer();
 			$listRenderer = new ListRenderer(
 				$parser,
-				PageProps::getInstance(),
+				$services->getPageProps(),
 				$services->getTitleFactory(),
 				$hookContainer
 			);
