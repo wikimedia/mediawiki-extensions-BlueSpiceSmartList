@@ -3,12 +3,12 @@
 		"authors": [
 			"Adriendelucca",
 			"Fohanno",
-			"Huñvreüs",
+			"Hu\u00f1vre\u00fcs",
 			"Y-M D"
 		]
 	},
 	"prefs-smartlist": "Roll speredek",
-	"bs-smartlist-recent-changes": "Kemmoù graet nevez zo",
+	"bs-smartlist-recent-changes": "Kemmo\u00f9 graet nevez zo",
 	"bs-smartlist-no-entries": "N'eus bet kavet disoc'h ebet.",
 	"bs-smartlist-comment": "Evezhiadenn : $1.",
 	"bs-smartlist-sort-asc": "war gresk",
@@ -18,12 +18,12 @@
 	"bs-smartlist-month": "Miz",
 	"bs-smartlist-time": "Eur",
 	"bs-smartlist-title": "Titl",
-	"bs-smartlist-tag-newbies-desc": "Diskwel implijerien nevez ar wiki. Gallout a ra ar roll bezañ strishaet d’un niver roet.",
-	"bs-smartlist-mostvisitedpages": "Pajennoù gwelet ar muiañ",
-	"bs-smartlist-mosteditedpages": "Pajennoù muiañ aozet",
-	"bs-smartlist-mostactiveusers": "Implijerien oberiantañ (dre aozadennoù)",
-	"bs-smartlist-lastedits": "Ma aozadennoù",
+	"bs-smartlist-tag-newbies-desc": "Diskwel implijerien nevez ar wiki. Gallout a ra ar roll beza\u00f1 strishaet d\u2019un niver roet.",
+	"bs-smartlist-mostvisitedpages": "Pajenno\u00f9 gwelet ar muia\u00f1",
+	"bs-smartlist-mosteditedpages": "Pajenno\u00f9 muia\u00f1 aozet",
+	"bs-smartlist-mostactiveusers": "Implijerien oberianta\u00f1 (dre aozadenno\u00f9)",
+	"bs-smartlist-lastedits": "Ma aozadenno\u00f9",
 	"bs-smartlist-noedits": "N'eus bet kavet aozadenn ebet.",
-	"bs-smartlist-ve-recentchanges-title": "Kemmoù diwezhañ",
-	"bs-smartlist-ve-whatlinkshere-title": "Liammoù war-zu ar bajenn-mañ"
+	"bs-smartlist-ve-recentchanges-title": "Kemmo\u00f9 diwezha\u00f1",
+	"bs-smartlist-ve-whatlinkshere-title": "Liammo\u00f9 war-zu ar bajenn-ma\u00f1"
 }

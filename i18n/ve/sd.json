@@ -6,17 +6,18 @@
 			"Tweety"
 		]
 	},
-	"bs-smartlist-ve-smartlistinspector-count": "ڳاڻيٽو",
-	"bs-smartlist-ve-smartlistinspector-period": "عرصو",
-	"bs-smartlist-ve-smartlistinspector-showtext": "متن ڏيکاريو",
-	"bs-smartlist-ve-smartlistinspector-meta": "ميٽا",
-	"bs-smartlist-ve-period-week-label": "هفتو",
-	"bs-smartlist-ve-period-month-label": "مھينو",
-	"bs-smartlist-ve-sort-time-label": "وقت",
-	"bs-smartlist-ve-sort-title-label": "عنوان",
-	"bs-smartlist-ve-newbies-title": "نوان-ايندڙ",
-	"bs-smartlist-ve-newbiesinspector-count": "ڳڻيو",
-	"bs-smartlist-ve-toplistinspector-count": "ڳڻيو",
-	"bs-smartlist-ve-toplistinspector-period": "عرصو",
-	"bs-smartlist-ve-mode-recentchanges-label": "تازيون تبديليون"
+	"bs-smartlist-ve-smartlistinspector-count": "\u06b3\u0627\u06bb\u064a\u067d\u0648",
+	"bs-smartlist-ve-smartlistinspector-period": "\u0639\u0631\u0635\u0648",
+	"bs-smartlist-ve-smartlistinspector-showtext": "\u0645\u062a\u0646 \u068f\u064a\u06a9\u0627\u0631\u064a\u0648",
+	"bs-smartlist-ve-smartlistinspector-meta": "\u0645\u064a\u067d\u0627",
+	"bs-smartlist-ve-period-week-label": "\u0647\u0641\u062a\u0648",
+	"bs-smartlist-ve-period-month-label": "\u0645\u06be\u064a\u0646\u0648",
+	"bs-smartlist-ve-sort-time-label": "\u0648\u0642\u062a",
+	"bs-smartlist-ve-sort-title-label": "\u0639\u0646\u0648\u0627\u0646",
+	"bs-smartlist-ve-newbies-title": "\u0646\u0648\u0627\u0646-\u0627\u064a\u0646\u062f\u0699",
+	"bs-smartlist-ve-newbiesinspector-count": "\u06b3\u06bb\u064a\u0648",
+	"bs-smartlist-ve-toplistinspector-count": "\u06b3\u06bb\u064a\u0648",
+	"bs-smartlist-ve-toplistinspector-period": "\u0639\u0631\u0635\u0648",
+	"bs-smartlist-ve-mode-recentchanges-label": "\u062a\u0627\u0632\u064a\u0648\u0646 \u062a\u0628\u062f\u064a\u0644\u064a\u0648\u0646",
+	"bs-smartlist-ve-period-day-label": "\u068f\u064a\u0646\u06be\u0646"
 }
