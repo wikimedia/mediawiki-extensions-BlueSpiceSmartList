@@ -36,6 +36,7 @@ class RecentChangesMode extends GenericSmartlistMode {
 	 * @param TitleFactory $titleFactory
 	 */
 	public function __construct( PermissionManager $permissionManager, ILoadBalancer $lb, TitleFactory $titleFactory ) {
+		parent::__construct();
 		$this->permissionManager = $permissionManager;
 		$this->lb = $lb;
 		$this->titleFactory = $titleFactory;

@@ -38,6 +38,7 @@ class WhatLinksHereMode extends GenericSmartlistMode {
 		ILoadBalancer $lb,
 		TitleFactory $titleFactory
 	) {
+		parent::__construct();
 		$this->permissionManager = $permissionManager;
 		$this->lb = $lb;
 		$this->titleFactory = $titleFactory;
