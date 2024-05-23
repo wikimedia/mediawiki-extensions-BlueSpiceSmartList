@@ -175,6 +175,7 @@ class ToplistMode extends SmartListBaseMode {
 			}
 		}
 
+		$options['LIMIT'] = $args[self::ATTR_COUNT];
 		$res = $dbr->select(
 			$tables,
 			$columns,
