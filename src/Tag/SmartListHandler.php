@@ -11,6 +11,7 @@ use MediaWiki\MediaWikiServices;
 use OOUI\MessageWidget;
 use OutputPage;
 use Parser;
+use ParserOptions;
 use PPFrame;
 use RequestContext;
 use TitleFactory;
@@ -82,7 +83,13 @@ class SmartListHandler extends Handler {
 
 		$this->processedArgs['listType'] = $this->mode->getListType();
 
-		$parser = new ParserObjectWrapper( $this->parser );
+		// Not injected as to not break compatibility for all other handlers
+		// Use fresh parser, to avoid side effects from parsing SL content in the same parser
+		$parser = MediaWikiServices::getInstance()->getParserFactory()->create();
+		$parser->setOptions( ParserOptions::newFromAnon() );
+		$parser->clearState();
+
+		$parser = new ParserObjectWrapper( $parser );
 		$listRenderer = new ListRenderer(
 			$parser,
 			MediaWikiServices::getInstance()->getPageProps(),
