@@ -18,7 +18,7 @@ use WebRequest;
 class ListRendererTest extends MediaWikiIntegrationTestCase {
 
 	/**
-	 * @param IParser $parser
+	 * @param \BlueSpice\SmartList\IParser $parser
 	 * @param array $items
 	 * @param array $args
 	 * @param string $expect

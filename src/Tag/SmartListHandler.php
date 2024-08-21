@@ -88,6 +88,7 @@ class SmartListHandler extends Handler {
 		$parser = MediaWikiServices::getInstance()->getParserFactory()->create();
 		$parser->setOptions( ParserOptions::newFromAnon() );
 		$parser->clearState();
+		$parser->setOutputType( Parser::OT_HTML );
 
 		$parser = new ParserObjectWrapper( $parser );
 		$listRenderer = new ListRenderer(
