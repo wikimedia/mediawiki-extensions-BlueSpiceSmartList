@@ -1,10 +1,12 @@
 {
 	"@metadata": {
 		"authors": [
+			"Artsiom91",
 			"Kareyac",
 			"Дзяніс Тутэйшы"
 		]
 	},
+	"bs-smartlist-month": "Месяц",
 	"bs-smartlist-mostactiveusersdesc": "Спіс найбольш актыўных карыстальнікаў, упарадкаваны па колькасці правак.",
 	"bs-smartlist-mosteditedpagesdesc": "Спіс найбольш рэдагаваных старонак, упарадкаваны па колькасці правак.",
 	"bs-smartlist-ve-userlistinspector-groups": "Групы"
