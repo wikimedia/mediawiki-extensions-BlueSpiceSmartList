@@ -102,7 +102,7 @@ class WhatLinksHereMode extends GenericSmartlistMode {
 			"page_id = pl_from",
 			"pl_namespace = {$targetTitle->getNamespace()}",
 			"pl_from NOT IN ({$targetTitle->getArticleID()})",
-			"pl_title = '{$targetTitle->getDBkey()}'",
+			"pl_title" => $dbr->addQuotes( $targetTitle->getDBkey() ),
 		];
 		$options = [];
 
