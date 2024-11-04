@@ -22,11 +22,6 @@
 	"bs-smartlist-month": "Месяц",
 	"bs-smartlist-time": "Время",
 	"bs-smartlist-title": "Заголовок",
-	"bs-smartlist-tag-smartlist-desc": "Показывает автоматически сгенерированные списки статей. Конфигурация выполняется через несколько модификаторов и параметров.",
-	"bs-smartlist-tag-smartlist-example-rc": "Режим: последние изменения",
-	"bs-smartlist-tag-smartlist-example-whatlinkshere": "Режим: ссылки сюда",
-	"bs-smartlist-tag-newbies-desc": "Показывает новых участников в вики. Список может быть ограничен определённым числом.",
-	"bs-smartlist-tag-toplist-desc": "Показывает список самых просматриваемых страниц. Может быть ограничено по нескольким параметрам.",
 	"bs-smartlist-mostvisitedpages": "Наиболее часто просматриваемые страницы",
 	"bs-smartlist-mosteditedpages": "Самые часто редактируемые страницы",
 	"bs-smartlist-mostactiveusers": "Самые активные пользователи (по количеству правок)",
@@ -39,7 +34,7 @@
 	"bs-smartlist-hitcounter-missing": "Должно быть установлено расширение <a target='blank' href='https://www.mediawiki.org/wiki/Special:MyLanguage/Extension:HitCounters'>HitCounters</a>.",
 	"apihelp-bs-smartlist-tasks-description": "Функции API для обслуживания данных портала для страницы и пользовательской статистики.",
 	"apihelp-bs-smartlist-tasks-summary": "Функции API для обслуживания данных портала для страницы и пользовательской статистики.",
+	"bs-smartlist-ve-userlist-title": "Список пользователей",
 	"bs-smartlist-ve-userlistinspector-groups": "Группы",
-	"bs-smartlist-droplet-newbies-name": "Новые участники",
-	"bs-smartlist-ve-userlist-title": "Список пользователей"
+	"bs-smartlist-droplet-newbies-name": "Новые участники"
 }
