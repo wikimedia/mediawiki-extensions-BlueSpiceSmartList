@@ -48,5 +48,6 @@
 	"bs-smartlist-droplet-what-links-here-name": "روابط لهذه الصفحة",
 	"bs-smartlist-droplet-what-links-here-desc": "قائمة الصفحات التي تصل إلى هذه الصفحة",
 	"bs-smartlist-ve-recentchanges-title": "التغييرات الأخيرة",
-	"bs-smartlist-ve-whatlinkshere-title": "روابط لهذه الصفحة"
+	"bs-smartlist-ve-whatlinkshere-title": "روابط لهذه الصفحة",
+	"bs-smartlist-error-mode-not-found": "لم يتم العثور على الوضع المحدد"
 }
