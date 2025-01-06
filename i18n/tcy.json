@@ -1,14 +1,15 @@
 {
 	"@metadata": {
 		"authors": [
-			"VASANTH S.N."
+			"VASANTH S.N.",
+			"ChiK"
 		]
 	},
 	"bs-smartlist-sort-asc": "ಮಿತ್ತ್ ಪೋಪುನೆ",
 	"bs-smartlist-sort-desc": "ತಿರ್ತ್ ಪೋಪುನೆ",
 	"bs-smartlist-day": "ದಿನ",
 	"bs-smartlist-week": "ವಾರೋ",
-	"bs-smartlist-month": "ತಿಂಗೊಳು",
+	"bs-smartlist-month": "ತಿಂಗೊಲು",
 	"bs-smartlist-time": "ಸಮಯೊ",
 	"bs-smartlist-title": "ತರೆಬರವು"
 }
