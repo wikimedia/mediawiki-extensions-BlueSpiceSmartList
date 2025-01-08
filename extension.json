@@ -22,7 +22,7 @@
 		"BlueSpiceFoundation": {
 			"Extensions": {
 				"BlueSpiceSmartList": {
-					"className": "SmartList",
+					"className": "BlueSpice\\SmartList\\Extension",
 					"extPath": "/BlueSpiceSmartList"
 				}
 			},
@@ -91,9 +91,6 @@
 			}
 		}
 	},
-	"APIModules": {
-		"bs-smartlist-tasks": "BSApiTasksSmartList"
-	},
 	"ServiceWiringFiles": [
 		"includes/ServiceWiring.php"
 	],
@@ -106,8 +103,7 @@
 		"BlueSpice\\SmartList\\": "src/"
 	},
 	"AutoloadClasses": {
-		"SmartList": "SmartList.class.php",
-		"BSApiTasksSmartList": "includes/api/BSApiTasksSmartList.php"
+		"SmartList": "SmartList.class.php"
 	},
 	"ResourceModules": {
 		"ext.bluespice.smartList.visualEditor": {
@@ -240,11 +236,7 @@
 		"remoteExtPath": "BlueSpiceSmartList/resources"
 	},
 	"Hooks": {
-		"BSUsageTrackerRegisterCollectors": "\\BlueSpice\\SmartList\\Hook\\BSUsageTrackerRegisterCollectors\\AddSmartlistTag::callback",
-		"BSDashboardsAdminDashboardPortalPortlets": "\\BlueSpice\\SmartList\\Hook\\BSDashboardsAdminDashboardPortalPortlets\\AddPortlets::callback",
-		"BSDashboardsAdminDashboardPortalConfig": "\\BlueSpice\\SmartList\\Hook\\BSDashboardsAdminDashboardPortalConfig\\AddConfigs::callback",
-		"BSDashboardsUserDashboardPortalPortlets": "\\BlueSpice\\SmartList\\Hook\\BSDashboardsUserDashboardPortalPortlets\\AddPortlets::callback",
-		"BSDashboardsUserDashboardPortalConfig": "\\BlueSpice\\SmartList\\Hook\\BSDashboardsUserDashboardPortalConfig\\AddConfigs::callback"
+		"BSUsageTrackerRegisterCollectors": "\\BlueSpice\\SmartList\\Hook\\BSUsageTrackerRegisterCollectors\\AddSmartlistTag::callback"
 	},
 	"load_composer_autoloader": true,
 	"manifest_version": 2
