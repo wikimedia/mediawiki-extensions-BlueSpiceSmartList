@@ -14,6 +14,7 @@ use WebRequest;
 
 /**
  * @covers \BlueSpice\SmartList\ListRenderer
+ * @group Database
  */
 class ListRendererTest extends MediaWikiIntegrationTestCase {
 
