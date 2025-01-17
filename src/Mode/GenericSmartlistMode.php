@@ -9,8 +9,8 @@ use BsPageContentProvider;
 use BsStringHelper;
 use Category;
 use MediaWiki\MediaWikiServices;
+use MediaWiki\Title\Title;
 use Sanitizer;
-use Title;
 
 class GenericSmartlistMode extends SmartListBaseMode {
 
