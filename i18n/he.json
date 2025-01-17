@@ -30,7 +30,6 @@
 	"bs-smartlist-mostvisitedpagesdesc": "רשימה של הדפים הנצפים ביותר, הממוינת לפי מספר הצפיות בהם.",
 	"bs-smartlist-lasteditsdesc": "רשימת הדפים שערכת.",
 	"bs-smartlist-hitcounter-missing": "ההרחבה <a target='blank' href='https://www.mediawiki.org/wiki/Special:MyLanguage/Extension:HitCounters'>HitCounters</a> חייבת להיות מותקנת.",
-	"apihelp-bs-smartlist-tasks-summary": "פונקציות API לשרת נתוני חלונית עבור סטטיסטיקות דף ומשתמשים.",
 	"bs-smartlist-ve-userlist-title": "רשימת משתמשים",
 	"bs-smartlist-ve-userlistinspector-groups": "קבוצות",
 	"bs-smartlist-ve-userlistinspector-limit": "מגבלה של המשתמשים המוצגים",

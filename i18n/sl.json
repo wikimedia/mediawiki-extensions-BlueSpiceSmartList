@@ -28,7 +28,6 @@
 	"bs-smartlist-mostvisitedpagesdesc": "Seznam najbolj obiskanih strani, urejen po njihovih ogledih.",
 	"bs-smartlist-lasteditsdesc": "Seznam strani, ki ste jih urejali.",
 	"bs-smartlist-hitcounter-missing": "Nameščena mora biti razširitev <a target='blank' href='https://www.mediawiki.org/wiki/Special:MyLanguage/Extension:HitCounters'>HitCounters</a>.",
-	"apihelp-bs-smartlist-tasks-summary": "Funkcije API-ja za zagotavljanje podatkov za statistiko strani in uporabnikov.",
 	"bs-smartlist-ve-userlist-title": "Uporabniški seznam",
 	"bs-smartlist-ve-userlistinspector-groups": "Skupine",
 	"bs-smartlist-ve-userlistinspector-limit": "Omejitev prikazanih uporabnikov",

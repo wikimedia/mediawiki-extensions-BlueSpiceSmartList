@@ -27,6 +27,5 @@
 	"bs-smartlist-mosteditedpagesdesc": "Elenghe de le pàggene cchiù cangiate ordenate pe le cangiaminde lore.",
 	"bs-smartlist-mostvisitedpagesdesc": "Elenghe de le pàggene cchiù 'ndrucate ordenate pe le 'ndrucaminde lore.",
 	"bs-smartlist-lasteditsdesc": "Elenghe de le pàggene ca è cangiate.",
-	"bs-smartlist-hitcounter-missing": "L'estenzione <a target='blank' href='https://www.mediawiki.org/wiki/Extension:HitCounters'>HitCounters</a> adda essere installate.",
-	"apihelp-bs-smartlist-tasks-summary": "Funziune API ca servene le date de le portlet pa pàgene e pe le statisteche de l'utende."
+	"bs-smartlist-hitcounter-missing": "L'estenzione <a target='blank' href='https://www.mediawiki.org/wiki/Extension:HitCounters'>HitCounters</a> adda essere installate."
 }

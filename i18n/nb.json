@@ -29,7 +29,6 @@
 	"bs-smartlist-mostvisitedpagesdesc": "Liste over mest viste sider sortert etter antall visninger.",
 	"bs-smartlist-lasteditsdesc": "Liste over sider du har redigert.",
 	"bs-smartlist-hitcounter-missing": "Utvidelsen <a target=\"blank\" href=\"https://www.mediawiki.org/wiki/Extension:HitCounters\">HitCounters</a> må være installert.",
-	"apihelp-bs-smartlist-tasks-summary": "API-funksjoner for å tilby portletdata for side- og brukerstatistikk.",
 	"bs-smartlist-ve-userlist-title": "Brukerliste",
 	"bs-smartlist-ve-userlistinspector-groups": "Grupper",
 	"bs-smartlist-ve-userlistinspector-limit": "Grense på viste brukere",
