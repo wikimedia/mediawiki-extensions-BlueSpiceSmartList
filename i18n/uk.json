@@ -30,6 +30,5 @@
 	"bs-smartlist-mosteditedpagesdesc": "Список найбільш редагованих сторінок, відсортованих за їх редагуваннями.",
 	"bs-smartlist-mostvisitedpagesdesc": "Список найбільш відвідуваних сторінок, відсортованих за їх переглядами.",
 	"bs-smartlist-lasteditsdesc": "Список сторінок, які Ви редагували.",
-	"bs-smartlist-hitcounter-missing": "Має бути встановлене розширення <a target='blank' href='https://www.mediawiki.org/wiki/Special:MyLanguage/Extension:HitCounters'>HitCounters</a>.",
-	"apihelp-bs-smartlist-tasks-summary": "Функції API для видачі даних про портлети для статистики сторінки й користувача."
+	"bs-smartlist-hitcounter-missing": "Має бути встановлене розширення <a target='blank' href='https://www.mediawiki.org/wiki/Special:MyLanguage/Extension:HitCounters'>HitCounters</a>."
 }
