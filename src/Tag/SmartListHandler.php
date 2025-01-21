@@ -6,6 +6,7 @@ use BlueSpice\SmartList\ListRenderer;
 use BlueSpice\SmartList\Parser\ParserObjectWrapper;
 use BlueSpice\Tag\Handler;
 use FormatJson;
+use MediaWiki\Context\RequestContext;
 use MediaWiki\HookContainer\HookContainer;
 use MediaWiki\MediaWikiServices;
 use OOUI\MessageWidget;
@@ -13,7 +14,6 @@ use OutputPage;
 use Parser;
 use ParserOptions;
 use PPFrame;
-use RequestContext;
 use TitleFactory;
 
 class SmartListHandler extends Handler {

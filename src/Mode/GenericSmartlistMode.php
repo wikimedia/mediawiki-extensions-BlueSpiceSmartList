@@ -8,6 +8,7 @@ use BsNamespaceHelper;
 use BsPageContentProvider;
 use BsStringHelper;
 use Category;
+use MediaWiki\Context\RequestContext;
 use MediaWiki\MediaWikiServices;
 use MediaWiki\Title\Title;
 use Sanitizer;

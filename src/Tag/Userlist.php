@@ -3,10 +3,10 @@
 namespace BlueSpice\SmartList\Tag;
 
 use BlueSpice\Tag\Tag;
+use MediaWiki\Context\RequestContext;
 use MediaWiki\MediaWikiServices;
 use Parser;
 use PPFrame;
-use RequestContext;
 
 class Userlist extends Tag {
 

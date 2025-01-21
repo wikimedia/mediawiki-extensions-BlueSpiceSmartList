@@ -6,10 +6,10 @@ use BlueSpice\SmartList\BlueSpiceSmartListModeFactory;
 use BlueSpice\SmartList\Mode\IMode;
 use BlueSpice\Tag\MarkerType\NoWiki;
 use BlueSpice\Tag\Tag;
+use MediaWiki\Context\RequestContext;
 use MediaWiki\MediaWikiServices;
 use Parser;
 use PPFrame;
-use RequestContext;
 
 class RecentChanges extends Tag {
 

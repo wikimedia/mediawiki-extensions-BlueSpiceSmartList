@@ -2,7 +2,7 @@
 
 namespace BlueSpice\SmartList\Mode;
 
-use RequestContext;
+use MediaWiki\Context\RequestContext;
 
 interface IMode {
 
