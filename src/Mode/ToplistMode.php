@@ -6,8 +6,8 @@ use BlueSpice\ParamProcessor\ParamDefinition;
 use BlueSpice\ParamProcessor\ParamType;
 use BsInvalidNamespaceException;
 use BsNamespaceHelper;
+use MediaWiki\Context\RequestContext;
 use MediaWiki\Permissions\PermissionManager;
-use RequestContext;
 use TitleFactory;
 use Wikimedia\Rdbms\ILoadBalancer;
 

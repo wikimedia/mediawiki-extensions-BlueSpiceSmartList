@@ -4,10 +4,10 @@ namespace BlueSpice\SmartList\Tag;
 
 use BlueSpice\SmartList\BlueSpiceSmartListModeFactory;
 use BlueSpice\Tag\Tag;
+use MediaWiki\Context\RequestContext;
 use MediaWiki\MediaWikiServices;
 use Parser;
 use PPFrame;
-use RequestContext;
 use Throwable;
 
 class SmartList extends Tag {
