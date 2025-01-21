@@ -9,12 +9,12 @@ use FormatJson;
 use MediaWiki\Context\RequestContext;
 use MediaWiki\HookContainer\HookContainer;
 use MediaWiki\MediaWikiServices;
+use MediaWiki\Title\TitleFactory;
 use OOUI\MessageWidget;
 use OutputPage;
 use Parser;
 use ParserOptions;
 use PPFrame;
-use TitleFactory;
 
 class SmartListHandler extends Handler {
 

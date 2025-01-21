@@ -2,8 +2,8 @@
 
 namespace BlueSpice\SmartList\Mode;
 
+use MediaWiki\Title\TitleFactory;
 use MediaWiki\User\UserFactory;
-use TitleFactory;
 use Wikimedia\Rdbms\ILoadBalancer;
 
 class NewbiesMode extends BaseMode {

@@ -7,8 +7,8 @@ use BlueSpice\ParamProcessor\ParamType;
 use BsInvalidNamespaceException;
 use MediaWiki\Context\RequestContext;
 use MediaWiki\Permissions\PermissionManager;
+use MediaWiki\Title\TitleFactory;
 use MessageLocalizer;
-use TitleFactory;
 use Wikimedia\Rdbms\ILoadBalancer;
 
 class WhatLinksHereMode extends GenericSmartlistMode {

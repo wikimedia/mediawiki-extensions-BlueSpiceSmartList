@@ -4,8 +4,8 @@ namespace BlueSpice\SmartList;
 
 use BsStringHelper;
 use MediaWiki\HookContainer\HookContainer;
+use MediaWiki\Title\TitleFactory;
 use PageProps;
-use TitleFactory;
 use ViewBaseElement;
 
 class ListRenderer {
