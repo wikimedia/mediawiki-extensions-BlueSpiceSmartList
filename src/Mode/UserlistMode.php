@@ -4,8 +4,8 @@ namespace BlueSpice\SmartList\Mode;
 
 use BlueSpice\ParamProcessor\ParamDefinition;
 use BlueSpice\ParamProcessor\ParamType;
+use MediaWiki\Title\TitleFactory;
 use MediaWiki\User\User;
-use TitleFactory;
 
 class UserlistMode extends SmartListBaseMode {
 

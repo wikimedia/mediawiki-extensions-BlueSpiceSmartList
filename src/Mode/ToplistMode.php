@@ -8,7 +8,7 @@ use BsInvalidNamespaceException;
 use BsNamespaceHelper;
 use MediaWiki\Context\RequestContext;
 use MediaWiki\Permissions\PermissionManager;
-use TitleFactory;
+use MediaWiki\Title\TitleFactory;
 use Wikimedia\Rdbms\ILoadBalancer;
 
 class ToplistMode extends SmartListBaseMode {
