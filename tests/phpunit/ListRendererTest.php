@@ -6,11 +6,11 @@ use BlueSpice\SmartList\ListRenderer;
 use BlueSpice\SmartList\Parser\DerivativeAPIRequestWrapper;
 use BlueSpice\SmartList\Parser\ParserObjectWrapper;
 use MediaWiki\MediaWikiServices;
+use MediaWiki\Request\WebRequest;
 use MediaWiki\Title\Title;
 use MediaWikiIntegrationTestCase;
 use PageProps;
 use Parser;
-use WebRequest;
 
 /**
  * @covers \BlueSpice\SmartList\ListRenderer
