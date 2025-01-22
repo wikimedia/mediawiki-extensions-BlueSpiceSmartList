@@ -7,10 +7,10 @@ use BlueSpice\UserSidebar\Widget;
 use Config;
 use IContextSource;
 use MediaWiki\MediaWikiServices;
+use MediaWiki\Message\Message;
 use MediaWiki\Title\TitleFactory;
 use MediaWiki\User\ActorNormalization;
 use MediaWiki\User\UserIdentity;
-use Message;
 use Wikimedia\Rdbms\ILoadBalancer;
 
 class YourEdits extends Widget {
