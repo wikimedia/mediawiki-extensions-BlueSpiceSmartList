@@ -36,7 +36,6 @@
 	"bs-smartlist-mostvisitedpagesdesc": "按监视数排列的最多监视页面列表。",
 	"bs-smartlist-lasteditsdesc": "您编辑的页面列表。",
 	"bs-smartlist-hitcounter-missing": "扩展<a target='blank' href='https://www.mediawiki.org/wiki/Special:MyLanguage/Extension:HitCounters'>HitCounters</a>必须被安装。",
-	"apihelp-bs-smartlist-tasks-summary": "作为门户组件数据用于页面及用户统计的API函数。",
 	"bs-smartlist-ve-userlist-title": "用户列表",
 	"bs-smartlist-ve-userlistinspector-no-group": "未选择组。选择一个组以列出其用户",
 	"bs-smartlist-droplet-userlist-name": "成员列表",

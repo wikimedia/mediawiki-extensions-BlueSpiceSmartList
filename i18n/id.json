@@ -30,6 +30,5 @@
 	"bs-smartlist-mosteditedpagesdesc": "Daftar halaman yang paling banyak diedit diurutkan berdasarkan hasil editnya.",
 	"bs-smartlist-mostvisitedpagesdesc": "Daftar halaman yang paling banyak dilihat diurutkan berdasarkan tampilan mereka.",
 	"bs-smartlist-lasteditsdesc": "Daftar halaman yang telah Anda edit.",
-	"bs-smartlist-hitcounter-missing": "Ekstensi <a target='blank' href='https://www.mediawiki.org/wiki/Extension:HitCounters'>HitCounters</a> harus dipasang.",
-	"apihelp-bs-smartlist-tasks-summary": "API berfungsi untuk menyajikan data portlet untuk halaman dan statistik pengguna."
+	"bs-smartlist-hitcounter-missing": "Ekstensi <a target='blank' href='https://www.mediawiki.org/wiki/Extension:HitCounters'>HitCounters</a> harus dipasang."
 }
