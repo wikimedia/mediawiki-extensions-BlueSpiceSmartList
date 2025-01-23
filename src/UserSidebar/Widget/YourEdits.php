@@ -4,8 +4,8 @@ namespace BlueSpice\SmartList\UserSidebar\Widget;
 
 use BlueSpice\UserSidebar\IWidget;
 use BlueSpice\UserSidebar\Widget;
-use IContextSource;
 use MediaWiki\Config\Config;
+use MediaWiki\Context\IContextSource;
 use MediaWiki\MediaWikiServices;
 use MediaWiki\Message\Message;
 use MediaWiki\Title\TitleFactory;
