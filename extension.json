@@ -102,9 +102,6 @@
 	"AutoloadNamespaces": {
 		"BlueSpice\\SmartList\\": "src/"
 	},
-	"AutoloadClasses": {
-		"SmartList": "SmartList.class.php"
-	},
 	"ResourceModules": {
 		"ext.bluespice.smartList.visualEditor": {
 			"scripts": [
