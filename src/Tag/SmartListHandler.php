@@ -9,10 +9,10 @@ use MediaWiki\Context\RequestContext;
 use MediaWiki\HookContainer\HookContainer;
 use MediaWiki\Json\FormatJson;
 use MediaWiki\MediaWikiServices;
+use MediaWiki\Output\OutputPage;
 use MediaWiki\Parser\ParserOptions;
 use MediaWiki\Title\TitleFactory;
 use OOUI\MessageWidget;
-use OutputPage;
 use Parser;
 use PPFrame;
 
