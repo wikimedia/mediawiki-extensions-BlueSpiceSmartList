@@ -10,10 +10,10 @@ use MediaWiki\HookContainer\HookContainer;
 use MediaWiki\Json\FormatJson;
 use MediaWiki\MediaWikiServices;
 use MediaWiki\Output\OutputPage;
+use MediaWiki\Parser\Parser;
 use MediaWiki\Parser\ParserOptions;
 use MediaWiki\Title\TitleFactory;
 use OOUI\MessageWidget;
-use Parser;
 use PPFrame;
 
 class SmartListHandler extends Handler {

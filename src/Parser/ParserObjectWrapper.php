@@ -3,7 +3,7 @@
 namespace BlueSpice\SmartList\Parser;
 
 use BlueSpice\SmartList\IParser;
-use Parser as MediaWikiParser;
+use MediaWiki\Parser\Parser as MediaWikiParser;
 
 class ParserObjectWrapper implements IParser {
 
