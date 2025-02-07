@@ -12,9 +12,9 @@ use MediaWiki\MediaWikiServices;
 use MediaWiki\Output\OutputPage;
 use MediaWiki\Parser\Parser;
 use MediaWiki\Parser\ParserOptions;
+use MediaWiki\Parser\PPFrame;
 use MediaWiki\Title\TitleFactory;
 use OOUI\MessageWidget;
-use PPFrame;
 
 class SmartListHandler extends Handler {
 
