@@ -3,7 +3,7 @@
 namespace BlueSpice\SmartList;
 
 use BlueSpice\SmartList\Mode\IMode;
-use ExtensionRegistry;
+use MediaWiki\Registration\ExtensionRegistry;
 use MWException;
 use Wikimedia\ObjectFactory\ObjectFactory;
 
