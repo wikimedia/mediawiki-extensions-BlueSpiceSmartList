@@ -3,8 +3,8 @@
 namespace BlueSpice\SmartList\Parser;
 
 use BlueSpice\SmartList\IParser;
-use DerivativeRequest;
 use MediaWiki\Api\ApiMain;
+use MediaWiki\Request\DerivativeRequest;
 use MediaWiki\Request\WebRequest;
 
 class DerivativeAPIRequestWrapper implements IParser {
