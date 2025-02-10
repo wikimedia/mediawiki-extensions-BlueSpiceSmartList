@@ -7,7 +7,7 @@ use BlueSpice\ParamProcessor\ParamType;
 use BsNamespaceHelper;
 use BsPageContentProvider;
 use BsStringHelper;
-use Category;
+use MediaWiki\Category\Category;
 use MediaWiki\Context\RequestContext;
 use MediaWiki\MediaWikiServices;
 use MediaWiki\Parser\Sanitizer;
