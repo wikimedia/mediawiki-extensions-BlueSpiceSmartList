@@ -90,19 +90,8 @@ class WhatLinksHereMode extends GenericSmartlistMode {
 		}
 
 		$dbr = $this->lb->getConnection( DB_REPLICA );
-		$tables = [
-			'pagelinks',
-			'page',
-		];
-		$fields = [
-			'title' => 'page_title',
-			'namespace' => 'page_namespace',
-		];
 		$conditions = [
-			"page_id = pl_from",
-			"pl_namespace = {$targetTitle->getNamespace()}",
 			"pl_from NOT IN ({$targetTitle->getArticleID()})",
-			"pl_title" => $targetTitle->getDBkey(),
 		];
 		$options = [];
 
@@ -132,18 +121,27 @@ class WhatLinksHereMode extends GenericSmartlistMode {
 			: ' DESC';
 
 		$conditions[ 'page_content_model' ] = [ '', 'wikitext' ];
-		$res = $dbr->select(
-			$tables,
-			$fields,
-			$conditions,
-			__METHOD__,
-			$options
-		);
+		$res = $dbr->newSelectQueryBuilder()
+			->from( 'page', 'p' )
+			->select( [
+				'p.page_title AS title',
+				'p.page_namespace AS namespace'
+			] )
+			->join( 'pagelinks', 'pl', [ 'p.page_id = pl.pl_from' ] )
+			->join( 'linktarget', 'lt', [
+				'pl.pl_target_id = lt.lt_id',
+				'lt.lt_namespace' => $targetTitle->getNamespace(),
+				'lt.lt_title' => $targetTitle->getDBkey(),
+			] )
+			->where( $conditions )
+			->options( $options )
+			->caller( __METHOD__ )
+			->fetchResultSet();
 
 		$count = 0;
 		$objectList = [];
 		foreach ( $res as $row ) {
-			if ( $count == $args['count'] ) {
+			if ( $count === $args['count'] ) {
 				break;
 			}
 
