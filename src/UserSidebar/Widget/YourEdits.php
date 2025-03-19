@@ -121,6 +121,7 @@ class YourEdits extends Widget {
 			->groupBy( 'page_id' )
 			->orderBy( 'MAX(rev_timestamp) DESC' )
 			->limit( $count )
+			->caller( __METHOD__ )
 			->fetchResultSet();
 
 		$edits = [];
