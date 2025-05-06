@@ -1,4 +1,4 @@
-( function( mw, $, d, bs ) {
+( function ( mw, $, d, bs ) {
 	bs.util.registerNamespace( 'bs.smartlist.ui' );
 	bs.smartlist.ui.RecentChangesInspector = function BsSmartlistUiRecentChangesInspector( config ) {
 		// Parent constructor
@@ -21,7 +21,7 @@
 
 	bs.smartlist.ui.RecentChangesInspector.static.dir = 'ltr';
 
-	//This tag does not have any content
+	// This tag does not have any content
 	bs.smartlist.ui.RecentChangesInspector.static.allowedEmpty = true;
 	bs.smartlist.ui.RecentChangesInspector.static.selfCloseEmptyBody = true;
 
@@ -29,4 +29,4 @@
 
 	ve.ui.windowFactory.register( bs.smartlist.ui.RecentChangesInspector );
 
-})( mediaWiki, jQuery, document, blueSpice );
+}( mediaWiki, jQuery, document, blueSpice ) );

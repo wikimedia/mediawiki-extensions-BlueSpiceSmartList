@@ -1,4 +1,4 @@
-( function( mw, $, d, bs ) {
+( function ( mw, $, d, bs ) {
 	bs.util.registerNamespace( 'bs.smartlist.dm' );
 
 	bs.smartlist.dm.UserlistNode = function BsSmartlistDmUserlistNode() {
@@ -19,14 +19,12 @@
 	// Name of the parser tag
 	bs.smartlist.dm.UserlistNode.static.extensionName = 'bs:userlist';
 
-
 	// This tag renders without content
 	bs.smartlist.dm.UserlistNode.static.childNodeTypes = [];
 	bs.smartlist.dm.UserlistNode.static.isContent = false;
-
 
 	/* Registration */
 
 	ve.dm.modelRegistry.register( bs.smartlist.dm.UserlistNode );
 
-})( mediaWiki, jQuery, document, blueSpice );
+}( mediaWiki, jQuery, document, blueSpice ) );

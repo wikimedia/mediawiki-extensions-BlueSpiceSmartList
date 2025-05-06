@@ -1,4 +1,4 @@
-( function( mw, $, d, bs ) {
+( function ( mw, $, d, bs ) {
 	bs.util.registerNamespace( 'bs.smartlist.dm' );
 
 	bs.smartlist.dm.WhatlinkshereNode = function BsSmartlistDmWhatlinkshereNode() {
@@ -19,14 +19,12 @@
 	// Name of the parser tag
 	bs.smartlist.dm.WhatlinkshereNode.static.extensionName = 'whatlinkshere';
 
-
 	// This tag renders without content
 	bs.smartlist.dm.WhatlinkshereNode.static.childNodeTypes = [];
 	bs.smartlist.dm.WhatlinkshereNode.static.isContent = false;
-
 
 	/* Registration */
 
 	ve.dm.modelRegistry.register( bs.smartlist.dm.WhatlinkshereNode );
 
-})( mediaWiki, jQuery, document, blueSpice );
+}( mediaWiki, jQuery, document, blueSpice ) );

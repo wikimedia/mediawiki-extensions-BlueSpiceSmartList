@@ -17,7 +17,7 @@ ve.ui.SmartListInspector.static.modelClasses = [ ve.dm.SmartListNode ];
 
 ve.ui.SmartListInspector.static.dir = 'ltr';
 
-//This tag does not have any content
+// This tag does not have any content
 ve.ui.SmartListInspector.static.allowedEmpty = true;
 ve.ui.SmartListInspector.static.selfCloseEmptyBody = true;
 
@@ -72,7 +72,7 @@ ve.ui.SmartListInspector.prototype.initialize = function () {
 	);
 };
 
-ve.ui.SmartListInspector.prototype.createFields = function() {
+ve.ui.SmartListInspector.prototype.createFields = function () {
 	this.countInput = new OO.ui.NumberInputWidget( { min: 1, max: 250, isInteger: true } );
 	this.nsInput = new OO.ui.TextInputWidget();
 	this.catInput = new OO.ui.TextInputWidget();
@@ -153,15 +153,15 @@ ve.ui.SmartListInspector.prototype.createFields = function() {
 	this.metaInput = new OO.ui.ToggleSwitchWidget();
 	this.targetInput = new OO.ui.TextInputWidget();
 	this.excludensInput = new OO.ui.TextInputWidget();
-}
+};
 
-ve.ui.SmartListInspector.prototype.setLayouts = function() {
+ve.ui.SmartListInspector.prototype.setLayouts = function () {
 	this.countLayout = new OO.ui.FieldLayout( this.countInput, {
 		align: 'right',
 		label: ve.msg( 'bs-smartlist-ve-smartlistinspector-count' )
 	} );
 
-	this.nsLayout =  new OO.ui.FieldLayout( this.nsInput, {
+	this.nsLayout = new OO.ui.FieldLayout( this.nsInput, {
 		align: 'right',
 		label: ve.msg( 'bs-smartlist-ve-smartlistinspector-ns' )
 	} );
@@ -229,7 +229,7 @@ ve.ui.SmartListInspector.prototype.setLayouts = function() {
 		align: 'right',
 		label: ve.msg( 'bs-smartlist-ve-smartlistinspector-excludens' )
 	} );
-}
+};
 
 /**
  * @inheritdoc
@@ -237,48 +237,48 @@ ve.ui.SmartListInspector.prototype.setLayouts = function() {
 ve.ui.SmartListInspector.prototype.getSetupProcess = function ( data ) {
 	return ve.ui.SmartListInspector.super.prototype.getSetupProcess.call( this, data )
 		.next( function () {
-			var attributes = this.selectedNode.getAttribute( 'mw' ).attrs;
+			const attributes = this.selectedNode.getAttribute( 'mw' ).attrs;
 
 			this.nsInput.setValue( attributes.ns || '' );
 			this.catInput.setValue( attributes.cat || '' );
-			if( attributes.count ) {
+			if ( attributes.count ) {
 				this.countInput.setValue( attributes.count );
 			}
-			if( attributes.minor === 1 || attributes.minor === '1' ) {
+			if ( attributes.minor === 1 || attributes.minor === '1' ) {
 				this.minorInput.setValue( true );
 			}
-			if( attributes.catmode ) {
+			if ( attributes.catmode ) {
 				this.catmodeInput.setValue( attributes.catmode );
 			}
-			if( attributes.period ) {
+			if ( attributes.period ) {
 				this.periodInput.setValue( attributes.period );
 			}
-			if( attributes.new === 1 || attributes.new === '1' ) {
+			if ( attributes.new === 1 || attributes.new === '1' ) {
 				this.newInput.setValue( true );
 			}
 			this.headingInput.setValue( attributes.heading || '' );
-			if( attributes.trim ) {
+			if ( attributes.trim ) {
 				this.trimInput.setValue( attributes.trim );
 			}
-			if( attributes.showtext === 1 || attributes.showtext === '1' ) {
+			if ( attributes.showtext === 1 || attributes.showtext === '1' ) {
 				this.showtextInput.setValue( true );
 			}
-			if( attributes.trimtext ) {
+			if ( attributes.trimtext ) {
 				this.trimtextInput.setValue( attributes.trimtext );
 			}
-			if( attributes.sort ) {
+			if ( attributes.sort ) {
 				this.sortInput.setValue( attributes.sort );
 			}
-			if( attributes.order ) {
+			if ( attributes.order ) {
 				this.orderInput.setValue( attributes.order );
 			}
-			if( attributes.showns === 1 || attributes.showns === '1' ) {
+			if ( attributes.showns === 1 || attributes.showns === '1' ) {
 				this.shownsInput.setValue( true );
 			}
-			if( attributes.numwithtext ) {
+			if ( attributes.numwithtext ) {
 				this.numwithtextInput.setValue( attributes.numwithtext );
 			}
-			if( attributes.meta === 1 || attributes.meta === '1' ) {
+			if ( attributes.meta === 1 || attributes.meta === '1' ) {
 				this.metaInput.setValue( true );
 			}
 			this.targetInput.setValue( attributes.target || '' );
@@ -286,12 +286,12 @@ ve.ui.SmartListInspector.prototype.getSetupProcess = function ( data ) {
 
 			this.wireEvents();
 
-			//Get this out of here
+			// Get this out of here
 			this.actions.setAbilities( { done: true } );
 		}, this );
 };
 
-ve.ui.SmartListInspector.prototype.wireEvents = function() {
+ve.ui.SmartListInspector.prototype.wireEvents = function () {
 
 	this.nsInput.on( 'change', this.onChangeHandler );
 	this.catInput.on( 'change', this.onChangeHandler );
@@ -311,102 +311,102 @@ ve.ui.SmartListInspector.prototype.wireEvents = function() {
 	this.targetInput.on( 'change', this.onChangeHandler );
 	this.excludensInput.on( 'change', this.onChangeHandler );
 	this.headingInput.on( 'change', this.onChangeHandler );
-}
+};
 
 ve.ui.SmartListInspector.prototype.updateMwData = function ( mwData ) {
 	// Parent method
 	ve.ui.SmartListInspector.super.prototype.updateMwData.call( this, mwData );
 
 	// Get data from inspector
-	if( this.nsInput.getValue() !== '' ) {
+	if ( this.nsInput.getValue() !== '' ) {
 		mwData.attrs.ns = this.nsInput.getValue();
 	} else {
-		delete( mwData.attrs.ns );
+		delete ( mwData.attrs.ns );
 	}
-	if( this.catInput.getValue() !== '' ) {
+	if ( this.catInput.getValue() !== '' ) {
 		mwData.attrs.cat = this.catInput.getValue();
 	} else {
-		delete( mwData.attrs.cat );
+		delete ( mwData.attrs.cat );
 	}
-	if( this.countInput.getValue() ) {
+	if ( this.countInput.getValue() ) {
 		mwData.attrs.count = this.countInput.getValue();
 	} else {
-		delete( mwData.attrs.count );
+		delete ( mwData.attrs.count );
 	}
-	if( this.minorInput.getValue() === true ) {
-		mwData.attrs.minor = "1";
+	if ( this.minorInput.getValue() === true ) {
+		mwData.attrs.minor = '1';
 	} else {
-		delete( mwData.attrs.minor );
+		delete ( mwData.attrs.minor );
 	}
-	if( this.catmodeInput.getValue() ) {
+	if ( this.catmodeInput.getValue() ) {
 		mwData.attrs.catmode = this.catmodeInput.getValue();
 	} else {
-		delete( mwData.attrs.catmode );
+		delete ( mwData.attrs.catmode );
 	}
-	if( this.periodInput.getValue() ) {
+	if ( this.periodInput.getValue() ) {
 		mwData.attrs.period = this.periodInput.getValue();
 	} else {
-		delete( mwData.attrs.period );
+		delete ( mwData.attrs.period );
 	}
-	if( this.newInput.getValue() === true ) {
-		mwData.attrs.new = "1";
+	if ( this.newInput.getValue() === true ) {
+		mwData.attrs.new = '1';
 	} else {
-		delete( mwData.attrs.new );
+		delete ( mwData.attrs.new );
 	}
-	if( this.headingInput.getValue() ) {
+	if ( this.headingInput.getValue() ) {
 		mwData.attrs.heading = this.headingInput.getValue();
 	} else {
-		delete( mwData.attrs.heading );
+		delete ( mwData.attrs.heading );
 	}
-	if( this.trimInput.getValue() ) {
+	if ( this.trimInput.getValue() ) {
 		mwData.attrs.trim = this.trimInput.getValue();
 	} else {
-		delete( mwData.attrs.trim );
+		delete ( mwData.attrs.trim );
 	}
-	if( this.showtextInput.getValue() === true ) {
-		mwData.attrs.showtext = "1";
+	if ( this.showtextInput.getValue() === true ) {
+		mwData.attrs.showtext = '1';
 	} else {
-		delete( mwData.attrs.showtext );
+		delete ( mwData.attrs.showtext );
 	}
-	if( this.trimtextInput.getValue() ) {
+	if ( this.trimtextInput.getValue() ) {
 		mwData.attrs.trimtext = this.trimtextInput.getValue();
 	} else {
-		delete( mwData.attrs.trimtext );
+		delete ( mwData.attrs.trimtext );
 	}
-	if( this.sortInput.getValue() ) {
+	if ( this.sortInput.getValue() ) {
 		mwData.attrs.sort = this.sortInput.getValue();
 	} else {
-		delete( mwData.attrs.sort );
+		delete ( mwData.attrs.sort );
 	}
-	if( this.orderInput.getValue() ) {
+	if ( this.orderInput.getValue() ) {
 		mwData.attrs.order = this.orderInput.getValue();
 	} else {
-		delete( mwData.attrs.order );
+		delete ( mwData.attrs.order );
 	}
-	if( this.numwithtextInput.getValue() ) {
+	if ( this.numwithtextInput.getValue() ) {
 		mwData.attrs.numwithtext = this.numwithtextInput.getValue();
 	} else {
-		delete( mwData.attrs.numwithtext );
+		delete ( mwData.attrs.numwithtext );
 	}
-	if( this.shownsInput.getValue() === true ) {
-		mwData.attrs.showns = "1";
+	if ( this.shownsInput.getValue() === true ) {
+		mwData.attrs.showns = '1';
 	} else {
-		mwData.attrs.showns = "0";
+		mwData.attrs.showns = '0';
 	}
-	if( this.metaInput.getValue() === true ) {
-		mwData.attrs.meta = "1";
+	if ( this.metaInput.getValue() === true ) {
+		mwData.attrs.meta = '1';
 	} else {
-		delete( mwData.attrs.meta );
+		delete ( mwData.attrs.meta );
 	}
-	if( this.targetInput.getValue() ) {
+	if ( this.targetInput.getValue() ) {
 		mwData.attrs.target = this.targetInput.getValue();
 	} else {
-		delete( mwData.attrs.target );
+		delete ( mwData.attrs.target );
 	}
-	if( this.excludensInput.getValue() ) {
+	if ( this.excludensInput.getValue() ) {
 		mwData.attrs.excludens = this.excludensInput.getValue();
 	} else {
-		delete( mwData.attrs.excludens );
+		delete ( mwData.attrs.excludens );
 	}
 
 };

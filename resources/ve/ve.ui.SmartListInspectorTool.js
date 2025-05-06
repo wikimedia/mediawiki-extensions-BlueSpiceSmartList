@@ -19,4 +19,3 @@ ve.ui.commandRegistry.register(
 		{ args: [ 'smartListInspector' ], supportedSelections: [ 'linear' ] }
 	)
 );
-
