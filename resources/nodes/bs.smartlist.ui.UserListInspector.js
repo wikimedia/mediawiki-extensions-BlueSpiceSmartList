@@ -1,4 +1,4 @@
-( function( mw, $, d, bs ) {
+( function ( mw, $, d, bs ) {
 	bs.util.registerNamespace( 'bs.smartlist.ui' );
 	bs.smartlist.ui.UserlistInspector = function BsSmartlistUiUserlistInspector( config ) {
 		// Parent constructor
@@ -21,7 +21,7 @@
 
 	bs.smartlist.ui.UserlistInspector.static.dir = 'ltr';
 
-	//This tag does not have any content
+	// This tag does not have any content
 	bs.smartlist.ui.UserlistInspector.static.allowedEmpty = true;
 	bs.smartlist.ui.UserlistInspector.static.selfCloseEmptyBody = true;
 
@@ -70,18 +70,18 @@
 	bs.smartlist.ui.UserlistInspector.prototype.getSetupProcess = function ( data ) {
 		return bs.smartlist.ui.UserlistInspector.super.prototype.getSetupProcess.call( this, data )
 			.next( function () {
-				var attributes = this.selectedNode.getAttribute( 'mw' ).attrs;
+				const attributes = this.selectedNode.getAttribute( 'mw' ).attrs;
 
-				if( attributes.groups ) {
+				if ( attributes.groups ) {
 					this.groupsInput.setValue( attributes.groups );
 				}
-				if( attributes.count ) {
+				if ( attributes.count ) {
 					this.countInput.setValue( attributes.count );
 				}
 				this.groupsInput.on( 'change', this.onChangeHandler );
 				this.countInput.on( 'change', this.onChangeHandler );
 
-				//Get this out of here
+				// Get this out of here
 				this.actions.setAbilities( { done: true } );
 			}, this );
 	};
@@ -93,13 +93,13 @@
 		if ( this.groupsInput.getValue() ) {
 			mwData.attrs.groups = this.groupsInput.getValue();
 		} else {
-			delete( mwData.attrs.groups );
+			delete ( mwData.attrs.groups );
 		}
 
 		if ( this.countInput.getValue() ) {
 			mwData.attrs.count = this.countInput.getValue();
 		} else {
-			delete( mwData.attrs.count );
+			delete ( mwData.attrs.count );
 		}
 	};
 
@@ -121,4 +121,4 @@
 
 	ve.ui.windowFactory.register( bs.smartlist.ui.UserlistInspector );
 
-})( mediaWiki, jQuery, document, blueSpice );
+}( mediaWiki, jQuery, document, blueSpice ) );

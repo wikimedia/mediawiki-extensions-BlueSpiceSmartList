@@ -1,4 +1,4 @@
-( function( mw, $, d, bs ) {
+( function ( mw, $, d, bs ) {
 	bs.util.registerNamespace( 'bs.smartlist.ui' );
 
 	bs.smartlist.ui.WhatlinkshereInspectorTool = function BsSmartlistUiWhatlinkshereInspectorTool( toolGroup, config ) {
@@ -23,4 +23,4 @@
 		)
 	);
 
-})( mediaWiki, jQuery, document, blueSpice );
+}( mediaWiki, jQuery, document, blueSpice ) );

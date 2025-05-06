@@ -17,7 +17,7 @@ ve.ui.NewbiesInspector.static.modelClasses = [ ve.dm.NewbiesNode ];
 
 ve.ui.NewbiesInspector.static.dir = 'ltr';
 
-//This tag does not have any content
+// This tag does not have any content
 ve.ui.NewbiesInspector.static.allowedEmpty = true;
 ve.ui.NewbiesInspector.static.selfCloseEmptyBody = true;
 
@@ -64,14 +64,14 @@ ve.ui.NewbiesInspector.prototype.initialize = function () {
 ve.ui.NewbiesInspector.prototype.getSetupProcess = function ( data ) {
 	return ve.ui.NewbiesInspector.super.prototype.getSetupProcess.call( this, data )
 		.next( function () {
-			var attributes = this.selectedNode.getAttribute( 'mw' ).attrs;
+			const attributes = this.selectedNode.getAttribute( 'mw' ).attrs;
 
-			if( attributes.count ) {
+			if ( attributes.count ) {
 				this.countInput.setValue( attributes.count );
 			}
 			this.countInput.on( 'change', this.onChangeHandler );
 
-			//Get this out of here
+			// Get this out of here
 			this.actions.setAbilities( { done: true } );
 		}, this );
 };
@@ -80,10 +80,10 @@ ve.ui.NewbiesInspector.prototype.updateMwData = function ( mwData ) {
 	// Parent method
 	ve.ui.NewbiesInspector.super.prototype.updateMwData.call( this, mwData );
 
-	if( this.countInput.getValue() ) {
+	if ( this.countInput.getValue() ) {
 		mwData.attrs.count = this.countInput.getValue();
 	} else {
-		delete( mwData.attrs.count );
+		delete ( mwData.attrs.count );
 	}
 };
 

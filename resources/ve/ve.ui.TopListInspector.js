@@ -17,7 +17,7 @@ ve.ui.TopListInspector.static.modelClasses = [ ve.dm.TopListNode ];
 
 ve.ui.TopListInspector.static.dir = 'ltr';
 
-//This tag does not have any content
+// This tag does not have any content
 ve.ui.TopListInspector.static.allowedEmpty = true;
 ve.ui.TopListInspector.static.selfCloseEmptyBody = true;
 
@@ -57,7 +57,7 @@ ve.ui.TopListInspector.prototype.initialize = function () {
 	);
 };
 
-ve.ui.TopListInspector.prototype.createFields = function() {
+ve.ui.TopListInspector.prototype.createFields = function () {
 	this.countInput = new OO.ui.NumberInputWidget( { min: 1, max: 250, isInteger: true } );
 	this.nsInput = new OO.ui.TextInputWidget();
 	this.catInput = new OO.ui.TextInputWidget();
@@ -82,15 +82,15 @@ ve.ui.TopListInspector.prototype.createFields = function() {
 			}
 		]
 	} );
-}
+};
 
-ve.ui.TopListInspector.prototype.setLayouts = function() {
+ve.ui.TopListInspector.prototype.setLayouts = function () {
 	this.countLayout = new OO.ui.FieldLayout( this.countInput, {
 		align: 'right',
 		label: ve.msg( 'bs-smartlist-ve-toplistinspector-count' )
 	} );
 
-	this.nsLayout =  new OO.ui.FieldLayout( this.nsInput, {
+	this.nsLayout = new OO.ui.FieldLayout( this.nsInput, {
 		align: 'right',
 		label: ve.msg( 'bs-smartlist-ve-toplistinspector-ns' )
 	} );
@@ -102,7 +102,7 @@ ve.ui.TopListInspector.prototype.setLayouts = function() {
 		align: 'right',
 		label: ve.msg( 'bs-smartlist-ve-toplistinspector-period' )
 	} );
-}
+};
 
 /**
  * @inheritdoc
@@ -110,14 +110,14 @@ ve.ui.TopListInspector.prototype.setLayouts = function() {
 ve.ui.TopListInspector.prototype.getSetupProcess = function ( data ) {
 	return ve.ui.TopListInspector.super.prototype.getSetupProcess.call( this, data )
 		.next( function () {
-			var attributes = this.selectedNode.getAttribute( 'mw' ).attrs;
+			const attributes = this.selectedNode.getAttribute( 'mw' ).attrs;
 
 			this.nsInput.setValue( attributes.ns || '' );
 			this.catInput.setValue( attributes.cat || '' );
-			if( attributes.count ) {
+			if ( attributes.count ) {
 				this.countInput.setValue( attributes.count );
 			}
-			if( attributes.period ) {
+			if ( attributes.period ) {
 				this.periodInput.setValue( attributes.period );
 			}
 
@@ -126,7 +126,7 @@ ve.ui.TopListInspector.prototype.getSetupProcess = function ( data ) {
 			this.countInput.on( 'change', this.onChangeHandler );
 			this.periodInput.on( 'change', this.onChangeHandler );
 
-			//Get this out of here
+			// Get this out of here
 			this.actions.setAbilities( { done: true } );
 		}, this );
 };
@@ -135,25 +135,25 @@ ve.ui.TopListInspector.prototype.updateMwData = function ( mwData ) {
 	// Parent method
 	ve.ui.TopListInspector.super.prototype.updateMwData.call( this, mwData );
 
-	if( this.nsInput.getValue() !== '' ) {
+	if ( this.nsInput.getValue() !== '' ) {
 		mwData.attrs.ns = this.nsInput.getValue();
 	} else {
-		delete( mwData.attrs.ns );
+		delete ( mwData.attrs.ns );
 	}
-	if( this.catInput.getValue() !== '' ) {
+	if ( this.catInput.getValue() !== '' ) {
 		mwData.attrs.cat = this.catInput.getValue();
 	} else {
-		delete( mwData.attrs.cat );
+		delete ( mwData.attrs.cat );
 	}
-	if( this.countInput.getValue() ) {
+	if ( this.countInput.getValue() ) {
 		mwData.attrs.count = this.countInput.getValue();
 	} else {
-		delete( mwData.attrs.count );
+		delete ( mwData.attrs.count );
 	}
-	if( this.periodInput.getValue() ) {
+	if ( this.periodInput.getValue() ) {
 		mwData.attrs.period = this.periodInput.getValue();
 	} else {
-		delete( mwData.attrs.period );
+		delete ( mwData.attrs.period );
 	}
 };
 
