@@ -1,4 +1,4 @@
-( function( mw, $, d, bs ) {
+( function ( mw, $, d, bs ) {
 	bs.util.registerNamespace( 'bs.smartlist.ce' );
 
 	bs.smartlist.ce.UserlistNode = function BsSmartlistCeUserlistNode() {
@@ -32,4 +32,4 @@
 	/* Registration */
 	ve.ce.nodeFactory.register( bs.smartlist.ce.UserlistNode );
 
-})( mediaWiki, jQuery, document, blueSpice );
+}( mediaWiki, jQuery, document, blueSpice ) );

@@ -1,4 +1,4 @@
-( function( mw, $, d, bs ) {
+( function ( mw, $, d, bs ) {
 	bs.util.registerNamespace( 'bs.smartlist.dm' );
 
 	bs.smartlist.dm.RecentChangesNode = function BsSmartlistDmRecentChangesNode() {
@@ -19,14 +19,12 @@
 	// Name of the parser tag
 	bs.smartlist.dm.RecentChangesNode.static.extensionName = 'recentchanges';
 
-
 	// This tag renders without content
 	bs.smartlist.dm.RecentChangesNode.static.childNodeTypes = [];
 	bs.smartlist.dm.RecentChangesNode.static.isContent = false;
-
 
 	/* Registration */
 
 	ve.dm.modelRegistry.register( bs.smartlist.dm.RecentChangesNode );
 
-})( mediaWiki, jQuery, document, blueSpice );
+}( mediaWiki, jQuery, document, blueSpice ) );

@@ -16,11 +16,9 @@ ve.dm.NewbiesNode.static.tagName = 'bs:newbies';
 // Name of the parser tag
 ve.dm.NewbiesNode.static.extensionName = 'bs:newbies';
 
-
 // This tag renders without content
 ve.dm.NewbiesNode.static.childNodeTypes = [];
 ve.dm.NewbiesNode.static.isContent = false;
-
 
 /* Registration */
 
