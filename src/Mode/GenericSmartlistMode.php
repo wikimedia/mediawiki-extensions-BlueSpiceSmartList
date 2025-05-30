@@ -2,8 +2,6 @@
 
 namespace BlueSpice\SmartList\Mode;
 
-use BlueSpice\ParamProcessor\ParamDefinition;
-use BlueSpice\ParamProcessor\ParamType;
 use BsNamespaceHelper;
 use BsPageContentProvider;
 use BsStringHelper;
@@ -12,6 +10,9 @@ use MediaWiki\Context\RequestContext;
 use MediaWiki\MediaWikiServices;
 use MediaWiki\Parser\Sanitizer;
 use MediaWiki\Title\Title;
+use MWStake\MediaWiki\Component\InputProcessor\Processor\BooleanValue;
+use MWStake\MediaWiki\Component\InputProcessor\Processor\KeywordListValue;
+use MWStake\MediaWiki\Component\InputProcessor\Processor\KeywordValue;
 
 class GenericSmartlistMode extends SmartListBaseMode {
 
@@ -58,84 +59,49 @@ class GenericSmartlistMode extends SmartListBaseMode {
 	 * @inheritDoc
 	 */
 	public function getParams(): array {
-		$parentParams = parent::getParams();
-		return array_merge( $parentParams, [
-			new ParamDefinition(
-				ParamType::INTEGER,
-				static::ATTR_COUNT,
-				5
-			),
-			new ParamDefinition(
-				ParamType::STRING,
-				static::ATTR_NS,
-				'all'
-			),
-			new ParamDefinition(
-				ParamType::STRING,
-				static::ATTR_CAT,
-				'-'
-			),
-			new ParamDefinition(
-				ParamType::STRING,
-				static::ATTR_MODE_CATEGORY,
-				'OR'
-			),
-			new ParamDefinition(
-				ParamType::STRING,
-				static::ATTR_MODE,
-				'recentchanges'
-			),
-			new ParamDefinition(
-				ParamType::BOOLEAN,
-				static::ATTR_SHOW_TEXT,
-				false
-			),
-			new ParamDefinition(
-				ParamType::STRING,
-				static::ATTR_HEADING,
-				''
-			),
-			new ParamDefinition(
-				ParamType::BOOLEAN,
-				static::ATTR_SHOWNS,
-				true
-			),
-			new ParamDefinition(
-				ParamType::INTEGER,
-				static::ATTR_TRIM,
-				30
-			),
-			new ParamDefinition(
-				ParamType::INTEGER,
-				static::ATTR_TRIM_TEXT,
-				50
-			),
-			new ParamDefinition(
-				ParamType::STRING,
-				static::ATTR_SORT,
-				'time'
-			),
-			new ParamDefinition(
-				ParamType::STRING,
-				static::ATTR_ORDER,
-				'DESC'
-			),
-			new ParamDefinition(
-				ParamType::INTEGER,
-				static::ATTR_NUM_WITH_TEXT,
-				100
-			),
-			new ParamDefinition(
-				ParamType::STRING,
-				static::ATTR_EXCLUDENS,
-				''
-			),
-			new ParamDefinition(
-				ParamType::BOOLEAN,
-				static::ATTR_META,
-				false
-			)
-		] );
+		$params = parent::getParams();
+		$params[ static::ATTR_MODE_CATEGORY ] = ( new KeywordListValue() )
+			->setListSeparator( ',' )
+			->setKeywords( [ 'AND', 'OR' ] )
+			->setDefaultValue( 'OR' );
+		$params[ static::ATTR_MODE ] = [
+			'type' => 'smartlist_mode',
+			'default' => 'recentchanges'
+		];
+		$params[ static::ATTR_SHOW_TEXT ] = ( new BooleanValue() )->setDefaultValue( false );
+		$params[ static::ATTR_HEADING ] = [
+			'type' => 'string',
+			'default' => '',
+		];
+		$params[ static::ATTR_TRIM ] = [
+			'type' => 'integer',
+			'default' => 30,
+			'min' => 0,
+		];
+		$params[ static::ATTR_TRIM_TEXT ] = [
+			'type' => 'integer',
+			'default' => 50,
+			'min' => 0,
+		];
+		$params[ static::ATTR_SHOWNS ] = ( new BooleanValue() )->setDefaultValue( false );
+		$params[ static::ATTR_SORT ] = ( new KeywordValue() )
+			->setKeywords( [ 'time', 'title' ] )
+			->setDefaultValue( 'time' );
+		$params[ static::ATTR_ORDER ] = ( new KeywordValue() )
+			->setKeywords( [ 'ASC', 'DESC' ] )
+			->setDefaultValue( 'DESC' );
+		$params[ static::ATTR_NUM_WITH_TEXT ] = [
+			'type' => 'integer',
+			'default' => 100,
+			'min' => 0,
+		];
+		$params[ static::ATTR_EXCLUDENS ] = [
+			'type' => 'string',
+			'separator' => ',',
+		];
+		$params[ static::ATTR_META ] = ( new BooleanValue() )->setDefaultValue( false );
+
+		return $params;
 	}
 
 	/**
@@ -271,6 +237,7 @@ class GenericSmartlistMode extends SmartListBaseMode {
 	 * Remove the excluded namespaces from the list of namespaces.
 	 * @param array $args
 	 * @return int[]
+	 * @throws \BsInvalidNamespaceException
 	 */
 	protected function makeNamespaceArrayDiff( $args ) {
 		if ( isset( $args['excludens'] ) && $args['excludens'] !== '' ) {
@@ -280,7 +247,7 @@ class GenericSmartlistMode extends SmartListBaseMode {
 			);
 		} else {
 			$namespaceDiff = BsNamespaceHelper::getNamespaceIdsFromAmbiguousCSVString(
-				$args['namespaces']
+				$args['namespaces'] ?? ''
 			);
 		}
 

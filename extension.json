@@ -27,20 +27,7 @@
 				}
 			},
 			"TagRegistry": {
-				"newbies": "BlueSpice\\SmartList\\Tag\\Newbies",
-				"toplist": "BlueSpice\\SmartList\\Tag\\Toplist",
-				"smartlist": "BlueSpice\\SmartList\\Tag\\SmartList",
-				"userlist": "BlueSpice\\SmartList\\Tag\\Userlist",
-				"recentchanges": "BlueSpice\\SmartList\\Tag\\RecentChanges",
-				"whatlinkshere": "BlueSpice\\SmartList\\Tag\\Whatlinkshere"
 			}
-		},
-		"VisualEditor": {
-			"PluginModules": [
-				"ext.bluespice.smartList.visualEditor",
-				"ext.bluespice.smartList.newbies.visualEditor",
-				"ext.bluespice.smartList.toplist.visualEditor"
-			]
 		},
 		"BlueSpiceUserSidebar": {
 			"WidgetRegistry": {
@@ -103,110 +90,6 @@
 		"BlueSpice\\SmartList\\": "src/"
 	},
 	"ResourceModules": {
-		"ext.bluespice.smartList.visualEditor": {
-			"scripts": [
-				"ve/ve.ce.SmartListNode.js",
-				"ve/ve.dm.SmartListNode.js",
-				"ve/ve.ui.SmartListInspector.js",
-				"ve/ve.ui.SmartListInspectorTool.js",
-				"nodes/bs.smartlist.ce.RecentChangesNode.js",
-				"nodes/bs.smartlist.dm.RecentChangesNode.js",
-				"nodes/bs.smartlist.ui.RecentChangesInspector.js",
-				"nodes/bs.smartlist.ui.RecentChangesInspectorTool.js",
-				"nodes/bs.smartlist.ce.WhatlinkshereNode.js",
-				"nodes/bs.smartlist.dm.WhatlinkshereNode.js",
-				"nodes/bs.smartlist.ui.WhatlinkshereInspector.js",
-				"nodes/bs.smartlist.ui.WhatlinkshereInspectorTool.js"
-			],
-			"messages": [
-				"bs-smartlist-ve-smartlist-title",
-				"bs-smartlist-ve-mode-recentchanges-label",
-				"bs-smartlist-ve-mode-changesofweek-label",
-				"bs-smartlist-ve-smartlistinspector-count",
-				"bs-smartlist-ve-smartlistinspector-ns",
-				"bs-smartlist-ve-smartlistinspector-cat",
-				"bs-smartlist-ve-smartlistinspector-minor",
-				"bs-smartlist-ve-smartlistinspector-catmode",
-				"bs-smartlist-ve-smartlistinspector-period",
-				"bs-smartlist-ve-smartlistinspector-new",
-				"bs-smartlist-ve-smartlistinspector-heading",
-				"bs-smartlist-ve-smartlistinspector-trim",
-				"bs-smartlist-ve-smartlistinspector-showtext",
-				"bs-smartlist-ve-smartlistinspector-trimtext",
-				"bs-smartlist-ve-smartlistinspector-sort",
-				"bs-smartlist-ve-smartlistinspector-order",
-				"bs-smartlist-ve-smartlistinspector-showns",
-				"bs-smartlist-ve-smartlistinspector-numwithtext",
-				"bs-smartlist-ve-smartlistinspector-meta",
-				"bs-smartlist-ve-smartlistinspector-target",
-				"bs-smartlist-ve-smartlistinspector-excludens",
-				"bs-smartlist-ve-period-day-label",
-				"bs-smartlist-ve-period-week-label",
-				"bs-smartlist-ve-period-month-label",
-				"bs-smartlist-ve-sort-time-label",
-				"bs-smartlist-ve-sort-title-label",
-				"bs-smartlist-ve-recentchanges-title",
-				"bs-smartlist-ve-whatlinkshere-title"
-			],
-			"dependencies": [
-				"ext.visualEditor.mwcore",
-				"ext.bluespice"
-			]
-		},
-		"ext.bluespice.smartList.newbies.visualEditor": {
-			"scripts": [
-				"ve/ve.ce.NewbiesNode.js",
-				"ve/ve.dm.NewbiesNode.js",
-				"ve/ve.ui.NewbiesInspector.js",
-				"ve/ve.ui.NewbiesInspectorTool.js"
-			],
-			"messages": [
-				"bs-smartlist-ve-newbies-title",
-				"bs-smartlist-ve-newbiesinspector-count"
-			],
-			"dependencies": [
-				"ext.visualEditor.mwcore"
-			]
-		},
-		"ext.bluespice.smartList.toplist.visualEditor": {
-			"scripts": [
-				"ve/ve.ce.TopListNode.js",
-				"ve/ve.dm.TopListNode.js",
-				"ve/ve.ui.TopListInspector.js",
-				"ve/ve.ui.TopListInspectorTool.js"
-			],
-			"messages": [
-				"bs-smartlist-ve-toplist-title",
-				"bs-smartlist-ve-toplistinspector-count",
-				"bs-smartlist-ve-toplistinspector-ns",
-				"bs-smartlist-ve-toplistinspector-cat",
-				"bs-smartlist-ve-toplistinspector-period",
-				"bs-smartlist-ve-toplistinspector-portletperiod"
-			],
-			"dependencies": [
-				"ext.visualEditor.mwcore"
-			]
-		},
-		"ext.bluespice.smartList.userlist.visualEditor": {
-			"scripts": [
-				"nodes/bs.smartlist.ce.UserListNode.js",
-				"nodes/bs.smartlist.dm.UserListNode.js",
-				"nodes/bs.smartlist.ui.UserListInspector.js",
-				"nodes/bs.smartlist.ui.UserListInspectorTool.js"
-			],
-			"styles": [
-				"stylesheets/bs.smartlist.droplets.userlist.css"
-			],
-			"messages": [
-				"bs-smartlist-ve-userlist-title",
-				"bs-smartlist-ve-userlistinspector-groups",
-				"bs-smartlist-ve-userlistinspector-limit"
-			],
-			"dependencies": [
-				"ext.visualEditor.mwcore",
-				"ext.oOJSPlus.widgets"
-			]
-		},
 		"ext.bluespice.smartList.droplets.recentchanges": {
 			"styles": [
 				"stylesheets/bs.smartlist.droplets.recentchanges.css"
@@ -226,6 +109,11 @@
 			"styles": [
 				"stylesheets/bs.smartlist.droplets.toplist.css"
 			]
+		},
+		"ext.bluespice.smartList.droplets.userlist": {
+			"styles": [
+				"stylesheets/bs.smartlist.droplets.userlist.css"
+			]
 		}
 	},
 	"ResourceFileModulePaths": {
@@ -233,7 +121,15 @@
 		"remoteExtPath": "BlueSpiceSmartList/resources"
 	},
 	"Hooks": {
-		"BSUsageTrackerRegisterCollectors": "\\BlueSpice\\SmartList\\Hook\\BSUsageTrackerRegisterCollectors\\AddSmartlistTag::callback"
+		"BSUsageTrackerRegisterCollectors": "\\BlueSpice\\SmartList\\Hook\\BSUsageTrackerRegisterCollectors\\AddSmartlistTag::callback",
+		"MWStakeGenericTagHandlerInitTags": "registerTags",
+		"MWStakeInputProcessorRegisterProcessors": "registerTags"
+	},
+	"HookHandlers": {
+		"registerTags": {
+			"class": "BlueSpice\\SmartList\\Hook\\RegisterTags",
+			"services": [ "BlueSpiceSmartList.SmartlistMode" ]
+		}
 	},
 	"load_composer_autoloader": true,
 	"manifest_version": 2

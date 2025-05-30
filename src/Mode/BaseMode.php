@@ -2,8 +2,7 @@
 
 namespace BlueSpice\SmartList\Mode;
 
-use BlueSpice\ParamProcessor\ParamDefinition;
-use BlueSpice\ParamProcessor\ParamType;
+use MWStake\MediaWiki\Component\InputProcessor\Processor\IntValue;
 
 abstract class BaseMode implements IMode {
 
@@ -14,12 +13,9 @@ abstract class BaseMode implements IMode {
 	 * @inheritDoc
 	 */
 	public function getParams(): array {
-		return [
-			new ParamDefinition(
-				ParamType::INTEGER,
-				static::ATTR_COUNT,
-				5
-			)
-		];
+		$count = ( new IntValue() )
+			->setMin( 1 )
+			->setDefaultValue( 5 );
+		return [ 'count' => $count ];
 	}
 }

@@ -2,74 +2,73 @@
 
 namespace BlueSpice\SmartList\Tag;
 
-use BlueSpice\Tag\Tag;
-use MediaWiki\Context\RequestContext;
-use MediaWiki\MediaWikiServices;
-use MediaWiki\Parser\Parser;
-use MediaWiki\Parser\PPFrame;
+use MediaWiki\Language\RawMessage;
+use MediaWiki\Message\Message;
+use MWStake\MediaWiki\Component\FormEngine\StandaloneFormSpecification;
+use MWStake\MediaWiki\Component\GenericTagHandler\ClientTagSpecification;
 
-class Toplist extends Tag {
-
-	/** @var MediaWikiServices */
-	private $services;
-
-	/** @var BlueSpiceSmartListModeFactory */
-	private $factory;
-
-	/** @var IMode */
-	private $mode;
+class Toplist extends SmartlistTag {
 
 	/**
-	 *
+	 * @inheritDoc
 	 */
-	public function __construct() {
-		$this->services = MediaWikiServices::getInstance();
-		$this->factory = $this->services->getService( 'BlueSpiceSmartList.SmartlistMode' );
-		$this->mode = $this->factory->createMode( 'toplist' );
+	public function getTagNames(): array {
+		return [ 'toplist', 'bs:toplist' ];
 	}
 
 	/**
-	 *
-	 * @param string $processedInput
-	 * @param array $processedArgs
-	 * @param Parser $parser
-	 * @param PPFrame $frame
-	 * @return PageBreakHandler
+	 * @inheritDoc
 	 */
-	public function getHandler( $processedInput, array $processedArgs, Parser $parser,
-		PPFrame $frame ) {
-		$context = RequestContext::getMain();
-		$titleFactory = $this->services->getTitleFactory();
-		$hookContainer = $this->services->getHookContainer();
+	public function getClientTagSpecification(): ClientTagSpecification|null {
+		$formSpec = new StandaloneFormSpecification();
 
-		return new SmartListHandler(
-			$processedInput,
-			$processedArgs,
-			$parser,
-			$frame,
-			$context,
-			$titleFactory,
-			$hookContainer,
-			$this->mode
+		$formSpec->setItems( [
+			[
+				'type' => 'number',
+				'name' => 'count',
+				'value' => 5,
+				'label' => Message::newFromKey( 'bs-smartlist-ve-toplistinspector-count' )->text(),
+			],
+			[
+				'type' => 'text',
+				'name' => 'ns',
+				'label' => Message::newFromKey( 'bs-smartlist-ve-toplistinspector-ns' )->text(),
+			],
+			[
+				'type' => 'text',
+				'name' => 'cat',
+				'label' => Message::newFromKey( 'bs-smartlist-ve-toplistinspector-cat' )->text(),
+			],
+			[
+				'type' => 'dropdown',
+				'name' => 'period',
+				'label' => Message::newFromKey( 'bs-smartlist-ve-toplistinspector-period' )->text(),
+				'options' => [
+					[
+						'data' => 'alltime',
+						'label' => '-'
+					],
+					[
+						'data' => 'day',
+						'label' => Message::newFromKey( 'bs-smartlist-ve-period-day-label' )->plain()
+					],
+					[
+						'data' => 'week',
+						'label' => Message::newFromKey( 'bs-smartlist-ve-period-week-label' )->plain()
+					],
+					[
+						'data' => 'month',
+						'label' => Message::newFromKey( 'bs-smartlist-ve-period-month-label' )->plain()
+					]
+				]
+			]
+		] );
+
+		return new ClientTagSpecification(
+			'Toplist',
+			new RawMessage( '' ),
+			$formSpec,
+			Message::newFromKey( 'bs-smartlist-ve-toplist-title' )
 		);
 	}
-
-	/**
-	 *
-	 * @return string[]
-	 */
-	public function getTagNames() {
-		return [
-			'toplist',
-			'bs:toplist',
-		];
-	}
-
-	/**
-	 * @return IParamDefinition[]
-	 */
-	public function getArgsDefinitions() {
-		return $this->mode->getParams();
-	}
-
 }

@@ -2,74 +2,45 @@
 
 namespace BlueSpice\SmartList\Tag;
 
-use BlueSpice\Tag\Tag;
-use MediaWiki\Context\RequestContext;
-use MediaWiki\MediaWikiServices;
-use MediaWiki\Parser\Parser;
-use MediaWiki\Parser\PPFrame;
+use MediaWiki\Language\RawMessage;
+use MediaWiki\Message\Message;
+use MWStake\MediaWiki\Component\FormEngine\StandaloneFormSpecification;
+use MWStake\MediaWiki\Component\GenericTagHandler\ClientTagSpecification;
 
-class Userlist extends Tag {
-
-	/** @var MediaWikiServices */
-	private $services;
-
-	/** @var BlueSpiceSmartListModeFactory */
-	private $factory;
-
-	/** @var IMode */
-	private $mode;
+class Userlist extends SmartlistTag {
 
 	/**
-	 *
+	 * @inheritDoc
 	 */
-	public function __construct() {
-		$this->services = MediaWikiServices::getInstance();
-		$this->factory = $this->services->getService( 'BlueSpiceSmartList.SmartlistMode' );
-		$this->mode = $this->factory->createMode( 'userlist' );
+	public function getTagNames(): array {
+		return [ 'userlist', 'bs:userlist' ];
 	}
 
 	/**
-	 *
-	 * @param string $processedInput
-	 * @param array $processedArgs
-	 * @param Parser $parser
-	 * @param PPFrame $frame
-	 * @return PageBreakHandler
+	 * @inheritDoc
 	 */
-	public function getHandler( $processedInput, array $processedArgs, Parser $parser,
-		PPFrame $frame ) {
-		$context = RequestContext::getMain();
-		$titleFactory = $this->services->getTitleFactory();
-		$hookContainer = $this->services->getHookContainer();
+	public function getClientTagSpecification(): ClientTagSpecification|null {
+		$formSpec = new StandaloneFormSpecification();
 
-		return new SmartListHandler(
-			$processedInput,
-			$processedArgs,
-			$parser,
-			$frame,
-			$context,
-			$titleFactory,
-			$hookContainer,
-			$this->mode
+		$formSpec->setItems( [
+			[
+				'type' => 'group_multiselect',
+				'name' => 'groups',
+				'label' => Message::newFromKey( 'bs-smartlist-ve-userlistinspector-groups' )->text(),
+			],
+			[
+				'type' => 'number',
+				'name' => 'count',
+				'value' => 10,
+				'label' => Message::newFromKey( 'bs-smartlist-ve-userlistinspector-count' )->text(),
+			],
+		] );
+
+		return new ClientTagSpecification(
+			'Userlist',
+			new RawMessage( '' ),
+			$formSpec,
+			Message::newFromKey( 'bs-smartlist-ve-userlist-title' )
 		);
 	}
-
-	/**
-	 *
-	 * @return string[]
-	 */
-	public function getTagNames() {
-		return [
-			'userlist',
-			'bs:userlist',
-		];
-	}
-
-	/**
-	 * @return IParamDefinition[]
-	 */
-	public function getArgsDefinitions() {
-		return $this->mode->getParams();
-	}
-
 }

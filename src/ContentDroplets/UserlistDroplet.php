@@ -32,7 +32,7 @@ class UserlistDroplet extends TagDroplet {
 	 * @inheritDoc
 	 */
 	public function getRLModules(): array {
-		return [ 'ext.bluespice.smartList.userlist.visualEditor' ];
+		return [ 'ext.bluespice.smartList.droplets.userlist' ];
 	}
 
 	/**

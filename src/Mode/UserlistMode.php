@@ -2,10 +2,9 @@
 
 namespace BlueSpice\SmartList\Mode;
 
-use BlueSpice\ParamProcessor\ParamDefinition;
-use BlueSpice\ParamProcessor\ParamType;
 use MediaWiki\Title\TitleFactory;
 use MediaWiki\User\User;
+use MWStake\MediaWiki\Component\InputProcessor\Processor\StringListValue;
 
 class UserlistMode extends SmartListBaseMode {
 
@@ -42,11 +41,7 @@ class UserlistMode extends SmartListBaseMode {
 	public function getParams(): array {
 		$parentParams = parent::getParams();
 		return array_merge( $parentParams, [
-			new ParamDefinition(
-				ParamType::STRING,
-				static::ATTR_GROUPS,
-				''
-			)
+			static::ATTR_GROUPS => ( new StringListValue() ),
 		] );
 	}
 
@@ -59,7 +54,7 @@ class UserlistMode extends SmartListBaseMode {
 		$limit = 10;
 
 		if ( isset( $args[ 'groups' ] ) ) {
-			$groups = explode( ',', $args['groups'] );
+			$groups = $args['groups'];
 		}
 		if ( isset( $args[ 'count' ] ) ) {
 			$limit = $args['count'];

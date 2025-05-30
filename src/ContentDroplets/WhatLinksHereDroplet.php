@@ -32,7 +32,7 @@ class WhatLinksHereDroplet extends TagDroplet {
 	 * @inheritDoc
 	 */
 	public function getRLModules(): array {
-		return [ 'ext.bluespice.smartList.visualEditor',
+		return [
 			'ext.bluespice.smartList.droplets.whatlinkshere'
 		];
 	}
