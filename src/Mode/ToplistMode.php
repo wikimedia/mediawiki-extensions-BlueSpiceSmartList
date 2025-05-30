@@ -2,13 +2,13 @@
 
 namespace BlueSpice\SmartList\Mode;
 
-use BlueSpice\ParamProcessor\ParamDefinition;
-use BlueSpice\ParamProcessor\ParamType;
 use BsInvalidNamespaceException;
 use BsNamespaceHelper;
 use MediaWiki\Context\RequestContext;
 use MediaWiki\Permissions\PermissionManager;
 use MediaWiki\Title\TitleFactory;
+use MWStake\MediaWiki\Component\InputProcessor\Processor\IntValue;
+use MWStake\MediaWiki\Component\InputProcessor\Processor\KeywordValue;
 use Wikimedia\Rdbms\ILoadBalancer;
 
 class ToplistMode extends SmartListBaseMode {
@@ -66,26 +66,10 @@ class ToplistMode extends SmartListBaseMode {
 	public function getParams(): array {
 		$parentParams = parent::getParams();
 		return array_merge( $parentParams, [
-			new ParamDefinition(
-				ParamType::INTEGER,
-				static::ATTR_COUNT,
-				10
-			),
-			new ParamDefinition(
-				ParamType::STRING,
-				static::ATTR_PERIOD,
-				'alltime'
-			),
-			new ParamDefinition(
-				ParamType::INTEGER,
-				static::ATTR_PORTLET_PERIOD,
-				0
-			),
-			new ParamDefinition(
-				ParamType::STRING,
-				static::ATTR_CAT,
-				''
-			)
+			static::ATTR_PERIOD => ( new KeywordValue() )
+				->setKeywords( [ '-', 'day', 'week', 'month', 'alltime' ] )
+				->setDefaultValue( 'alltime' ),
+			static::ATTR_PORTLET_PERIOD => ( new IntValue() )->setDefaultValue( 0 )
 		] );
 	}
 

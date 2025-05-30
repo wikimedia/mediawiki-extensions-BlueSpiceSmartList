@@ -20,7 +20,7 @@ interface IMode {
 
 	/**
 	 *
-	 * @return IParamDefinition[]
+	 * @return array
 	 */
 	public function getParams(): array;
 

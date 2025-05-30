@@ -46,6 +46,7 @@ class BlueSpiceSmartListModeFactory {
 	/**
 	 *
 	 * @return array
+	 * @throws MWException
 	 */
 	public function getAllModes(): array {
 		foreach ( $this->modeRegistry as $key => $spec ) {

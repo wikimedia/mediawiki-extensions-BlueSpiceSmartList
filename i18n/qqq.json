@@ -52,5 +52,9 @@
 	"bs-smartlist-droplet-what-links-here-desc": "Description of droplet for template what links here",
 	"bs-smartlist-ve-recentchanges-title": "Title for recent changes inspector",
 	"bs-smartlist-ve-whatlinkshere-title": "Title for what links here inspector",
-	"bs-smartlist-error-mode-not-found": "Error shown if smartlist is passed a mode that doesn't exist"
+	"bs-smartlist-error-mode-not-found": "Error shown if smartlist is passed a mode that doesn't exist",
+	"bs-smartlist-input-validator-invalid mode": "Error message if input for smartlist mode failed.\n* $1 field name\n* $2 specified value",
+	"bs-smartlist-ve-tab-main": "VisualEditor inspector tab label",
+	"bs-smartlist-ve-tab-advanced": "VisualEditor inspector tab label",
+	"bs-smartlist-ve-tab-appearance": "VisualEditor inspector tab label"
 }

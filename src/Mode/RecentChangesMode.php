@@ -2,13 +2,13 @@
 
 namespace BlueSpice\SmartList\Mode;
 
-use BlueSpice\ParamProcessor\ParamDefinition;
-use BlueSpice\ParamProcessor\ParamType;
 use BsInvalidNamespaceException;
 use MediaWiki\Context\RequestContext;
 use MediaWiki\Permissions\PermissionManager;
 use MediaWiki\Title\TitleFactory;
 use MediaWiki\User\UserFactory;
+use MWStake\MediaWiki\Component\InputProcessor\Processor\BooleanValue;
+use MWStake\MediaWiki\Component\InputProcessor\Processor\KeywordValue;
 use RecentChange;
 use Wikimedia\Rdbms\ILoadBalancer;
 
@@ -66,26 +66,16 @@ class RecentChangesMode extends GenericSmartlistMode {
 	}
 
 	/**
-	 * @return IParamDefinition[]
+	 * @return array
 	 */
 	public function getParams(): array {
 		$parentParams = parent::getParams();
 		return array_merge( $parentParams, [
-			new ParamDefinition(
-				ParamType::STRING,
-				static::ATTR_PERIOD,
-				'-'
-			),
-			new ParamDefinition(
-				ParamType::BOOLEAN,
-				static::ATTR_SHOW_MINOR,
-				true
-			),
-			new ParamDefinition(
-				ParamType::BOOLEAN,
-				static::ATTR_SHOW_ARTICLES,
-				false
-			)
+			static::ATTR_PERIOD => ( new KeywordValue() )
+				->setKeywords( [ '-', 'day', 'week', 'month' ] )
+				->setDefaultValue( '-' ),
+			static::ATTR_SHOW_MINOR => ( new BooleanValue() )->setDefaultValue( true ),
+			static::ATTR_SHOW_ARTICLES => ( new BooleanValue() )->setDefaultValue( false ),
 		] );
 	}
 

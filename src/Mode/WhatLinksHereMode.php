@@ -2,13 +2,12 @@
 
 namespace BlueSpice\SmartList\Mode;
 
-use BlueSpice\ParamProcessor\ParamDefinition;
-use BlueSpice\ParamProcessor\ParamType;
 use BsInvalidNamespaceException;
 use MediaWiki\Context\RequestContext;
 use MediaWiki\Permissions\PermissionManager;
 use MediaWiki\Title\TitleFactory;
 use MessageLocalizer;
+use MWStake\MediaWiki\Component\InputProcessor\Processor\StringValue;
 use Wikimedia\Rdbms\ILoadBalancer;
 
 class WhatLinksHereMode extends GenericSmartlistMode {
@@ -53,16 +52,12 @@ class WhatLinksHereMode extends GenericSmartlistMode {
 	}
 
 	/**
-	 * @return IParamDefinition[]
+	 * @return array
 	 */
 	public function getParams(): array {
 		$parentParams = parent::getParams();
 		return array_merge( $parentParams, [
-			new ParamDefinition(
-				ParamType::STRING,
-				static::ATTR_TARGET,
-				''
-			)
+			static::ATTR_TARGET => new StringValue(),
 		] );
 	}
 

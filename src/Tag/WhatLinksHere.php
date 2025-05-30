@@ -6,13 +6,13 @@ use MediaWiki\Language\RawMessage;
 use MediaWiki\Message\Message;
 use MWStake\MediaWiki\Component\GenericTagHandler\ClientTagSpecification;
 
-class RecentChanges extends SmartlistTag {
+class WhatLinksHere extends SmartlistTag {
 
 	/**
 	 * @inheritDoc
 	 */
 	public function getTagNames(): array {
-		return [ 'recentchanges' ];
+		return [ 'whatlinkshere' ];
 	}
 
 	/**
@@ -20,10 +20,10 @@ class RecentChanges extends SmartlistTag {
 	 */
 	public function getClientTagSpecification(): ClientTagSpecification|null {
 		return new ClientTagSpecification(
-			'RecentChanges',
+			'WhatLinksHere',
 			new RawMessage( '' ),
 			$this->getFormSpec(),
-			Message::newFromKey( 'bs-smartlist-ve-recentchanges-title' )
+			Message::newFromKey( 'bs-smartlist-ve-whatlinkshere-title' )
 		);
 	}
 }

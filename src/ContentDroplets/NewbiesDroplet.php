@@ -33,7 +33,6 @@ class NewbiesDroplet extends TagDroplet {
 	 */
 	public function getRLModules(): array {
 		return [
-			'ext.bluespice.smartList.newbies.visualEditor',
 			'ext.bluespice.smartList.droplets.newbies'
 		];
 	}

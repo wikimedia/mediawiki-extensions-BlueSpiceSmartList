@@ -32,7 +32,7 @@ class RecentChangesDroplet extends TagDroplet {
 	 * @inheritDoc
 	 */
 	public function getRLModules(): array {
-		return [ 'ext.bluespice.smartList.visualEditor',
+		return [
 			'ext.bluespice.smartList.droplets.recentchanges'
 		];
 	}
@@ -71,7 +71,7 @@ class RecentChangesDroplet extends TagDroplet {
 	 * @return string|null
 	 */
 	public function getVeCommand(): ?string {
-		return 'recentChangesCommand';
+		return 'recentchangesCommand';
 	}
 
 }

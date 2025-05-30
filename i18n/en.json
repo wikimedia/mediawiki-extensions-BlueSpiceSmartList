@@ -45,5 +45,9 @@
 	"bs-smartlist-droplet-what-links-here-desc": "List of pages that link to this page",
 	"bs-smartlist-ve-recentchanges-title": "Recent changes",
 	"bs-smartlist-ve-whatlinkshere-title": "Links to this page",
-	"bs-smartlist-error-mode-not-found": "Mode specified not found"
+	"bs-smartlist-error-mode-not-found": "Mode specified not found",
+	"bs-smartlist-input-validator-invalid mode": "Value \"$2\" for \"$1\" is not a valid SmartList mode",
+	"bs-smartlist-ve-tab-main": "General",
+	"bs-smartlist-ve-tab-advanced": "Advanced",
+	"bs-smartlist-ve-tab-appearance": "Appearance"
 }

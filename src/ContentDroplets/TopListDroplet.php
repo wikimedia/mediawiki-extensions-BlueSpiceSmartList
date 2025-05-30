@@ -33,7 +33,6 @@ class TopListDroplet extends TagDroplet {
 	 */
 	public function getRLModules(): array {
 		return [
-			'ext.bluespice.smartList.toplist.visualEditor',
 			'ext.bluespice.smartList.dropelts.toplist'
 		];
 	}
@@ -71,7 +70,7 @@ class TopListDroplet extends TagDroplet {
 	 * @return string|null
 	 */
 	public function getVeCommand(): ?string {
-		return 'topListCommand';
+		return 'toplistCommand';
 	}
 
 }
