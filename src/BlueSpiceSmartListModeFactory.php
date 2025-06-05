@@ -3,8 +3,8 @@
 namespace BlueSpice\SmartList;
 
 use BlueSpice\SmartList\Mode\IMode;
+use InvalidArgumentException;
 use MediaWiki\Registration\ExtensionRegistry;
-use MWException;
 use Wikimedia\ObjectFactory\ObjectFactory;
 
 class BlueSpiceSmartListModeFactory {
@@ -32,10 +32,11 @@ class BlueSpiceSmartListModeFactory {
 	/**
 	 * @param string $mode
 	 * @return IMode|null
+	 * @throws InvalidArgumentException
 	 */
 	public function createMode( $mode ): IMode {
 		if ( !isset( $this->modeRegistry[$mode] ) ) {
-			throw new MWException( 'No such mode: ' . $mode );
+			throw new InvalidArgumentException( 'No such mode: ' . $mode );
 		}
 		if ( !isset( $this->modes[$mode] ) ) {
 			$this->modes[$mode] = $this->objectFactory->createObject( $this->modeRegistry[$mode] );
@@ -44,9 +45,7 @@ class BlueSpiceSmartListModeFactory {
 	}
 
 	/**
-	 *
 	 * @return array
-	 * @throws MWException
 	 */
 	public function getAllModes(): array {
 		foreach ( $this->modeRegistry as $key => $spec ) {
