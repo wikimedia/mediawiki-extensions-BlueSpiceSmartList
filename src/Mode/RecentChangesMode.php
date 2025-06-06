@@ -8,6 +8,7 @@ use BsInvalidNamespaceException;
 use MediaWiki\Context\RequestContext;
 use MediaWiki\Permissions\PermissionManager;
 use MediaWiki\Title\TitleFactory;
+use MediaWiki\User\UserFactory;
 use RecentChange;
 use Wikimedia\Rdbms\ILoadBalancer;
 
@@ -29,17 +30,23 @@ class RecentChangesMode extends GenericSmartlistMode {
 	/** @var MessageLocalizer */
 	private $messageLocalizer;
 
+	/** @var UserFactory */
+	private $userFactory;
+
 	/**
 	 *
 	 * @param PermissionManager $permissionManager
 	 * @param ILoadBalancer $lb
 	 * @param TitleFactory $titleFactory
+	 * @param UserFactory $userFactory
 	 */
-	public function __construct( PermissionManager $permissionManager, ILoadBalancer $lb, TitleFactory $titleFactory ) {
+	public function __construct( PermissionManager $permissionManager, ILoadBalancer $lb,
+		TitleFactory $titleFactory, UserFactory $userFactory ) {
 		parent::__construct();
 		$this->permissionManager = $permissionManager;
 		$this->lb = $lb;
 		$this->titleFactory = $titleFactory;
+		$this->userFactory = $userFactory;
 		$this->messageLocalizer = RequestContext::getMain();
 	}
 
@@ -87,7 +94,12 @@ class RecentChangesMode extends GenericSmartlistMode {
 	 * @inheritDoc
 	 */
 	protected function getMeta( $item, $context ): string {
-		$metaInfo = ' - <i>(' . $item->username . ', '
+		$user = $this->userFactory->newFromName( $item->username );
+		$userName = $user->getRealName();
+		if ( !$userName ) {
+			$userName = $user->getName();
+		}
+		$metaInfo = ' - <i>(' . $userName . ', '
 			. $context->getLanguage()->date( $item->time, true, true ) . ')</i>';
 		return $metaInfo;
 	}
