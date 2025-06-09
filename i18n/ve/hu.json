@@ -1,0 +1,41 @@
+{
+	"@metadata": {
+		"authors": [
+			"Krisztina"
+		]
+	},
+	"bs-smartlist-ve-smartlist-title": "SmartLista",
+	"bs-smartlist-ve-smartlistinspector-count": "Számláló",
+	"bs-smartlist-ve-smartlistinspector-ns": "Névterek",
+	"bs-smartlist-ve-smartlistinspector-cat": "Kategória",
+	"bs-smartlist-ve-smartlistinspector-minor": "Kisebb módosítások megjelenítése",
+	"bs-smartlist-ve-smartlistinspector-catmode": "Kategória mód",
+	"bs-smartlist-ve-smartlistinspector-period": "Időszak",
+	"bs-smartlist-ve-smartlistinspector-new": "Csak az új szócikkek megjelenítése",
+	"bs-smartlist-ve-smartlistinspector-heading": "Címsor",
+	"bs-smartlist-ve-smartlistinspector-trim": "Trim",
+	"bs-smartlist-ve-smartlistinspector-showtext": "Szöveg megjelenítése",
+	"bs-smartlist-ve-smartlistinspector-trimtext": "Szöveg levágása",
+	"bs-smartlist-ve-smartlistinspector-sort": "Rendezés",
+	"bs-smartlist-ve-smartlistinspector-order": "Rendezési sorrend",
+	"bs-smartlist-ve-smartlistinspector-showns": "Névterek megjelenítése",
+	"bs-smartlist-ve-smartlistinspector-numwithtext": "Szám szöveggel",
+	"bs-smartlist-ve-smartlistinspector-meta": "Meta",
+	"bs-smartlist-ve-smartlistinspector-target": "Cél",
+	"bs-smartlist-ve-smartlistinspector-excludens": "Névtér(ek) kizárása",
+	"bs-smartlist-ve-period-day-label": "Nap",
+	"bs-smartlist-ve-period-week-label": "Hét",
+	"bs-smartlist-ve-period-month-label": "Hónap",
+	"bs-smartlist-ve-sort-time-label": "Idő",
+	"bs-smartlist-ve-sort-title-label": "Cím",
+	"bs-smartlist-ve-newbies-title": "Újoncok",
+	"bs-smartlist-ve-newbiesinspector-count": "Számláló",
+	"bs-smartlist-ve-toplist-title": "Toplista",
+	"bs-smartlist-ve-toplistinspector-count": "Számláló",
+	"bs-smartlist-ve-toplistinspector-ns": "Névterek",
+	"bs-smartlist-ve-toplistinspector-cat": "Kategória",
+	"bs-smartlist-ve-toplistinspector-period": "Időszak",
+	"bs-smartlist-ve-toplistinspector-portletperiod": "Portlet időszak",
+	"bs-smartlist-ve-mode-recentchanges-label": "Legutóbbi változások",
+	"bs-smartlist-ve-mode-changesofweek-label": "A hét változásai"
+}
