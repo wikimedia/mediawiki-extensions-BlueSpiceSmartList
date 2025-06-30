@@ -3,7 +3,8 @@
 		"authors": [
 			"Banjo",
 			"Elisardojm",
-			"Osnard"
+			"Osnard",
+			"Toliño"
 		]
 	},
 	"bs-smartlist-desc": "Amosa os últimos cinco cambios da wiki nunha lista",
@@ -12,7 +13,7 @@
 	"bs-smartlist-no-entries": "Non se atopou ningún resultado.",
 	"bs-smartlist-invalid-namespaces": "{{PLURAL:$1|O espazo de nomes dado non é válido|Os espazos de nomes dados non son válidos}}: $2.",
 	"bs-smartlist-invalid-target": "El obxectivo dado non é un título de páxina válido",
-	"bs-smartlist-comment": "Commentario: $1.",
+	"bs-smartlist-comment": "Comentario: $1.",
 	"bs-smartlist-sort-asc": "ascendente",
 	"bs-smartlist-sort-desc": "descendente",
 	"bs-smartlist-day": "Día",
@@ -29,5 +30,5 @@
 	"bs-smartlist-mosteditedpagesdesc": "Lista das páxinas máis editadas ordenadas polas súas edicións.",
 	"bs-smartlist-mostvisitedpagesdesc": "Lista das páxinas máis vistas ordenadas polo número de visitas.",
 	"bs-smartlist-lasteditsdesc": "Lista das páxinas que editou.",
-	"bs-smartlist-hitcounter-missing": "A extensión <a target='blank' href='https://www.mediawiki.org/wiki/Extension:HitCounters'>HitCounters</a> debe estar instalada."
+	"bs-smartlist-hitcounter-missing": "A extensión <a target='blank' href='https://www.mediawiki.org/wiki/Special:MyLanguage/Extension:HitCounters'>HitCounters</a> debe estar instalada."
 }
