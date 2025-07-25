@@ -5,7 +5,6 @@ namespace BlueSpice\SmartList\Tests;
 use BlueSpice\SmartList\ListRenderer;
 use BlueSpice\SmartList\Parser\DerivativeAPIRequestWrapper;
 use BlueSpice\SmartList\Parser\ParserObjectWrapper;
-use MediaWiki\MediaWikiServices;
 use MediaWiki\Page\PageProps;
 use MediaWiki\Parser\Parser;
 use MediaWiki\Request\WebRequest;
@@ -28,8 +27,8 @@ class ListRendererTest extends MediaWikiIntegrationTestCase {
 	 */
 	public function testrender( $parser, $items, $args, $expect ) {
 		$propsMock = $this->createMock( PageProps::class );
-		$titleFactory = MediaWikiServices::getInstance()->getTitleFactory();
-		$hookContainer = MediaWikiServices::getInstance()->getHookContainer();
+		$titleFactory = $this->getServiceContainer()->getTitleFactory();
+		$hookContainer = $this->getServiceContainer()->getHookContainer();
 
 		$listRenderer = new ListRenderer( $parser, $propsMock, $titleFactory, $hookContainer );
 		$actualContent = $listRenderer->render( $items, $args );
