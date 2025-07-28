@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"A2y4",
+			"Shulmj",
 			"Suyama"
 		]
 	},
@@ -10,5 +11,6 @@
 	"bs-smartlist-ve-smartlistinspector-order": "並び順",
 	"bs-smartlist-ve-smartlistinspector-showns": "名前空間を表示",
 	"bs-smartlist-ve-toplistinspector-ns": "名前空間",
-	"bs-smartlist-ve-toplistinspector-cat": "カテゴリ"
+	"bs-smartlist-ve-toplistinspector-cat": "カテゴリ",
+	"bs-smartlist-ve-mode-recentchanges-label": "最近の更新"
 }

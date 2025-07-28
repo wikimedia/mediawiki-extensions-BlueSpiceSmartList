@@ -26,5 +26,16 @@
 	"bs-smartlist-ve-toplistinspector-cat": "Категори",
 	"bs-smartlist-ve-toplistinspector-period": "Мур",
 	"bs-smartlist-ve-mode-recentchanges-label": "Керла нисдарш",
-	"bs-smartlist-ve-mode-changesofweek-label": "КӀиран чохь хийцамаш"
+	"bs-smartlist-ve-mode-changesofweek-label": "КӀиран чохь хийцамаш",
+	"bs-smartlist-ve-smartlist-title": "Хьекъале могӀам",
+	"bs-smartlist-ve-smartlistinspector-trim": "Тодар",
+	"bs-smartlist-ve-smartlistinspector-trimtext": "Хадайе текст",
+	"bs-smartlist-ve-smartlistinspector-sort": "Къастам бе",
+	"bs-smartlist-ve-smartlistinspector-showns": "ЦӀерийн меттигаш гайта",
+	"bs-smartlist-ve-smartlistinspector-numwithtext": "Текстца терахь",
+	"bs-smartlist-ve-smartlistinspector-meta": "Бета",
+	"bs-smartlist-ve-smartlistinspector-excludens": "ЦӀерийн меттигаш йукъарайаха",
+	"bs-smartlist-ve-newbies-title": "Керла декъашхой",
+	"bs-smartlist-ve-toplist-title": "Топ-лист",
+	"bs-smartlist-ve-toplistinspector-portletperiod": "Портлетан мур"
 }

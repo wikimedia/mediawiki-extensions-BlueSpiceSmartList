@@ -22,5 +22,12 @@
 	"bs-smartlist-lastedits": "Сан нисдарш",
 	"bs-smartlist-noedits": "Нисдарш цакарий",
 	"bs-smartlist-ve-userlistinspector-groups": "Тобанаш",
-	"bs-smartlist-droplet-newbies-name": "Керла декъашхой"
+	"bs-smartlist-droplet-newbies-name": "Керла декъашхой",
+	"bs-smartlist-ve-userlist-title": "Декъашхойн могӀам",
+	"bs-smartlist-ve-userlistinspector-limit": "Гойтуш болчу декъашхойн лимит",
+	"bs-smartlist-droplet-userlist-name": "Декъашхойн могӀам",
+	"bs-smartlist-droplet-recent-changes-name": "Керла нисдарш",
+	"bs-smartlist-droplet-what-links-here-name": "ХӀокху агӀонна тӀе хьажоргаш",
+	"bs-smartlist-ve-recentchanges-title": "Керла нисдарш",
+	"bs-smartlist-ve-whatlinkshere-title": "ХӀокху агӀонна тӀе хьажоргаш"
 }
