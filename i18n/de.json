@@ -4,6 +4,7 @@
 			"*Surak*",
 			"Hwboehm",
 			"Metalhead64",
+			"MoritzMT20",
 			"Purodha",
 			"SehrGuterCode",
 			"Stephan Muggli <muggli@hallowelt.biz>"
@@ -50,5 +51,8 @@
 	"bs-smartlist-droplet-what-links-here-desc": "Liste von Seiten, die auf diese Seite verlinken",
 	"bs-smartlist-ve-recentchanges-title": "Letzte Änderungen",
 	"bs-smartlist-ve-whatlinkshere-title": "Links auf diese Seite",
-	"bs-smartlist-error-mode-not-found": "Der angegebene Modus wurde nicht gefunden"
+	"bs-smartlist-error-mode-not-found": "Der angegebene Modus wurde nicht gefunden",
+	"bs-smartlist-ve-tab-main": "Allgemein",
+	"bs-smartlist-ve-tab-advanced": "Erweitert",
+	"bs-smartlist-ve-tab-appearance": "Aussehen"
 }

@@ -5,6 +5,7 @@
 			"Lewis2013",
 			"Ltrlg",
 			"MacOS Weed",
+			"McDutchie",
 			"Trial",
 			"Verdy p",
 			"Wladek92",
@@ -53,5 +54,9 @@
 	"bs-smartlist-droplet-what-links-here-desc": "Liste des pages qui sont liées à cette page",
 	"bs-smartlist-ve-recentchanges-title": "Modifications récentes",
 	"bs-smartlist-ve-whatlinkshere-title": "Liens vers cette page",
-	"bs-smartlist-error-mode-not-found": "Mode spécifié non trouvé"
+	"bs-smartlist-error-mode-not-found": "Mode spécifié non trouvé",
+	"bs-smartlist-input-validator-invalid mode": "Value \"$2\" for \"$1\" is not a valid SmartList mode",
+	"bs-smartlist-ve-tab-main": "General",
+	"bs-smartlist-ve-tab-advanced": "Advanced",
+	"bs-smartlist-ve-tab-appearance": "Appearance"
 }

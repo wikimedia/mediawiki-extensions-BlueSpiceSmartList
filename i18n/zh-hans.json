@@ -7,6 +7,7 @@
 			"Kishinsagi",
 			"Liuxinyu970226",
 			"Osnard",
+			"Peterxy12",
 			"Xiplus",
 			"Xyb",
 			"Yfdyh000"
@@ -42,5 +43,9 @@
 	"bs-smartlist-droplet-newbies-name": "新用户",
 	"bs-smartlist-droplet-recent-changes-name": "最近更改",
 	"bs-smartlist-ve-recentchanges-title": "最近更改",
-	"bs-smartlist-ve-whatlinkshere-title": "本页的链入页面"
+	"bs-smartlist-ve-whatlinkshere-title": "本页的链入页面",
+	"bs-smartlist-input-validator-invalid mode": "“$2”的值“$1”不是有效的SmartList模式",
+	"bs-smartlist-ve-tab-main": "常规",
+	"bs-smartlist-ve-tab-advanced": "高级",
+	"bs-smartlist-ve-tab-appearance": "外观"
 }
