@@ -46,5 +46,9 @@
 	"bs-smartlist-droplet-what-links-here-desc": "Lista de paginas que liga a iste pagina",
 	"bs-smartlist-ve-recentchanges-title": "Modificationes recente",
 	"bs-smartlist-ve-whatlinkshere-title": "Ligamines a iste pagina",
-	"bs-smartlist-error-mode-not-found": "Le modo specificate non ha essite trovate"
+	"bs-smartlist-error-mode-not-found": "Le modo specificate non ha essite trovate",
+	"bs-smartlist-input-validator-invalid mode": "Le valor “$2” pro “$1” non es un modo SmartList valide",
+	"bs-smartlist-ve-tab-main": "General",
+	"bs-smartlist-ve-tab-advanced": "Avantiate",
+	"bs-smartlist-ve-tab-appearance": "Apparentia"
 }
