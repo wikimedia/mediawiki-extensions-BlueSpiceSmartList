@@ -54,5 +54,9 @@
 	"bs-smartlist-droplet-what-links-here-desc": "Lista das páxinas que ligan cara a esta páxina",
 	"bs-smartlist-ve-recentchanges-title": "Cambios recentes",
 	"bs-smartlist-ve-whatlinkshere-title": "Ligazóns cara a esta páxina",
-	"bs-smartlist-error-mode-not-found": "Non se atopou o modo especificado"
+	"bs-smartlist-error-mode-not-found": "Non se atopou o modo especificado",
+	"bs-smartlist-input-validator-invalid mode": "O valor «$2» para «$1» non é un modo de lista intelixente válido",
+	"bs-smartlist-ve-tab-main": "Xeral",
+	"bs-smartlist-ve-tab-advanced": "Avanzado",
+	"bs-smartlist-ve-tab-appearance": "Aparencia"
 }
