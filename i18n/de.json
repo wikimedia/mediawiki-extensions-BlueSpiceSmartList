@@ -6,7 +6,8 @@
 			"Metalhead64",
 			"Purodha",
 			"SehrGuterCode",
-			"Stephan Muggli <muggli@hallowelt.biz>"
+			"Stephan Muggli <muggli@hallowelt.biz>",
+			"MoritzMT20"
 		]
 	},
 	"bs-smartlist-desc": "Zeigt die letzten fünf Änderungen des Wikis in einer Liste an",
@@ -33,7 +34,6 @@
 	"bs-smartlist-mostvisitedpagesdesc": "Liste der am häufigsten besuchten Seiten sortiert nach der Anzahl der Aufrufe.",
 	"bs-smartlist-lasteditsdesc": "Liste der von dir zuletzt bearbeiteten Seiten.",
 	"bs-smartlist-hitcounter-missing": "Die Softwareerweiterung „<a target='blank' href='https://www.mediawiki.org/wiki/Special:MyLanguage/Extension:HitCounters'>HitCounters</a>“ muss installiert sein.",
-	"apihelp-bs-smartlist-tasks-summary": "API-Funktionen zum Bereitstellen von Portletdaten für Seiten- und Benutzerstatistiken",
 	"bs-smartlist-ve-userlist-title": "Benutzerliste",
 	"bs-smartlist-ve-userlistinspector-groups": "Gruppen",
 	"bs-smartlist-ve-userlistinspector-limit": "Limit angezeigter Benutzer",
@@ -51,5 +51,8 @@
 	"bs-smartlist-droplet-what-links-here-desc": "Liste von Seiten, die auf diese Seite verlinken",
 	"bs-smartlist-ve-recentchanges-title": "Letzte Änderungen",
 	"bs-smartlist-ve-whatlinkshere-title": "Links auf diese Seite",
-	"bs-smartlist-error-mode-not-found": "Der angegebene Modus wurde nicht gefunden"
+	"bs-smartlist-error-mode-not-found": "Der angegebene Modus wurde nicht gefunden",
+	"bs-smartlist-ve-tab-main": "Allgemein",
+	"bs-smartlist-ve-tab-advanced": "Erweitert",
+	"bs-smartlist-ve-tab-appearance": "Aussehen"
 }

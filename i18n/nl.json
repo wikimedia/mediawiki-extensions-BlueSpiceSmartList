@@ -36,7 +36,6 @@
 	"bs-smartlist-mostvisitedpagesdesc": "Lijst van meest bekeken pagina's gesorteerd op aantal keren bekeken",
 	"bs-smartlist-lasteditsdesc": "Lijst met pagina's die u hebt bewerkt.",
 	"bs-smartlist-hitcounter-missing": "De extensie <a target='blank' href='https://www.mediawiki.org/wiki/Special:MyLanguage/Extension:HitCounters'>HitCounters</a> moet geïnstalleerd zijn.",
-	"apihelp-bs-smartlist-tasks-summary": "API-functies om portlet-gegevens te bedienen voor pagina- en gebruikersstatistieken",
 	"bs-smartlist-ve-userlist-title": "Gebruikerslijst",
 	"bs-smartlist-ve-userlistinspector-groups": "Groepen",
 	"bs-smartlist-ve-userlistinspector-limit": "Limiet van getoonde gebruikers",

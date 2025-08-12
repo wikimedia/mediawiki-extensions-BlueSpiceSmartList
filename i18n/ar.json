@@ -30,7 +30,6 @@
 	"bs-smartlist-mostvisitedpagesdesc": "قائمة أكثر الصفحات مشاهدة مرتبة حسب وجهات مشاهداتها.",
 	"bs-smartlist-lasteditsdesc": "قائمة الصفحات التي قمت بتحريرها.",
 	"bs-smartlist-hitcounter-missing": "يجب تثبيت ملحق <a target='blank' href='https://www.mediawiki.org/wiki/Special:MyLanguage/Extension:HitCounters'>HitCounters</a> .",
-	"apihelp-bs-smartlist-tasks-summary": "وظائف API لعرض بيانات المدخل لإحصاءات الصفحات والمستخدم.",
 	"bs-smartlist-ve-userlist-title": "قائمة المستخدم",
 	"bs-smartlist-ve-userlistinspector-groups": "المجموعات",
 	"bs-smartlist-ve-userlistinspector-limit": "حد المستخدمين المعروضين",

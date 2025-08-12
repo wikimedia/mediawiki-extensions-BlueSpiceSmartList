@@ -9,7 +9,8 @@
 			"Verdy p",
 			"Wladek92",
 			"Wyz",
-			"Yasten"
+			"Yasten",
+			"McDutchie"
 		]
 	},
 	"bs-smartlist-desc": "Affiche une liste des cinq dernières modifications du wiki",
@@ -36,7 +37,6 @@
 	"bs-smartlist-mostvisitedpagesdesc": "Liste des pages les plus vues triées par leurs consultations.",
 	"bs-smartlist-lasteditsdesc": "Liste des pages que vous avez modifiées.",
 	"bs-smartlist-hitcounter-missing": "L’extension <a target=\"blank\" href=\"https://www.mediawiki.org/wiki/Special:MyLanguage/Extension:HitCounters\">HitCounters</a> doit être installée.",
-	"apihelp-bs-smartlist-tasks-summary": "Fonctions API pour servir les données de portlet pour la page et les statistiques utilisateur.",
 	"bs-smartlist-ve-userlist-title": "Liste d’utilisateurs",
 	"bs-smartlist-ve-userlistinspector-groups": "Groupes",
 	"bs-smartlist-ve-userlistinspector-limit": "Limite d’utilisateurs affichés",
@@ -54,5 +54,9 @@
 	"bs-smartlist-droplet-what-links-here-desc": "Liste des pages qui sont liées à cette page",
 	"bs-smartlist-ve-recentchanges-title": "Modifications récentes",
 	"bs-smartlist-ve-whatlinkshere-title": "Liens vers cette page",
-	"bs-smartlist-error-mode-not-found": "Mode spécifié non trouvé"
+	"bs-smartlist-error-mode-not-found": "Mode spécifié non trouvé",
+	"bs-smartlist-input-validator-invalid mode": "Value \"$2\" for \"$1\" is not a valid SmartList mode",
+	"bs-smartlist-ve-tab-main": "General",
+	"bs-smartlist-ve-tab-advanced": "Advanced",
+	"bs-smartlist-ve-tab-appearance": "Appearance"
 }
