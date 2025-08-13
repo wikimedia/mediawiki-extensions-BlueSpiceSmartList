@@ -48,5 +48,9 @@
 	"bs-smartlist-droplet-what-links-here-desc": "قائمة الصفحات التي تصل إلى هذه الصفحة",
 	"bs-smartlist-ve-recentchanges-title": "التغييرات الأخيرة",
 	"bs-smartlist-ve-whatlinkshere-title": "روابط لهذه الصفحة",
-	"bs-smartlist-error-mode-not-found": "لم يتم العثور على الوضع المحدد"
+	"bs-smartlist-error-mode-not-found": "لم يتم العثور على الوضع المحدد",
+	"bs-smartlist-input-validator-invalid mode": "القيمة \"$2\" لـ \"$1\" ليست وضع SmartList صالحًا",
+	"bs-smartlist-ve-tab-main": "عام",
+	"bs-smartlist-ve-tab-advanced": "متقدم",
+	"bs-smartlist-ve-tab-appearance": "المظهر"
 }
