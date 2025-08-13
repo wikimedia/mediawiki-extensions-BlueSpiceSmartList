@@ -55,5 +55,9 @@
 	"bs-smartlist-droplet-what-links-here-desc": "Lijst met pagina's die naar deze pagina linken",
 	"bs-smartlist-ve-recentchanges-title": "Recente wijzigingen",
 	"bs-smartlist-ve-whatlinkshere-title": "Links naar deze pagina",
-	"bs-smartlist-error-mode-not-found": "Opgegeven modus niet gevonden"
+	"bs-smartlist-error-mode-not-found": "Opgegeven modus niet gevonden",
+	"bs-smartlist-input-validator-invalid mode": "De waarde “$2” voor “$1” is geen juiste SmartList-modus",
+	"bs-smartlist-ve-tab-main": "Algemeen",
+	"bs-smartlist-ve-tab-advanced": "Geavanceerd",
+	"bs-smartlist-ve-tab-appearance": "Uiterlijk"
 }
