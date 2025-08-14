@@ -1,16 +1,18 @@
 {
 	"@metadata": {
 		"authors": [
+			"Derugon",
 			"Gomoko",
+			"JLTRY",
 			"Lewis2013",
 			"Ltrlg",
 			"MacOS Weed",
+			"McDutchie",
 			"Trial",
 			"Verdy p",
 			"Wladek92",
 			"Wyz",
-			"Yasten",
-			"McDutchie"
+			"Yasten"
 		]
 	},
 	"bs-smartlist-desc": "Affiche une liste des cinq dernières modifications du wiki",
@@ -55,8 +57,8 @@
 	"bs-smartlist-ve-recentchanges-title": "Modifications récentes",
 	"bs-smartlist-ve-whatlinkshere-title": "Liens vers cette page",
 	"bs-smartlist-error-mode-not-found": "Mode spécifié non trouvé",
-	"bs-smartlist-input-validator-invalid mode": "Value \"$2\" for \"$1\" is not a valid SmartList mode",
-	"bs-smartlist-ve-tab-main": "General",
-	"bs-smartlist-ve-tab-advanced": "Advanced",
-	"bs-smartlist-ve-tab-appearance": "Appearance"
+	"bs-smartlist-input-validator-invalid mode": "La valeur « $2 » pour « $1 » n'est pas un mode SmartList valide",
+	"bs-smartlist-ve-tab-main": "Général",
+	"bs-smartlist-ve-tab-advanced": "Avancé",
+	"bs-smartlist-ve-tab-appearance": "Apparence"
 }
