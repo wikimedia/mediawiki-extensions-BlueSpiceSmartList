@@ -6,6 +6,7 @@
 			"Metalhead64",
 			"MoritzMT20",
 			"Purodha",
+			"Russianbabe1978",
 			"SehrGuterCode",
 			"Stephan Muggli <muggli@hallowelt.biz>"
 		]
@@ -55,5 +56,6 @@
 	"bs-smartlist-error-mode-not-found": "Der angegebene Modus wurde nicht gefunden",
 	"bs-smartlist-ve-tab-main": "Allgemein",
 	"bs-smartlist-ve-tab-advanced": "Erweitert",
-	"bs-smartlist-ve-tab-appearance": "Aussehen"
+	"bs-smartlist-ve-tab-appearance": "Aussehen",
+	"bs-smartlist-input-validator-invalid mode": "Der Wert „ $2 “ für „ $1 “ ist kein gültiger SmartList-Modus"
 }
