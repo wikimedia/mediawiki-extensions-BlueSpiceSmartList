@@ -30,5 +30,7 @@
 	"bs-smartlist-lasteditsdesc": "فهرست صفحه‌هایی که ویرایش کرده‌اید.",
 	"bs-smartlist-droplet-userlist-name": "فهرست اعضا",
 	"bs-smartlist-droplet-newbies-name": "کاربران جدید",
-	"bs-smartlist-droplet-recent-changes-name": "تغییرات اخیر"
+	"bs-smartlist-droplet-recent-changes-name": "تغییرات اخیر",
+	"bs-smartlist-ve-tab-main": "عمومی",
+	"bs-smartlist-ve-tab-appearance": "نمایش صفحه"
 }
