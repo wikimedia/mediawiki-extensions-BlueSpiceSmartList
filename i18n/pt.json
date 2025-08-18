@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"Hamilton Abreu",
+			"Mansil alfalb",
 			"Osnard",
 			"Vitorvicentevalente"
 		]
@@ -29,5 +30,8 @@
 	"bs-smartlist-mosteditedpagesdesc": "Lista das páginas mais editadas ordenada pelo número de edições.",
 	"bs-smartlist-mostvisitedpagesdesc": "Lista das páginas mais visitadas ordenada pelo número de visitas.",
 	"bs-smartlist-lasteditsdesc": "Lista de páginas que editou.",
-	"bs-smartlist-hitcounter-missing": "A extensão <a target='blank' href='https://www.mediawiki.org/wiki/Special:MyLanguage/Extension:HitCounters'>HitCounters</a> precisa de ser instalada."
+	"bs-smartlist-hitcounter-missing": "A extensão <a target='blank' href='https://www.mediawiki.org/wiki/Special:MyLanguage/Extension:HitCounters'>HitCounters</a> precisa de ser instalada.",
+	"bs-smartlist-ve-tab-main": "Geral",
+	"bs-smartlist-ve-tab-advanced": "Avançado",
+	"bs-smartlist-ve-tab-appearance": "Aparência"
 }
