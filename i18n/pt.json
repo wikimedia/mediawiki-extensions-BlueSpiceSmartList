@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"Hamilton Abreu",
+			"Mansil alfalb",
 			"Osnard",
 			"Vitorvicentevalente"
 		]
@@ -36,5 +37,8 @@
 	"bs-smartlist-lasteditsdesc": "Lista de páginas que editou.",
 	"bs-smartlist-hitcounter-missing": "A extensão <a target='blank' href='https://www.mediawiki.org/wiki/Special:MyLanguage/Extension:HitCounters'>HitCounters</a> precisa de ser instalada.",
 	"apihelp-bs-smartlist-tasks-description": "Funções da API para fornecer a <i>portlets</i> dados estatísticos de páginas e utilizadores.",
-	"apihelp-bs-smartlist-tasks-summary": "Funções da API para servir dados a portlets de estatísticas de páginas e de utilizadores."
+	"apihelp-bs-smartlist-tasks-summary": "Funções da API para servir dados a portlets de estatísticas de páginas e de utilizadores.",
+	"bs-smartlist-ve-tab-main": "Geral",
+	"bs-smartlist-ve-tab-advanced": "Avançado",
+	"bs-smartlist-ve-tab-appearance": "Aparência"
 }
