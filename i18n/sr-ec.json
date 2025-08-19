@@ -34,5 +34,7 @@
 	"bs-smartlist-droplet-newbies-name": "Нови корисници",
 	"bs-smartlist-droplet-recent-changes-name": "Скорашње измене",
 	"bs-smartlist-droplet-toplist-name": "Најпосећеније странице",
-	"bs-smartlist-ve-recentchanges-title": "Скорашње измене"
+	"bs-smartlist-ve-recentchanges-title": "Скорашње измене",
+	"bs-smartlist-ve-tab-main": "Опште",
+	"bs-smartlist-ve-tab-appearance": "Приказ"
 }
