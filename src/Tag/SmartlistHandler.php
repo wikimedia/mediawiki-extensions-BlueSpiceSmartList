@@ -50,7 +50,7 @@ class SmartlistHandler implements ITagHandler {
 			$this->mode = $this->tryCreateMode( $params );
 		}
 		$parser->getOutput()->updateCacheExpiry( 0 );
-		$parser->getOutput()->setPageProperty( 'bs-tag-smartlist', 1 );
+		$parser->getOutput()->setPageProperty( 'bs-tag-smartlist', '1' );
 
 		if ( !$this->mode ) {
 			OutputPage::setupOOUI();
