@@ -216,11 +216,7 @@ class ToplistMode extends SmartListBaseMode {
 					$title = $this->titleFactory->makeTitle( $row->page_namespace, $row->page_title );
 				}
 
-				if ( !$this->permissionManager->quickUserCan(
-					'read',
-					$context->getUser(),
-					$title
-				) ) {
+				if ( !$this->userCanRead( $title, $context->getUser(), $this->permissionManager ) ) {
 					continue;
 				}
 

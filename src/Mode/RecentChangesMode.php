@@ -215,12 +215,10 @@ class RecentChangesMode extends GenericSmartlistMode {
 			}
 
 			$title = $this->titleFactory->makeTitleSafe( $row->namespace, $row->title );
-			$userCanRead = $this->permissionManager->quickUserCan(
-				'read',
-				$context->getUser(),
-				$title
-			);
-			if ( !$title || !$userCanRead ) {
+			if ( !$title ) {
+				continue;
+			}
+			if ( !$this->userCanRead( $title, $context->getUser(), $this->permissionManager ) ) {
 				continue;
 			}
 
