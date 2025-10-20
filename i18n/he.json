@@ -48,5 +48,9 @@
 	"bs-smartlist-droplet-what-links-here-desc": "רשימת הדפים המקשרים לדף הזה",
 	"bs-smartlist-ve-recentchanges-title": "שינויים אחרונים",
 	"bs-smartlist-ve-whatlinkshere-title": "קישורים לדף הזה",
-	"bs-smartlist-error-mode-not-found": "המצב שצוין לא נמצא"
+	"bs-smartlist-error-mode-not-found": "המצב שצוין לא נמצא",
+	"bs-smartlist-input-validator-invalid mode": "הערך \"$2\" עבור \"$1\" אינו מצב SmartList תקין",
+	"bs-smartlist-ve-tab-main": "כללי",
+	"bs-smartlist-ve-tab-advanced": "מתקדם",
+	"bs-smartlist-ve-tab-appearance": "מראה"
 }

@@ -33,7 +33,7 @@
 	"bs-smartlist-mostactiveusersdesc": "Liste der aktivsten Benutzer sortiert nach der Anzahl Ihrer Bearbeitungen.",
 	"bs-smartlist-mosteditedpagesdesc": "Liste der am häufigsten bearbeiteten Seiten sortiert nach der Anzahl Ihrer Bearbeitungen.",
 	"bs-smartlist-mostvisitedpagesdesc": "Liste der am häufigsten besuchten Seiten sortiert nach der Anzahl der Aufrufe.",
-	"bs-smartlist-lasteditsdesc": "Liste der von dir zuletzt bearbeiteten Seiten.",
+	"bs-smartlist-lasteditsdesc": "Liste der von {{#FORMAL:dir|Ihnen}} zuletzt bearbeiteten Seiten.",
 	"bs-smartlist-hitcounter-missing": "Die Softwareerweiterung „<a target='blank' href='https://www.mediawiki.org/wiki/Special:MyLanguage/Extension:HitCounters'>HitCounters</a>“ muss installiert sein.",
 	"apihelp-bs-smartlist-tasks-summary": "API-Funktionen zum Bereitstellen von Portletdaten für Seiten- und Benutzerstatistiken",
 	"bs-smartlist-ve-userlist-title": "Benutzerliste",

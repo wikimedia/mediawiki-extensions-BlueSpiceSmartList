@@ -5,6 +5,7 @@
 			"Dalba",
 			"FarsiNevis",
 			"Jeeputer",
+			"LordProfo",
 			"Reza1615"
 		]
 	},
@@ -32,5 +33,6 @@
 	"bs-smartlist-droplet-newbies-name": "کاربران جدید",
 	"bs-smartlist-droplet-recent-changes-name": "تغییرات اخیر",
 	"bs-smartlist-ve-tab-main": "عمومی",
-	"bs-smartlist-ve-tab-appearance": "نمایش صفحه"
+	"bs-smartlist-ve-tab-appearance": "نمایش صفحه",
+	"bs-smartlist-ve-tab-advanced": "پیشرفته"
 }
