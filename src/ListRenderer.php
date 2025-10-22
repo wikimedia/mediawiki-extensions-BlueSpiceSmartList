@@ -75,8 +75,8 @@ class ListRenderer {
 			$smartListView->addData( [
 				'HEADING' => !empty( $args['heading'] )
 					? $args['heading']
-					: wfMessage( 'bs-smartlist-recent-changes' )->plain(),
-				'LIST' => wfMessage( 'bs-smartlist-no-entries' )->plain()
+					: wfMessage( 'bs-smartlist-recent-changes' )->text(),
+				'LIST' => wfMessage( 'bs-smartlist-no-entries' )->text()
 				] );
 
 			return $smartListView->execute();
@@ -168,7 +168,7 @@ class ListRenderer {
 		$smartListView->addData( [
 			'HEADING' => !empty( $args['heading'] )
 				? $args['heading']
-				: wfMessage( 'bs-smartlist-recent-changes' )->plain(),
+				: wfMessage( 'bs-smartlist-recent-changes' )->text(),
 			'LIST' => $this->parser->parse( $smartListListView->execute() )
 			]
 		);
