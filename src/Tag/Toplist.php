@@ -50,15 +50,15 @@ class Toplist extends SmartlistTag {
 					],
 					[
 						'data' => 'day',
-						'label' => Message::newFromKey( 'bs-smartlist-ve-period-day-label' )->plain()
+						'label' => Message::newFromKey( 'bs-smartlist-ve-period-day-label' )->text()
 					],
 					[
 						'data' => 'week',
-						'label' => Message::newFromKey( 'bs-smartlist-ve-period-week-label' )->plain()
+						'label' => Message::newFromKey( 'bs-smartlist-ve-period-week-label' )->text()
 					],
 					[
 						'data' => 'month',
-						'label' => Message::newFromKey( 'bs-smartlist-ve-period-month-label' )->plain()
+						'label' => Message::newFromKey( 'bs-smartlist-ve-period-month-label' )->text()
 					]
 				]
 			]
