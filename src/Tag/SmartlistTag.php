@@ -83,6 +83,7 @@ abstract class SmartlistTag extends GenericTag {
 			],
 			[
 				'type' => 'checkbox',
+				'labelAlign' => 'inline',
 				'name' => 'minor',
 				'label' => Message::newFromKey( 'bs-smartlist-ve-smartlistinspector-minor' )->text(),
 			],
@@ -121,6 +122,7 @@ abstract class SmartlistTag extends GenericTag {
 			[
 				'type' => 'checkbox',
 				'name' => 'new',
+				'labelAlign' => 'inline',
 				'label' => Message::newFromKey( 'bs-smartlist-ve-smartlistinspector-new' )->text(),
 			],
 		];
@@ -141,6 +143,7 @@ abstract class SmartlistTag extends GenericTag {
 			[
 				'type' => 'checkbox',
 				'name' => 'showtext',
+				'labelAlign' => 'inline',
 				'label' => Message::newFromKey( 'bs-smartlist-ve-smartlistinspector-showtext' )->text(),
 			],
 			[
@@ -172,6 +175,7 @@ abstract class SmartlistTag extends GenericTag {
 			[
 				'type' => 'checkbox',
 				'name' => 'showns',
+				'labelAlign' => 'inline',
 				'label' => Message::newFromKey( 'bs-smartlist-ve-smartlistinspector-showns' )->text(),
 			],
 			[
@@ -184,6 +188,7 @@ abstract class SmartlistTag extends GenericTag {
 			[
 				'type' => 'checkbox',
 				'name' => 'meta',
+				'labelAlign' => 'inline',
 				'label' => Message::newFromKey( 'bs-smartlist-ve-smartlistinspector-meta' )->text(),
 			],
 		];
