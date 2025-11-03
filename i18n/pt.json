@@ -33,5 +33,11 @@
 	"bs-smartlist-hitcounter-missing": "A extensão <a target='blank' href='https://www.mediawiki.org/wiki/Special:MyLanguage/Extension:HitCounters'>HitCounters</a> precisa de ser instalada.",
 	"bs-smartlist-ve-tab-main": "Geral",
 	"bs-smartlist-ve-tab-advanced": "Avançado",
-	"bs-smartlist-ve-tab-appearance": "Aparência"
+	"bs-smartlist-ve-tab-appearance": "Aparência",
+	"bs-smartlist-ve-userlist-title": "Lista de utilizadores",
+	"bs-smartlist-ve-userlistinspector-groups": "Grupos",
+	"bs-smartlist-ve-userlistinspector-limit": "Limite de utilizadores mostrados",
+	"bs-smartlist-droplet-userlist-name": "Lista de membros",
+	"bs-smartlist-droplet-newbies-name": "Novos utilizadores",
+	"bs-smartlist-droplet-recent-changes-name": "Alterações recentes"
 }
