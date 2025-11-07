@@ -36,7 +36,7 @@
 	"bs-smartlist-ve-userlist-title": "Lista de cuentas",
 	"bs-smartlist-ve-userlistinspector-groups": "Grupos",
 	"bs-smartlist-ve-userlistinspector-limit": "Límite de cuentas mostradas",
-	"bs-smartlist-ve-userlistinspector-no-group": "No se seleccionó ningún grupo. Elige un grupo para enumerar las cuentas asociadas",
+	"bs-smartlist-ve-userlistinspector-no-group": "No se seleccionó ningún grupo. {{#FORMAL:Elige|Elija}} un grupo para enumerar las cuentas asociadas",
 	"bs-smartlist-droplet-userlist-name": "Lista de miembros",
 	"bs-smartlist-droplet-userlist-desc": "Lista de miembros de grupos seleccionables",
 	"bs-smartlist-droplet-newbies-name": "Usuarios nuevos",
