@@ -32,5 +32,11 @@
 	"bs-smartlist-lasteditsdesc": "Lista de páginas que editou.",
 	"bs-smartlist-hitcounter-missing": "A extensão <a target='blank' href='https://www.mediawiki.org/wiki/Special:MyLanguage/Extension:HitCounters'>HitCounters</a> precisa de ser instalada.",
 	"apihelp-bs-smartlist-tasks-description": "Funções da API para fornecer a <i>portlets</i> dados estatísticos de páginas e utilizadores.",
-	"apihelp-bs-smartlist-tasks-summary": "Funções da API para servir dados a portlets de estatísticas de páginas e de utilizadores."
+	"apihelp-bs-smartlist-tasks-summary": "Funções da API para servir dados a portlets de estatísticas de páginas e de utilizadores.",
+	"bs-smartlist-ve-userlist-title": "Lista de utilizadores",
+	"bs-smartlist-ve-userlistinspector-groups": "Grupos",
+	"bs-smartlist-ve-userlistinspector-limit": "Limite de utilizadores mostrados",
+	"bs-smartlist-droplet-userlist-name": "Lista de membros",
+	"bs-smartlist-droplet-newbies-name": "Novos utilizadores",
+	"bs-smartlist-droplet-recent-changes-name": "Alterações recentes"
 }
