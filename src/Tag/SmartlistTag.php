@@ -69,17 +69,14 @@ abstract class SmartlistTag extends GenericTag {
 				'widget_min' => 1,
 				'widget_max' => 250,
 				'value' => 5,
-				'label' => Message::newFromKey( 'bs-smartlist-ve-smartlistinspector-count' )->text(),
+				'label' => Message::newFromKey( 'bs-smartlist-ve-inspector-count-label' )->text(),
+				'labelAlign' => 'top'
 			],
 			[
 				'type' => 'text',
 				'name' => 'ns',
-				'label' => Message::newFromKey( 'bs-smartlist-ve-smartlistinspector-ns' )->text(),
-			],
-			[
-				'type' => 'text',
-				'name' => 'cat',
-				'label' => Message::newFromKey( 'bs-smartlist-ve-smartlistinspector-cat' )->text(),
+				'label' => Message::newFromKey( 'bs-smartlist-ve-inspector-ns-label' )->text(),
+				'labelAlign' => 'top'
 			],
 			[
 				'type' => 'checkbox',
@@ -88,19 +85,26 @@ abstract class SmartlistTag extends GenericTag {
 				'label' => Message::newFromKey( 'bs-smartlist-ve-smartlistinspector-minor' )->text(),
 			],
 			[
+				'type' => 'text',
+				'name' => 'cat',
+				'label' => Message::newFromKey( 'bs-smartlist-ve-inspector-cat-label' )->text(),
+				'labelAlign' => 'top'
+			],
+			[
 				'type' => 'dropdown',
 				'name' => 'catmode',
-				'label' => Message::newFromKey( 'bs-smartlist-ve-smartlistinspector-catmode' )->text(),
+				'label' => Message::newFromKey( 'bs-smartlist-ve-inspector-catmode-label' )->text(),
+				'labelAlign' => 'top',
 				'options' => [
 					[ 'data' => '', 'label' => '' ],
 					[
 						'data' => 'OR',
-						'label' => Message::newFromKey( 'bs-smartlist-ve-smartlistinspector-catmode-or-label' )->text()
+						'label' => Message::newFromKey( 'bs-smartlist-ve-inspector-catmode-or-label' )->text()
 					],
 					[
 						'data' => 'AND',
 						'label' => Message::newFromKey(
-							'bs-smartlist-ve-smartlistinspector-catmode-and-label'
+							'bs-smartlist-ve-inspector-catmode-and-label'
 						)->text()
 					],
 				]
@@ -108,7 +112,8 @@ abstract class SmartlistTag extends GenericTag {
 			[
 				'type' => 'dropdown',
 				'name' => 'period',
-				'label' => Message::newFromKey( 'bs-smartlist-ve-smartlistinspector-period' )->text(),
+				'label' => Message::newFromKey( 'bs-smartlist-ve-inspector-period-label' )->text(),
+				'labelAlign' => 'top',
 				'options' => [
 					[ 'data' => '-', 'label' => '-' ],
 					[ 'data' => 'day', 'label' => Message::newFromKey( 'bs-smartlist-ve-period-day-label' )->text() ],
@@ -130,33 +135,38 @@ abstract class SmartlistTag extends GenericTag {
 			[
 				'type' => 'text',
 				'name' => 'heading',
-				'label' => Message::newFromKey( 'bs-smartlist-ve-smartlistinspector-heading' )->text(),
+				'label' => Message::newFromKey( 'bs-smartlist-ve-inspector-heading-label' )->text(),
+				'labelAlign' => 'top'
 			],
 			[
 				'type' => 'number',
 				'name' => 'trim',
 				'widget_min' => 1,
 				'widget_max' => 250,
-				'value' => 5,
-				'label' => Message::newFromKey( 'bs-smartlist-ve-smartlistinspector-trim' )->text(),
+				'value' => 30,
+				'label' => Message::newFromKey( 'bs-smartlist-ve-inspector-trim-label' )->text(),
+				'labelAlign' => 'top'
 			],
 			[
 				'type' => 'checkbox',
 				'name' => 'showtext',
 				'labelAlign' => 'inline',
-				'label' => Message::newFromKey( 'bs-smartlist-ve-smartlistinspector-showtext' )->text(),
+				'label' => Message::newFromKey( 'bs-smartlist-ve-inspector-showtext-label' )->text(),
 			],
 			[
 				'type' => 'number',
 				'name' => 'trimtext',
 				'widget_min' => 1,
 				'widget_max' => 1000,
-				'label' => Message::newFromKey( 'bs-smartlist-ve-smartlistinspector-trimtext' )->text(),
+				'label' => Message::newFromKey( 'bs-smartlist-ve-inspector-trimtext-label' )->text(),
+				'labelAlign' => 'top',
+				'value' => 50
 			],
 			[
 				'type' => 'dropdown',
 				'name' => 'sort',
 				'label' => Message::newFromKey( 'bs-smartlist-ve-smartlistinspector-sort' )->text(),
+				'labelAlign' => 'top',
 				'options' => [
 					[ 'data' => 'time', 'label' => Message::newFromKey( 'bs-smartlist-ve-sort-time-label' )->text() ],
 					[ 'data' => 'title', 'label' => Message::newFromKey( 'bs-smartlist-ve-sort-title-label' )->text() ],
@@ -166,42 +176,46 @@ abstract class SmartlistTag extends GenericTag {
 				'type' => 'dropdown',
 				'name' => 'order',
 				'label' => Message::newFromKey( 'bs-smartlist-ve-smartlistinspector-order' )->text(),
+				'labelAlign' => 'top',
 				'options' => [
 					[ 'data' => '', 'label' => '' ],
-					[ 'data' => 'DESC', 'label' => Message::newFromKey( 'bs-smartlist-ve-order-desc-label' )->text() ],
-					[ 'data' => 'ASC', 'label' => Message::newFromKey( 'bs-smartlist-ve-order-asc-label' )->text() ],
+					[ 'data' => 'DESC', 'label' => Message::newFromKey( 'bs-smartlist-ve-inspector-order-desc-label' )->text() ],
+					[ 'data' => 'ASC', 'label' => Message::newFromKey( 'bs-smartlist-ve-inspector-order-asc-label' )->text() ],
 				]
 			],
 			[
 				'type' => 'checkbox',
 				'name' => 'showns',
 				'labelAlign' => 'inline',
-				'label' => Message::newFromKey( 'bs-smartlist-ve-smartlistinspector-showns' )->text(),
+				'label' => Message::newFromKey( 'bs-smartlist-ve-inspector-showns-label' )->text(),
 			],
 			[
 				'type' => 'number',
 				'name' => 'numwithtext',
+				'labelAlign' => 'top',
 				'widget_min' => 1,
 				'widget_max' => 1000,
-				'label' => Message::newFromKey( 'bs-smartlist-ve-smartlistinspector-numwithtext' )->text(),
+				'label' => Message::newFromKey( 'bs-smartlist-ve-inspector-numwithtext-label' )->text(),
 			],
 			[
 				'type' => 'checkbox',
 				'name' => 'meta',
 				'labelAlign' => 'inline',
-				'label' => Message::newFromKey( 'bs-smartlist-ve-smartlistinspector-meta' )->text(),
+				'label' => Message::newFromKey( 'bs-smartlist-ve-inspector-meta-label' )->text(),
 			],
 		];
 		$tabAdvanced = [
 			[
 				'type' => 'title',
 				'name' => 'target',
-				'label' => Message::newFromKey( 'bs-smartlist-ve-smartlistinspector-target' )->text(),
+				'label' => Message::newFromKey( 'bs-smartlist-ve-inspector-target-label' )->text(),
+				'labelAlign' => 'top'
 			],
 			[
 				'type' => 'text',
 				'name' => 'excludens',
-				'label' => Message::newFromKey( 'bs-smartlist-ve-smartlistinspector-excludens' )->text(),
+				'label' => Message::newFromKey( 'bs-smartlist-ve-inspector-excludens-label' )->text(),
+				'labelAlign' => 'top'
 			],
 		];
 		$formSpec->setItems( [
