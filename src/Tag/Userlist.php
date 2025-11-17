@@ -32,7 +32,7 @@ class Userlist extends SmartlistTag {
 				'type' => 'number',
 				'name' => 'count',
 				'value' => 10,
-				'label' => Message::newFromKey( 'bs-smartlist-ve-userlistinspector-count' )->text(),
+				'label' => Message::newFromKey( 'bs-smartlist-ve-inspector-count-label' )->text(),
 			],
 		] );
 

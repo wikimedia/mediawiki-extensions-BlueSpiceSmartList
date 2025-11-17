@@ -26,7 +26,7 @@ class Newbies extends SmartlistTag {
 				'type' => 'number',
 				'name' => 'count',
 				'value' => 5,
-				'label' => Message::newFromKey( 'bs-smartlist-ve-newbiesinspector-count' )->text(),
+				'label' => Message::newFromKey( 'bs-smartlist-ve-inspector-count-label' )->text(),
 			]
 		] );
 
@@ -34,7 +34,7 @@ class Newbies extends SmartlistTag {
 			'Newbies',
 			new RawMessage( '' ),
 			$formSpec,
-			Message::newFromKey( 'bs-smartlist-ve-newbies-title' )
+			Message::newFromKey( 'bs-smartlist-ve-newbies-title-label' )
 		);
 	}
 }

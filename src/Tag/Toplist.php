@@ -27,22 +27,22 @@ class Toplist extends SmartlistTag {
 				'type' => 'number',
 				'name' => 'count',
 				'value' => 5,
-				'label' => Message::newFromKey( 'bs-smartlist-ve-toplistinspector-count' )->text(),
+				'label' => Message::newFromKey( 'bs-smartlist-ve-inspector-count-label' )->text(),
 			],
 			[
 				'type' => 'text',
 				'name' => 'ns',
-				'label' => Message::newFromKey( 'bs-smartlist-ve-toplistinspector-ns' )->text(),
+				'label' => Message::newFromKey( 'bs-smartlist-ve-inspector-ns-label' )->text(),
 			],
 			[
 				'type' => 'text',
 				'name' => 'cat',
-				'label' => Message::newFromKey( 'bs-smartlist-ve-toplistinspector-cat' )->text(),
+				'label' => Message::newFromKey( 'bs-smartlist-ve-inspector-cat-label' )->text(),
 			],
 			[
 				'type' => 'dropdown',
 				'name' => 'period',
-				'label' => Message::newFromKey( 'bs-smartlist-ve-toplistinspector-period' )->text(),
+				'label' => Message::newFromKey( 'bs-smartlist-ve-inspector-period-label' )->text(),
 				'options' => [
 					[
 						'data' => 'alltime',
