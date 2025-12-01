@@ -52,5 +52,9 @@
 	"bs-smartlist-droplet-what-links-here-desc": "連至此頁面的頁面清單",
 	"bs-smartlist-ve-recentchanges-title": "近期變更",
 	"bs-smartlist-ve-whatlinkshere-title": "連至此頁面的連結",
-	"bs-smartlist-error-mode-not-found": "未找到指定模式"
+	"bs-smartlist-error-mode-not-found": "未找到指定模式",
+	"bs-smartlist-input-validator-invalid mode": "「$1」的值「$2」不是有效的 SmartList 模式",
+	"bs-smartlist-ve-tab-main": "一般",
+	"bs-smartlist-ve-tab-advanced": "進階",
+	"bs-smartlist-ve-tab-appearance": "外觀"
 }
