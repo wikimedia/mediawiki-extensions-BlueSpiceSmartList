@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"Daud I.F. Argana",
+			"Penyuwangi",
 			"Rachmat.Wahidi",
 			"Rachmat04",
 			"Sonic Speedy"
@@ -23,12 +24,12 @@
 	"bs-smartlist-title": "Judul",
 	"bs-smartlist-mostvisitedpages": "Halaman yang sering dikunjungi",
 	"bs-smartlist-mosteditedpages": "Halaman yang disunting teratas",
-	"bs-smartlist-mostactiveusers": "Pengguna paling aktif (menurut pengeditan)",
+	"bs-smartlist-mostactiveusers": "Pengguna teraktif (berdasarkan suntingan)",
 	"bs-smartlist-lastedits": "Suntingan saya",
 	"bs-smartlist-noedits": "Tidak ada hasil yang ditemukan.",
-	"bs-smartlist-mostactiveusersdesc": "Daftar pengguna paling aktif yang diurutkan berdasarkan editan mereka.",
-	"bs-smartlist-mosteditedpagesdesc": "Daftar halaman yang paling banyak diedit diurutkan berdasarkan hasil editnya.",
+	"bs-smartlist-mostactiveusersdesc": "Daftar pengguna paling aktif diurutkan berdasarkan suntingan mereka.",
+	"bs-smartlist-mosteditedpagesdesc": "Daftar halaman yang paling disuntingdiurutkan berdasarkan suntingannya.",
 	"bs-smartlist-mostvisitedpagesdesc": "Daftar halaman yang paling banyak dilihat diurutkan berdasarkan tampilan mereka.",
-	"bs-smartlist-lasteditsdesc": "Daftar halaman yang telah Anda edit.",
+	"bs-smartlist-lasteditsdesc": "Daftar halaman yang telah Anda sunting.",
 	"bs-smartlist-hitcounter-missing": "Ekstensi <a target='blank' href='https://www.mediawiki.org/wiki/Extension:HitCounters'>HitCounters</a> harus dipasang."
 }
