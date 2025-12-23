@@ -27,5 +27,8 @@
 	"bs-smartlist-ve-toplistinspector-cat": "Kategorie",
 	"bs-smartlist-ve-toplistinspector-period": "Period",
 	"bs-smartlist-ve-mode-recentchanges-label": "Rezent Ännerungen",
-	"bs-smartlist-ve-mode-changesofweek-label": "Ännerunge vun der Woch"
+	"bs-smartlist-ve-mode-changesofweek-label": "Ännerunge vun der Woch",
+	"bs-smartlist-ve-newbies-title-label": "Nei Benotzer",
+	"bs-smartlist-ve-inspector-order-desc-label": "Ofsteigend",
+	"bs-smartlist-ve-inspector-order-asc-label": "Opsteigend"
 }

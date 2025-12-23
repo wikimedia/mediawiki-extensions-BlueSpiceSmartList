@@ -47,5 +47,16 @@
 	"bs-smartlist-input-validator-invalid mode": "“$2”的值“$1”不是有效的SmartList模式",
 	"bs-smartlist-ve-tab-main": "常规",
 	"bs-smartlist-ve-tab-advanced": "高级",
-	"bs-smartlist-ve-tab-appearance": "外观"
+	"bs-smartlist-ve-tab-appearance": "外观",
+	"bs-smartlist-ve-userlistinspector-groups": "组",
+	"bs-smartlist-ve-userlistinspector-limit": "显示用户限制",
+	"bs-smartlist-ve-userlistinspector-no-users": "所选群组里没有用户。请挑选另个群组来列出其用户",
+	"bs-smartlist-droplet-userlist-desc": "可选择群组的成员列表",
+	"bs-smartlist-droplet-newbies-desc": "wiki中的新用户列表",
+	"bs-smartlist-droplet-recent-changes-desc": "最近更改页面的列表",
+	"bs-smartlist-droplet-toplist-name": "最多人浏览的页面",
+	"bs-smartlist-droplet-toplist-desc": "最多浏览的wiki页面清单",
+	"bs-smartlist-droplet-what-links-here-name": "连至此页面的链接",
+	"bs-smartlist-droplet-what-links-here-desc": "连至此页面的页面列表",
+	"bs-smartlist-error-mode-not-found": "未找到指定模式"
 }
