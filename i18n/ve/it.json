@@ -23,5 +23,11 @@
 	"bs-smartlist-ve-toplistinspector-ns": "Namespace",
 	"bs-smartlist-ve-toplistinspector-cat": "Categoria",
 	"bs-smartlist-ve-toplistinspector-period": "Periodo",
-	"bs-smartlist-ve-mode-recentchanges-label": "Ultime modifiche"
+	"bs-smartlist-ve-mode-recentchanges-label": "Ultime modifiche",
+	"bs-smartlist-ve-inspector-count-label": "Numero di risultati mostrati",
+	"bs-smartlist-ve-inspector-heading-label": "Titolo della sezione",
+	"bs-smartlist-ve-inspector-showtext-label": "Mostra l'anteprima del contenuto della pagina",
+	"bs-smartlist-ve-inspector-trimtext-label": "Lunghezza massima del contenuto della pagina",
+	"bs-smartlist-ve-inspector-order-desc-label": "Decrescente",
+	"bs-smartlist-ve-inspector-order-asc-label": "Crescente"
 }
