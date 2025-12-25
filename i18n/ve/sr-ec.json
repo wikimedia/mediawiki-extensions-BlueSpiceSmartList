@@ -36,5 +36,7 @@
 	"bs-smartlist-ve-toplistinspector-period": "Период",
 	"bs-smartlist-ve-mode-recentchanges-label": "Недавне промене",
 	"bs-smartlist-ve-mode-changesofweek-label": "Промене недеље",
-	"bs-smartlist-ve-inspector-order-asc-label": "растуће"
+	"bs-smartlist-ve-inspector-order-asc-label": "растуће",
+	"bs-smartlist-ve-newbies-title-label": "Нови корисници",
+	"bs-smartlist-ve-inspector-order-desc-label": "Опадајући"
 }
