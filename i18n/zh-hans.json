@@ -40,10 +40,21 @@
 	"apihelp-bs-smartlist-tasks-description": "为页面和用户统计供应portlet数据的API功能。",
 	"apihelp-bs-smartlist-tasks-summary": "作为门户组件数据用于页面及用户统计的API函数。",
 	"bs-smartlist-ve-userlist-title": "用户列表",
+	"bs-smartlist-ve-userlistinspector-groups": "组",
+	"bs-smartlist-ve-userlistinspector-limit": "显示用户限制",
+	"bs-smartlist-ve-userlistinspector-no-users": "所选群组里没有用户。请挑选另个群组来列出其用户",
 	"bs-smartlist-ve-userlistinspector-no-group": "未选择组。选择一个组以列出其用户",
 	"bs-smartlist-droplet-userlist-name": "成员列表",
+	"bs-smartlist-droplet-userlist-desc": "可选择群组的成员列表",
 	"bs-smartlist-droplet-newbies-name": "新用户",
+	"bs-smartlist-droplet-newbies-desc": "wiki中的新用户列表",
 	"bs-smartlist-droplet-recent-changes-name": "最近更改",
+	"bs-smartlist-droplet-recent-changes-desc": "最近更改页面的列表",
+	"bs-smartlist-droplet-toplist-name": "最多人浏览的页面",
+	"bs-smartlist-droplet-toplist-desc": "最多浏览的wiki页面清单",
+	"bs-smartlist-droplet-what-links-here-name": "连至此页面的链接",
+	"bs-smartlist-droplet-what-links-here-desc": "连至此页面的页面列表",
 	"bs-smartlist-ve-recentchanges-title": "最近更改",
-	"bs-smartlist-ve-whatlinkshere-title": "本页的链入页面"
+	"bs-smartlist-ve-whatlinkshere-title": "本页的链入页面",
+	"bs-smartlist-error-mode-not-found": "未找到指定模式"
 }
