@@ -38,5 +38,6 @@
 	"bs-smartlist-ve-mode-changesofweek-label": "Промене недеље",
 	"bs-smartlist-ve-inspector-order-asc-label": "растуће",
 	"bs-smartlist-ve-newbies-title-label": "Нови корисници",
-	"bs-smartlist-ve-inspector-order-desc-label": "Опадајући"
+	"bs-smartlist-ve-inspector-order-desc-label": "Опадајући",
+	"bs-smartlist-ve-inspector-excludens-label": "Искључи именске просторе"
 }

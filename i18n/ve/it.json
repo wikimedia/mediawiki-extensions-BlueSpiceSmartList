@@ -29,5 +29,6 @@
 	"bs-smartlist-ve-inspector-showtext-label": "Mostra l'anteprima del contenuto della pagina",
 	"bs-smartlist-ve-inspector-trimtext-label": "Lunghezza massima del contenuto della pagina",
 	"bs-smartlist-ve-inspector-order-desc-label": "Decrescente",
-	"bs-smartlist-ve-inspector-order-asc-label": "Crescente"
+	"bs-smartlist-ve-inspector-order-asc-label": "Crescente",
+	"bs-smartlist-ve-newbies-title-label": "Nuovi utenti"
 }
