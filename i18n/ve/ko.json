@@ -16,8 +16,15 @@
 	"bs-smartlist-ve-period-month-label": "월",
 	"bs-smartlist-ve-sort-time-label": "시간",
 	"bs-smartlist-ve-sort-title-label": "제목",
+	"bs-smartlist-ve-newbies-title-label": "새 사용자",
 	"bs-smartlist-ve-newbiesinspector-count": "개수",
 	"bs-smartlist-ve-toplist-title": "톱리스트",
 	"bs-smartlist-ve-mode-recentchanges-label": "최근 바뀜",
-	"bs-smartlist-ve-mode-changesofweek-label": "주의 바뀜"
+	"bs-smartlist-ve-mode-changesofweek-label": "주의 바뀜",
+	"bs-smartlist-ve-inspector-cat-label": "분류별 필터",
+	"bs-smartlist-ve-inspector-period-label": "시간 제한",
+	"bs-smartlist-ve-inspector-order-desc-label": "내림차순",
+	"bs-smartlist-ve-inspector-order-asc-label": "오름차순",
+	"bs-smartlist-ve-inspector-meta-label": "메타 정보 표시",
+	"bs-smartlist-ve-inspector-excludens-label": "이름공간 제외"
 }
