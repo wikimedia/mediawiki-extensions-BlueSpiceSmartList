@@ -15,12 +15,12 @@
 	"bs-smartlist-ve-period-month-label": "Mese",
 	"bs-smartlist-ve-sort-time-label": "Ora",
 	"bs-smartlist-ve-sort-title-label": "Titolo",
+	"bs-smartlist-ve-newbies-title-label": "Nuovi utenti",
 	"bs-smartlist-ve-mode-recentchanges-label": "Ultime modifiche",
 	"bs-smartlist-ve-inspector-count-label": "Numero di risultati mostrati",
 	"bs-smartlist-ve-inspector-heading-label": "Titolo della sezione",
 	"bs-smartlist-ve-inspector-showtext-label": "Mostra l'anteprima del contenuto della pagina",
 	"bs-smartlist-ve-inspector-trimtext-label": "Lunghezza massima del contenuto della pagina",
 	"bs-smartlist-ve-inspector-order-desc-label": "Decrescente",
-	"bs-smartlist-ve-inspector-order-asc-label": "Crescente",
-	"bs-smartlist-ve-newbies-title-label": "Nuovi utenti"
+	"bs-smartlist-ve-inspector-order-asc-label": "Crescente"
 }
