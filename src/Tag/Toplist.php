@@ -28,6 +28,7 @@ class Toplist extends SmartlistTag {
 				'name' => 'count',
 				'value' => 5,
 				'label' => Message::newFromKey( 'bs-smartlist-ve-inspector-count-label' )->text(),
+				'min' => '1'
 			],
 			[
 				'type' => 'text',
