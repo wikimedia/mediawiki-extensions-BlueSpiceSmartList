@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"BaRaN6161 TURK",
+			"SaldırganSincap",
 			"Sayginer"
 		]
 	},
@@ -28,5 +29,5 @@
 	"bs-smartlist-mosteditedpagesdesc": "Düzenlenmişlerine göre en çok düzenlenmiş sayfaların listesi.",
 	"bs-smartlist-mostvisitedpagesdesc": "En çok görüntülenen sayfaların görünümlerine göre sıralanmış listesi.",
 	"bs-smartlist-lasteditsdesc": "Düzenlediğiniz sayfaların listesi.",
-	"bs-smartlist-hitcounter-missing": "<a target='blank' href='https://www.mediawiki.org/wiki/Extension:HitCounters'>HitCounters</a> uzantısı kurulmalıdır."
+	"bs-smartlist-hitcounter-missing": "<a target='blank' href='https://www.mediawiki.org/Special:MyLanguage/wiki/Extension:HitCounters'>HitCounters</a> uzantısı kurulmalıdır."
 }

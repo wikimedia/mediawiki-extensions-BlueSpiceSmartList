@@ -1,13 +1,14 @@
 {
 	"@metadata": {
 		"authors": [
+			"Stefan2255",
 			"WikiPhoenix"
 		]
 	},
 	"bs-smartlist-ve-smartlistinspector-count": "Antal",
 	"bs-smartlist-ve-smartlistinspector-ns": "Namnrymd(er)",
 	"bs-smartlist-ve-smartlistinspector-cat": "Kategori",
-	"bs-smartlist-ve-smartlistinspector-minor": "Visa mindre",
+	"bs-smartlist-ve-smartlistinspector-minor": "Visa mindre ändringar",
 	"bs-smartlist-ve-smartlistinspector-catmode": "Kategoriläge",
 	"bs-smartlist-ve-smartlistinspector-period": "Period",
 	"bs-smartlist-ve-smartlistinspector-new": "Visa endast nya artiklar",
@@ -33,6 +34,28 @@
 	"bs-smartlist-ve-toplistinspector-ns": "Namnrymd(er)",
 	"bs-smartlist-ve-toplistinspector-cat": "Kategori",
 	"bs-smartlist-ve-toplistinspector-period": "Period",
-	"bs-smartlist-ve-mode-recentchanges-label": "Senaste ändringar",
-	"bs-smartlist-ve-mode-changesofweek-label": "Veckans ändringar"
+	"bs-smartlist-ve-mode-recentchanges-label": "Senaste ändringarna",
+	"bs-smartlist-ve-mode-changesofweek-label": "Veckans ändringar",
+	"bs-smartlist-ve-smartlist-title": "Smartlista",
+	"bs-smartlist-ve-newbies-title-label": "Nya användare",
+	"bs-smartlist-ve-toplist-title": "Topplista",
+	"bs-smartlist-ve-toplistinspector-portletperiod": "Portletperiod",
+	"bs-smartlist-ve-inspector-count-label": "Antal visade resultat",
+	"bs-smartlist-ve-inspector-ns-label": "Filtrera efter namnrymder",
+	"bs-smartlist-ve-inspector-cat-label": "Filtrera efter kategorier",
+	"bs-smartlist-ve-inspector-catmode-label": "Filterkombination av kategorier",
+	"bs-smartlist-ve-inspector-catmode-or-label": "En kategori är tillräcklig (ELLER)",
+	"bs-smartlist-ve-inspector-catmode-and-label": "Alla kategorier måste tilldelas (OCH)",
+	"bs-smartlist-ve-inspector-period-label": "Tidsgräns",
+	"bs-smartlist-ve-inspector-heading-label": "Avsnittsrubrik",
+	"bs-smartlist-ve-inspector-trim-label": "Maximal längd på sidtitlar",
+	"bs-smartlist-ve-inspector-showtext-label": "Visa förhandsgranskning av sidans innehåll",
+	"bs-smartlist-ve-inspector-trimtext-label": "Maximal längd på sidinnehåll",
+	"bs-smartlist-ve-inspector-order-desc-label": "Fallande",
+	"bs-smartlist-ve-inspector-order-asc-label": "Stigande",
+	"bs-smartlist-ve-inspector-showns-label": "Visa namnrymdsprefix",
+	"bs-smartlist-ve-inspector-meta-label": "Visa metainformation",
+	"bs-smartlist-ve-inspector-numwithtext-label": "Antal sidtitlar med förhandsgranskning av sidan",
+	"bs-smartlist-ve-inspector-target-label": "Sida för inkommande länkar",
+	"bs-smartlist-ve-inspector-excludens-label": "Exkludera namnrymder"
 }
