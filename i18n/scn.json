@@ -1,10 +1,11 @@
 {
 	"@metadata": {
 		"authors": [
-			"Ajeje Brazorf"
+			"Ajeje Brazorf",
+			"GianAntonucci"
 		]
 	},
-	"bs-smartlist-recent-changes": "Ùrtimi canciamenti",
+	"bs-smartlist-recent-changes": "Ùrtimi canci",
 	"bs-smartlist-comment": "Cummentu: $1.",
 	"bs-smartlist-sort-asc": "criscenti",
 	"bs-smartlist-day": "Jornu",
@@ -14,5 +15,5 @@
 	"bs-smartlist-mostvisitedpages": "Pàggini cchiù taliati",
 	"bs-smartlist-mosteditedpages": "Pàggini cchiù canciati",
 	"bs-smartlist-mostactiveusers": "Utenti cchiù attivi (pi canciamenti)",
-	"bs-smartlist-lastedits": "Li mè canciamenti"
+	"bs-smartlist-lastedits": "Li me canci"
 }

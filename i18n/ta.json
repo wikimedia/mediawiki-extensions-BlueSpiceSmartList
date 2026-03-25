@@ -18,5 +18,6 @@
 	"bs-smartlist-lastedits": "எனது தொகுப்புகள்",
 	"bs-smartlist-ve-userlist-title": "பயனர் பட்டியல்",
 	"bs-smartlist-ve-userlistinspector-groups": "குழுக்கள்",
-	"bs-smartlist-ve-userlistinspector-no-users": "நீங்கள் தேர்வு செய்த குழுவில் பயனர்கள் யாரும் இல்லை. வேறு பயனர்களின் பட்டியலைப் பார்வையிட மற்றொரு குழுவினைத் தேர்வு செய்யவும்."
+	"bs-smartlist-ve-userlistinspector-no-users": "நீங்கள் தேர்வு செய்த குழுவில் பயனர்கள் யாரும் இல்லை. வேறு பயனர்களின் பட்டியலைப் பார்வையிட மற்றொரு குழுவினைத் தேர்வு செய்யவும்.",
+	"bs-smartlist-ve-tab-main": "பொது"
 }

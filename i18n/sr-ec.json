@@ -34,5 +34,7 @@
 	"bs-smartlist-mostactiveusersdesc": "Списак најактивнијих корисника сортиран по њиховим изменама.",
 	"bs-smartlist-mosteditedpagesdesc": "Списак најуређенијих страница сортиран по њиховим изменама.",
 	"bs-smartlist-mostvisitedpagesdesc": "Списак највише прегледаних страница сортиран по њиховим прегледима.",
-	"bs-smartlist-lasteditsdesc": "Списак страница које сте уредили."
+	"bs-smartlist-lasteditsdesc": "Списак страница које сте уредили.",
+	"bs-smartlist-ve-tab-main": "Опште",
+	"bs-smartlist-ve-tab-appearance": "Приказ"
 }

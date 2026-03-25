@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Ajeje Brazorf"
+			"Ajeje Brazorf",
+			"GianAntonucci"
 		]
 	},
 	"bs-smartlist-ve-smartlistinspector-ns": "Namespace",
@@ -20,6 +21,6 @@
 	"bs-smartlist-ve-toplistinspector-ns": "Namespace",
 	"bs-smartlist-ve-toplistinspector-cat": "Catigurìa",
 	"bs-smartlist-ve-toplistinspector-period": "Pirìudu",
-	"bs-smartlist-ve-mode-recentchanges-label": "Ùrtimi canciamenti",
+	"bs-smartlist-ve-mode-recentchanges-label": "Ùrtimi canci",
 	"bs-smartlist-ve-mode-changesofweek-label": "Canciamenti dâ simana"
 }

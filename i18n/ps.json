@@ -4,10 +4,15 @@
 			"Af420",
 			"Ahmed-Najib-Biabani-Ibrahimkhel",
 			"Amjad Khan",
-			"Baloch Khan"
+			"Baloch Khan",
+			"شاه زمان پټان"
 		]
 	},
 	"bs-smartlist-recent-changes": "وروستي بدلونونه",
-	"bs-smartlist-week": "اونۍ",
-	"bs-smartlist-title": "سرليک"
+	"bs-smartlist-week": "اوونۍ",
+	"bs-smartlist-title": "سرليک",
+	"bs-smartlist-input-validator-invalid mode": "د \"$1\" لپاره \"$2\" ارزښت د ويښيارلړ دريځ نه دی",
+	"bs-smartlist-ve-tab-main": "ټولگړی",
+	"bs-smartlist-ve-tab-advanced": "پرمختللی",
+	"bs-smartlist-ve-tab-appearance": "ونگ‌بڼه"
 }

@@ -4,7 +4,9 @@
 			"*Surak*",
 			"Hwboehm",
 			"Metalhead64",
+			"MoritzMT20",
 			"Purodha",
+			"Russianbabe1978",
 			"SehrGuterCode",
 			"Stephan Muggli <muggli@hallowelt.biz>"
 		]
@@ -36,7 +38,7 @@
 	"bs-smartlist-mostactiveusersdesc": "Liste der aktivsten Benutzer sortiert nach der Anzahl Ihrer Bearbeitungen.",
 	"bs-smartlist-mosteditedpagesdesc": "Liste der am häufigsten bearbeiteten Seiten sortiert nach der Anzahl Ihrer Bearbeitungen.",
 	"bs-smartlist-mostvisitedpagesdesc": "Liste der am häufigsten besuchten Seiten sortiert nach der Anzahl der Aufrufe.",
-	"bs-smartlist-lasteditsdesc": "Liste der von dir zuletzt bearbeiteten Seiten.",
+	"bs-smartlist-lasteditsdesc": "Liste der von {{#FORMAL:dir|Ihnen}} zuletzt bearbeiteten Seiten.",
 	"bs-smartlist-hitcounter-missing": "Die Softwareerweiterung „<a target='blank' href='https://www.mediawiki.org/wiki/Special:MyLanguage/Extension:HitCounters'>HitCounters</a>“ muss installiert sein.",
 	"apihelp-bs-smartlist-tasks-description": "API-Funktionen zur Bereitstellung von Portletdaten für Seiten- und Benutzerstatistiken.",
 	"apihelp-bs-smartlist-tasks-summary": "API-Funktionen zum Bereitstellen von Portletdaten für Seiten- und Benutzerstatistiken",
@@ -57,5 +59,9 @@
 	"bs-smartlist-droplet-what-links-here-desc": "Liste von Seiten, die auf diese Seite verlinken",
 	"bs-smartlist-ve-recentchanges-title": "Letzte Änderungen",
 	"bs-smartlist-ve-whatlinkshere-title": "Links auf diese Seite",
-	"bs-smartlist-error-mode-not-found": "Der angegebene Modus wurde nicht gefunden"
+	"bs-smartlist-error-mode-not-found": "Der angegebene Modus wurde nicht gefunden",
+	"bs-smartlist-input-validator-invalid mode": "Der Wert „ $2 “ für „ $1 “ ist kein gültiger SmartList-Modus",
+	"bs-smartlist-ve-tab-main": "Allgemein",
+	"bs-smartlist-ve-tab-advanced": "Erweitert",
+	"bs-smartlist-ve-tab-appearance": "Aussehen"
 }

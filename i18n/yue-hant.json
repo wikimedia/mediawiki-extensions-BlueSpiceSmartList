@@ -1,0 +1,11 @@
+{
+	"@metadata": {
+		"authors": [
+			"JeffreyKim"
+		]
+	},
+	"bs-smartlist-input-validator-invalid mode": "「$1」嘅數值「$2」唔係有效嘅SmartList模式",
+	"bs-smartlist-ve-tab-main": "一般",
+	"bs-smartlist-ve-tab-advanced": "進階",
+	"bs-smartlist-ve-tab-appearance": "外表"
+}
