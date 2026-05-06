@@ -14,5 +14,7 @@
 	"bs-smartlist-mostvisitedpages": "Найбольш прагляданыя старонкі",
 	"bs-smartlist-mosteditedpages": "Найбольш рэдагаваныя старонкі",
 	"bs-smartlist-lastedits": "Мае рэдагаваньні",
-	"bs-smartlist-ve-recentchanges-title": "Нядаўныя зьмены"
+	"bs-smartlist-ve-recentchanges-title": "Нядаўныя зьмены",
+	"bs-smartlist-sort-asc": "водле ўзросту",
+	"bs-smartlist-sort-desc": "водле спаду"
 }
