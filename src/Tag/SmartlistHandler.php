@@ -10,7 +10,6 @@ use MediaWiki\Context\RequestContext;
 use MediaWiki\HookContainer\HookContainer;
 use MediaWiki\Json\FormatJson;
 use MediaWiki\Output\OutputPage;
-use MediaWiki\Page\PageProps;
 use MediaWiki\Parser\Parser;
 use MediaWiki\Parser\ParserFactory;
 use MediaWiki\Parser\ParserOptions;
@@ -18,6 +17,7 @@ use MediaWiki\Parser\PPFrame;
 use MediaWiki\Title\TitleFactory;
 use MWException;
 use MWStake\MediaWiki\Component\GenericTagHandler\ITagHandler;
+use MWStake\MediaWiki\Component\Utils\UtilityFactory;
 use Throwable;
 
 class SmartlistHandler implements ITagHandler {
@@ -27,7 +27,7 @@ class SmartlistHandler implements ITagHandler {
 	 * @param RequestContext $context
 	 * @param ParserFactory $parserFactory
 	 * @param TitleFactory $titleFactory
-	 * @param PageProps $pageProps
+	 * @param UtilityFactory $utilityFactory
 	 * @param BlueSpiceSmartListModeFactory $modeFactory
 	 * @param IMode|null $mode
 	 */
@@ -36,7 +36,7 @@ class SmartlistHandler implements ITagHandler {
 		private readonly RequestContext $context,
 		private readonly ParserFactory $parserFactory,
 		private readonly TitleFactory $titleFactory,
-		private readonly PageProps $pageProps,
+		private readonly UtilityFactory $utilityFactory,
 		private readonly BlueSpiceSmartListModeFactory $modeFactory,
 		private ?IMode $mode
 	) {
@@ -90,7 +90,7 @@ class SmartlistHandler implements ITagHandler {
 		$parser = new ParserObjectWrapper( $parser );
 		$listRenderer = new ListRenderer(
 			$parser,
-			$this->pageProps,
+			$this->utilityFactory,
 			$this->titleFactory,
 			$this->hookContainer
 		);
