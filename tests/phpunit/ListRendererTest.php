@@ -5,11 +5,11 @@ namespace BlueSpice\SmartList\Tests;
 use BlueSpice\SmartList\ListRenderer;
 use BlueSpice\SmartList\Parser\DerivativeAPIRequestWrapper;
 use BlueSpice\SmartList\Parser\ParserObjectWrapper;
-use MediaWiki\Page\PageProps;
 use MediaWiki\Parser\Parser;
 use MediaWiki\Request\WebRequest;
 use MediaWiki\Title\Title;
 use MediaWikiIntegrationTestCase;
+use MWStake\MediaWiki\Component\Utils\UtilityFactory;
 
 /**
  * @covers \BlueSpice\SmartList\ListRenderer
@@ -26,11 +26,11 @@ class ListRendererTest extends MediaWikiIntegrationTestCase {
 	 * @covers \BlueSpice\SmartList\ListRenderer::render
 	 */
 	public function testrender( $parser, $items, $args, $expect ) {
-		$propsMock = $this->createMock( PageProps::class );
+		$utilFactoryMock = $this->createMock( UtilityFactory::class );
 		$titleFactory = $this->getServiceContainer()->getTitleFactory();
 		$hookContainer = $this->getServiceContainer()->getHookContainer();
 
-		$listRenderer = new ListRenderer( $parser, $propsMock, $titleFactory, $hookContainer );
+		$listRenderer = new ListRenderer( $parser, $utilFactoryMock, $titleFactory, $hookContainer );
 		$actualContent = $listRenderer->render( $items, $args );
 		$this->assertEquals( $expect, $actualContent );
 	}
