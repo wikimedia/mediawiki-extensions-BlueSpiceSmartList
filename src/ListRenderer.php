@@ -4,8 +4,8 @@ namespace BlueSpice\SmartList;
 
 use BsStringHelper;
 use MediaWiki\HookContainer\HookContainer;
-use MediaWiki\Page\PageProps;
 use MediaWiki\Title\TitleFactory;
+use MWStake\MediaWiki\Component\Utils\UtilityFactory;
 use ViewBaseElement;
 
 class ListRenderer {
@@ -15,10 +15,8 @@ class ListRenderer {
 	 */
 	private $parser = null;
 
-	/**
-	 * @var PageProps
-	 */
-	private $pageProps = null;
+	/** @var UtilityFactory */
+	private UtilityFactory $utilityFactory;
 
 	/**
 	 *
@@ -35,13 +33,15 @@ class ListRenderer {
 	/**
 	 *
 	 * @param IParser $parser
-	 * @param PageProps $pageProps
+	 * @param UtilityFactory $utilityFactory
 	 * @param TitleFactory $titleFactory
 	 * @param HookContainer $hookContainer
 	 */
-	public function __construct( $parser, $pageProps, TitleFactory $titleFactory, HookContainer $hookContainer ) {
+	public function __construct(
+		$parser, UtilityFactory $utilityFactory, TitleFactory $titleFactory, HookContainer $hookContainer
+	) {
 		$this->parser = $parser;
-		$this->pageProps = $pageProps;
+		$this->utilityFactory = $utilityFactory;
 		$this->titleFactory = $titleFactory;
 		$this->hookContainer = $hookContainer;
 	}
@@ -97,11 +97,9 @@ class ListRenderer {
 				$displayTitle = $title->getFullText();
 			}
 
-			$properties = $this->pageProps->getProperties( $title, 'displaytitle' );
-			$pageId = $title->getArticleID();
-
-			if ( isset( $properties[ $pageId ] ) ) {
-				$displayTitle = $properties[ $pageId ];
+			$realDisplayTitle = $this->utilityFactory->getDisplayTitleHelper()->getDisplayTitle( $title );
+			if ( $realDisplayTitle ) {
+				$displayTitle = $realDisplayTitle;
 			}
 
 			$displayTitle = BsStringHelper::shorten(

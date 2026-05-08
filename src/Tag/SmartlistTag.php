@@ -43,7 +43,7 @@ abstract class SmartlistTag extends GenericTag {
 			RequestContext::getMain(),
 			$services->getParserFactory(),
 			$services->getTitleFactory(),
-			$services->getPageProps(),
+			$services->getService( 'MWStakeCommonUtilsFactory' ),
 			$services->getService( 'BlueSpiceSmartList.SmartlistMode' ),
 			$this->mode
 		);
