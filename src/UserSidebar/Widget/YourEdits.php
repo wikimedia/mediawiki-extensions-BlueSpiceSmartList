@@ -2,6 +2,7 @@
 
 namespace BlueSpice\SmartList\UserSidebar\Widget;
 
+use BlueSpice\SmartList\UserEditProvider;
 use BlueSpice\UserSidebar\IWidget;
 use BlueSpice\UserSidebar\Widget;
 use MediaWiki\Config\Config;
@@ -10,7 +11,6 @@ use MediaWiki\MediaWikiServices;
 use MediaWiki\Message\Message;
 use MediaWiki\Title\TitleFactory;
 use MediaWiki\User\ActorNormalization;
-use MediaWiki\User\UserIdentity;
 use Wikimedia\Rdbms\ILoadBalancer;
 
 class YourEdits extends Widget {
@@ -32,6 +32,11 @@ class YourEdits extends Widget {
 	private $titleFactory;
 
 	/**
+	 * @var UserEditProvider
+	 */
+	private $userEditProvider;
+
+	/**
 	 * @param string $key
 	 * @param IContextSource $context
 	 * @param Config $config
@@ -44,18 +49,31 @@ class YourEdits extends Widget {
 		$services = MediaWikiServices::getInstance();
 		return new static(
 			$key, $context, $config, $params,
-			$services->getDBLoadBalancer(), $services->getActorNormalization(), $services->getTitleFactory()
+			$services->getDBLoadBalancer(), $services->getActorNormalization(), $services->getTitleFactory(),
+			$services->getService( 'BlueSpiceSmartList.UserEditProvider' )
 		);
 	}
 
+	/**
+	 * @param string $key
+	 * @param IContextSource $context
+	 * @param Config $config
+	 * @param array $params
+	 * @param ILoadBalancer $lb
+	 * @param ActorNormalization $actorNormalization
+	 * @param TitleFactory $titleFactory
+	 * @param UserEditProvider $userEditProvider
+	 */
 	public function __construct(
 		string $key, IContextSource $context, Config $config, array $params,
-		ILoadBalancer $lb, ActorNormalization $actorNormalization, TitleFactory $titleFactory
+		ILoadBalancer $lb, ActorNormalization $actorNormalization,
+		TitleFactory $titleFactory, UserEditProvider $userEditProvider
 	) {
 		parent::__construct( $key, $context, $config, $params );
 		$this->lb = $lb;
 		$this->actorNormalization = $actorNormalization;
 		$this->titleFactory = $titleFactory;
+		$this->userEditProvider = $userEditProvider;
 	}
 
 	/**
@@ -87,7 +105,7 @@ class YourEdits extends Widget {
 			$count = (int)$this->params[static::PARAM_COUNT];
 		}
 
-		$edits = $this->getYourEditsTitles( $this->context->getUser(), $count );
+		$edits = $this->userEditProvider->getUserEdits( $this->context->getUser(), $count );
 
 		$links = [];
 		foreach ( $edits as $edit ) {
@@ -103,36 +121,4 @@ class YourEdits extends Widget {
 		return $links;
 	}
 
-	/**
-	 * @param UserIdentity $user
-	 * @param int $count
-	 * @return array
-	 */
-	private function getYourEditsTitles( UserIdentity $user, int $count ) {
-		$dbr = $this->lb->getConnection( DB_REPLICA );
-		$res = $dbr->newSelectQueryBuilder()
-			->select( [ 'page_id', 'page_namespace', 'page_title' ] )
-			->from( 'revision' )
-			->join( 'page', 'p', [ 'rev_page = page_id' ] )
-			->where( [
-				'page_content_model' => [ '', 'wikitext' ],
-				'rev_actor' => $this->actorNormalization->findActorId( $user, $dbr )
-			] )
-			->groupBy( 'page_id' )
-			->orderBy( 'MAX(rev_timestamp) DESC' )
-			->limit( $count )
-			->caller( __METHOD__ )
-			->fetchResultSet();
-
-		$edits = [];
-		foreach ( $res as $row ) {
-			$title = $this->titleFactory->newFromRow( $row );
-			$edits[] = [
-				'title' => $title,
-				'displayText' => $title->getPrefixedText()
-			];
-		}
-
-		return $edits;
-	}
 }

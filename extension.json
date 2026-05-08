@@ -233,7 +233,14 @@
 		"remoteExtPath": "BlueSpiceSmartList/resources"
 	},
 	"Hooks": {
-		"BSUsageTrackerRegisterCollectors": "\\BlueSpice\\SmartList\\Hook\\BSUsageTrackerRegisterCollectors\\AddSmartlistTag::callback"
+		"BSUsageTrackerRegisterCollectors": "\\BlueSpice\\SmartList\\Hook\\BSUsageTrackerRegisterCollectors\\AddSmartlistTag::callback",
+		"RevisionFromEditComplete": "updateUserEdits"
+	},
+	"HookHandlers": {
+		"updateUserEdits": {
+			"class": "BlueSpice\\SmartList\\Hook\\UpdateUserEdits",
+			"services": [ "BlueSpiceSmartList.UserEditProvider" ]
+		}
 	},
 	"load_composer_autoloader": true,
 	"manifest_version": 2
