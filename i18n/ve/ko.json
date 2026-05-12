@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Tensama0415",
 			"YeBoy371",
 			"Ykhwong"
 		]
@@ -23,8 +24,12 @@
 	"bs-smartlist-ve-mode-changesofweek-label": "주의 바뀜",
 	"bs-smartlist-ve-inspector-cat-label": "분류별 필터",
 	"bs-smartlist-ve-inspector-period-label": "시간 제한",
+	"bs-smartlist-ve-inspector-trim-label": "문서 제목의 최대 길이",
+	"bs-smartlist-ve-inspector-showtext-label": "페이지 콘텐츠의 미리보기 표시",
+	"bs-smartlist-ve-inspector-trimtext-label": "페이지 콘텐츠의 최대 길이",
 	"bs-smartlist-ve-inspector-order-desc-label": "내림차순",
 	"bs-smartlist-ve-inspector-order-asc-label": "오름차순",
+	"bs-smartlist-ve-inspector-showns-label": "이름공간 접두사 표시",
 	"bs-smartlist-ve-inspector-meta-label": "메타 정보 표시",
 	"bs-smartlist-ve-inspector-excludens-label": "이름공간 제외"
 }
