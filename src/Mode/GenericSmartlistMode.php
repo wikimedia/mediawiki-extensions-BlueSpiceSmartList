@@ -203,25 +203,23 @@ class GenericSmartlistMode extends SmartListBaseMode {
 	 * @param array $args
 	 */
 	protected function makeCategoriesFilterCondition( &$conditions, $pageIdFileName, $args ) {
-		if ( $args['categories'] != '-' && $args['categories'] != '' ) {
-			$categories = explode( ',', $args['categories'] );
-			$cnt = count( $categories );
+		$cnt = count( $args['categories'] );
+		if ( $cnt ) {
+			$categories = [];
 			for ( $i = 0; $i < $cnt; $i++ ) {
-				$category = Category::newFromName( trim( $categories[$i] ) );
+				$category = Category::newFromTitle( $args['categories'][$i] );
 				if ( $category === false ) {
-					unset( $categories[$i] );
 					continue;
 				}
-				$categories[$i] = "'" . $category->getName() . "'";
+				$categories[] = "'" . $category->getName() . "'";
 			}
-			$args['categories'] = implode( ',', $categories );
 
 			$dbr = $this->services->getDBLoadBalancer()->getConnection( DB_REPLICA );
 			if ( $args['categoryMode'] == 'OR' ) {
 				$conditions[] = $pageIdFileName
 					. ' IN ( SELECT cl_from FROM '
 					. $dbr->tableName( 'categorylinks' )
-					. ' WHERE cl_to IN (' . $args['categories'] . ') )';
+					. ' WHERE cl_to IN (' . implode( ',', $categories ) . ') )';
 			} else {
 				foreach ( $categories as $category ) {
 					$conditions[] = $pageIdFileName
