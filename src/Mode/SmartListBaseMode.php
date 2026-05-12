@@ -25,7 +25,8 @@ abstract class SmartListBaseMode extends BaseMode {
 			'required' => false,
 		];
 		$params[ static::ATTR_CAT ] = [
-			'type' => 'category',
+			'type' => 'category-list',
+			'separator' => ',',
 			'required' => false,
 		];
 		return $params;
