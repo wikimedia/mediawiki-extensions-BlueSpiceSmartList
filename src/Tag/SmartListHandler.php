@@ -93,7 +93,7 @@ class SmartListHandler extends Handler {
 		$parser = new ParserObjectWrapper( $parser );
 		$listRenderer = new ListRenderer(
 			$parser,
-			MediaWikiServices::getInstance()->getPageProps(),
+			MediaWikiServices::getInstance()->getService( 'MWStakeCommonUtilsFactory' ),
 			$this->titleFactory,
 			$this->hookContainer
 		);
