@@ -141,21 +141,20 @@ class ToplistMode extends SmartListBaseMode {
 			$joinConditions = [];
 		}
 
-		if ( count( $args['categories'] ) ) {
-			$categories = array_map( static function ( $category ) {
-				return $category->getDBkey();
-			}, $args['categories'] );
+		if ( !empty( $args['categories'] ) ) {
+			$cat = explode( ',', $args['categories'] );
+			$cat = array_map( 'trim', $cat );
+			$cat = str_replace( ' ', '_', $cat );
 
-			// TODO: we do not support multiple categories like the smartlist at the moment.
 			if ( $alltime === false ) {
 				$columns[] = 'wo_page_id';
 				$joinConditions = [ 'categorylinks' => [ 'INNER JOIN ', 'wo_page_id = cl_from' ] ];
 				$tables[] = 'categorylinks';
-				$conditions['cl_to'] = $categories[0];
+				$conditions['cl_to'] = $cat;
 			} else {
 				$tables[] = 'categorylinks';
 				$conditions[] = 'p.page_id = cl_from';
-				$conditions['cl_to'] = $categories[0];
+				$conditions['cl_to'] = $cat;
 			}
 		}
 

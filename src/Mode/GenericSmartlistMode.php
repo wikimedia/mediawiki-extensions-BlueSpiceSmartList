@@ -7,6 +7,7 @@ use BlueSpice\ParamProcessor\ParamType;
 use BsNamespaceHelper;
 use BsPageContentProvider;
 use BsStringHelper;
+use MediaWiki\Category\Category;
 use MediaWiki\Context\RequestContext;
 use MediaWiki\MediaWikiServices;
 use MediaWiki\Parser\Sanitizer;
@@ -236,17 +237,25 @@ class GenericSmartlistMode extends SmartListBaseMode {
 	 * @param array $args
 	 */
 	protected function makeCategoriesFilterCondition( &$conditions, $pageIdFileName, $args ) {
-		if ( count( $args['categories'] ) ) {
-			$categories = array_map( static function ( $category ) {
-				return "'" . $category->getDBkey() . "'";
-			}, $args['categories'] );
+		if ( $args['categories'] != '-' && $args['categories'] != '' ) {
+			$categories = explode( ',', $args['categories'] );
+			$cnt = count( $categories );
+			for ( $i = 0; $i < $cnt; $i++ ) {
+				$category = Category::newFromName( trim( $categories[$i] ) );
+				if ( $category === false ) {
+					unset( $categories[$i] );
+					continue;
+				}
+				$categories[$i] = "'" . $category->getName() . "'";
+			}
+			$args['categories'] = implode( ',', $categories );
 
 			$dbr = $this->services->getDBLoadBalancer()->getConnection( DB_REPLICA );
 			if ( $args['categoryMode'] == 'OR' ) {
 				$conditions[] = $pageIdFileName
 					. ' IN ( SELECT cl_from FROM '
 					. $dbr->tableName( 'categorylinks' )
-					. ' WHERE cl_to IN (' . implode( ',', $categories ) . ') )';
+					. ' WHERE cl_to IN (' . $args['categories'] . ') )';
 			} else {
 				foreach ( $categories as $category ) {
 					$conditions[] = $pageIdFileName
