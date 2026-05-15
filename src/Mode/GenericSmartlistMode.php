@@ -5,7 +5,6 @@ namespace BlueSpice\SmartList\Mode;
 use BsNamespaceHelper;
 use BsPageContentProvider;
 use BsStringHelper;
-use MediaWiki\Category\Category;
 use MediaWiki\Context\RequestContext;
 use MediaWiki\MediaWikiServices;
 use MediaWiki\Parser\Sanitizer;
@@ -203,16 +202,10 @@ class GenericSmartlistMode extends SmartListBaseMode {
 	 * @param array $args
 	 */
 	protected function makeCategoriesFilterCondition( &$conditions, $pageIdFileName, $args ) {
-		$cnt = count( $args['categories'] );
-		if ( $cnt ) {
-			$categories = [];
-			for ( $i = 0; $i < $cnt; $i++ ) {
-				$category = Category::newFromTitle( $args['categories'][$i] );
-				if ( $category === false ) {
-					continue;
-				}
-				$categories[] = "'" . $category->getName() . "'";
-			}
+		if ( count( $args['categories'] ) ) {
+			$categories = array_map( static function ( $category ) {
+				return "'" . $category->getDBkey() . "'";
+			}, $args['categories'] );
 
 			$dbr = $this->services->getDBLoadBalancer()->getConnection( DB_REPLICA );
 			if ( $args['categoryMode'] == 'OR' ) {
