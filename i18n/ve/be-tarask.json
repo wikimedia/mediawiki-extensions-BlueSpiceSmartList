@@ -16,5 +16,6 @@
 	"bs-smartlist-ve-toplistinspector-cat": "Катэгорыя",
 	"bs-smartlist-ve-mode-recentchanges-label": "Апошнія зьмяненьні",
 	"bs-smartlist-ve-inspector-order-desc-label": "Водле спаду",
-	"bs-smartlist-ve-inspector-order-asc-label": "Водле ўзросту"
+	"bs-smartlist-ve-inspector-order-asc-label": "Водле ўзросту",
+	"bs-smartlist-ve-inspector-cat-label": "Фільтар водле катэґорый"
 }
