@@ -18,5 +18,6 @@
 	"bs-smartlist-ve-mode-recentchanges-label": "Апошнія зьмяненьні",
 	"bs-smartlist-ve-inspector-order-desc-label": "Водле спаду",
 	"bs-smartlist-ve-inspector-order-asc-label": "Водле ўзросту",
-	"bs-smartlist-ve-inspector-cat-label": "Фільтар паводле катэгорыяў"
+	"bs-smartlist-ve-inspector-cat-label": "Фільтар паводле катэгорыяў",
+	"bs-smartlist-ve-smartlistinspector-sort": "Сартаваць паводле"
 }
