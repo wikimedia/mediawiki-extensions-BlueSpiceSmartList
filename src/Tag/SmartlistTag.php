@@ -178,9 +178,18 @@ abstract class SmartlistTag extends GenericTag {
 				'label' => Message::newFromKey( 'bs-smartlist-ve-smartlistinspector-order' )->text(),
 				'labelAlign' => 'top',
 				'options' => [
-					[ 'data' => '', 'label' => '' ],
-					[ 'data' => 'DESC', 'label' => Message::newFromKey( 'bs-smartlist-ve-inspector-order-desc-label' )->text() ],
-					[ 'data' => 'ASC', 'label' => Message::newFromKey( 'bs-smartlist-ve-inspector-order-asc-label' )->text() ],
+					[
+						'data' => '',
+						'label' => ''
+					],
+					[
+						'data' => 'DESC',
+						'label' => Message::newFromKey( 'bs-smartlist-ve-inspector-order-desc-label' )->text()
+					],
+					[
+						'data' => 'ASC',
+						'label' => Message::newFromKey( 'bs-smartlist-ve-inspector-order-asc-label' )->text()
+					],
 				]
 			],
 			[

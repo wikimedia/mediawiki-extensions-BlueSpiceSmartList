@@ -19,7 +19,6 @@ class BlueSpiceSmartListModeFactory {
 	private $modes;
 
 	/**
-	 *
 	 * @param ObjectFactory $objectFactory
 	 */
 	public function __construct( ObjectFactory $objectFactory ) {

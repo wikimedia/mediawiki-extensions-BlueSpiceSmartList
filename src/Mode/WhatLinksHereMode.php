@@ -27,7 +27,6 @@ class WhatLinksHereMode extends GenericSmartlistMode {
 	private $messageLocalizer;
 
 	/**
-	 *
 	 * @param PermissionManager $permissionManager
 	 * @param ILoadBalancer $lb
 	 * @param TitleFactory $titleFactory

@@ -76,7 +76,8 @@ class UserEditProvider {
 		// Push new edit to the beginning of the list and remove the last one if there are more than 50
 		array_unshift( $edits, [
 			'title' => $title,
-			'displayText' => $this->utilityFactory->getDisplayTitleHelper()->getDisplayTitle( $title ) ?? $title->getPrefixedText(),
+			'displayText' => $this->utilityFactory->getDisplayTitleHelper()->getDisplayTitle( $title )
+				?? $title->getPrefixedText(),
 		] );
 		if ( count( $edits ) > 50 ) {
 			array_pop( $edits );

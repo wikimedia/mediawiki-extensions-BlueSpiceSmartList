@@ -15,7 +15,6 @@ abstract class SmartListBaseMode extends BaseMode {
 	private array $restrictedNamespaces = [];
 
 	/**
-	 *
 	 * @inheritDoc
 	 */
 	public function getParams(): array {

@@ -29,7 +29,6 @@ class ToplistMode extends SmartListBaseMode {
 	private $messageLocalizer;
 
 	/**
-	 *
 	 * @param PermissionManager $permissionManager
 	 * @param ILoadBalancer $lb
 	 * @param TitleFactory $titleFactory
@@ -60,7 +59,6 @@ class ToplistMode extends SmartListBaseMode {
 	}
 
 	/**
-	 *
 	 * @inheritDoc
 	 */
 	public function getParams(): array {
@@ -74,7 +72,6 @@ class ToplistMode extends SmartListBaseMode {
 	}
 
 	/**
-	 *
 	 * @inheritDoc
 	 */
 	public function getList( $args, $context ): array {
