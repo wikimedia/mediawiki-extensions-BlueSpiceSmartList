@@ -34,7 +34,6 @@ class RecentChangesMode extends GenericSmartlistMode {
 	private $userFactory;
 
 	/**
-	 *
 	 * @param PermissionManager $permissionManager
 	 * @param ILoadBalancer $lb
 	 * @param TitleFactory $titleFactory
@@ -58,7 +57,6 @@ class RecentChangesMode extends GenericSmartlistMode {
 	}
 
 	/**
-	 *
 	 * @return string
 	 */
 	public function getProviderKey(): string {
@@ -80,7 +78,6 @@ class RecentChangesMode extends GenericSmartlistMode {
 	}
 
 	/**
-	 *
 	 * @inheritDoc
 	 */
 	protected function getMeta( $item, $context ): string {

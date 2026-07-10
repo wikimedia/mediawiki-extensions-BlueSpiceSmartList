@@ -19,19 +19,16 @@ class ListRenderer {
 	private UtilityFactory $utilityFactory;
 
 	/**
-	 *
 	 * @var TitleFactory
 	 */
 	private $titleFactory = null;
 
 	/**
-	 *
 	 * @var HookContainer
 	 */
 	private $hookContainer = null;
 
 	/**
-	 *
 	 * @param IParser $parser
 	 * @param UtilityFactory $utilityFactory
 	 * @param TitleFactory $titleFactory
@@ -47,7 +44,6 @@ class ListRenderer {
 	}
 
 	/**
-	 *
 	 * @param array $items
 	 * @param array $args
 	 * @return string

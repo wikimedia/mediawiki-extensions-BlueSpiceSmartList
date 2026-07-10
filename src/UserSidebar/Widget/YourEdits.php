@@ -77,7 +77,6 @@ class YourEdits extends Widget {
 	}
 
 	/**
-	 *
 	 * @return bool
 	 */
 	public function shouldRender(): bool {
@@ -85,7 +84,6 @@ class YourEdits extends Widget {
 	}
 
 	/**
-	 *
 	 * @return Message
 	 */
 	public function getHeaderMessage(): Message {
@@ -93,7 +91,6 @@ class YourEdits extends Widget {
 	}
 
 	/**
-	 *
 	 * @return array
 	 */
 	public function getLinks(): array {

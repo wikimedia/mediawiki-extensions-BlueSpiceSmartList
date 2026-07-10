@@ -15,7 +15,6 @@ class DerivativeAPIRequestWrapper implements IParser {
 	private $request = null;
 
 	/**
-	 *
 	 * @param WebRequest $request
 	 */
 	public function __construct( WebRequest $request ) {
@@ -23,7 +22,6 @@ class DerivativeAPIRequestWrapper implements IParser {
 	}
 
 	/**
-	 *
 	 * @param string $wikitext
 	 * @return string
 	 */

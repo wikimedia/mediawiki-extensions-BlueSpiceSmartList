@@ -18,7 +18,6 @@ class NewbiesMode extends BaseMode {
 	private $titleFactory;
 
 	/**
-	 *
 	 * @param ILoadBalancer $lb
 	 * @param UserFactory $userFactory
 	 * @param TitleFactory $titleFactory
@@ -44,7 +43,6 @@ class NewbiesMode extends BaseMode {
 	}
 
 	/**
-	 *
 	 * @inheritDoc
 	 */
 	public function getList( $args, $context ): array {

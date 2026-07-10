@@ -9,7 +9,6 @@ abstract class BaseMode implements IMode {
 	public const ATTR_COUNT = 'count';
 
 	/**
-	 *
 	 * @inheritDoc
 	 */
 	public function getParams(): array {
