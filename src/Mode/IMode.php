@@ -19,13 +19,11 @@ interface IMode {
 	public function getList( $args, $context ): array;
 
 	/**
-	 *
 	 * @return IParamDefinition[]
 	 */
 	public function getParams(): array;
 
 	/**
-	 *
 	 * @return string
 	 */
 	public function getListType(): string;

@@ -31,9 +31,6 @@ class GenericSmartlistMode extends SmartListBaseMode {
 	/** @var MediaWikiServices */
 	protected $services = null;
 
-	/**
-	 *
-	 */
 	public function __construct() {
 		$this->services = MediaWikiServices::getInstance();
 	}
@@ -46,7 +43,6 @@ class GenericSmartlistMode extends SmartListBaseMode {
 	}
 
 	/**
-	 *
 	 * @inheritDoc
 	 */
 	public function getListType(): string {
@@ -54,7 +50,6 @@ class GenericSmartlistMode extends SmartListBaseMode {
 	}
 
 	/**
-	 *
 	 * @inheritDoc
 	 */
 	public function getParams(): array {
@@ -139,7 +134,6 @@ class GenericSmartlistMode extends SmartListBaseMode {
 	}
 
 	/**
-	 *
 	 * @inheritDoc
 	 */
 	public function getList( $args, $context ): array {
@@ -208,7 +202,6 @@ class GenericSmartlistMode extends SmartListBaseMode {
 	}
 
 	/**
-	 *
 	 * @param array $args
 	 * @return array
 	 */
@@ -231,7 +224,6 @@ class GenericSmartlistMode extends SmartListBaseMode {
 	}
 
 	/**
-	 *
 	 * @param array &$conditions
 	 * @param string $pageIdFileName
 	 * @param array $args

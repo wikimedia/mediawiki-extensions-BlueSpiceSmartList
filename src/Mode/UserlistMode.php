@@ -36,7 +36,6 @@ class UserlistMode extends SmartListBaseMode {
 	}
 
 	/**
-	 *
 	 * @inheritDoc
 	 */
 	public function getParams(): array {
@@ -51,7 +50,6 @@ class UserlistMode extends SmartListBaseMode {
 	}
 
 	/**
-	 *
 	 * @inheritDoc
 	 */
 	public function getList( $args, $context ): array {

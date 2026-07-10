@@ -45,7 +45,6 @@ class RecentChangesDroplet extends TagDroplet {
 	}
 
 	/**
-	 *
 	 * @return string
 	 */
 	protected function getTagName(): string {
@@ -53,7 +52,6 @@ class RecentChangesDroplet extends TagDroplet {
 	}
 
 	/**
-	 *
 	 * @return array
 	 */
 	protected function getAttributes(): array {
