@@ -13,7 +13,6 @@ class ParserObjectWrapper implements IParser {
 	private $parser = null;
 
 	/**
-	 *
 	 * @param MediaWikiParser $parser
 	 */
 	public function __construct( MediaWikiParser $parser ) {
@@ -21,7 +20,6 @@ class ParserObjectWrapper implements IParser {
 	}
 
 	/**
-	 *
 	 * @param string $wikitext
 	 * @return string
 	 */
