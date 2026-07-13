@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Saederup92"
+			"Saederup92",
+			"Steenth"
 		]
 	},
 	"bs-smartlist-recent-changes": "Seneste ændringer",
@@ -11,7 +12,7 @@
 	"bs-smartlist-time": "Tidspunkt",
 	"bs-smartlist-title": "Titel",
 	"bs-smartlist-mostvisitedpages": "Mest besøgte sider",
-	"bs-smartlist-mosteditedpages": "Topredigerede sider",
+	"bs-smartlist-mosteditedpages": "Mest redigerede sider",
 	"bs-smartlist-mostactiveusers": "Mest aktive brugere (efter antal redigeringer)",
 	"bs-smartlist-lastedits": "Mine redigeringer",
 	"bs-smartlist-noedits": "Ingen redigeringer fundet."
