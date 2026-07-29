@@ -169,7 +169,8 @@ class RecentChangesMode extends GenericSmartlistMode {
 		// prevent display of deleted articles
 		$conditions[] = 'rc_title = page_title AND rc_namespace = page_namespace';
 		// include files
-		$conditions[] = 'NOT ( rc_type = 3 AND NOT ( rc_namespace = 6 ) )';
+		$conditions[] = 'NOT ( rc_source = ' . $dbr->addQuotes( RecentChange::SRC_LOG ) .
+			' AND NOT ( rc_namespace = 6 ) )';
 
 		$fields = [ 'rc_title as title', 'rc_namespace as namespace' ];
 
