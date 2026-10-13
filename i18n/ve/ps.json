@@ -1,0 +1,41 @@
+{
+	"@metadata": {
+		"authors": [
+			"شاه زمان پټان"
+		]
+	},
+	"bs-smartlist-ve-smartlist-title": "ويښيارلړ",
+	"bs-smartlist-ve-smartlistinspector-count": "شمېر",
+	"bs-smartlist-ve-smartlistinspector-minor": "کوچني بدلونونه وښایاست",
+	"bs-smartlist-ve-smartlistinspector-new": "يوازې نوې ليکنې وښاياست",
+	"bs-smartlist-ve-smartlistinspector-sort": "اوډون ډول",
+	"bs-smartlist-ve-smartlistinspector-order": "اوډلو ترتيب",
+	"bs-smartlist-ve-period-day-label": "ورځ",
+	"bs-smartlist-ve-period-week-label": "اوونۍ",
+	"bs-smartlist-ve-period-month-label": "مياشت",
+	"bs-smartlist-ve-sort-time-label": "وخت",
+	"bs-smartlist-ve-sort-title-label": "سرليک",
+	"bs-smartlist-ve-newbies-title-label": "نوي کارنان",
+	"bs-smartlist-ve-newbiesinspector-count": "شمېر",
+	"bs-smartlist-ve-toplist-title": "غورلړ",
+	"bs-smartlist-ve-mode-recentchanges-label": "وروستي بدلونونه",
+	"bs-smartlist-ve-mode-changesofweek-label": "د اوونۍ بدلونونه",
+	"bs-smartlist-ve-inspector-count-label": "د ښودل شويو پايلو شمېر",
+	"bs-smartlist-ve-inspector-ns-label": "نوم‌تشيالونو له مخې چاڼول",
+	"bs-smartlist-ve-inspector-cat-label": "وېشنيزو له مخې چاڼول",
+	"bs-smartlist-ve-inspector-catmode-label": "د وېشنيزو ترکيب چاڼول",
+	"bs-smartlist-ve-inspector-catmode-or-label": "يوه (OR) وېشنيزه بسنه کوي",
+	"bs-smartlist-ve-inspector-catmode-and-label": "ټولې وېشنيزې بايد (AND) وټاکل شي",
+	"bs-smartlist-ve-inspector-period-label": "وخت موده",
+	"bs-smartlist-ve-inspector-heading-label": "برخې سرليک",
+	"bs-smartlist-ve-inspector-trim-label": "د مخ سرليکونو ډېر اوږدوالی",
+	"bs-smartlist-ve-inspector-showtext-label": "د مخ منځپانگې مخکتنه ښودل",
+	"bs-smartlist-ve-inspector-trimtext-label": "د مخ منځپانگې ډېر اوږدوالی",
+	"bs-smartlist-ve-inspector-order-desc-label": "پاييز",
+	"bs-smartlist-ve-inspector-order-asc-label": "پيليز",
+	"bs-smartlist-ve-inspector-showns-label": "د نوم‌تشيال مختاړی ښودل",
+	"bs-smartlist-ve-inspector-meta-label": "د پېژنداومتوک مالومات ښودل",
+	"bs-smartlist-ve-inspector-numwithtext-label": "د مخ مخکتنې سره د مخ سرليکونو شمېر",
+	"bs-smartlist-ve-inspector-target-label": "د راتلونکو تړونو لپاره مخ",
+	"bs-smartlist-ve-inspector-excludens-label": "نوم‌تشيالونه ويستل"
+}
