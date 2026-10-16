@@ -30,5 +30,7 @@
 	"bs-smartlist-ve-mode-changesofweek-label": "Ännerunge vun der Woch",
 	"bs-smartlist-ve-newbies-title-label": "Nei Benotzer",
 	"bs-smartlist-ve-inspector-order-desc-label": "Ofsteigend",
-	"bs-smartlist-ve-inspector-order-asc-label": "Opsteigend"
+	"bs-smartlist-ve-inspector-order-asc-label": "Opsteigend",
+	"bs-smartlist-ve-smartlistinspector-minor": "Kleng Ännerunge weisen",
+	"bs-smartlist-ve-smartlistinspector-sort": "Sortéieren no"
 }
