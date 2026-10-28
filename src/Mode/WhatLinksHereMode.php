@@ -4,9 +4,9 @@ namespace BlueSpice\SmartList\Mode;
 
 use BsInvalidNamespaceException;
 use MediaWiki\Context\RequestContext;
+use MediaWiki\Language\MessageLocalizer;
 use MediaWiki\Permissions\PermissionManager;
 use MediaWiki\Title\TitleFactory;
-use MessageLocalizer;
 use MWStake\MediaWiki\Component\InputProcessor\Processor\StringValue;
 use Wikimedia\Rdbms\ILoadBalancer;
 
