@@ -2,12 +2,12 @@
 
 namespace BlueSpice\SmartList;
 
+use MediaWiki\ObjectCache\ObjectCacheFactory;
 use MediaWiki\Title\Title;
 use MediaWiki\Title\TitleFactory;
 use MediaWiki\User\ActorNormalization;
 use MediaWiki\User\UserIdentity;
 use MWStake\MediaWiki\Component\Utils\UtilityFactory;
-use ObjectCacheFactory;
 use Wikimedia\LightweightObjectStore\ExpirationAwareness;
 use Wikimedia\ObjectCache\BagOStuff;
 use Wikimedia\Rdbms\ILoadBalancer;
