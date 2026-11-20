@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"A100Star",
 			"Amire80",
 			"Erelon",
 			"Neriah",
@@ -24,5 +25,6 @@
 	"bs-smartlist-ve-toplist-title": "רשימת מובילים",
 	"bs-smartlist-ve-toplistinspector-portletperiod": "משך התיבה",
 	"bs-smartlist-ve-mode-recentchanges-label": "שינויים אחרונים",
-	"bs-smartlist-ve-mode-changesofweek-label": "שינויי השבוע"
+	"bs-smartlist-ve-mode-changesofweek-label": "שינויי השבוע",
+	"bs-smartlist-ve-inspector-count-label": "מספר התוצאות המוצגות"
 }
